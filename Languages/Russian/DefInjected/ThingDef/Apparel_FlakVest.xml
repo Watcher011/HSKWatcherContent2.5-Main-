@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BallisticPlateI.label>Баллистическая пластина (Металл)</BallisticPlateI.label>
+  <BallisticPlateI.description>Штампованная стальная пластина с закалкой. Пистолетную пулю ещё держит, но автоматная очередь только треснет и прогреет грудную клетку до кипения.</BallisticPlateI.description>
+
+  <BallisticPlateII.label>Баллистическая пластина (Пластик)</BallisticPlateII.label>
+  <BallisticPlateII.description>Стальная подложка с арамидным демпферным слоем. Пуля тормозит в пластике, дробится о сталь — выживший помнит только глухой удар и хруст расслоения.</BallisticPlateII.description>
+
+  <BallisticPlateIII.label>Баллистическая пластина (Керамика)</BallisticPlateIII.label>
+  <BallisticPlateIII.description>Керамический сердечник в кевларовой оплётке. Встречает пулю твёрдостью, гасит осколки вязкостью — идеальный баланс между живучестью и весом.</BallisticPlateIII.description>
+
+
+</LanguageData>

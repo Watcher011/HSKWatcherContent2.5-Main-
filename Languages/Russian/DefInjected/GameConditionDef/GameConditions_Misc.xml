@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HSK_GameCondition_WildHunt.label>Дикая Охота</HSK_GameCondition_WildHunt.label>
+  <HSK_GameCondition_WildHunt.description>Дикая Охота</HSK_GameCondition_WildHunt.description>
+
+  <HSK_GameCondition_CursedSoul.label>Проклятая Душа</HSK_GameCondition_CursedSoul.label>
+  <HSK_GameCondition_CursedSoul.description>Тёмное проклятие пало на одного из ваших поселенцев, привлекая баргестов из тени.</HSK_GameCondition_CursedSoul.description>
+  <HSK_GameCondition_CursedSoul.letterText>Один из ваших поселенцев был проклят, что привлекает баргестов к вашей колонии.</HSK_GameCondition_CursedSoul.letterText>
+
+
+  <!-- GameCondition для отложенного рейда -->
+
+  <HSK_PlanetaryBombardment.label>Планетарная бомбардировка</HSK_PlanetaryBombardment.label>
+  <HSK_PlanetaryBombardment.description>Планетарная бомбардировка.</HSK_PlanetaryBombardment.description>
+
+  <HSK_AbominationOverrun.label>Критическое заражение</HSK_AbominationOverrun.label>
+  <HSK_AbominationOverrun.description>Мерзость распространилась по всей планете</HSK_AbominationOverrun.description>
+
+
+</LanguageData>

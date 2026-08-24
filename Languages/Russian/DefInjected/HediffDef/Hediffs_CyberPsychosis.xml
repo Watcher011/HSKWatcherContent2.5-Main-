@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Temporary Blocker -->
+
+  <CyberPsychosisBlocker.label>ингибитор киберпсихоза</CyberPsychosisBlocker.label>
+  <CyberPsychosisBlocker.description>Временная защита от киберпсихоза. Предотвращает потерю человечности и медленно восстанавливает её.</CyberPsychosisBlocker.description>
+  <CyberPsychosisBlocker.stages.0.label>активен</CyberPsychosisBlocker.stages.0.label>
+
+
+  <!-- Permanent Blocker -->
+
+  <PermanentCyberPsychosisBlocker.label>нейростабилизатор</PermanentCyberPsychosisBlocker.label>
+  <PermanentCyberPsychosisBlocker.description>Продвинутый нейроимплант, который навсегда стабилизирует психику от нагрузки, вызванной кибернетическими улучшениями. Предотвращает киберпсихоз и медленно восстанавливает утраченную человечность.</PermanentCyberPsychosisBlocker.description>
+  <PermanentCyberPsychosisBlocker.stages.0.label>активен</PermanentCyberPsychosisBlocker.stages.0.label>
+
+  <MindLock.label>Стеклянная клетка</MindLock.label>
+  <MindLock.description>Установленный маленький чип способен значительно усилить психику.</MindLock.description>
+  <MindLock.labelNoun>чип «Стеклянная клетка»</MindLock.labelNoun>
+
+
+  <!-- Постоянный блокиратор -->
+
+</LanguageData>

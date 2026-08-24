@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+
+	<RecipeDef ParentName="GrenadeRecipeBase" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>MakeHealingGrenade</defName>
+		<label>make healing grenades x5</label>
+		<description>Craft 5 healing grenades.</description>
+		<jobString>Making healing grenades.</jobString>
+		 <researchPrerequisite>Grenade_C1</researchPrerequisite>
+		<workAmount>3200</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			  </categories>
+			</filter>
+			<count>12</count>
+		  </li>
+		  <li>
+			<filter>
+			  <categories>
+				<li>HeavyBar</li>
+			  </categories>
+			</filter>
+			<count>4</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>MedicineIndustrial</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+			  </thingDefs>
+			</filter>
+			<count>3</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentIndustrial</li>
+			  </thingDefs>
+			</filter>
+			<count>2</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+		    <li>MedicineIndustrial</li>
+			<li>ComponentIndustrial</li>
+			<li>FSX</li>
+			<li>Powder</li>
+		  </thingDefs>
+		  <categories>
+			<li>SLDBar</li>
+			<li>USLDBar</li>
+			<li>HeavyBar</li>
+		  </categories>
+		</fixedIngredientFilter>
+		<products>
+			<GrenadeHealingGas>5</GrenadeHealingGas>
+		</products>
+	</RecipeDef>
+	
+	
+		<RecipeDef ParentName="GrenadeRecipeBase" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>MakeTearGas</defName>
+		<label>make tear grenades x5</label>
+		<description>Craft 5 tear grenades.</description>
+		<jobString>Making tear grenades.</jobString>
+		 <researchPrerequisite>Grenade_C1</researchPrerequisite>
+		<workAmount>3200</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			  </categories>
+			</filter>
+			<count>12</count>
+		  </li>
+		  <li>
+			<filter>
+			  <categories>
+				<li>HeavyBar</li>
+			  </categories>
+			</filter>
+			<count>4</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Rawonion</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+			  </thingDefs>
+			</filter>
+			<count>3</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentIndustrial</li>
+			  </thingDefs>
+			</filter>
+			<count>2</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+		    <li>Rawonion</li>
+			<li>ComponentIndustrial</li>
+			<li>FSX</li>
+			<li>Powder</li>
+		  </thingDefs>
+		  <categories>
+			<li>SLDBar</li>
+			<li>USLDBar</li>
+			<li>HeavyBar</li>
+		  </categories>
+		</fixedIngredientFilter>
+		<products>
+			<GrenadeTearGas>5</GrenadeTearGas>
+		</products>
+	</RecipeDef>
+	
+	
+		<RecipeDef ParentName="GrenadeRecipeBase" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>MakeInsecticideGas</defName>
+		<label>make insecticide grenades x5</label>
+		<description>Craft 5 insecticide grenades.</description>
+		<jobString>Making insecticide grenades.</jobString>
+		 <researchPrerequisite>Grenade_C1</researchPrerequisite>
+		<workAmount>3200</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			  </categories>
+			</filter>
+			<count>12</count>
+		  </li>
+		  <li>
+			<filter>
+			   <thingDefs>
+				<li>PoisonGland</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>InsectJelly</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+			  </thingDefs>
+			</filter>
+			<count>3</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentIndustrial</li>
+			  </thingDefs>
+			</filter>
+			<count>2</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+		    <li>Rawonion</li>
+			<li>ComponentIndustrial</li>
+			<li>FSX</li>
+			<li>Powder</li>
+		  </thingDefs>
+		  <categories>
+			<li>SLDBar</li>
+			<li>USLDBar</li>
+		  </categories>
+		</fixedIngredientFilter>
+		<products>
+			<GrenadeInsecticide>5</GrenadeInsecticide>
+		</products>
+	</RecipeDef>
+
+  <!--  <RecipeDef ParentName="RangedWeaponRecipeBase">
+        <defName>MakeFlashbangGrenades</defName>
+        <label>make shock grenades</label>
+        <description>Builds a set of Shock Grenades. Shock grenades are damaging to electronic equipment or electronic-based entities. They do not harm non-electronic entities. Shock Grenades are thrown by hand and have a 3x3 blast zone around the point of impact.</description>
+        <jobString>Making shock grenades.</jobString>
+        <workAmount>6000</workAmount>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <skillRequirements>
+            <Crafting>9</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Metallic</li>
+                    </categories>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Powder</li>
+                    </thingDefs>
+                </filter>
+                <count>6</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+        <categories>
+            <li>SLDBar</li>
+            <li>USLDBar</li>
+        </categories>
+        <thingDefs>
+            <li>Powder</li>
+            <li>ComponentIndustrial</li>
+        </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <CE_Weapon_GrenadeFlashbang>5</CE_Weapon_GrenadeFlashbang>
+        </products>
+        <recipeUsers>
+            <li>TableHeavyAmmunition</li>
+        </recipeUsers>
+        <researchPrerequisite>Grenade_C1</researchPrerequisite>
+    </RecipeDef>
+-->
+  
+</Defs>

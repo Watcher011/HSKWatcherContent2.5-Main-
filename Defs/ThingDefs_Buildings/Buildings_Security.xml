@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_CannonBio</defName>
+		<label>120mm tank cannon turret</label>
+		<graphicData>
+			<texPath>Things/Building/Security/CannonGun_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/BioTurretLaser_Ico</uiIconPath>
+		<statBases>
+			<MaxHitPoints>270</MaxHitPoints>
+			<WorkToBuild>2150</WorkToBuild>
+			<Mass>1600</Mass>
+			<Bulk>1200</Bulk>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<description>A turret mounted with a 120mm tank gun. It can fire an explosive shell long distances, over walls and through constructed roofs. The turret will explode when heavily damaged. It uses 120mm Cannon Shells for ammo.</description>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>180</costStuffCount>
+		<costList>
+			<CannonTurret_Crate>1</CannonTurret_Crate>
+		</costList>
+		<specialDisplayRadius>16</specialDisplayRadius>
+		<researchPrerequisites>
+			<li>Artillery_C2</li>
+		</researchPrerequisites>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Gun_CannonTurretBio</turretGunDef>
+			<turretTopDrawSize>3</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Cannon</minifiedDef>
+		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Gun_CannonTurretBio</defName>
+		<label>120mm Bio Cannon</label>
+		<description>120mm Bio cannon to a turret base.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/BioTurretLaser_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>4000</MarketValue>
+			<SightsEfficiency>1.8</SightsEfficiency>
+			<ShotSpread>0.22</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>TurretGun</li>
+			<li>Artillery_BaseDestroyer</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_Laserbeam_Bio</defaultProjectile>
+				<!{1}**<forcedMissRadius>4</forcedMissRadius>**{1}>
+				<circularError>1.35</circularError>
+				<warmupTime>2.00</warmupTime>
+				<minRange>16</minRange>
+				<range>140</range>
+				<soundCast>120mm</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>20</muzzleFlashScale>
+				<indirectFirePenalty>0.2</indirectFirePenalty>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>8.5</reloadTime>
+				<!{1}** <spawnUnloaded>true</spawnUnloaded> **{1}>
+				<ammoSet>AmmoSet_ChargedLaser</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes" />
+		</comps>
+	</ThingDef>-->
+
+<ThingDef ParentName="TrapIEDBase">
+    <defName>Claymore</defName>
+    <label>Directional Claymore Mine</label>
+    <description>A directional fragmentation mine for perimeter defense. It uses a laser trigger to detect targets. When triggered, it detonates the main charge of plastic explosive, firing a fan of 700 steel balls in a 60° arc. Effective against enemy personnel at ranges of up to 25 meters. It has a short arming delay (0.2 seconds) after activation of the motion sensor.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+        <texPath>Things/Building/Furniture/Claymore/Claymore</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <shaderType>CutoutComplex</shaderType>
+        <drawSize>(1.0,2.0)</drawSize>
+        <drawRotated>true</drawRotated>
+        <allowFlip>true</allowFlip>
+    </graphicData>
+    <uiIconPath>Things/Building/Furniture/Claymore/Claymore_ui</uiIconPath>
+    <altitudeLayer>PawnUnused</altitudeLayer>
+    <fillPercent>0.15</fillPercent>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <statBases>
+        <Beauty>9</Beauty>
+        <WorkToBuild>310</WorkToBuild>
+        <Bulk>12</Bulk>
+        <Mass>4</Mass>
+        <Cleanliness>0</Cleanliness>
+        <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
+    </statBases>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <size>(1,1)</size>
+    <stuffCategories>
+        <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>35</costStuffCount>
+    <costList>
+        <Powder>10</Powder>
+        <ElectronicComponents>3</ElectronicComponents>
+        <Mechanism>2</Mechanism>
+    </costList>
+    <surfaceType>Item</surfaceType>
+    <placeWorkers>
+        <li>SK.PlaceWorker_NotOnWall</li>
+        <li>SK.PlaceWorker_WallAttachment</li>
+        <li>Watcher.Comps.PlaceWorker_DirectionalMine</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <building>
+        <uninstallWork>150</uninstallWork>
+        <isEdifice>true</isEdifice>
+        <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+    </building>
+    <rotatable>True</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <comps>
+        <li Class="Watcher.Comps.CompProperties_DirectionalExplosive">
+            <explosiveRadius>5</explosiveRadius>
+            <damageAmountBase>120</damageAmountBase>
+            <damageDef>Fragment</damageDef>
+            <armorPenetrationSharp>15</armorPenetrationSharp>
+            <armorPenetrationBlunt>80</armorPenetrationBlunt>
+            <angle>120</angle>
+            <wickTicks>30</wickTicks>
+            <startWickOnDamageTaken>
+                <li>Flame</li>
+                <li>Bomb</li>
+            </startWickOnDamageTaken>
+            <hasMotionSensor>true</hasMotionSensor>
+            <sensorRange>4</sensorRange>
+            <sensorScanInterval>30</sensorScanInterval>
+            <sensorOnlyHostile>true</sensorOnlyHostile>
+            <sensorOnlyPawns>true</sensorOnlyPawns>
+        </li>
+        <li Class="CompProperties_Flickable"/>
+    </comps>
+    <researchPrerequisites>
+        <li>IED_C1</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+</ThingDef>
+
+<ThingDef ParentName="TrapIEDBase">
+    <defName>ClaymoreNonLethal</defName>
+    <label>Claymore non-lethal</label>
+    <description>A directional device for non-flying perimeter control. It uses tranquilizer capsules as the striking element. When a laser trigger is activated, the main charge initiates the release of 700 gelatin capsules containing a fast-acting sedative at a constant 120° angle. It provides instantaneous immobilization of firepower at a range of up to 25 meters. It has a short response delay (0.2 seconds) after activation of the motion sensor for operator safety.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+        <texPath>Things/Building/Furniture/Claymore/ClaymoreNonLethal</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <shaderType>CutoutComplex</shaderType>
+        <drawSize>(1.0,2.0)</drawSize>
+        <drawRotated>true</drawRotated>
+        <allowFlip>true</allowFlip>
+    </graphicData>
+    <uiIconPath>Things/Building/Furniture/Claymore/ClaymoreNonLethal_ui</uiIconPath>
+    <altitudeLayer>PawnUnused</altitudeLayer>
+    <fillPercent>0.15</fillPercent>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <statBases>
+        <Beauty>9</Beauty>
+        <WorkToBuild>310</WorkToBuild>
+        <Bulk>12</Bulk>
+        <Mass>4</Mass>
+        <Cleanliness>0</Cleanliness>
+        <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
+    </statBases>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <size>(1,1)</size>
+    <stuffCategories>
+        <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>35</costStuffCount>
+    <costList>
+        <Powder>10</Powder>
+        <ElectronicComponents>3</ElectronicComponents>
+        <Med-x>2</Med-x>
+    </costList>
+    <surfaceType>Item</surfaceType>
+    <placeWorkers>
+        <li>SK.PlaceWorker_NotOnWall</li>
+        <li>SK.PlaceWorker_WallAttachment</li>
+        <li>Watcher.Comps.PlaceWorker_DirectionalMine</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <building>
+        <uninstallWork>150</uninstallWork>
+        <isEdifice>true</isEdifice>
+        <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+    </building>
+    <rotatable>True</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <comps>
+        <li Class="Watcher.Comps.CompProperties_DirectionalExplosive">
+            <explosiveRadius>5</explosiveRadius>
+            <damageAmountBase>12</damageAmountBase>
+            <damageDef>Tranquilizer</damageDef>
+            <armorPenetrationSharp>0.5</armorPenetrationSharp>
+            <armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+            <angle>120</angle>
+            <wickTicks>30</wickTicks>
+            <startWickOnDamageTaken>
+                <li>Flame</li>
+                <li>Bomb</li>
+            </startWickOnDamageTaken>
+            <hasMotionSensor>true</hasMotionSensor>
+            <sensorRange>4</sensorRange>
+            <sensorScanInterval>30</sensorScanInterval>
+            <sensorOnlyHostile>true</sensorOnlyHostile>
+            <sensorOnlyPawns>true</sensorOnlyPawns>
+        </li>
+        <li Class="CompProperties_Flickable"/>
+    </comps>
+    <researchPrerequisites>
+        <li>IED_C1</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+</ThingDef>
+	
+</Defs>

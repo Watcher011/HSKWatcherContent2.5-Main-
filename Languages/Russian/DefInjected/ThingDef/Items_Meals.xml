@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CupDecaffeinatedCoffee.label>Кофе без кофеина</CupDecaffeinatedCoffee.label>
+  <CupDecaffeinatedCoffee.description>Чашка кофе без кофеина.</CupDecaffeinatedCoffee.description>
+  <CupDecaffeinatedCoffee.ingestible.ingestCommandString>Выпить {0}</CupDecaffeinatedCoffee.ingestible.ingestCommandString>
+  <CupDecaffeinatedCoffee.ingestible.ingestReportString>Пьёт {0}.</CupDecaffeinatedCoffee.ingestible.ingestReportString>
+
+  <CupStrongCoffee.label>Чашка крепкого кофе</CupStrongCoffee.label>
+  <CupStrongCoffee.description>Чашка крепкого кофе.</CupStrongCoffee.description>
+  <CupStrongCoffee.ingestible.ingestCommandString>Выпить {0}</CupStrongCoffee.ingestible.ingestCommandString>
+  <CupStrongCoffee.ingestible.ingestReportString>Пьёт {0}.</CupStrongCoffee.ingestible.ingestReportString>
+
+  <IceCreamfruits.label>Мороженое (фруктовое)</IceCreamfruits.label>
+  <IceCreamfruits.description>Наконец, венцом кулинарного безумия Рима является это мороженое - хрустящий рожок из перемолотых механитов, наполненный «кремом» из гидропонного молока (которое в прошлой жизни, возможно, было ядовитым грибом), щедро украшенный фруктами, собранными... ну, вы знаете кем.</IceCreamfruits.description>
+
+  <IceCreamchocolate.label>Мороженое (шоколадное)</IceCreamchocolate.label>
+  <IceCreamchocolate.description>"Имперские учёные долго спорили, можно ли считать эту липкую массу настоящей едой. В итоге Главный пищевой алгоритм постановил: если колонист ест это добровольно - значит, съедобно. Хотя случай с гибелью рядового Джонсона от счастья после первой ложки всё ещё расследуется.
+*Добывается из какао-бобов, выращенных на южных плантациях, где работают только счастливые (и совершенно добровольные) рабочие. По крайней мере, так говорится в отчётах для Имперской инспекции. Сам шоколад проходит 17 стадий очистки, после чего в нём остаётся всего 3% песка, 1% насекомых и 0,5% воспоминаний о свободе."*.</IceCreamchocolate.description>
+
+  <IceCreamcoconut.label>Мороженое (кокосовое)</IceCreamcoconut.label>
+  <IceCreamcoconut.description>"Когда Имперский продовольственный департамент впервые классифицировал кокос как 'древесный орех', это вызвало бунт среди ботаников. Затем они исчезли. Теперь мы едим эту тропическую напасть, бережно выращенную на гидропонных плантациях садовниками-заключёнными (строго добровольно, согласно их трудовым договорам)."
+"Рецепт был 'позаимствован' у племени островных дикарей в обмен на стеклянные бусы и сифилис. Их вождь заплакал, попробовав мороженое. Возможно, от осознания величия имперской кухни. Или потому, что мы добавили его тотемный столб в морозильный агрегат.".</IceCreamcoconut.description>
+
+ <Adjika.label>Аджика</Adjika.label>
+<Adjika.description>Тёмно-красная пастообразная приправа из молотого жгучего перца, чеснока и диких трав.</Adjika.description>
+
+
+</LanguageData>

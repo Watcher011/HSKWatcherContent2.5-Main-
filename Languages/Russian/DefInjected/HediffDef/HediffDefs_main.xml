@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <PreyMark.label>метка добычи</PreyMark.label>
+  <PreyMark.description>МЕТКА БАРГЕСТА.</PreyMark.description>
+  <PreyMark.labelNoun>метка добычи</PreyMark.labelNoun>
+
+  <Hediff_AbominationTracker.label>отслеживание</Hediff_AbominationTracker.label>
+  <Hediff_AbominationTracker.description>---.</Hediff_AbominationTracker.description>
+
+  <Hediff_InfectedAnimalTracker.label>отслеживание заражённого</Hediff_InfectedAnimalTracker.label>
+  <Hediff_InfectedAnimalTracker.description>---.</Hediff_InfectedAnimalTracker.description>
+
+  <Hediff_InfectionCarrier.label>носитель инфекции</Hediff_InfectionCarrier.label>
+  <Hediff_InfectionCarrier.description>---.</Hediff_InfectionCarrier.description>
+
+  <Hediff_AbominationInfection.label>латентная инфекция</Hediff_AbominationInfection.label>
+  <Hediff_AbominationInfection.description>---.</Hediff_AbominationInfection.description>
+  <Hediff_AbominationInfection.stages.0.label>ранняя стадия</Hediff_AbominationInfection.stages.0.label>
+
+  <AbnormalLeg.label>аномальная нога</AbnormalLeg.label>
+  <AbnormalLeg.description>Со стороны эта конечность обманчиво напоминает продвинутый бионический протез — но лишь до тех пор, пока вы не прикоснётесь к ней. Вместо холодного титана её сегменты отлиты из живой стали (Биоферрит), пронизанной пульсирующими тёмными венами. Это не просто замена ноги. Это гибрид, где высокие технологии встречаются с тем, что выходит за пределы известной реальности.</AbnormalLeg.description>
+  <AbnormalLeg.comps.0.tools.0.label>когти</AbnormalLeg.comps.0.tools.0.label>
+  <AbnormalLeg.stages.0.label>аномальная нога</AbnormalLeg.stages.0.label>
+  <AbnormalLeg.labelNoun>аномальная нога</AbnormalLeg.labelNoun>
+
+
+  <!-- Abnormal arm -->
+
+  <AbnormalArm.label>аномальная рука</AbnormalArm.label>
+  <AbnormalArm.description>На первый взгляд, это технологическое чудо — бионическая рука, достойная лучших лабораторий. Но присмотритесь: её «сухожилия» сотканы из пульсирующих волокон живой стали, а хитиновые пластины на фалангах отливают багровым оттенком. Это не просто протез. Это конечность, рождённая самой аномалией — и она жаждет быть использованной.</AbnormalArm.description>
+  <AbnormalArm.comps.0.tools.0.label>лезвие</AbnormalArm.comps.0.tools.0.label>
+  <AbnormalArm.stages.0.label>аномальная рука</AbnormalArm.stages.0.label>
+  <AbnormalArm.labelNoun>аномальная рука</AbnormalArm.labelNoun>
+
+
+  <!-- Abnormal Spine -->
+
+  <AbnormalSpine.label>аномальный позвоночник</AbnormalSpine.label>
+  <AbnormalSpine.description>На первый взгляд, это передовой бионический позвоночник — гибкий, прочный и идеально выровненный. Но при ближайшем рассмотрении открывается правда: позвонки не из титана, а из сращённых сегментов живой кости-металла, пульсирующих тёмными венами, которые, кажется, дышат в ритме с хозяином. Сам спинной мозг был заменён чем-то... осознающим. Это не протез. Это симбиот, который закрепляется в нервной системе, переписывая пределы тела изнутри.</AbnormalSpine.description>
+  <AbnormalSpine.stages.0.label>аномальный позвоночник</AbnormalSpine.stages.0.label>
+  <AbnormalSpine.labelNoun>аномальный позвоночник</AbnormalSpine.labelNoun>
+
+
+  <!-- Abnormal Heart -->
+
+  <AbnormalHeart.label>аномальное сердце</AbnormalHeart.label>
+  <AbnormalHeart.description>Сначала оно выглядит как вершина бионической инженерии — идеальная копия человеческого сердца, бьющаяся с механической точностью. Но приложите ухо к груди, и вы услышите нечто неладное. Ритм нестабилен; он меняется, адаптируется, почти мыслит. Камеры выстланы живой тканью, которой не должно существовать, пульсирующей слабым багровым свечением. Этот орган не просто перекачивает кровь. Он жаждет её, ускоряет её, превращает всю кровеносную систему во что-то, выходящее за пределы человеческих возможностей. Но такая сила имеет свою цену — сердце помнит свою истинную природу и время от времени требует, чтобы его услышали.</AbnormalHeart.description>
+  <AbnormalHeart.stages.0.label>аномальное сердце</AbnormalHeart.stages.0.label>
+  <AbnormalHeart.labelNoun>аномальное сердце</AbnormalHeart.labelNoun>
+
+
+  <!-- Abnormal Stomach -->
+
+  <AbnormalStomach.label>аномальный желудок</AbnormalStomach.label>
+  <AbnormalStomach.description>Это выглядит как продвинутый бионический желудок — пока вы не почувствуете, как он урчит. Его подкладка из живой стали (Биоферрит) под давлением производит вязкий, едкий токсин. Этот орган не просто переваривает — он производит оружие. Желудок, рождённый аномалией, способный в любой момент извергнуть концентрированный яд.</AbnormalStomach.description>
+  <AbnormalStomach.stages.0.label>аномальный желудок</AbnormalStomach.stages.0.label>
+  <AbnormalStomach.labelNoun>аномальный желудок</AbnormalStomach.labelNoun>
+
+
+  <!-- Abnormal Eye -->
+
+  <AbnormalEye.label>аномальный глаз</AbnormalEye.label>
+  <AbnormalEye.description>На первый взгляд, эти глаза кажутся обычными — тёмные радужки, идеальные зрачки, почти красивые. Но присмотритесь, и вы увидите слабое мерцание живой стали (Биоферрит), вплетённой в сетчатку. Они не просто видят свет; они видят истину, скрытую в тенях. Невидимые сущности, призрачные аномалии, существа, существующие между мгновениями — всё открыто перед этим взглядом. Носитель видит то, чего не видят другие, и ничто не остаётся скрытым.</AbnormalEye.description>
+  <AbnormalEye.stages.0.label>аномальные глаза</AbnormalEye.stages.0.label>
+  <AbnormalEye.labelNoun>аномальный глаз</AbnormalEye.labelNoun>
+
+
+  <!-- Abnormal Regeneration Gland - HediffDef -->
+
+  <AbnormalRegenerationGland.label>аномальная железа регенерации</AbnormalRegenerationGland.label>
+  <AbnormalRegenerationGland.description>Каждая кома питает паразита, медленно опустошая вас изнутри. После трёх ком пустота заберёт свою плату.</AbnormalRegenerationGland.description>
+  <AbnormalRegenerationGland.stages.0.label>аномальная железа регенерации</AbnormalRegenerationGland.stages.0.label>
+  <AbnormalRegenerationGland.labelNoun>аномальная железа регенерации</AbnormalRegenerationGland.labelNoun>
+
+
+  <!-- Abnormal Regeneration Coma -->
+
+  <AbnormalRegenerationComa.label>аномальная регенеративная кома</AbnormalRegenerationComa.label>
+  <AbnormalRegenerationComa.description>Паразит взял полный контроль. Тело хозяина перестраивается изнутри — раны закрываются, органы отрастают, кровь снова течёт.</AbnormalRegenerationComa.description>
+
+
+  <!-- Abnormal Bliss Lobotomy -->
+
+  <AbnormalBlissLobotomy.label>аномальная блаженная лоботомия</AbnormalBlissLobotomy.label>
+  <AbnormalBlissLobotomy.description>Пустота забрала свою плату. Этот человек был психически лоботомирован — его разум разрушен, воля сломлена, душа опустошена. Они существуют в состоянии блаженства, но ничего не осталось от того, кем они были.</AbnormalBlissLobotomy.description>
+
+
+  <!-- RecipeDef для выращивания -->
+
+  <HealingGasHediff.label>целительный газ</HealingGasHediff.label>
+  <HealingGasHediff.description>Целительный газ насыщает организм, быстро регенерируя ткани и подавляя боль. Высокие концентрации вызывают лёгкое головокружение. Эффект постепенно ослабевает после выхода из облака.</HealingGasHediff.description>
+  <HealingGasHediff.stages.0.label>остаточный эффект</HealingGasHediff.stages.0.label>
+  <HealingGasHediff.stages.1.label>активный</HealingGasHediff.stages.1.label>
+  <HealingGasHediff.stages.2.label>пиковый</HealingGasHediff.stages.2.label>
+  <HealingGasHediff.labelNoun>воздействие целительного газа</HealingGasHediff.labelNoun>
+
+  <TearGasHediff.label>слезоточивый газ</TearGasHediff.label>
+  <TearGasHediff.description>Раздражающий газ вызывает сильное жжение глаз, кашель и временную слепоту.</TearGasHediff.description>
+  <TearGasHediff.stages.0.label>слезящиеся глаза</TearGasHediff.stages.0.label>
+  <TearGasHediff.stages.1.label>жгучее раздражение</TearGasHediff.stages.1.label>
+  <TearGasHediff.stages.2.label>сильное жжение</TearGasHediff.stages.2.label>
+  <TearGasHediff.stages.3.label>слепота и удушье</TearGasHediff.stages.3.label>
+  <TearGasHediff.stages.4.label>асфиксия</TearGasHediff.stages.4.label>
+
+  <ExplosiveParasite.label>взрывной паразит</ExplosiveParasite.label>
+  <ExplosiveParasite.description>Бесконтрольное размножение паразитов внутри организма вызывает сильное вздутие и накопление летучих токсичных веществ. При повреждении тканей или ударе давление внутри тела резко возрастает, что провоцирует мощный взрыв с выбросом газа.</ExplosiveParasite.description>
+  <ExplosiveParasite.stages.0.label>заражён</ExplosiveParasite.stages.0.label>
+  <ExplosiveParasite.labelNoun>взрывной паразит</ExplosiveParasite.labelNoun>
+<HadAdjika.label>ел Аджику</HadAdjika.label>
+<HadAdjika.description>Я ел острую пасту из жгучего перца и диких трав. Я чувствовал, как обжигающий жар разливается по венам, согревая тело и проясняя мысли...</HadAdjika.description>
+
+
+  <!-- ========================================== -->
+  <!-- Abnormal Arm                                -->
+  <!-- Abnormal Spine                              -->
+  <!-- Abnormal Heart                              -->
+  <!-- Abnormal Stomach                            -->
+  <!-- Abnormal Eye                                -->
+  <!-- Abnormal Regeneration Gland                 -->
+  <!-- Abnormal Regeneration Coma                  -->
+  <!-- Abnormal Bliss Lobotomy                     -->
+
+</LanguageData>

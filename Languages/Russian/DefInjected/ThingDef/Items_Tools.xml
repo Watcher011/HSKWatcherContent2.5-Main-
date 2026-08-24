@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <TFJ_Tool_Woodcutting_TameBeaver.label>БобрКурва</TFJ_Tool_Woodcutting_TameBeaver.label>
+  <TFJ_Tool_Woodcutting_TameBeaver.description>Согласно древнему польскому проклятию, если вы услышали «KURVA» — ваша жизнь разделилась на «до» и «после». «До» — это когда у вас ещё были все пальцы. Бобёр, которого вы так наивно попытались приручить, не занимается валкой леса в привычном понимании этого слова. Он — квинтэссенция деструктивной энергии, закованная в пушистую шкуру. Логика проста: если что-то можно сгрызть — он сгрызёт. Если нельзя — он попробует, а потом сгрызёт. Этот зверь не знает пощады, не ведает страха и, что самое пугающее, получает искреннее удовольствие от процесса. Оставшиеся после встречи с ним конечности — вовсе не признак его великодушия. Просто, видите ли, у него в тот момент было неважное настроение. Очевидно, недогрызенный сосед или недостаточно уничтоженный куст испортили ему весь настрой.</TFJ_Tool_Woodcutting_TameBeaver.description>
+  <TFJ_Tool_Woodcutting_TameBeaver.tools.0.label>Когти</TFJ_Tool_Woodcutting_TameBeaver.tools.0.label>
+  <TFJ_Tool_Woodcutting_TameBeaver.tools.1.label>Зубы</TFJ_Tool_Woodcutting_TameBeaver.tools.1.label>
+
+  <HSK_GordonCrowbar.label>Монтировка</HSK_GordonCrowbar.label>
+  <HSK_GordonCrowbar.description>Легендарная красная монтировка. Фирменное оружие физика-теоретика, который однажды спас мир. Невероятно прочная и идеально сбалансированная как для строительства, так и для... других целей. «Просыпайся и сияй, мистер Фримен. Просыпайся и сияй.»</HSK_GordonCrowbar.description>
+  <HSK_GordonCrowbar.tools.0.label>рукоять</HSK_GordonCrowbar.tools.0.label>
+  <HSK_GordonCrowbar.tools.1.label>головка</HSK_GordonCrowbar.tools.1.label>
+  <HSK_GordonCrowbar.tools.2.label>крюк</HSK_GordonCrowbar.tools.2.label>
+
+  <Proj_GrenadeHealingGas.label>граната «Доктор Хаос»</Proj_GrenadeHealingGas.label>
+  <Proj_GrenadeTearGas.label>граната «Взрослые слёзы»</Proj_GrenadeTearGas.label>
+
+  <GrenadeHealingGas.label>граната «Доктор Хаос»</GrenadeHealingGas.label>
+  <GrenadeHealingGas.description>Бросаешь её в толпу, и все внезапно начинают чувствовать себя лучше. Побочный эффект — лёгкое головокружение, но кто не рискует, тот не выживает.</GrenadeHealingGas.description>
+  <GrenadeHealingGas.verbs.0.label>бросить целебную штуковину</GrenadeHealingGas.verbs.0.label>
+
+  <GrenadeTearGas.label>граната «Взрослые слёзы»</GrenadeTearGas.label>
+  <GrenadeTearGas.description>Выпускает облако, от которого даже киборги заплакали бы. Идеально для тех, кто считает, что дипломатия — это перебор.</GrenadeTearGas.description>
+  <GrenadeTearGas.verbs.0.label>бросить гранату со слезоточивым газом</GrenadeTearGas.verbs.0.label>
+
+  <Proj_GrenadeInsecticide.label>граната «Жуко-STOP»</Proj_GrenadeInsecticide.label>
+
+  <GrenadeInsecticide.label>граната «Жуко-STOP»</GrenadeInsecticide.label>
+  <GrenadeInsecticide.description>Нейротоксичное облако, мгновенно решающее проблему насекомых. Безопасна для людей, но жукам настоятельно не рекомендуется вдыхать.</GrenadeInsecticide.description>
+  <GrenadeInsecticide.verbs.0.label>бросить аэрозоль от тараканов</GrenadeInsecticide.verbs.0.label>
+
+
+  <!--<HealingGasHediff.label>газ «Всё будет хорошо»</HealingGasHediff.label>-->
+  <!--<HealingGasHediff.description>Насыщает организм, заставляя плоть зарастать быстрее, чем ты успеваешь жаловаться. Высокие дозы вызывают лёгкое головокружение — но это мелочь по сравнению с отсутствием внутренних органов.</HealingGasHediff.description>-->
+  <!--<HealingGasHediff.stages.0.label>едва заметный</HealingGasHediff.stages.0.label>-->
+  <!--<HealingGasHediff.stages.1.label>работает, как надо</HealingGasHediff.stages.1.label>-->
+  <!--<HealingGasHediff.stages.2.label>почти бессмертие</HealingGasHediff.stages.2.label>-->
+  <!--<HealingGasHediff.labelNoun>воздействие доброго тумана</HealingGasHediff.labelNoun>-->
+  <!-- Слезоточивый газ -->
+  <!--<TearGasHediff.label>газ «Поплачь»</TearGasHediff.label>-->
+  <!--<TearGasHediff.description>Косметическая процедура для глаз и лёгких. Побочные эффекты включают слепоту, рвоту и непреодолимое желание убежать к маме.</TearGasHediff.description>-->
+  <!--<TearGasHediff.stages.0.label>лёгкая сентиментальность</TearGasHediff.stages.0.label>-->
+  <!--<TearGasHediff.stages.1.label>жгучая искренность</TearGasHediff.stages.1.label>-->
+  <!--<TearGasHediff.stages.2.label>пламенная страсть</TearGasHediff.stages.2.label>-->
+  <!--<TearGasHediff.stages.3.label>тёмное просветление</TearGasHediff.stages.3.label>-->
+  <!--<TearGasHediff.stages.4.label>финальный вдох</TearGasHediff.stages.4.label>-->
+  <!-- Гранаты -->
+
+</LanguageData>

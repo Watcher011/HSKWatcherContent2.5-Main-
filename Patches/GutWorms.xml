@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!--  <Operation Class="PatchOperationConditional">
+        <xpath>Defs/HediffDef[defName="GutWorms"]/comps</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/HediffDef[defName="GutWorms"]/comps</xpath>
+            <value>
+                <li Class="HSK.Watcher.Content.HediffCompProperties_SpawnWorm">
+                    <thingDef>Worm</thingDef>
+                    <mtbDays>1.0</mtbDays>
+                    <spawnCount>1</spawnCount>
+                    <spawnRadius>2</spawnRadius>
+                </li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/HediffDef[defName="GutWorms"]</xpath>
+            <value>
+                <comps>
+                    <li Class="HSK.Watcher.Content.HediffCompProperties_SpawnWorm">
+                        <thingDef>Worm</thingDef>
+                        <mtbDays>1.0</mtbDays>
+                        <spawnCount>1</spawnCount>
+                        <spawnRadius>2</spawnRadius>
+                    </li>
+                </comps>
+            </value>
+        </nomatch>
+    </Operation>-->
+</Patch>

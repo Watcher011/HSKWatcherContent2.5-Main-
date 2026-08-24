@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <!-- <HSK.AnimalSettings>
+        <defName>AnimalEventSettings</defName>
+        <includedRaces>
+            <!{1}** Животные которые всегда включаются **{1}>
+            <li>Husky</li>
+            <li>LabradorRetriever</li>
+            <li>Cougar</li>
+            <li>Wolf_Timber</li>
+            <li>Fox_Red</li>
+            <li>Bear_Grizzly</li>
+            <li>Warg</li>
+            <li>Megasloth</li>
+            <li>Panther</li>
+            <li>Lynx</li>
+        </includedRaces>
+        <excludedRaces>
+            <!{1}** Животные которые всегда исключаются **{1}>
+            <li>AlphaBeaver</li>
+            <li>Boomrat</li>
+            <li>Boomalope</li>
+        </excludedRaces>
+        <maxBodySize>3.0</maxBodySize>
+        <maxWildness>0.95</maxWildness>
+    </HSK.AnimalSettings>
+-->
+</Defs>

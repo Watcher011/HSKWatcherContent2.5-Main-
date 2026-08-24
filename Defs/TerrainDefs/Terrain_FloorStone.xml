@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>FloorJadeBrick</defName>
+		<label>Jade tiles</label>
+		 <color>(85,118,69)</color>
+		<renderPrecedence>270</renderPrecedence>
+		<description>Stone floor made of neat square jade slabs
+Beauty: 8</description>
+		<texturePath>Terrain/Surfaces/SpikecoreTile</texturePath>
+		<researchPrerequisites>
+			<li>Stone_floor_B4</li>
+		</researchPrerequisites>
+		<statBases>
+			<WorkToBuild>820</WorkToBuild>
+			<Beauty>8</Beauty>
+		</statBases>
+		<costList>
+			<Jade>4</Jade>
+		</costList>
+		<designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+
+    <TerrainDef ParentName="FloorBase">
+		<defName>FloorJadeMosaic</defName>
+		<label>Jade mosaic</label>
+		 <color>(85,118,69)</color>
+		<renderPrecedence>268</renderPrecedence>
+		<description>Stone floor made of neat jade mosaic
+Beauty: 7</description>
+		<texturePath>Terrain/Surfaces/StoneMosaic</texturePath>
+		<researchPrerequisites>
+			<li>Stone_floor_B4</li>
+		</researchPrerequisites>
+		<statBases>
+			<WorkToBuild>760</WorkToBuild>
+			<Beauty>7</Beauty>
+		</statBases>
+		<costList>
+			<Jade>4</Jade>
+		</costList>
+		<designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+	
+	
+		<TerrainDef ParentName="FloorBase">
+		<defName>FloorJadePlates</defName>
+		<label>Jade plates</label>
+		 <color>(85,118,69)</color>
+		<renderPrecedence>268</renderPrecedence>
+		<description>Jade stone floor
+Beauty: 9</description>
+		<texturePath>Things/Floor/jadarTile</texturePath>
+		<researchPrerequisites>
+			<li>Stone_floor_B4</li>
+		</researchPrerequisites>
+		<statBases>
+			<WorkToBuild>960</WorkToBuild>
+			<Beauty>9</Beauty>
+			 <StyleDominance>1</StyleDominance>
+		</statBases>
+		<tags>
+      <li>FineFloor</li>
+       </tags>
+		<costList>
+			<Jade>8</Jade>
+		</costList>
+		<designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBase">
+		<defName>FloorAmberPlates</defName>
+		<label>Amber plates</label>
+		 <color>(255,171,0)</color>
+		<renderPrecedence>268</renderPrecedence>
+		<description>Amber stone floor
+Beauty: 8</description>
+		<texturePath>Things/Floor/AmberFlor</texturePath>
+		<researchPrerequisites>
+			<li>Stone_floor_B4</li>
+		</researchPrerequisites>
+		<statBases>
+			<WorkToBuild>1060</WorkToBuild>
+			<Beauty>8</Beauty>
+			 <StyleDominance>1</StyleDominance>
+		</statBases>
+		
+		<tags>
+      <li>FineFloor</li>
+       </tags>
+		<costList>
+			<Amber>8</Amber>
+		</costList>
+		<designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+	 
+	
+	
+	<TerrainDef ParentName="FloorBase">
+		<defName>HSK_AntiBugFloor</defName>
+       <label>Anti-bug tile</label>
+       <description>A special concrete mixture with an integrated layer of barbed wire, designed to protect against underground insect attacks. When beetles try to break through this floor, they get an unexpected surprise in the form of sharp metal clippings on their own limbs.</description>
+		<renderPrecedence>268</renderPrecedence>
+		<texturePath>Things/Floor/AntiBugFlor</texturePath>
+		<researchPrerequisites>
+			<li>Stone_floor_B4</li>
+		</researchPrerequisites>
+		<statBases>
+			<WorkToBuild>1060</WorkToBuild>
+			<Beauty>8</Beauty>
+			<StyleDominance>1</StyleDominance>
+		</statBases>
+		<tags>
+      <li>FineFloor</li>
+       </tags>
+		<costList>
+			<ConcreteResource>1</ConcreteResource>
+			<Wire>1</Wire>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+	
+</Defs>

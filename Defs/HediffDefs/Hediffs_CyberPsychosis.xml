@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+   
+
+    <!-- Temporary Blocker -->
+    <HediffDef>
+        <defName>CyberPsychosisBlocker</defName>
+        <label>cyber psychosis inhibitor</label>
+        <description>Temporary protection against cyber psychosis. Prevents humanity loss and slowly restores it.</description>
+        <hediffClass>HSK.Watcher.Content.Hediff_CyberPsychosisBlocker</hediffClass>
+        <defaultLabelColor>(0.2, 0.6, 1.0)</defaultLabelColor>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <label>active</label>
+                <becomeVisible>true</becomeVisible>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HSK.Watcher.Content.HediffCompProperties_CyberPsychosisBlocker">
+                <durationHours>24</durationHours>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <!-- Permanent Blocker -->
+    <HediffDef>
+        <defName>PermanentCyberPsychosisBlocker</defName>
+        <label>neural stabilizer</label>
+        <description>An advanced neural implant that permanently stabilizes the psyche against cybernetic augmentation stress. Prevents cyber psychosis and slowly restores lost humanity.</description>
+        <hediffClass>HSK.Watcher.Content.Hediff_PermanentCyberPsychosisBlocker</hediffClass>
+        <defaultLabelColor>(0.2, 0.8, 0.2)</defaultLabelColor>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <label>active</label>
+                <becomeVisible>true</becomeVisible>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HSK.Watcher.Content.HediffCompProperties_PermanentCyberBlocker">
+                <humanityRestorePerDay>0.1</humanityRestorePerDay>
+            </li>
+        </comps>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.0</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+	
+	
+	
+	<ThingDef ParentName="BodyPartBase_Bionic">
+		<defName>MindLock</defName>
+		<label>Glass Cage</label>
+		<description>A homemade neural interface assembled from parts of old quantum graphics cards and a medical stimulator. Instead of blocking signals, it generates 40Hz "white noise" that drowns out the sounds of advertising neural networks and the panic attacks of news feeds.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAIChip</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/Core/Joywire</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<MaxHitPoints>35</MaxHitPoints>
+		</statBases>
+		<costList>
+			<CarbonAlloy>6</CarbonAlloy>
+			<Glass>10</Glass>
+			<SyntheticFibers>8</SyntheticFibers>
+			<BioMicrochips>1</BioMicrochips>
+		</costList>
+		<recipeMaker>
+			<productCount>1</productCount>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>Bionics</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<HediffDef ParentName="HediffBodyPartBase_BionicImplant">
+		<defName>MindLock</defName>
+		<label>Glass Cage</label>
+		<description>An installed little chip is able to significantly boost.</description>
+		<labelNoun>an Glass Cage chip</labelNoun>
+		<descriptionHyperlinks>
+			<ThingDef>MindLock</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.2</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>0.14</offset>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.20</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MindLock</spawnThingOnRemoved>
+	</HediffDef>
+
+	<RecipeDef ParentName="SK_SurgeryFlesh">
+		<defName>InstallMindLock</defName>
+		<label>Install Glass Cage</label>
+		<description>Installs an Glass Cage.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing Glass Cage.</jobString>
+		<workAmount>4600</workAmount>
+		<descriptionHyperlinks>
+			<ThingDef>MindLock</ThingDef>
+		</descriptionHyperlinks>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MindLock</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MindLock</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MindLock</addsHediff>
+		<skillRequirements>
+			<Medicine>15</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>Prosthesis_install_D4</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SK_SurgeryFlesh">
+		<defName>RemoveMindLock</defName>
+		<label>remove Glass Cage</label>
+		<description>Removes Glass Cage.</description>
+		<workerClass>Recipe_RemoveImplant</workerClass>
+		<jobString>Removing Glass Cage chip.</jobString>
+		<successfullyRemovedHediffMessage>{0} has successfully removed {1}'s Glass Cage chip.</successfullyRemovedHediffMessage>
+		<workAmount>3700</workAmount>
+		<removesHediff>MindLock</removesHediff>
+		<deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>MedicineHerbal</li>
+			</disallowedThingDefs>
+		</fixedIngredientFilter>
+		<skillRequirements>
+			<Medicine>6</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>Prosthesis_install_D3</researchPrerequisite>
+	</RecipeDef>
+</Defs>

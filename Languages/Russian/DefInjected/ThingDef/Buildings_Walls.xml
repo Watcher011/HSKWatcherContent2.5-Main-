@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Walltextile.label>Текстильная стена</Walltextile.label>
+  <Walltextile.description>Простая стена, выполненная из ткани, которая может служить опорой для крыши.</Walltextile.description>
+
+  <WallcomKristal.label>Стена из светокамня</WallcomKristal.label>
+  <WallcomKristal.description>Простая стена, отделанная светокамнем, способная служить опорой для крыши.</WallcomKristal.description>
+
+  <WallcomKristalReinforced.label>Армированная стена со светокамнем</WallcomKristalReinforced.label>
+  <WallcomKristalReinforced.description>Армированная стена, отделанная светокамнем, способная служить опорой для крыши.</WallcomKristalReinforced.description>
+
+
+</LanguageData>

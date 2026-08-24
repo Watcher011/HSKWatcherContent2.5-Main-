@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+
+	<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Conversion"]/defNames</xpath>
+				<value>
+				<li>CharcoalPit</li>
+				</value>
+	</Operation>
+	 <Operation Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Lights"]/defNames</xpath>
+				<value>
+				<li>KristalWallLamp</li>
+				<li>CeilingKristal</li>
+				</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Columns"]/defNames</xpath>
+				<value>
+				<li>ColumnKristal</li>
+				</value>
+	</Operation>
+			 <Operation Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Walls"]/defNames</xpath>
+				<value>
+				<li>Walltextile</li>
+				<li>WallcomKristal</li>
+				<li>WallcomKristalReinforced</li>
+				</value>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Traps"]/defNames</xpath>
+				<value>
+				<li>Claymore</li>
+				</value>
+			 </Operation>
+	
+	
+	
+</Patch>
+
+
+
+
+

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThingDef ParentName="LeatherBase">
+		<defName>Leather_GreenyZyabra</defName>
+		<label>GreenyZyabra fur</label>
+		<description>At first glance, the appearance resembles a wet felt-infused bulletproof vest, but this country's ability to repel water, dirt, and conscience is evident. If you brush your wool against it, you can hear a quiet roar—not a hallucination, but the residual essence of evil, inextricably woven into every cell.</description>
+		<graphicData>
+			<color>(100,203,100)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>8</MarketValue>
+			<StuffPower_Armor_Sharp>2.4</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>2.3</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.135</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>9</StuffPower_Insulation_Heat>
+			<Mass>0.1</Mass>
+			<Bulk>0.1</Bulk>
+		</statBases>
+		<stuffProps>
+			<color>(100,203,100)</color>
+			<commonality>0.0075</commonality>
+			<statFactors>
+				<MaxHitPoints>1.5</MaxHitPoints>
+				<Beauty>7</Beauty>
+				<MoveSpeed>1</MoveSpeed>
+				<MarketValue>0.8</MarketValue>
+				<WorkToMake>1.9</WorkToMake>
+				<WorkToBuild>1.9</WorkToBuild>
+				<BedRestEffectiveness>0.85</BedRestEffectiveness>
+				<ImmunityGainSpeedFactor>1.24</ImmunityGainSpeedFactor>
+				<Mass>0.5</Mass>
+			</statFactors>
+		</stuffProps>
+	</ThingDef> 
+
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>GreenyZyabrawool</defName>
+		<label>GreenyZyabra wool</label>
+		<description>This is the remarkably soft wool of an GreenyZyabra. It is useful for clothing.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Wool</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(100,203,100)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>130</MaxHitPoints>
+			<MarketValue>7.0</MarketValue>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<StuffPower_Armor_Sharp>2.0</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>2.0</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.105</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>25</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
+			<Mass>0.02</Mass>
+			<Bulk>0.02</Bulk>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<stackLimit>300</stackLimit>
+		<techLevel>Neolithic</techLevel>
+		<stuffProps>
+			<categories>
+				<li>Fabric</li>
+			</categories>
+			<color>(100,203,100)</color>
+			<statFactors>
+				<MaxHitPoints>1.2</MaxHitPoints>
+				<Beauty>1.2</Beauty>
+				<MoveSpeed>0.85</MoveSpeed>
+				<MarketValue>0.7</MarketValue>
+				<WorkToMake>1.1</WorkToMake>
+				<WorkToBuild>1.1</WorkToBuild>
+				<BedRestEffectiveness>1.2</BedRestEffectiveness>
+				<ImmunityGainSpeedFactor>1.65</ImmunityGainSpeedFactor>
+				<Mass>0.66</Mass>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BTextiles</li>
+		</thingCategories>
+		<burnableByRecipe>True</burnableByRecipe>
+	</ThingDef>
+</Defs>

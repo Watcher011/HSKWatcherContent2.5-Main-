@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================================ -->
+    <!-- THINGDEF: Ocellus с CE бронёй               -->
+    <!-- ============================================ -->
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>Ocellus</defName>
+        <label>Ocellus Parasite</label>
+        <description>The link penetrates the eye socket and fuses with the brain, completely dominating the body. The host remains safe, but is unable to control themselves, watching as the parasite uses their hands on their loved ones. The eye glows with a pulsating light, and threads writhe beneath the skin. The creature studies the victim's behavior and copies it. Even death does not free it—the parasite leaves the corpse through the eye socket in search of a new host.</description>
+        <statBases>
+            <Mass>0.5</Mass>
+            <MoveSpeed>8.8</MoveSpeed>
+            <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+            <ComfyTemperatureMax>50</ComfyTemperatureMax>
+            <MarketValue>200</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+            <MeatAmount>0</MeatAmount>
+            <ImmunityGainSpeed>3</ImmunityGainSpeed>
+            <MeleeDodgeChance>0.35</MeleeDodgeChance>
+            <MeleeCritChance>0.15</MeleeCritChance>
+            <SmokeSensitivity>0.5</SmokeSensitivity>
+            <GermResistance>0.7</GermResistance>
+            <GermContainment>0.01</GermContainment>
+            <FilthRate>4</FilthRate>
+            <ToxicResistance>0.95</ToxicResistance>
+            <Wildness>0.85</Wildness>
+            <!-- CE броня -->
+            <ArmorRating_Sharp>3.5</ArmorRating_Sharp>
+            <ArmorRating_Blunt>5.2</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.5</ArmorRating_Heat>
+            <!-- CE дополнительные статы -->
+            <MeleeParryChance>0.1</MeleeParryChance>
+            <Suppressability>0.3</Suppressability>
+            <NightVisionEfficiency>0.8</NightVisionEfficiency>
+        </statBases>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>mouth</label>
+                <capacities>
+                    <li>PlagueBite</li>
+                </capacities>
+                <power>4</power>
+                <cooldownTime>1.2</cooldownTime>
+                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+                <armorPenetrationSharp>1.5</armorPenetrationSharp>
+                <armorPenetrationBlunt>2.0</armorPenetrationBlunt>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>2</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <chanceFactor>0.2</chanceFactor>
+                <armorPenetrationBlunt>1.0</armorPenetrationBlunt>
+            </li>
+        </tools>
+        <butcherProducts>
+            <Chitin>1</Chitin>
+        </butcherProducts>
+        <race>
+            <body>BeetleLike</body>
+            <herdMigrationAllowed>false</herdMigrationAllowed>
+            <baseHungerRate>0.68</baseHungerRate>
+            <baseBodySize>0.16</baseBodySize>
+            <baseHealthScale>0.16</baseHealthScale>
+            <useMeatFrom>Megaspider</useMeatFrom>
+            <foodType>Plant, OmnivoreAnimal, AnimalProduct, Corpse</foodType>
+            <fleshType>Insectoid</fleshType>
+            <bloodDef>Filth_BloodInsect</bloodDef>
+            <petness>0</petness>
+            <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0</manhunterOnDamageChance>
+            <lifeExpectancy>3</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>EusocialInsectLarva</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>EusocialInsectJuvenile</def>
+                    <minAge>0.03</minAge>
+                </li>
+                <li>
+                    <def>EusocialInsectAdult</def>
+                    <minAge>0.13</minAge>
+                    <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+                    <soundDeath>Pawn_Megascarab_Death</soundDeath>
+                    <soundCall>Pawn_Megascarab_Call</soundCall>
+                    <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+            <soundEating>Insectoid_Eat</soundEating>
+        </race>
+        <modExtensions>
+            <li Class="CombatExtended.RacePropertiesExtensionCE">
+                <bodyShape>QuadrupedLow</bodyShape>
+            </li>
+            <li Class="SK.DestroyCorpseExtension" />
+            <li Class="SK.DevourerAnimalExtension">
+                <things>
+                    <li>food</li>
+                </things>
+            </li>
+        </modExtensions>
+    <comps>
+		<li Class="CombatExtended.CompProperties_ArmorDurability">
+				<Durability>325</Durability>
+				<Regenerates>true</Regenerates>
+				<RegenInterval>60</RegenInterval>
+				<RegenValue>5</RegenValue>
+				<MinArmorPct>0.75</MinArmorPct>
+		</li>
+    </comps>
+    </ThingDef>
+
+    <!-- ============================================ -->
+    <!-- PAWNKINDDEF: Ocellus                         -->
+    <!-- ============================================ -->
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Ocellus</defName>
+        <label>Ocellus</label>
+        <race>Ocellus</race>
+        <combatPower>10</combatPower>
+        <ecoSystemWeight>0.03</ecoSystemWeight>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Ocellus/Ocellus</texPath>
+                    <drawSize>0.4</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>0.1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Ocellus/Ocellus</texPath>
+                    <drawSize>0.5</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>0.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Ocellus/Ocellus</texPath>
+                    <drawSize>0.7</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>0.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+	
+	
+ 
+<!-- ============================================ -->
+    <!-- THINGDEF: Headcrab с CE бронёй               -->
+    <!-- ============================================ -->
+    <ThingDef ParentName="AnimalThingBase">
+       <defName>Headcrab</defName>
+    <label>Headcrab</label>
+    <description>A parasitic creature from another world. It leaps at its victims, attaching to their heads and taking control of their nervous system. The host's face is completely covered, and their body is used as a puppet. The headcrab feeds on the host's vital energy, slowly consuming them from the inside. Extremely aggressive and fast, it can jump great distances to reach its prey.</description>
+        <statBases>
+            <Mass>0.5</Mass>
+            <MoveSpeed>6.8</MoveSpeed>
+            <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+            <ComfyTemperatureMax>50</ComfyTemperatureMax>
+            <MarketValue>200</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+            <MeatAmount>0</MeatAmount>
+            <ImmunityGainSpeed>3</ImmunityGainSpeed>
+            <MeleeDodgeChance>0.35</MeleeDodgeChance>
+            <MeleeCritChance>0.15</MeleeCritChance>
+            <SmokeSensitivity>0.5</SmokeSensitivity>
+            <GermResistance>0.7</GermResistance>
+            <GermContainment>0.01</GermContainment>
+            <FilthRate>4</FilthRate>
+            <ToxicResistance>0.95</ToxicResistance>
+            <Wildness>0.85</Wildness>
+            <!-- CE броня -->
+            <ArmorRating_Sharp>3.5</ArmorRating_Sharp>
+            <ArmorRating_Blunt>5.2</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.5</ArmorRating_Heat>
+            <!-- CE дополнительные статы -->
+            <MeleeParryChance>0.1</MeleeParryChance>
+            <Suppressability>0.3</Suppressability>
+            <NightVisionEfficiency>0.8</NightVisionEfficiency>
+        </statBases>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>mouth</label>
+                <capacities>
+                    <li>PlagueBite</li>
+                </capacities>
+                <power>4</power>
+                <cooldownTime>1.2</cooldownTime>
+                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+                <armorPenetrationSharp>1.5</armorPenetrationSharp>
+                <armorPenetrationBlunt>2.0</armorPenetrationBlunt>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>2</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <chanceFactor>0.2</chanceFactor>
+                <armorPenetrationBlunt>1.0</armorPenetrationBlunt>
+            </li>
+        </tools>
+        <butcherProducts>
+            <Chitin>1</Chitin>
+        </butcherProducts>
+        <race>
+            <body>BeetleLike</body>
+            <herdMigrationAllowed>false</herdMigrationAllowed>
+            <baseHungerRate>0.68</baseHungerRate>
+            <baseBodySize>0.5</baseBodySize>
+            <baseHealthScale>0.5</baseHealthScale>
+            <useMeatFrom>Megaspider</useMeatFrom>
+            <foodType>Plant, OmnivoreAnimal, AnimalProduct, Corpse</foodType>
+            <fleshType>Insectoid</fleshType>
+            <bloodDef>Filth_BloodInsect</bloodDef>
+            <petness>0</petness>
+            <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0</manhunterOnDamageChance>
+            <lifeExpectancy>3</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>EusocialInsectLarva</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>EusocialInsectJuvenile</def>
+                    <minAge>0.03</minAge>
+                </li>
+                <li>
+                    <def>EusocialInsectAdult</def>
+                    <minAge>0.13</minAge>
+                    <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+                    <soundDeath>Pawn_Megascarab_Death</soundDeath>
+                    <soundCall>Pawn_Megascarab_Call</soundCall>
+                    <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+            <soundEating>Insectoid_Eat</soundEating>
+        </race>
+        <modExtensions>
+            <li Class="CombatExtended.RacePropertiesExtensionCE">
+                <bodyShape>QuadrupedLow</bodyShape>
+            </li>
+            <li Class="SK.DestroyCorpseExtension" />
+            <li Class="SK.DevourerAnimalExtension">
+                <things>
+                    <li>food</li>
+                </things>
+            </li>
+        </modExtensions>
+    <comps>
+		<li Class="CombatExtended.CompProperties_ArmorDurability">
+				<Durability>325</Durability>
+				<Regenerates>true</Regenerates>
+				<RegenInterval>60</RegenInterval>
+				<RegenValue>5</RegenValue>
+				<MinArmorPct>0.75</MinArmorPct>
+		</li>
+    </comps>
+    </ThingDef>
+
+    <!-- ============================================ -->
+    <!-- PAWNKINDDEF:Headcrab                       -->
+    <!-- ============================================ -->
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Headcrab</defName>
+        <label>Headcrab</label>
+        <race>Headcrab</race>
+        <combatPower>10</combatPower>
+        <ecoSystemWeight>0.03</ecoSystemWeight>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Headcrab/Headcrab</texPath>
+                    <drawSize>1</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>0.1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Headcrab/Headcrab</texPath>
+                    <drawSize>1</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>0.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Headcrab/Headcrab</texPath>
+                    <drawSize>1</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>0.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+	
+	
+	
+	
+	<ThingDef ParentName="BaseInsect">
+    <defName>Worm</defName>
+    <label>worm</label>
+  <description>Adult specimen of an endoparasite that voluntarily terminated its "lease agreement" with the host. Having left its warm and cozy shelter, the worm is now looking for a new tenant — or at least a dark corner to digest its conscience (and the host's leftovers). Upon meeting, it waves its tail in a friendly manner, but in reality, it's sizing up how juicy you are. Aggressive.</description>
+    <statBases>
+      <MoveSpeed>2.0</MoveSpeed>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <MarketValue>35</MarketValue>
+      <LeatherAmount>0</LeatherAmount>
+      <Wildness>0.2</Wildness>
+    </statBases>
+    <tools>
+      <li>
+        <label>mandibles</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>Larva</body>
+      <baseBodySize>0.2</baseBodySize>
+      <baseHungerRate>0.10</baseHungerRate>
+      <baseHealthScale>0.25</baseHealthScale>
+      <useMeatFrom>Megaspider</useMeatFrom>
+      <lifeExpectancy>4</lifeExpectancy>
+      <trainability>Intermediate</trainability>
+      
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Larva_Wounded</soundWounded>
+          <soundDeath>Pawn_Larva_Death</soundDeath>
+          <soundCall>Pawn_Larva_Call</soundCall>
+          <soundAngry>Pawn_Larva_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalInsect</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_SpreadSludge">
+        <mtbTicks>15000</mtbTicks>
+        <abilityDef>SludgeSpew</abilityDef>
+        <tryAvoidSludge>true</tryAvoidSludge>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="InsectKindBase">
+    <defName>Worm</defName>
+    <label>Worm</label>
+    <race>Worm</race>
+    <combatPower>25</combatPower>
+    <ecoSystemWeight>0.15</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Worm/Worm</texPath>
+          <drawSize>0.85</drawSize>
+          <color>(200,156,156)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Insect/Larva/Dessicated_Larva</texPath>
+          <drawSize>0.85</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+</Defs>

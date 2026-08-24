@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HadGFish.stages.0.label>Рыба солона, чего-то не хватает.</HadGFish.stages.0.label>
+  <HadGFish.stages.0.description>Рыба требует пивного сопровождения. Без этого чувствую себя как механоид без смазки - скриплю и раздражаю всех вокруг.</HadGFish.stages.0.description>
+
+  <HadGFishAndBear.stages.0.label>Рыбно-пивная нирвана</HadGFishAndBear.stages.0.label>
+  <HadGFishAndBear.stages.0.description>Чувствую прилив энергии, могу горы свернуть! Правда, сейчас больше хочется свернуть в сторону туалета... Пивной закон Архимеда в действии: объём выпитого стремится занять тот же объём в мочевом пузыре.</HadGFishAndBear.stages.0.description>
+
+  <HadGTea.stages.0.label>Мятное озарение</HadGTea.stages.0.label>
+  <HadGTea.stages.0.description>Этот чай дарит мне умиротворение, обычно доступное только мёртвым. Хочется медитировать и прощать врагов. Ну, или хотя бы не стрелять в них сразу при встрече.</HadGTea.stages.0.description>
+
+  <HadGreenTea.stages.0.label>Зелёная бодрость</HadGreenTea.stages.0.label>
+  <HadGreenTea.stages.0.description>Чувствую прилив бодрости! Готов срубить все деревья на карте! Или хотя бы не засыпать за станком. Имперские учёные утверждают, что это полезнее, чем три дозы луциума - и дешевле!</HadGreenTea.stages.0.description>
+
+  <HadPuerT.stages.0.label>Пуэровое прозрение</HadPuerT.stages.0.label>
+  <HadPuerT.stages.0.description>Чувствую, как моё тело очищается от шлаков, токсинов и глупых мыслей. Даже желание продать новичка работорговцам кажется теперь менее разумным. Наверное.</HadPuerT.stages.0.description>
+
+  <AteHeadcrabMeal.stages.0.label>Паразитарная кулинария</AteHeadcrabMeal.stages.0.label>
+  <AteHeadcrabMeal.stages.0.description>Я съел хедкраба. Да, ТОГО САМОГО, что пытался залезть мне на голову. И знаете что? Вкус напоминает курицу. Если бы курица прилетела из другого измерения и у неё было бы слишком много лап. Чувствую себя подозрительно сильным. И немного пристыженным. Но в основном — сильным.</AteHeadcrabMeal.stages.0.description>
+
+
+</LanguageData>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- <ThingDef ParentName="ApparelMedievalBase">
+		<defName>Gloves_Worker</defName>
+		<label>Leather Gloves</label>
+		<description>A pair of hardened leather gloves, commonly used by most craftsmen.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Gloves/LeatherGloves/LeatherGloves</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>18</costStuffCount>
+		<costList>
+			<ComponentMedieval>2</ComponentMedieval>
+		</costList>
+		<statBases>
+			<WorkToMake>2500</WorkToMake>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Flammability>2</Flammability>
+			<Mass>0.3</Mass>
+			<Bulk>1</Bulk>
+			<WornBulk>0.4</WornBulk>
+			<EquipDelay>0.5</EquipDelay>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>0.12</WorkSpeedGlobal>
+			<SocialImpact>0.03</SocialImpact>
+			<MentalBreakThreshold>-0.02</MentalBreakThreshold>
+			<ConstructionSpeed>0.13</ConstructionSpeed>
+			<SmeltingSpeed>0.12</SmeltingSpeed>
+			<GermResistance>0.12</GermResistance>
+			<GermContainment>0.15</GermContainment>
+		</equippedStatOffsets>
+		<generateCommonality>1</generateCommonality>
+		<apparel>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>IndustrialBasic</li>
+				<li>Outlander</li>
+				<li>BanditsLight</li>
+				<li>RenegadesLight</li>
+				<li>PredatorsLight</li>
+				<li>EmpireLight</li>
+				<li>EmpireScout</li>
+				<li>BrotherhoodScout</li>
+				<li>SectarianLight</li>
+				<li>SectarianMedium</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<thingCategories>
+			<li>GlovesCat</li>
+			<li>SetConstructor</li>
+			<li>SetSmith</li>
+		</thingCategories>
+        <recipeMaker>
+            <researchPrerequisite>Apparel_B3</researchPrerequisite>
+        </recipeMaker>
+	</ThingDef> -->
+
+  <Gloves_DocCutters.label>Примитивные перчатки врача</Gloves_DocCutters.label>
+  <Gloves_DocCutters.description>Они буквально просто окунули чьи-то руки в жидкую резину и дали ей высохнуть. Результат напоминает криминалистические слепки рук больше, чем медицинский инструмент. Они липкие, ужасно пахнут и полностью убивают тактильную чувствительность. С другой стороны, они на 200% гигиеничнее, чем просто вытирать ладони о штаны перед ампутацией. Пациент всё ещё может умереть от сепсиса, но по крайней мере не потому, что вы забыли помыть руки после чистки выгребной ямы.</Gloves_DocCutters.description>
+
+  <Gloves_DocLeather.label>Кожаные перчатки врача</Gloves_DocLeather.label>
+  <Gloves_DocLeather.description>Толстые перчатки из грубой кожи, выдаваемые по имперскому регламенту. После стерилизации они становятся жёсткими и неудобными, но служат годами. В них можно провести десятки операций, не боясь порезов — хотя что-либо чувствовать через них практически невозможно.</Gloves_DocLeather.description>
+
+
+</LanguageData>

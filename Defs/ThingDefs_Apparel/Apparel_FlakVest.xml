@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <ThingDef ParentName="ApparelNoQualityBase">
+		<defName>BallisticPlateI</defName>
+		<label>Ballistic Plate(Metallic)</label>
+		<description>A stamped, heat-treated steel plate. It can handle pistol-caliber fire, but a burst of machine gun fire will only crack and heat up your chest.</description>
+		<graphicData>
+			<texPath>Things/Apparel/BallisticPlate/BPI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>		
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+			<li>Clothing</li>
+		</tradeTags>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<MaxHitPoints>40</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>3.2</Mass>
+			<Bulk>4</Bulk>
+			<WornBulk>3</WornBulk>
+			<EquipDelay>1.3</EquipDelay>
+			<Insulation_Heat>0</Insulation_Heat>
+			<Insulation_Cold>0</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>8</ArmorRating_Sharp>
+			<ArmorRating_Blunt>12</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.04</MoveSpeed>
+			<Suppressability>-0.06</Suppressability>
+		</equippedStatOffsets>
+		<generateCommonality>0.2</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<tags>
+				<li>IndustrialMilitaryBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags> 
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(1.0,1.0,1.0)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingCategories>
+			 <li>VestsCat</li>
+		</thingCategories>
+		<generateAllowChance>0.1</generateAllowChance>
+	</ThingDef>
+	
+	
+	 <ThingDef ParentName="ApparelNoQualityBase">
+		<defName>BallisticPlateII</defName>
+		<label>Ballistic Plate(Plastic)</label>
+		<description>Steel backing with aramid damping layer. The bullet slows down in the plastic, crushes on the steel - the survivor remembers only the dull impact and crack of delamination.</description>
+		<graphicData>
+			<texPath>Things/Apparel/BallisticPlate/BPII</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>		
+		<techLevel>Industrial</techLevel>
+		<tradeTags>
+			<li>Clothing</li>
+		</tradeTags>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>4.2</Mass>
+			<Bulk>5</Bulk>
+			<WornBulk>3</WornBulk>
+			<EquipDelay>1.3</EquipDelay>
+			<Insulation_Heat>0</Insulation_Heat>
+			<Insulation_Cold>0</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>16</ArmorRating_Sharp>
+			<ArmorRating_Blunt>45</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.06</MoveSpeed>
+			<Suppressability>-0.09</Suppressability>
+		</equippedStatOffsets>
+		<generateCommonality>0.2</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<tags>
+				<li>IndustrialMilitaryBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags> 
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(1.0,1.0,1.0)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingCategories>
+			 <li>VestsCat</li>
+		</thingCategories>
+		<generateAllowChance>0.1</generateAllowChance>
+	</ThingDef>
+	
+	
+	
+	 <ThingDef ParentName="ApparelNoQualityBase">
+		<defName>BallisticPlateIII</defName>
+		<label>Ballistic Plate(Ceramic)</label>
+		<description>A ceramic core, braced by a Kevlar jacket, meets bullets with hardness and dampens fragments with toughness—the perfect balance between durability and weight.</description>
+		<graphicData>
+			<texPath>Things/Apparel/BallisticPlate/BPIII</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>		
+		<techLevel>Industrial</techLevel>
+		<tradeTags>
+			<li>Clothing</li>
+		</tradeTags>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>4.4</Mass>
+			<Bulk>5</Bulk>
+			<WornBulk>3</WornBulk>
+			<EquipDelay>1.3</EquipDelay>
+			<Insulation_Heat>0</Insulation_Heat>
+			<Insulation_Cold>0</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>70</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.065</MoveSpeed>
+			<Suppressability>-0.12</Suppressability>
+		</equippedStatOffsets>
+		<generateCommonality>0.2</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<tags>
+				<li>IndustrialMilitaryBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags> 
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(1.0,1.0,1.0)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingCategories>
+			 <li>VestsCat</li>
+		</thingCategories>
+		<generateAllowChance>0.1</generateAllowChance>
+	</ThingDef>
+</Defs>

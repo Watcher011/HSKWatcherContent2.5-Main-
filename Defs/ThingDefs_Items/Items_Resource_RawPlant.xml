@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+  
+  <ThingDef ParentName="SK_PlantFoodRawBase">
+    <defName>RawSpices</defName>
+    <label>raw Blazepepper</label>
+    <description>A highly mutated fruit that grows in arid biomes and small settlements. It is widely used in cooking for spicy dishes and tonic infusions.</description>
+    <possessionCount>10</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Resource/RawSpices</texPath>
+	   <drawSize>0.5</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.1</MarketValue>
+	  <FoodPoisonChanceFixedHuman>0.92</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <ingestible>
+		<foodType>VegetableOrFruit</foodType>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		 <preferability>MealTerrible</preferability>
+    </ingestible>
+	<thingCategories>
+	        <li>BasicPlantFoodRaw</li>
+	</thingCategories>
+    <ingredient>
+      <mergeCompatibilityTags>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+      </mergeCompatibilityTags>
+    </ingredient>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>400</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+</Defs>

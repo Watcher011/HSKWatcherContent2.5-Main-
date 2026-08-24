@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef Name="CookRoastedMeat">
+		<defName>CookSausages</defName>
+		<label>cook Sausages</label>
+		<description>Prepares Sausages. Produces 1.</description>
+		<jobString>Roasting Sausages.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>500</workAmount>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>0.4</count>
+			</li>
+		</ingredients>
+		<products>
+			<Sausages>1</Sausages>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Meat_Megaspider</li>
+				<li>Meat_Human</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+				<li>InsectJelly</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<Cooking>0</Cooking>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<recipeUsers>
+			<li>Campfire</li>
+			<li>TableGrill</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>ElectricOven</li>
+		</recipeUsers>
+		<researchPrerequisite>Food_00</researchPrerequisite>
+	</RecipeDef>
+
+
+	<RecipeDef Name="CookRoastedMeatx4">
+		<defName>CookSausagesBulk</defName>
+		<label>cook Sausages (x4)</label>
+		<description>Prepares Sausages. Produces 4. Much of the ingredients are wasted in order to create the best eating experience.</description>
+		<jobString>Roast Sausages.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>1350</workAmount>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<Sausages>4</Sausages>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<Cooking>1</Cooking>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<recipeUsers>
+			<li>ElectricStove_Pro</li>
+			<li>ElectricOven</li>
+		</recipeUsers>
+		<researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
+	</RecipeDef>
+
+   <RecipeDef ParentName="CookMealFineBase">
+    <defName>CookMealFishAndBeer</defName>
+   <label>Make beer with fish</label>
+    <description>Real man food.</description>
+    <jobString>Cooks.</jobString>
+	<recipeUsers>
+			<li>TableButcher</li>
+			<li>TableKitchen</li>
+		</recipeUsers>
+    <ingredients>
+     <li>
+				<filter>
+					<thingDefs>
+						<li>DruFish</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+             <li>
+				<filter>
+					<thingDefs>
+						<li>Beer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+    </ingredients>
+    <products>
+      <MealFishAndBeer>1</MealFishAndBeer>
+    </products>
+    <displayPriority>200</displayPriority>
+  </RecipeDef>
+
+   <RecipeDef ParentName="CookMealFineBase">
+    <defName>CookMealFishinplastic</defName>
+    <label>Seal fish in plastic</label>
+    <description>Dry rations for hard times.</description>
+    <jobString>Cooks.</jobString>
+	<recipeUsers>
+			<li>TableButcher</li>
+			<li>TableKitchen</li>
+		</recipeUsers>
+    <ingredients>
+     <li>
+				<filter>
+					<thingDefs>
+						<li>DruFish</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+             <li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+    </ingredients>
+    <products>
+      <DruFishPlastic>1</DruFishPlastic>
+    </products>
+    <displayPriority>300</displayPriority>
+  </RecipeDef>
+ 
+  
+  <RecipeDef>
+ <defName>CookCyberPsychosisBlockerPill</defName>
+    <label>Make CyberPsychosis Blocker Pill</label>
+    <description>CyberPsychosis Blocker Pill.</description>
+		<jobString>Crafting Blocker Pill</jobString>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<workAmount>720</workAmount>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<CyberPsychosisBlockerPill>4</CyberPsychosisBlockerPill>
+		</products>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<researchPrerequisite>PenoxycylineProduction</researchPrerequisite>
+	</RecipeDef>
+
+
+ <RecipeDef ParentName="CookMealFineBase">
+    <defName>CookMealHeadcrab</defName>
+   <label>Make Headcrab Meal</label>
+    <description>Real man food.</description>
+    <jobString>Cooks.</jobString>
+	     <recipeUsers>
+			<li>Campfire</li>
+			<li>TableGrill</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>ElectricOven</li>
+		</recipeUsers>
+      <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Corpse_Headcrab</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Beer</li>
+                </thingDefs>
+            </filter>
+            <count>0.1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Corpse_Headcrab</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+        <thingDefs>
+            <li>Corpse_Headcrab</li>
+        </thingDefs>
+    </defaultIngredientFilter>
+    <products>
+      <HeadcrabGrill>1</HeadcrabGrill>
+    </products>
+    <displayPriority>200</displayPriority>
+  </RecipeDef>
+
+
+
+	<RecipeDef ParentName="CookMealSpecialBase_SK">
+		<defName>MakeAdjika</defName>
+		<label>cook Adjika</label>
+		<description>Creates a spicy paste from fiery peppers, garlic, and wild herbs. Yields 2.</description>
+		<jobString>Cooking Adjika.</jobString>
+		<workAmount>900</workAmount>
+		<soundWorking>Chemlab_Medicine_Drink</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawSpices</li>
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Salt</li>
+					</thingDefs>
+				</filter>
+				<count>0.03</count>
+			</li>
+		</ingredients>
+		<products>
+			<Adjika>2</Adjika>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawSpices</li>
+				<li>Salt</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>RawSpices</li>
+				<li>Salt</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<recipeUsers>
+		    <li>Campfire</li>
+			<li>TableGrill</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>ElectricOven</li>
+		</recipeUsers>
+	</RecipeDef>
+
+</Defs>

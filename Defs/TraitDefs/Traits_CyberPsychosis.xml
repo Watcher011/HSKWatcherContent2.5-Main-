@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <TraitDef>
+        <defName>CyberPsychosisImmune</defName>
+        <commonality>0.3</commonality>  <!-- не спавнится при генерации пешки -->
+        <degreeDatas>
+            <li>
+                <label>iron will</label>
+                <description>"They implanted a chip in my head to control me. But they forgot that as steel dulls, so does my character."</description>
+                <statOffsets>
+                    <MentalBreakThreshold>-0.12</MentalBreakThreshold>
+                    <PainShockThreshold>0.15</PainShockThreshold>
+                </statOffsets>
+            </li>
+        </degreeDatas>
+        <conflictingTraits>
+            <li>Hollowed</li>
+        </conflictingTraits>
+    </TraitDef>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!--  ОПУСТОШЁННЫЙ  (последствие длительного психоза)     -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <TraitDef>
+        <defName>Hollowed</defName>
+        <commonality>0.0</commonality>  <!-- только динамическое приобретение -->
+        <degreeDatas>
+            <li>
+                <label>devastated</label>
+                <description>"There were more chips than gray matter. The balance shifted—and the human element simply evaporated."</description>
+                <statOffsets>
+                    <SocialImpact>-0.30</SocialImpact>
+                    <MentalBreakThreshold>0.15</MentalBreakThreshold>
+                    <GlobalLearningFactor>-0.50</GlobalLearningFactor>
+                </statOffsets>
+            </li>
+        </degreeDatas>
+        <conflictingTraits>
+            <li>CyberPsychosisImmune</li>
+        </conflictingTraits>
+    </TraitDef>
+
+</Defs>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	  
+	<ThingDef ParentName="ArmorSpacerSimpleBase">
+		<defName>Armor_HEV</defName>
+		<label>H.E.V.protective suit</label>
+		<description>Legends speak of a scientist who survived the resonance cascade in this very suit. The Mark V modification features reinforced ceramo-steel plating and a self-sealing membrane that makes it virtually immune to toxins and fire. However, the bulky power supply and dense composite layers slow the wearer significantly, and the onboard AI constantly reminds you of your failing vitals in a monotone female voice.</description>
+		<graphicData>
+			<texPath>Things/Apparel/HazardousEnvironmentVest/HEV</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			  <shaderType>CutoutComplex</shaderType>
+		</graphicData>		
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>110</costStuffCount>
+		<costList>
+			<Carbon>20</Carbon>
+			<Compaste>25</Compaste>
+			<BiosyntheticMaterial>4</BiosyntheticMaterial>
+			<ChitinPlating>75</ChitinPlating>
+		</costList>
+		<statBases>
+			<WorkToMake>31000</WorkToMake>
+			<MaxHitPoints>190</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<Mass>5</Mass>
+			<Bulk>20</Bulk>
+			<WornBulk>15</WornBulk>
+			<EquipDelay>13</EquipDelay>
+			<Insulation_Heat>20</Insulation_Heat>
+			<Insulation_Cold>20</Insulation_Cold>	
+			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>7.37</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>12.7</ArmorRating_Sharp>
+			<ArmorRating_Blunt>33.791</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryWeight>40</CarryWeight>
+			<CarryBulk>15</CarryBulk>
+			<MoveSpeed>-0.6</MoveSpeed>
+			<WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+			<MentalBreakThreshold>-0.08</MentalBreakThreshold>
+			<PsychicSensitivity>0.1</PsychicSensitivity>
+			<ShootingAccuracyPawn>-0.22</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.22</AimingDelayFactor>
+			<MeleeHitChance>-0.27</MeleeHitChance>
+			<MeleeWeapon_CooldownMultiplier>0.22</MeleeWeapon_CooldownMultiplier>
+			<ImmunityGainSpeed>0.25</ImmunityGainSpeed>
+			<Suppressability>-0.33</Suppressability>
+			<ArmorRating_Toxin>0.8</ArmorRating_Toxin>
+			<Radiation>-0.35</Radiation>
+			<GermResistance>0.05</GermResistance>
+			<GermContainment>0.04</GermContainment>
+			<VacuumResistance MayRequire="ludeon.rimworld.odyssey">0.73</VacuumResistance>
+		</equippedStatOffsets>
+		<generateCommonality>1</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/HazardousEnvironmentVest/HEV</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>SyndicateMedium</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			<soundWear>Wear_PowerArmor</soundWear>
+			<soundRemove>Remove_PowerArmor</soundRemove>
+		</apparel>	
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>20</weight>
+					<only>(1,1,1,1)</only>
+				</li>
+				<li>
+					<weight>5</weight>
+					<max>(1,1,1,1)</max>
+					<min>(0.30,0.30,0.30,1)</min>
+				</li>				
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<thingCategories>
+			<li>HeavyFullArmorCat</li>
+			<li>Sethivearmor</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisite>ReconArmor</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+</Defs>

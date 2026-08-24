@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<Nutcracker.label>Щелкунчик</Nutcracker.label>
+<Nutcracker.description>Новое поколение пехоты Арахнид. Вместо обычных ходильных ног у них три пары хитиновых рук, что позволяет им достигать невероятной скорости в ближнем бою. Их главное оружие — передняя конечность, модифицированная в подобие гарпуна, способного пробивать броню Мародёров.</Nutcracker.description>
+<Nutcracker.tools.0.label>Левая передняя конечность</Nutcracker.tools.0.label>
+<Nutcracker.tools.1.label>Правая передняя конечность</Nutcracker.tools.1.label>
+<Nutcracker.tools.3.label>голова</Nutcracker.tools.3.label>
+
+
+</LanguageData>

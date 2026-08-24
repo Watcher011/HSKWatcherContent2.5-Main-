@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WildHunt.label>Дикая охота</WildHunt.label>
+  <WildHunt.letterText>Гончие Дикой Охоты атакуют колонию.Каждый погибший пополнит их ряды. Они покинут эти земли через 2 дня.</WildHunt.letterText>
+  <WildHunt.letterLabel>Дикая охота</WildHunt.letterLabel>
+
+  <HSK_CursedSoul.label>Проклятая душа</HSK_CursedSoul.label>
+  <HSK_CursedSoul.letterText>Колонист был проклят тёмными силами, что привлекает баргестов в вашу колонию!</HSK_CursedSoul.letterText>
+  <HSK_CursedSoul.letterLabel>Проклятая душа</HSK_CursedSoul.letterLabel>
+
+  <AnimalWanderIn_Husky.label>животное прибыло в поселение</AnimalWanderIn_Husky.label>
+  <AnimalWanderIn_Husky.letterText>Дружелюбный хаски подбегает к вашим воротам. Собака выглядит здоровой и ухоженной, по-видимому, потерявшей своих хозяев во время путешествия. Она с надеждой смотрит на вас, ища новый дом.</AnimalWanderIn_Husky.letterText>
+  <AnimalWanderIn_Husky.letterLabel>Животное прибыло</AnimalWanderIn_Husky.letterLabel>
+
+  <AnimalWanderIn.label>бродячее животное</AnimalWanderIn.label>
+
+  <HSK_PredatorGuest.label>гость-хищник</HSK_PredatorGuest.label>
+  <HSK_PredatorGuest.description>Оно пришло не как враг. Оно пришло как охотник. Существо, которое не знает страха, не чувствует боли, не слышит мольбы. Оно наблюдало. Изучало. Ждало. Теперь оно среди нас. И мы — его добыча.</HSK_PredatorGuest.description>
+
+  <GreenyZyabraInvasion.label>вторжение ГриниЗябры</GreenyZyabraInvasion.label>
+  <HSK_PlanetaryAnnihilation.label>аннигиляция</HSK_PlanetaryAnnihilation.label>
+  <OcellusAttack.label>Паразит-глазник</OcellusAttack.label>
+
+  <HeadcrabAttack.label>атака хедкраба</HeadcrabAttack.label>
+  <HeadcrabAttack.letterText>Хедкраб замечен приближающимся к вашей колонии! Он попытается прикрепиться к голове поселенца и превратить его во враждебное существо. Убейте его, пока он не добрался до кого-нибудь!</HeadcrabAttack.letterText>
+  <HeadcrabAttack.letterLabel>Хедкраб!</HeadcrabAttack.letterLabel>
+
+  <LamarPortal.label>аномальная телепортация</LamarPortal.label>
+  <LamarPortal.letterText>Странный энергетический сигнал зафиксирован недалеко от вашей колонии...</LamarPortal.letterText>
+  <LamarPortal.letterLabel>Аномальная телепортация</LamarPortal.letterLabel>
+
+  <ArtilleryPreparation.label>Артиллерийская подготовка</ArtilleryPreparation.label>
+  <ExplosiveParasiteRaid.label>взрывной паразит</ExplosiveParasiteRaid.label>
+
+
+  <!--<GreenyZyabraInvasion.description>Земля трескается. Небо темнеет. Зелёная Зиабра пришла. Её плоть — хитин и слизь. Её разум — рой. Она не завоёвывает — она пожирает. Города исчезают. Технологии бесполезны. Остаётся только бежать. Или стать частью неё.</GreenyZyabraInvasion.description>-->
+  <!--<HSK_PlanetaryAnnihilation.description>Нет спасения. Нет надежды. Только конец. Планета умрёт. Не в огне. Не во тьме. В тишине. Всё, что было — исчезнет. Всё, что есть — станет прахом. Пустота пришла. И она никогда не уйдёт.</HSK_PlanetaryAnnihilation.description>-->
+  <!--<RaiderTributeDemand.label>Дань для Налётчиков</RaiderTributeDemand.label>-->
+  <!--<RaiderTributeDemand.letterText>Группа налётчиков требует дань с вашего поселения!</RaiderTributeDemand.letterText>-->
+  <!--<RaiderTributeDemand.letterLabel>Налётчики Требуют Дани</RaiderTributeDemand.letterLabel>-->
+
+</LanguageData>

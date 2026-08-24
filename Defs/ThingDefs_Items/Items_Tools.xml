@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+
+
+    <ThingDef ParentName="BaseTool">
+        <defName>TFJ_Tool_Woodcutting_TameBeaver</defName>
+        <label>Tame beaver</label>
+        <description>Hear "KURVA"? Run. It doesn't matter if you're a tree, a neighbor, or your conscience. This beaver doesn't whittle—it takes out every living thing and rejoices. There's not a drop of goodness in it, only a tooth-crushing malice and the dark energy of a Brazilian slum.Sawing? No. It gets a thrill when you yell "KURVA BEAVER!" and the forest around you turns to splinters. The remaining fingers aren't luck; the beaver was just in a bad mood.</description>
+		<thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/TameBeaver</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <techLevel>Neolithic</techLevel>
+        <statBases>
+            <WorkToMake>7000</WorkToMake>
+            <Mass>2.5</Mass>
+            <Bulk>4</Bulk>
+        </statBases>
+        <equippedAngleOffset>0</equippedAngleOffset>
+        <weaponTags>
+            <li>Handaxe</li>
+        </weaponTags>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>Claws</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>4</power>
+                <cooldownTime>2</cooldownTime>
+                <chanceFactor>0.33</chanceFactor>
+                <armorPenetrationBlunt>3</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>Teeth</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>2.6</cooldownTime>
+                <chanceFactor>1.33</chanceFactor>
+                <armorPenetrationBlunt>5</armorPenetrationBlunt>
+                <armorPenetrationSharp>2</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <equippedStatOffsets>
+            <MeleeCritChance>0.3</MeleeCritChance>
+			<ToolEffectivenessFactor>1.9</ToolEffectivenessFactor>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>SurvivalToolsIndustrial</li>
+        </thingCategories>
+      <!--  <recipeMaker>
+            <recipeUsers>
+                <li>CraftingSpot</li>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+            </recipeUsers>
+            <researchPrerequisite>Craft_0</researchPrerequisite>
+        </recipeMaker>-->
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>35</costStuffCount>
+        <modExtensions>
+         <li Class="SurvivalToolsLite.SurvivalToolProperties">
+						<baseWorkStatFactors>
+							<TreeFellingSpeed>2.4</TreeFellingSpeed>
+							<PlantHarvestingSpeed>1.7</PlantHarvestingSpeed>
+							<PruningSpeed MayRequire="ludeon.rimworld.ideology">1.9</PruningSpeed>
+						</baseWorkStatFactors>
+						<defaultSurvivalToolAssignmentTags>
+							<li>PlantWorker</li>
+						</defaultSurvivalToolAssignmentTags>
+					</li>
+        </modExtensions>
+    </ThingDef>
+
+ 
+    <ThingDef ParentName="BaseTool">
+       <defName>HSK_GordonCrowbar</defName>
+    <label>Crowbar</label>
+    <description>A legendary red crowbar. The signature weapon of a theoretical physicist who once saved the world. Impossibly durable and perfectly balanced for both construction and... other purposes."Rise and shine, Mr. Freeman. Rise and shine."</description>
+    <graphicData>
+        <texPath>Things/Item/Equipment/WeaponMelee/Crowbar</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>CutoutComplex</shaderType>
+        <drawSize>1.0</drawSize>
+    </graphicData>
+        <techLevel>Medieval</techLevel>
+        <statBases>
+            <WorkToMake>2000</WorkToMake>
+            <Mass>1</Mass>
+            <Bulk>1</Bulk>
+        </statBases>
+        <equippedAngleOffset>0</equippedAngleOffset>
+        <weaponTags>
+            <li>Hammer</li>
+        </weaponTags>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>1.5</cooldownTime>
+                <armorPenetrationBlunt>3</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>11</power>
+                <chanceFactor>1.33</chanceFactor>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetrationBlunt>4</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+            </li>
+		 <li Class="CombatExtended.ToolCE">
+            <label>hook</label>
+            <capacities>
+                <li>Stab</li>
+            </capacities>
+            <power>22</power>
+            <chanceFactor>0.8</chanceFactor>
+            <cooldownTime>2.2</cooldownTime>
+            <armorPenetrationSharp>12</armorPenetrationSharp>
+            <armorPenetrationBlunt>8</armorPenetrationBlunt>
+            <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+        </li>
+        </tools>
+        <equippedStatOffsets>
+            <ConstructionSpeed>0.35</ConstructionSpeed>
+            <SmithingSpeed>0.3</SmithingSpeed>
+            <MeleeCritChance>0.22</MeleeCritChance>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>SurvivalToolsNeolithic</li>
+        </thingCategories>
+        <recipeMaker>
+            <recipeUsers>
+                <li>CraftingSpot</li>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+            </recipeUsers>
+            <researchPrerequisite>Craft_0</researchPrerequisite>
+        </recipeMaker>
+        <stuffCategories>
+		     <li>Metallic</li>
+            <li>StrongMetallic</li>
+        </stuffCategories>
+        <costStuffCount>25</costStuffCount>
+        <modExtensions>
+            <!-- 			<li Class="RightToolForJob.EquipRightToolExtension">
+				<purpose>Construction, Repair, Craft</purpose>
+			</li> -->
+        </modExtensions>
+    </ThingDef>
+
+ 
+   <ThingDef ParentName="BaseGrenadeProjectile">
+        <defName>Proj_GrenadeHealingGas</defName>
+        <label>healing gas grenade</label>
+        <thingClass>CombatExtended.BulletCE</thingClass>
+        <graphicData>
+            <texPath>Things/Projectile/Grenades/Smoke</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(0.3, 0.7, 1.0)</color>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <explosionRadius>4</explosionRadius>
+            <damageDef>Smoke</damageDef>
+            <suppressionFactor>0.0</suppressionFactor>
+            <dangerFactor>0.0</dangerFactor>
+            <explosionDelay>30</explosionDelay>
+            <dropsCasings>true</dropsCasings>
+            <casingMoteDefname>Fleck_GrenadePin</casingMoteDefname>
+            <casingFilthDefname>Filth_GrenadeAmmoCasings</casingFilthDefname>
+            <preExplosionSpawnChance>1</preExplosionSpawnChance>
+            <speed>12</speed>
+            <screenShakeFactor>0</screenShakeFactor>
+        </projectile>
+ 
+        <modExtensions>
+            <li Class="HSK.Watcher.Content.GasProjectileConfig">
+                <gasDefName>Custom_Gas_Healing</gasDefName>
+                <radius>4</radius>
+                <gasCount>40</gasCount>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseGrenadeProjectile">
+        <defName>Proj_GrenadeTearGas</defName>
+        <label>tear gas grenade</label>
+        <thingClass>CombatExtended.BulletCE</thingClass>
+        <graphicData>
+            <texPath>Things/Projectile/Grenades/Smoke</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(1.0, 0.5, 0.0)</color>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <explosionRadius>4</explosionRadius>
+            <damageDef>Smoke</damageDef>
+            <suppressionFactor>0.0</suppressionFactor>
+            <dangerFactor>0.0</dangerFactor>
+            <explosionDelay>30</explosionDelay>
+            <dropsCasings>true</dropsCasings>
+            <casingMoteDefname>Fleck_GrenadePin</casingMoteDefname>
+            <casingFilthDefname>Filth_GrenadeAmmoCasings</casingFilthDefname>
+            <preExplosionSpawnChance>1</preExplosionSpawnChance>
+            <speed>12</speed>
+            <screenShakeFactor>0</screenShakeFactor>
+        </projectile>
+        <modExtensions>
+            <li Class="HSK.Watcher.Content.GasProjectileConfig">
+                <gasDefName>Custom_Gas_Tear</gasDefName>
+                <radius>4</radius>
+                <gasCount>40</gasCount>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+ 
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+        <defName>GrenadeHealingGas</defName>
+        <equipmentType>Primary</equipmentType>
+        <label>healing gas grenade</label>
+        <description>A grenade that releases a cloud of healing gas upon explosion.</description>
+        <graphicData>
+            <texPath>Things/Ammo/HandGrenades/HealingGas</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+			 <drawSize>0.5</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Grenade</soundInteract>
+        <techLevel>Neolithic</techLevel>
+        <stackLimit>25</stackLimit>
+        <smeltable>false</smeltable>
+        <statBases>
+            <Mass>1.5</Mass>
+            <Bulk>4.72</Bulk>
+            <SightsEfficiency>1.0</SightsEfficiency>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>CE_AI_AOE</li>
+            <li>CE_GrenadeNeolithic</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Grenades</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <label>throw healing gas grenade</label>
+                <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <range>10</range>
+                <warmupTime>0.8</warmupTime>
+                <noiseRadius>4</noiseRadius>
+                <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+                <soundCast>ThrowGrenade</soundCast>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <defaultProjectile>Proj_GrenadeHealingGas</defaultProjectile>
+                <onlyManualCast>true</onlyManualCast>
+                <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+            </li>
+        </verbs>
+     
+    </ThingDef>
+
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+        <defName>GrenadeTearGas</defName>
+        <equipmentType>Primary</equipmentType>
+        <label>tear gas grenade</label>
+        <description>A grenade that releases a cloud of tear gas upon explosion.</description>
+        <graphicData>
+            <texPath>Things/Ammo/HandGrenades/TearGas</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+			 <drawSize>0.5</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Grenade</soundInteract>
+        <techLevel>Neolithic</techLevel>
+        <stackLimit>25</stackLimit>
+        <smeltable>false</smeltable>
+        <statBases>
+            <Mass>1.5</Mass>
+            <Bulk>4.72</Bulk>
+            <SightsEfficiency>1.0</SightsEfficiency>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>CE_AI_AOE</li>
+            <li>CE_GrenadeNeolithic</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Grenades</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <label>throw tear gas grenade</label>
+                <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <range>10</range>
+                <warmupTime>0.8</warmupTime>
+                <noiseRadius>4</noiseRadius>
+                <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+                <soundCast>ThrowGrenade</soundCast>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <defaultProjectile>Proj_GrenadeTearGas</defaultProjectile>
+                <onlyManualCast>true</onlyManualCast>
+                <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+            </li>
+        </verbs>
+ 
+    </ThingDef>
+	
+	
+	 <ThingDef ParentName="BaseGrenadeProjectile">
+        <defName>Proj_GrenadeInsecticide</defName>
+        <label>insecticide grenade</label>
+        <thingClass>CombatExtended.BulletCE</thingClass>
+        <graphicData>
+            <texPath>Things/Projectile/Grenades/Smoke</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(0.2, 0.8, 0.3)</color>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <explosionRadius>4</explosionRadius>
+            <damageDef>Smoke</damageDef>
+            <suppressionFactor>0.0</suppressionFactor>
+            <dangerFactor>0.0</dangerFactor>
+            <explosionDelay>30</explosionDelay>
+            <dropsCasings>true</dropsCasings>
+            <casingMoteDefname>Fleck_GrenadePin</casingMoteDefname>
+            <casingFilthDefname>Filth_GrenadeAmmoCasings</casingFilthDefname>
+            <preExplosionSpawnChance>1</preExplosionSpawnChance>
+            <speed>12</speed>
+            <screenShakeFactor>0</screenShakeFactor>
+        </projectile>
+        <modExtensions>
+            <li Class="HSK.Watcher.Content.GasProjectileConfig">
+                <gasDefName>Custom_Gas_Insecticide</gasDefName>
+                <radius>6</radius>
+                <gasCount>45</gasCount>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+ 
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+        <defName>GrenadeInsecticide</defName>
+        <equipmentType>Primary</equipmentType>
+        <label>insecticide grenade</label>
+        <description>A grenade releasing a neurotoxic cloud that instantly kills insectoids. Safe for human use.</description>
+        <graphicData>
+            <texPath>Things/Ammo/HandGrenades/Insecticide</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+			 <drawSize>0.5</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Grenade</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <stackLimit>25</stackLimit>
+        <smeltable>false</smeltable>
+        <statBases>
+            <Mass>1.5</Mass>
+            <Bulk>4.72</Bulk>
+            <SightsEfficiency>1.0</SightsEfficiency>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>CE_AI_AOE</li>
+            <li>CE_GrenadeIndustrial</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Grenades</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <label>throw insecticide grenade</label>
+                <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <range>10</range>
+                <warmupTime>0.8</warmupTime>
+                <noiseRadius>4</noiseRadius>
+                <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+                <soundCast>ThrowGrenade</soundCast>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <defaultProjectile>Proj_GrenadeInsecticide</defaultProjectile>
+                <onlyManualCast>true</onlyManualCast>
+                <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+            </li>
+        </verbs>
+    </ThingDef>
+	
+	
+  
+	
+</Defs>

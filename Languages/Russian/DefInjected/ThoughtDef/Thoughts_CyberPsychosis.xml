@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CyberPsychosis.stages.0.label>киберпсихоз (ранний)</CyberPsychosis.stages.0.label>
+  <CyberPsychosis.stages.0.description>Я чувствую... что-то не то. Мысли стали расплывчатыми. Но мне это почти нравится.</CyberPsychosis.stages.0.description>
+  <CyberPsychosis.stages.1.label>киберпсихоз (умеренный)</CyberPsychosis.stages.1.label>
+  <CyberPsychosis.stages.1.description>Эти импланты... они меняют меня. Я чувствую это. И чем дальше, тем слаще становится это безумие.</CyberPsychosis.stages.1.description>
+  <CyberPsychosis.stages.2.label>киберпсихоз (тяжёлый)</CyberPsychosis.stages.2.label>
+  <CyberPsychosis.stages.2.description>Я ТЕРЯЮ СЕБЯ! ОСТАНОВИТЕ ЭТО!... Хотя, может, не надо? Мне здесь так хорошо.</CyberPsychosis.stages.2.description>
+
+  <KillDesire.stages.0.label>жажда убийства</KillDesire.stages.0.label>
+  <KillDesire.stages.0.description>Я должен убивать. Я ДОЛЖЕН УБИВАТЬ. ОНИ ДОЛЖНЫ УМЕРЕТЬ. А знаешь... я даже с нетерпением жду этого. Их лица. Их страх. Их последний вздох. Какая же это будет симфония.</KillDesire.stages.0.description>
+
+
+</LanguageData>

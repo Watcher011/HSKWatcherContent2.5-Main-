@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThoughtDef>
+		<defName>HadGFish</defName>
+		<durationDays>0.8</durationDays>
+		<stackLimit>2</stackLimit>
+		<stages>
+			<li>
+				<label>Fish, salty, something's missing.</label>
+                <description>I want something to go with the fish</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>HadGFishAndBear</defName>
+		<durationDays>0.6</durationDays>
+		<stackLimit>2</stackLimit>
+		<stages>
+			<li>
+				<label>Fish and beer</label>
+                <description>I feel a surge of energy, I can move mountains, but where is this? toilet?</description> 
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	
+	
+	
+	<ThoughtDef>
+		<defName>HadGTea</defName>
+		<durationDays>0.8</durationDays>
+		<stackLimit>2</stackLimit>
+		<stages>
+			<li>
+				<label>Drank mint tea</label>
+                 <description>This tea gives me peace</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>HadGreenTea</defName>
+		<durationDays>0.6</durationDays>
+		<stackLimit>2</stackLimit>
+		<stages>
+			<li>
+				<label>Drank green tea</label>
+                <description>I feel a surge of energy</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>HadPuerT</defName>
+		<durationDays>0.9</durationDays>
+		<stackLimit>2</stackLimit>
+		<stages>
+			<li>
+				<label>Drank Pu-erh tea</label>
+                <description>I feel my body being cleansed</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+
+<ThoughtDef>
+    <defName>AteHeadcrabMeal</defName>
+    <durationDays>0.6</durationDays>
+    <stackLimit>2</stackLimit>
+    <stages>
+        <li>
+            <label>Alien parasite cuisine</label>
+            <description>I ate a headcrab. Yes, THAT headcrab. The one that tried to eat MY head. But you know what? It tasted like chicken. If chicken was from another dimension and had too many legs. I feel weirdly powerful. And slightly ashamed. But mostly powerful.</description>
+            <baseMoodEffect>12</baseMoodEffect>
+        </li>
+    </stages>
+</ThoughtDef>
+
+</Defs>

@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>GrinCat</defName>
+    <label>GrinCat</label>
+    <devNote>GrinCat</devNote>
+    <description>One of mankind's first pets, the cat is a small mammal which hunts vermin. Known for their aloofness, cats are nevertheless popular companions because of their independence, calm disposition, and fine, pettable fur.</description>
+    <statBases>
+      <MoveSpeed>4.4</MoveSpeed>
+      <MarketValue>100</MarketValue>
+      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+      <Wildness>0</Wildness>
+    </statBases>
+    <race>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <predator>true</predator>
+      <baseBodySize>0.32</baseBodySize>
+      <maxPreyBodySize>0.25</maxPreyBodySize>
+      <baseHungerRate>0.15</baseHungerRate>
+      <baseHealthScale>0.42</baseHealthScale>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+      <leatherDef>Leather_Light</leatherDef>
+      <petness>1</petness>
+      <trainability>None</trainability>
+      <specialTrainables>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">Comfort</li>
+      </specialTrainables>
+      <nuzzleMtbHours>12</nuzzleMtbHours>
+      <gestationPeriodDays>10</gestationPeriodDays>
+      <nameOnTameChance>1</nameOnTameChance>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1.7)</li>
+          <li>(3, 0.7)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>10</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.15</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.4</minAge>
+          <soundWounded>Pawn_Cat_Injured</soundWounded>
+          <soundDeath>Pawn_Cat_Death</soundDeath>
+          <soundCall>Pawn_Cat_Call</soundCall>
+          <soundAngry>Pawn_Cat_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <soundEating>PredatorSmall_Eat</soundEating>
+      <headPosPerRotation>
+        <li>(0.02, 0, 0.23)</li>
+        <li>(0.35, 0, 0.05)</li>
+        <li>(0.0, 0, -0.185)</li>
+        <li>(-0.35, 0, 0.05)</li>
+      </headPosPerRotation>
+	  
+    </race>
+	
+    <tradeTags>
+      <li>AnimalCommon</li>
+      <li>AnimalPet</li>
+    </tradeTags>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <labelNoLocation>claw</labelNoLocation>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claw</label>
+        <labelNoLocation>claw</labelNoLocation>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>GrinCat</defName>
+    <label>GrinCat</label>
+    <race>GrinCat</race>
+    <combatPower>35</combatPower>
+    <ecoSystemWeight>0.3</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <label>kitten</label>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cat/GrinCat</texPath>
+          <drawSize>0.6</drawSize>
+          <color>(120,151,120)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
+          <drawSize>0.6</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cat/GrinCat</texPath>
+          <drawSize>0.8</drawSize>
+            <color>(120,151,120)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cat/GrinCat</texPath>
+          <drawSize>1.0</drawSize>
+          <color>(120,151,120)</color>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <!-- =================================================================== -->
+<ThingDef ParentName="AnimalThingBase">
+		<defName>GreenyZyabra</defName>
+		<label>Greeny Zyabra</label>
+		<devNote>misc</devNote>
+		<description>The name derives from the ancient shepherd's words "grini" (greenery, grass, and also the death rattle of a fool with a club) and "ziabr" (what he breathes and bites off limbs with). The clarification "from the word Grini" became established in folklore after seven linguists tried to out-argue GriniZiabr about declensions and were eaten along with their dictionaries.</description>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<Mass>230</Mass>
+			<Flammability>0</Flammability>
+			<MoveSpeed>6.2</MoveSpeed>
+			<LeatherAmount>75</LeatherAmount>
+			<ComfyTemperatureMin>-220</ComfyTemperatureMin>
+			<ComfyTemperatureMax>99999</ComfyTemperatureMax>
+			<MarketValue>15000</MarketValue>
+			<ArmorRating_Blunt>45</ArmorRating_Blunt>
+			<ArmorRating_Sharp>35</ArmorRating_Sharp>
+			<MeleeDodgeChance>0.15</MeleeDodgeChance>
+			<MeleeCritChance>0</MeleeCritChance>
+			<GermResistance>0.9</GermResistance>
+			<GermContainment>0.2</GermContainment>
+			<FilthRate>24</FilthRate>
+			<NightVisionEfficiency>0.5</NightVisionEfficiency>
+			<ToxicResistance>1.0</ToxicResistance>
+			<Wildness>1.0</Wildness>
+			<PainShockThreshold>0.75</PainShockThreshold>   <!-- Не падает в шок, пока почти не умрёт -->
+           
+            <ImmunityGainSpeed>2.0</ImmunityGainSpeed>      <!-- Мгновенно лечит болезни -->
+            <RestFallRateFactor>0.1</RestFallRateFactor>    <!-- Почти не устаёт -->
+          
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>0.95</recoilAmount>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>DragonFireBreathAlpha</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<burstShotCount>16</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<minRange>4</minRange>
+				<range>15</range>
+				<soundCast>FlameThrower</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<!--Commanility determines how frequent this range verb is chosen.-->
+				<commonality>0.45</commonality>
+			</li>
+		</verbs>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>Left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>1.9</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>21</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<armorPenetrationSharp>4.7</armorPenetrationSharp>
+				<armorPenetrationBlunt>13</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>Right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>1.9</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>21</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<armorPenetrationSharp>4.7</armorPenetrationSharp>
+				<armorPenetrationBlunt>13</armorPenetrationBlunt>
+			</li>
+			<!-- <li Class="CombatExtended.ToolCE">
+				<capacities>
+					<li>Flame</li>
+				</capacities>
+				<power>32</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<armorPenetrationSharp>7</armorPenetrationSharp>
+				<armorPenetrationBlunt>13</armorPenetrationBlunt>
+			</li> -->
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>31</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationBlunt>11</armorPenetrationBlunt>
+			</li>
+		</tools>
+	 <comps>
+		<li Class="CombatExtended.CompProperties_ArmorDurability">
+				<Durability>3000</Durability>
+				<Regenerates>true</Regenerates>
+				<RegenInterval>600</RegenInterval>
+				<RegenValue>5</RegenValue>
+				<MinArmorPct>0.75</MinArmorPct>
+			</li>
+			<li Class="CompProperties_Shearable">
+				<woolDef>GreenyZyabrawool</woolDef>
+				<shearIntervalDays>10</shearIntervalDays>
+				<woolAmount>50</woolAmount>
+			</li>
+		</comps>
+		<race>
+		    <forceGender>Male</forceGender>
+			<predator>true</predator>
+			<maxPreyBodySize>1.5</maxPreyBodySize>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<executionRange>5</executionRange>
+			<nameGenerator>NamerAnimalGenericMale</nameGenerator>
+			<nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>UnstoppablePassiveSet</li>
+			</hediffGiverSets>
+			<body>QuadrupedAnimalWithClawsTailAndJowl</body>
+			<petness>0.01</petness>
+			<baseBodySize>2.6</baseBodySize>
+			<baseHungerRate>2.5</baseHungerRate>
+			<baseHealthScale>8</baseHealthScale>
+			<foodType>OmnivoreAnimal, OvivoreAnimal, CarnivoreAnimal, CarnivoreAnimalStrict</foodType>
+			<leatherDef>Leather_GreenyZyabra</leatherDef>
+			<nuzzleMtbHours>60</nuzzleMtbHours>
+			<useMeatFrom>Muffalo</useMeatFrom>
+			<gestationPeriodDays>23</gestationPeriodDays>
+			<trainability>Advanced</trainability>
+			<manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<lifeExpectancy>130</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>1.9</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>3.5</minAge>
+					<soundWounded>Lion_Hurt</soundWounded>
+					<soundDeath>Pawn_Lion_Death</soundDeath>
+					<soundCall>Pawn_Lion_Call</soundCall>
+					<soundAngry>Pawn_Lion_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Interact_Ignite</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Interact_Ignite</soundMeleeHitBuilding>
+			<soundMeleeMiss>Interact_Ignite</soundMeleeMiss>
+			<soundEating>Reptile_Eat</soundEating>
+			<wildBiomes>
+				<BorealForest>0.005</BorealForest>
+				<TemperateForest>0.005</TemperateForest>
+				<TropicalRainforest>0.01</TropicalRainforest>
+			</wildBiomes>
+		</race>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Quadruped</bodyShape>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+		<PawnKindDef ParentName="AnimalKindBase">
+		<defName>GreenyZyabra</defName>
+		<label>Greeny Zyabra</label>
+		<race>GreenyZyabra</race>
+		<combatPower>550</combatPower>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<label>Greeny Ember</label>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Zyabra/GreenyZyabra</texPath>
+					<drawSize>1.1</drawSize>
+					<color>(255,255,255)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/bonedragon</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Zyabra/GreenyZyabra</texPath>
+					<drawSize>2.8</drawSize>
+					<color>(255,255,255)</color>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/bonedragon</texPath>
+					<drawSize>2.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Zyabra/GreenyZyabra</texPath>
+					<drawSize>3.8</drawSize>
+					<color>(255,255,255)</color>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/bonedragon</texPath>
+					<drawSize>3.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

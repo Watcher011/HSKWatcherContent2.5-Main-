@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Custom_Gas_Healing.label>Исцеляющий газ</Custom_Gas_Healing.label>
+  <Custom_Gas_Healing.description>Облако исцеляющего газа, стимулирующее регенерацию тканей.</Custom_Gas_Healing.description>
+
+
+  <!-- КАСТОМНЫЙ ГАЗ: СЛЕЗОТОЧИВЫЙ -->
+
+  <Custom_Gas_Tear.label>Слезоточивый газ</Custom_Gas_Tear.label>
+  <Custom_Gas_Tear.description>Облако раздражающего слезоточивого газа.</Custom_Gas_Tear.description>
+
+  <Custom_Gas_Insecticide.label>Инсектицидный газ</Custom_Gas_Insecticide.label>
+  <Custom_Gas_Insecticide.description>Плотное нейротоксичное облако, смертельное для всех насекомоподобных форм жизни. Безопасно для млекопитающих.</Custom_Gas_Insecticide.description>
+
+
+</LanguageData>

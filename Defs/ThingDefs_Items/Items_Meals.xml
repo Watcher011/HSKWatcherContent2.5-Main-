@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThingDef ParentName="MealBeverage">
+		<defName>CupDecaffeinatedCoffee</defName>
+		<label>Decaffeinated coffee</label>
+		<description>A cup of decaffeinated coffee.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/Coffee</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit>
+		<statBases>
+			<DeteriorationRate>10</DeteriorationRate>
+			<MarketValue>8</MarketValue>
+			<Nutrition>0.08</Nutrition>
+		</statBases>
+		<thingCategories>
+			<li>Energetics</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<joy>0.17</joy>
+			<joyKind>Gluttonous</joyKind>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Beer</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<tasteThought>Hotdrink</tasteThought>
+			<chairSearchRadius>25</chairSearchRadius>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.13</offset>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+		<li Class="CompProperties_Drug">
+				<addictiveness>0</addictiveness>
+				<listOrder>1100</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+<ThingDef ParentName="MealBeverage">
+		<defName>CupStrongCoffee</defName>
+		<label>Cup of Strong Coffee</label>
+		<description>A cup of Strong Coffee.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/StrongCoffee</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit>
+		<statBases>
+			<DeteriorationRate>10</DeteriorationRate>
+			<MarketValue>8</MarketValue>
+			<Nutrition>0.10</Nutrition>
+		</statBases>
+		<thingCategories>
+			<li>Energetics</li>
+			<li>Drugs</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<joy>0.20</joy>
+			<joyKind>Gluttonous</joyKind>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Beer</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<tasteThought>Hotdrink</tasteThought>
+			<chairSearchRadius>25</chairSearchRadius>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Caffeine</hediffDef>
+					<severity>0.1</severity>
+					<toleranceChemical>Caffeine</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.2</offset>
+					<toleranceChemical>Caffeine</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>CaffeineTolerance</hediffDef>
+					<severity>0.03</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Caffeine</chemical>
+				<addictiveness>0.010</addictiveness>
+				<minToleranceToAddict>0.25</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.05</existingAddictionSeverityOffset>
+				<needLevelOffset>0.5</needLevelOffset>
+				<listOrder>1100</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+	
+		<ThingDef ParentName="SweetMealBase">
+		<defName>IceCreamfruits</defName>
+		<label>IceCream(fruits)</label>
+		<description>Finally, the crowning glory of RimWorld's culinary madness is this ice cream - a crispy cone of ground-up Mekhanite filled with a "cream" made from hydroponic milk (which may have been a poisonous mushroom in a past life), generously topped with fruit picked by... well, you know who.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/Icecream/IceCreamfruits</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>10</DeteriorationRate>
+			<MarketValue>14</MarketValue>
+			<Bulk>1.0</Bulk>
+			<Mass>0.7</Mass>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<ingestible>
+			<nurseable>true</nurseable>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<preferability>DesperateOnly</preferability>
+			<joy>0.5</joy>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<joyKind>Gluttonous</joyKind>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>HadIceCream</hediffDef>
+					<severity>0.1</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<addictiveness>0</addictiveness>
+				<listOrder>1300</listOrder>
+			</li>
+			<li Class="CompProperties_Rottable">
+
+				<daysToRotStart>1</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	
+		<ThingDef ParentName="SweetMealBase">
+		<defName>IceCreamchocolate</defName>
+		<label>IceCream(chocolate)</label>
+		<description>"The Imperial scientists debated for a long time whether this sticky mass could be considered real food. In the end, the Main Food Algorithm ruled that if a colonist eats it voluntarily, it is edible. Although the case of Private Johnson dying of joy after the first spoonful is still under investigation.
+*It is extracted from cocoa beans grown on southern plantations where only happy (and completely voluntary) workers work. At least, that's what the reports for the Imperial Inspectorate say. The chocolate itself goes through 17 stages of purification, after which only 3% sand, 1% insects and 0.5% memories of freedom remain in it."*.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/Icecream/IceCreamchocolate</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>10</DeteriorationRate>
+			<MarketValue>14</MarketValue>
+			<Bulk>1.0</Bulk>
+			<Mass>0.7</Mass>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<ingestible>
+			<nurseable>true</nurseable>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<preferability>DesperateOnly</preferability>
+			<joy>0.5</joy>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<joyKind>Gluttonous</joyKind>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>HadIceCream</hediffDef>
+					<severity>0.1</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<addictiveness>0</addictiveness>
+				<listOrder>1300</listOrder>
+			</li>
+			<li Class="CompProperties_Rottable">
+
+				<daysToRotStart>1</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	
+		<ThingDef ParentName="SweetMealBase">
+		<defName>IceCreamcoconut</defName>
+		<label>IceCream(coconut)</label>
+		<description>"When the Imperial Food Department first classified the coconut as a 'tree nut', it caused a riot among botanists. Then they disappeared. Now we eat this tropical nuisance, carefully grown in hydroponic plantations by prisoner gardeners (strictly voluntary, as per their work contracts)."
+"The recipe was 'borrowed' from a tribe of island savages in exchange for glass beads and syphilis. Their chieftain wept when he tasted the ice cream. Perhaps from realizing the greatness of Imperial cooking. Or because we added his sacred totem pole to the freezing unit.".</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/Icecream/IceCreamcoconut</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>10</DeteriorationRate>
+			<MarketValue>14</MarketValue>
+			<Bulk>1.0</Bulk>
+			<Mass>0.7</Mass>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<ingestible>
+			<nurseable>true</nurseable>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<preferability>DesperateOnly</preferability>
+			<joy>0.5</joy>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<joyKind>Gluttonous</joyKind>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>HadIceCream</hediffDef>
+					<severity>0.1</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<addictiveness>0</addictiveness>
+				<listOrder>1300</listOrder>
+			</li>
+			<li Class="CompProperties_Rottable">
+
+				<daysToRotStart>1</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="SK_MealBase">
+		<defName>Adjika</defName>
+		<label>Adjika</label>
+		<description>A dark-red paste-like seasoning made from ground fiery peppers, garlic, and wild herbs.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/Adjika</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			 <drawSize>0.5</drawSize>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>10</DeteriorationRate>
+			<MarketValue>45</MarketValue>
+			<Bulk>1.5</Bulk>
+			<Mass>0.5</Mass>
+			<Nutrition>0.75</Nutrition>	
+		</statBases>
+		<stackLimit>10</stackLimit>
+		<ingestible>
+			<tasteThought>AteLavishMeal</tasteThought>
+			<preferability>MealLavish</preferability>
+			<joy>0.7</joy>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<joyKind>Gluttonous</joyKind>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>HadAdjika</hediffDef>
+					<severity>0.6</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

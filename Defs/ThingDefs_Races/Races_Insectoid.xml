@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="InstectoidBase">
+		<defName>Nutcracker</defName>
+		<label>nutcracker</label>
+		<description>A new generation of Arachnid infantry. Instead of the usual walking legs, they have three pairs of chitinous arms, allowing them to achieve incredible speed in close combat. Their main weapon is a forelimb modified into a harpoon-like weapon that can pierce Marauder armor.</description>
+		<statBases>
+			<Mass>50</Mass>
+			<MoveSpeed>8.6</MoveSpeed>
+			<ArmorRating_Sharp>1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>2</ArmorRating_Blunt>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>90</ComfyTemperatureMax>
+			<MarketValue>4000</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+			<ImmunityGainSpeed>3</ImmunityGainSpeed>
+			<MeleeDodgeChance>0.13</MeleeDodgeChance>
+			<MeleeCritChance>0</MeleeCritChance>
+			<MeleeParryChance>0.11</MeleeParryChance>
+			<Wildness>0.9</Wildness>
+			<ToxicResistance>1</ToxicResistance>
+	        <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+		</statBases>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>Left foreleg</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.35</cooldownTime>
+				<linkedBodyPartsGroup>AntisLeftForeleg</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<armorPenetrationSharp>2.77</armorPenetrationSharp>
+				<armorPenetrationBlunt>4.5</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>Right foreleg</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.35</cooldownTime>
+				<linkedBodyPartsGroup>AntisRightForeleg</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<armorPenetrationSharp>2.77</armorPenetrationSharp>
+				<armorPenetrationBlunt>4.5</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2.7</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+				<armorPenetrationSharp>3.5</armorPenetrationSharp>
+				<armorPenetrationBlunt>2.4</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationBlunt>5</armorPenetrationBlunt>
+			</li>
+		</tools>
+		<comps>
+		 <li Class="CompProperties_SpreadSludge">
+              <mtbTicks>15000</mtbTicks>
+              <abilityDef>SludgeSpew</abilityDef>
+               <tryAvoidSludge>true</tryAvoidSludge>
+         </li>
+			<li Class="SK.CompProperties_PawnJumper">
+				<maxCharges>5</maxCharges>
+				<!-- Number of possible jumps -->
+				<minEnergy>0.45</minEnergy>
+				<!-- Subtracts from the current rest(energy) level. 0.5 = 50% -->
+				<ammoCountPerCharge>10</ammoCountPerCharge>
+				<!-- Rest(energy) consumption. 10 = 10% cost per jump. -->
+				<jumpCooldown>1250</jumpCooldown>
+				<!-- Jump cooldown in ticks -->
+				<range>4</range>
+				<chargeNoun>jump</chargeNoun>
+				<hotKey>Misc4</hotKey>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+			<li Class="CombatExtended.CompProperties_ArmorDurability">
+				<Durability>150</Durability>
+				<Regenerates>true</Regenerates>
+				<RegenInterval>600</RegenInterval>
+				<RegenValue>5</RegenValue>
+				<MinArmorPct>0.5</MinArmorPct>
+			</li>
+		</comps>
+		<butcherProducts>
+			<Chitin>10</Chitin>
+			<PoisonGland>1</PoisonGland>
+		</butcherProducts>
+		<race>
+			<body>Antis</body>
+			<baseBodySize>0.9</baseBodySize>
+			<baseHungerRate>0.7</baseHungerRate>
+			<baseHealthScale>1.25</baseHealthScale>
+			<maxPreyBodySize>2.2</maxPreyBodySize>
+			<herdAnimal>true</herdAnimal>
+			<predator>true</predator>
+			<petness>0</petness>
+			<foodType>Corpse, CarnivoreAnimal, CarnivoreAnimalStrict</foodType>
+			<gestationPeriodDays>12</gestationPeriodDays>
+			<trainability>Advanced</trainability>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<manhunterOnTameFailChance>0.4</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.3</manhunterOnDamageChance>
+			<lifeExpectancy>12</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>EusocialInsectLarva</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectJuvenile</def>
+					<minAge>0.03</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectAdultShearable</def>
+					<minAge>0.4</minAge>
+					<soundWounded>Pawn_Insectoid_Cry</soundWounded>
+					<soundDeath>Pawn_Insectoid_Die</soundDeath>
+					<soundCall>Pawn_Insectoid_Cry</soundCall>
+					<soundAngry>Pawn_Insectoid_Cry2</soundAngry>
+				</li>
+				
+			</lifeStageAges>
+			 <specialTrainables>
+                     <li>SludgeSpew</li>
+                  </specialTrainables>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Quadruped</bodyShape>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef>
+		<defName>Nutcracker</defName>
+		<label>Nutcracker</label>
+		<race>Nutcracker</race>
+		<defaultFactionType>Insectoid</defaultFactionType>
+		<aiAvoidCover>true</aiAvoidCover>
+		<combatPower>330</combatPower>
+		<abilities>
+          <li>SludgeSpew</li>
+        </abilities>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Nutcracker/Nutcracker</texPath>
+					<drawSize>2.6</drawSize>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Nutcracker/Nutcracker</texPath>
+					<drawSize>2.5</drawSize>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+					<drawSize>2.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Nutcracker/Nutcracker</texPath>
+					<drawSize>2.6</drawSize>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Nutcracker/Nutcracker</texPath>
+					<drawSize>2.6</drawSize>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+					<drawSize>2.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Nutcracker/Nutcracker</texPath>
+					<drawSize>2.6</drawSize>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Nutcracker/Nutcracker</texPath>
+					<drawSize>2.5</drawSize>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+					<drawSize>2.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

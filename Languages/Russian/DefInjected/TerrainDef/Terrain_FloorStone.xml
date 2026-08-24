@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FloorJadeBrick.label>Плитка из нефрита</FloorJadeBrick.label>
+  <FloorJadeBrick.description>Каменный пол из аккуратных квадратных плит нефрита
+Красота: 8</FloorJadeBrick.description>
+
+  <FloorJadeMosaic.label>Мозаика из нефрита</FloorJadeMosaic.label>
+  <FloorJadeMosaic.description>Каменный пол из аккуратной нефритовой мозаики
+Красота: 7</FloorJadeMosaic.description>
+
+  <FloorJadePlates.label>Пластины из нефрита</FloorJadePlates.label>
+  <FloorJadePlates.description>Каменный пол из нефрита
+Красота: 9</FloorJadePlates.description>
+
+  <FloorAmberPlates.label>Пластины из янтаря</FloorAmberPlates.label>
+  <FloorAmberPlates.description>Каменный пол из янтаря
+Красота: 8</FloorAmberPlates.description>
+
+  <HSK_AntiBugFloor.label>Противожучья плитка</HSK_AntiBugFloor.label>
+  <HSK_AntiBugFloor.description>Специальная бетонная смесь со встроенным слоем колючей проволоки, предназначенная для защиты от подземных атак насекомых. Когда жуки пытаются прорваться через этот пол, их ждёт неожиданный сюрприз в виде острых металлических обрезков, вонзающихся в их конечности.</HSK_AntiBugFloor.description>
+
+
+</LanguageData>

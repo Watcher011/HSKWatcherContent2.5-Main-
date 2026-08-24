@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- <ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_CannonBio</defName>
+		<label>120mm tank cannon turret</label>
+		<graphicData>
+			<texPath>Things/Building/Security/CannonGun_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/BioTurretLaser_Ico</uiIconPath>
+		<statBases>
+			<MaxHitPoints>270</MaxHitPoints>
+			<WorkToBuild>2150</WorkToBuild>
+			<Mass>1600</Mass>
+			<Bulk>1200</Bulk>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<description>A turret mounted with a 120mm tank gun. It can fire an explosive shell long distances, over walls and through constructed roofs. The turret will explode when heavily damaged. It uses 120mm Cannon Shells for ammo.</description>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>180</costStuffCount>
+		<costList>
+			<CannonTurret_Crate>1</CannonTurret_Crate>
+		</costList>
+		<specialDisplayRadius>16</specialDisplayRadius>
+		<researchPrerequisites>
+			<li>Artillery_C2</li>
+		</researchPrerequisites>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Gun_CannonTurretBio</turretGunDef>
+			<turretTopDrawSize>3</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Cannon</minifiedDef>
+		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Gun_CannonTurretBio</defName>
+		<label>120mm Bio Cannon</label>
+		<description>120mm Bio cannon to a turret base.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/BioTurretLaser_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>4000</MarketValue>
+			<SightsEfficiency>1.8</SightsEfficiency>
+			<ShotSpread>0.22</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>TurretGun</li>
+			<li>Artillery_BaseDestroyer</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_Laserbeam_Bio</defaultProjectile>
+				<!{1}**<forcedMissRadius>4</forcedMissRadius>**{1}>
+				<circularError>1.35</circularError>
+				<warmupTime>2.00</warmupTime>
+				<minRange>16</minRange>
+				<range>140</range>
+				<soundCast>120mm</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>20</muzzleFlashScale>
+				<indirectFirePenalty>0.2</indirectFirePenalty>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>8.5</reloadTime>
+				<!{1}** <spawnUnloaded>true</spawnUnloaded> **{1}>
+				<ammoSet>AmmoSet_ChargedLaser</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes" />
+		</comps>
+	</ThingDef> -->
+
+  <Claymore.label>Направленная мина «Клеймор»</Claymore.label>
+  <Claymore.description>Направленная осколочная мина для периметральной обороны. Использует лазерный триггер для обнаружения целей. При срабатывании подрывает основной заряд пластичного взрывчатого вещества.</Claymore.description>
+
+  <ClaymoreNonLethal.label>Нелетальный «Клеймор»</ClaymoreNonLethal.label>
+  <ClaymoreNonLethal.description>Направленное устройство для нелетального контроля периметра. Использует желатиновые капсулы со снотворным в качестве поражающего элемента.</ClaymoreNonLethal.description>
+
+
+</LanguageData>

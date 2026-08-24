@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <GrinCat.label>ГриньКот</GrinCat.label>
+  <GrinCat.labelPlural>ГриньКоты</GrinCat.labelPlural>
+  <GrinCat.lifeStages.0.label>котёнок</GrinCat.lifeStages.0.label>
+  <GrinCat.lifeStages.0.labelPlural>котята</GrinCat.lifeStages.0.labelPlural>
+  <GrinCat.lifeStages.0.labelMale>котёнок</GrinCat.lifeStages.0.labelMale>
+  <GrinCat.lifeStages.0.labelMalePlural>котята</GrinCat.lifeStages.0.labelMalePlural>
+  <GrinCat.lifeStages.0.labelFemale>кошечка</GrinCat.lifeStages.0.labelFemale>
+  <GrinCat.lifeStages.0.labelFemalePlural>кошечки</GrinCat.lifeStages.0.labelFemalePlural>
+  <GrinCat.lifeStages.1.label>ГриньКот</GrinCat.lifeStages.1.label>
+  <GrinCat.lifeStages.1.labelPlural>ГриньКоты</GrinCat.lifeStages.1.labelPlural>
+  <GrinCat.lifeStages.1.labelMale>ГриньКот</GrinCat.lifeStages.1.labelMale>
+  <GrinCat.lifeStages.1.labelMalePlural>ГриньКоты</GrinCat.lifeStages.1.labelMalePlural>
+  <GrinCat.lifeStages.1.labelFemale>ГриньКошка</GrinCat.lifeStages.1.labelFemale>
+  <GrinCat.lifeStages.1.labelFemalePlural>ГриньКошки</GrinCat.lifeStages.1.labelFemalePlural>
+  <GrinCat.lifeStages.2.label>ГриньКот</GrinCat.lifeStages.2.label>
+  <GrinCat.lifeStages.2.labelPlural>ГриньКоты</GrinCat.lifeStages.2.labelPlural>
+  <GrinCat.lifeStages.2.labelMale>ГриньКот</GrinCat.lifeStages.2.labelMale>
+  <GrinCat.lifeStages.2.labelMalePlural>ГриньКоты</GrinCat.lifeStages.2.labelMalePlural>
+  <GrinCat.lifeStages.2.labelFemale>ГриньКошка</GrinCat.lifeStages.2.labelFemale>
+  <GrinCat.lifeStages.2.labelFemalePlural>ГриньКошки</GrinCat.lifeStages.2.labelFemalePlural>
+  <GrinCat.labelMale>ГриньКот</GrinCat.labelMale>
+  <GrinCat.labelMalePlural>ГриньКоты</GrinCat.labelMalePlural>
+  <GrinCat.labelFemale>ГриньКошка</GrinCat.labelFemale>
+  <GrinCat.labelFemalePlural>ГриньКошки</GrinCat.labelFemalePlural>
+
+  <GreenyZyabra.label>ГриниЗябра</GreenyZyabra.label>
+  <GreenyZyabra.labelPlural>ГриниЗябры</GreenyZyabra.labelPlural>
+  <GreenyZyabra.lifeStages.0.label>ГриниЗябрик</GreenyZyabra.lifeStages.0.label>
+  <GreenyZyabra.lifeStages.0.labelPlural>ГриниЗябрики</GreenyZyabra.lifeStages.0.labelPlural>
+  <GreenyZyabra.lifeStages.0.labelMale>самец ГриниЗябрик</GreenyZyabra.lifeStages.0.labelMale>
+  <GreenyZyabra.lifeStages.0.labelMalePlural>самцы ГриниЗябрика</GreenyZyabra.lifeStages.0.labelMalePlural>
+  <GreenyZyabra.lifeStages.0.labelFemale>самка ГриниЗябрика</GreenyZyabra.lifeStages.0.labelFemale>
+  <GreenyZyabra.lifeStages.0.labelFemalePlural>самки ГриниЗябрика</GreenyZyabra.lifeStages.0.labelFemalePlural>
+  <GreenyZyabra.lifeStages.1.label>ГриниЗябра</GreenyZyabra.lifeStages.1.label>
+  <GreenyZyabra.lifeStages.1.labelPlural>ГриниЗябры</GreenyZyabra.lifeStages.1.labelPlural>
+  <GreenyZyabra.lifeStages.1.labelMale>самец ГриниЗябры</GreenyZyabra.lifeStages.1.labelMale>
+  <GreenyZyabra.lifeStages.1.labelMalePlural>самцы ГриниЗябры</GreenyZyabra.lifeStages.1.labelMalePlural>
+  <GreenyZyabra.lifeStages.1.labelFemale>самка ГриниЗябры</GreenyZyabra.lifeStages.1.labelFemale>
+  <GreenyZyabra.lifeStages.1.labelFemalePlural>самки ГриниЗябры</GreenyZyabra.lifeStages.1.labelFemalePlural>
+  <GreenyZyabra.lifeStages.2.label>ГриниЗябра</GreenyZyabra.lifeStages.2.label>
+  <GreenyZyabra.lifeStages.2.labelPlural>ГриниЗябры</GreenyZyabra.lifeStages.2.labelPlural>
+  <GreenyZyabra.lifeStages.2.labelMale>самец ГриниЗябры</GreenyZyabra.lifeStages.2.labelMale>
+  <GreenyZyabra.lifeStages.2.labelMalePlural>самцы ГриниЗябры</GreenyZyabra.lifeStages.2.labelMalePlural>
+  <GreenyZyabra.lifeStages.2.labelFemale>самка ГриниЗябры</GreenyZyabra.lifeStages.2.labelFemale>
+  <GreenyZyabra.lifeStages.2.labelFemalePlural>самки ГриниЗябры</GreenyZyabra.lifeStages.2.labelFemalePlural>
+  <GreenyZyabra.labelMale>самец ГриниЗябры</GreenyZyabra.labelMale>
+  <GreenyZyabra.labelMalePlural>самцы ГриниЗябры</GreenyZyabra.labelMalePlural>
+  <GreenyZyabra.labelFemale>самка ГриниЗябры</GreenyZyabra.labelFemale>
+  <GreenyZyabra.labelFemalePlural>самки ГриниЗябры</GreenyZyabra.labelFemalePlural>
+
+
+</LanguageData>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="UniversalFermenterBase" Class="UniversalFermenterSK.ThingDef_UF">
+		<defName>IcecreamBasin</defName>
+		<label>Ice cream machine</label>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			 <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <texPath>Things/Machin/Icecream_MachinB</texPath>
+	  <drawSize>(2.4,2.4)</drawSize>
+	  <drawRotated>true</drawRotated>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<size>(1,1)</size>
+		<uiIconPath>Things/Machin/Icecream_MachinB_UI</uiIconPath>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<fillPercent>0.45</fillPercent>
+		<pathCost>60</pathCost>
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>10</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>*"Approved by the Ministry of Public Enjoyment as 'the most effective remedy against seditious thoughts'. Guaranteed to distract colonists from such unnecessary questions as 'why are we eating nut paste again' or 'who is that shooting on the perimeter'.Each cone contains a carefully calibrated dose of sugar, synthetic flavors and mild antidepressants. A built-in mood sensor automatically adds extra chocolate when it detects an elevated level of 'unhealthy thoughts' in the client."*</description>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<Mechanism>3</Mechanism>
+			<Glass>15</Glass>
+		</costList>
+		<building>
+			<uninstallWork>650</uninstallWork>
+		</building>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+				<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(117,77,213,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+				<soundPowerOn>Power_OnSmall</soundPowerOn>
+				<soundPowerOff>Power_OffSmall</soundPowerOff>
+			</li>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<rotatable>true</rotatable>
+		<designationCategory>Production</designationCategory>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>Food_C1</li>
+		</researchPrerequisites>
+		<!-- ThingDef_UF fields -->
+		<showProductIcon>false</showProductIcon>
+		<barOffset>(0.0, -0.18)</barOffset>
+		<barScale>(1.1, 1.1)</barScale>
+		<slotsCount>4</slotsCount>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="UniversalFermenterBase" Class="UniversalFermenterSK.ThingDef_UF">
+		<defName>CoffeeBasin</defName>
+		<label>Coffee machine</label>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			 <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	 <texPath>Things/Machin/Cofi_MachinB</texPath>
+	  <drawSize>(2.4,2.4)</drawSize>
+	  <drawRotated>false</drawRotated>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<size>(1,1)</size>
+		<uiIconPath>Things/Machin/Cofi_MachinB_UI</uiIconPath>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<fillPercent>0.45</fillPercent>
+		<pathCost>60</pathCost>
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>10</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>*"Approved by the Ministry of Colonial Vigor as 'the most humane way of exploiting... i.e. motivating staff'. Each cup contains:70% real coffee powder (3rd grade).20% Empire approved stimulants.10% wood pulp for volume (completely harmless!)</description>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<Mechanism>3</Mechanism>
+			<Glass>15</Glass>
+		</costList>
+		<building>
+			<uninstallWork>650</uninstallWork>
+		</building>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+				<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(217,77,13,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+				<soundPowerOn>Power_OnSmall</soundPowerOn>
+				<soundPowerOff>Power_OffSmall</soundPowerOff>
+			</li>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<rotatable>true</rotatable>
+		<designationCategory>Production</designationCategory>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>Food_C1</li>
+		</researchPrerequisites>
+		<!-- ThingDef_UF fields -->
+		<showProductIcon>false</showProductIcon>
+		<barOffset>(0.0, -0.68)</barOffset>
+		<barScale>(1.1, 1.1)</barScale>
+		<slotsCount>3</slotsCount>
+		
+	</ThingDef>
+<!--	
+	 <ThingDef ParentName="UniversalFermenterBase" Class="UniversalFermenterSK.ThingDef_UF">
+		<defName>CharcoalPit</defName>
+		<label>Charcoal Pit</label>
+		<graphicData>
+			<texPath>Things/Building/CharcoalPit/Charcoal_pit</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(0, 0, 0)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/CharcoalPit/Charcoal_UI</uiIconPath>
+		<costList>
+			<WoodLog>25</WoodLog>
+		</costList>
+		<fillPercent>0.01</fillPercent>
+		<pathCost>60</pathCost>
+		<statBases>
+			<WorkToBuild>8200</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<Beauty>-50</Beauty>
+			<Cleanliness>-100</Cleanliness>
+		</statBases>
+		<description>A primitive wood kiln. Tightly stacked logs slowly smolder beneath a layer of earth, turning into valuable charcoal. It's smoky and smells of burning, but there's no better fuel for metallurgy.</description>
+		<size>(3,3)</size>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>21</heatPerSecond>
+        <heatPushMaxTemperature>28</heatPushMaxTemperature>
+      </li>
+	   <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<rotatable>false</rotatable>
+		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+		<designationCategory>Production</designationCategory>
+		<researchPrerequisites>
+			<li>RecurveBow</li>
+		</researchPrerequisites>
+        <terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+		<!{1}** ThingDef_UF fields **{1}>
+		<showProductIcon>true</showProductIcon>
+		<barOffset>(0.0, 0.25)</barOffset>
+		<barScale>(1.0, 1.0)</barScale>
+		<slotsCount>10</slotsCount>
+	</ThingDef>-->
+	
+	
+	<ThingDef ParentName="UniversalFermenterBase" Class="UniversalFermenterSK.ThingDef_UF">
+		<defName>RecyclerBasin</defName>
+		<label>Recycler machine</label>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			 <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <texPath>Things/Machin/Recycler</texPath>
+	  <drawSize>(2,1.4)</drawSize>
+	  <!-- <drawOffset>(0,0,0.3)</drawOffset>-->
+	  <drawRotated>true</drawRotated>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<size>(2,1)</size>
+		<uiIconPath>Things/Machin/Recycler</uiIconPath>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<fillPercent>0.45</fillPercent>
+		<pathCost>60</pathCost>
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>10</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>A sealed glass terrarium, stocked with a specialized colony of termite beetles (Recycler Beetles). These genetically modified insects were bred on ark-like ships to recycle waste in a closed-loop system. Their saliva contains a unique enzyme that can combine any material with basic organic polymers.</description>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<Mechanism>3</Mechanism>
+			<Glass>15</Glass>
+		</costList>
+		<building>
+			<uninstallWork>650</uninstallWork>
+		</building>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+				<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(117,77,213,0)</glowColor>
+			</li>
+			 
+		</comps>
+		<tickerType>Rare</tickerType>
+		<rotatable>false</rotatable>
+		<designationCategory>Production</designationCategory>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>Food_C1</li>
+		</researchPrerequisites>
+		<!-- ThingDef_UF fields -->
+		<showProductIcon>false</showProductIcon>
+		<barOffset>(0.0, -0.28)</barOffset>
+		<barScale>(1.1, 1.1)</barScale>
+		<slotsCount>20</slotsCount>
+	</ThingDef>
+	
+</Defs>

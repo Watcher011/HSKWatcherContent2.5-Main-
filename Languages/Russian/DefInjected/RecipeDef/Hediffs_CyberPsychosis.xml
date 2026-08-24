@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Permanent Blocker -->
+
+  <InstallMindLock.label>Установить «Стеклянную клетку»</InstallMindLock.label>
+  <InstallMindLock.description>Устанавливает чип «Стеклянная клетка».</InstallMindLock.description>
+  <InstallMindLock.jobString>Установка «Стеклянной клетки».</InstallMindLock.jobString>
+
+  <RemoveMindLock.label>Удалить «Стеклянную клетку»</RemoveMindLock.label>
+  <RemoveMindLock.description>Удаляет чип «Стеклянная клетка».</RemoveMindLock.description>
+  <RemoveMindLock.jobString>Удаление чипа «Стеклянная клетка».</RemoveMindLock.jobString>
+  <RemoveMindLock.successfullyRemovedHediffMessage>{0} успешно удалил(а) чип «Стеклянная клетка» у {1}.</RemoveMindLock.successfullyRemovedHediffMessage>
+
+
+</LanguageData>

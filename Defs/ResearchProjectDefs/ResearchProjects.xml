@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- <ResearchProjectDef>
+        <defName>CyberPsychosisTreatment</defName>
+        <label>cyber psychosis treatment</label>
+        <description>Develop specialized neurochemical treatments to manage the mental side effects of extensive cybernetic augmentation.</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>MicroelectronicsBasics</li>
+            <li>MedicineProduction</li>
+        </prerequisites>
+        <researchViewX>10</researchViewX>
+        <researchViewY>5</researchViewY>
+    </ResearchProjectDef>
+-->
+  
+</Defs>

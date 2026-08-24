@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_ChargedLaser</defName>
+		<label>Charged Laser beam</label>
+		<ammoTypes>
+			<Ammo_ChargedLaser>Bullet_Laserbeam</Ammo_ChargedLaser>
+			<Ammo_ChargedLaser_Stable>Bullet_Laserbeam_Stable</Ammo_ChargedLaser_Stable>
+			<Ammo_ChargedLaser_Electromagnetic>Bullet_Laserbeam_Electromagnetic</Ammo_ChargedLaser_Electromagnetic>
+			<Ammo_ChargedLaser_Bio>Bullet_Laserbeam_Bio</Ammo_ChargedLaser_Bio>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	
+
+	<!{1}** ==================== Ammo ========================== **{1}>
+ 
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
+		<defName>Ammo_ChargedLaser_Bio</defName>
+		<label>Bio laser charge pack (S)</label>
+		<description>Stable (S) laser energy cell - ammunition for high-tech weapons. It is a micro battery.\n\nWhen firing, the released energy of the ammunition is fed to the focusing component of the weapon, where a powerful high-temperature beam of light is formed for a split second. So pinpoint and concentrated that it literally perforates targets like bullets. Does not set targets on fire.</description>
+		<tradeTags>
+			<li>CE_AutoEnableCrafting</li>
+			<li>CE_AutoEnableTrade_Sellable</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoLaser</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Ammo/LaserPack</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>11</MarketValue>
+			<Mass>0.01</Mass>
+			<Bulk>0.02</Bulk>
+		</statBases>
+		<ammoClass>LaserST</ammoClass>
+		<thingSetMakerTags>
+			<li>HSKCombatSuppliesAmmoAC</li>
+		</thingSetMakerTags>
+	</ThingDef>  
+	
+<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" Name="BioLaserBulletTextured" ParentName="BaseLaserBullet" Abstract="True">
+		<textures>
+			<li>Things/Projectile/ChargeRay3</li>
+		</textures>
+	</ThingDef>
+
+	<!{1}** ================== White Laser ================== **{1}>
+	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" Name="LaserBulletBio" ParentName="BioLaserBulletTextured" Abstract="True">
+		<graphicData>
+			<color>(255,255,255)</color>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletBio">
+		<defName>Bullet_Laserbeam_Bio</defName>
+		<label>Bio beam</label>
+		<graphicData>
+			<texPath>Things/Projectile/ChargeRay3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>BombSuper</damageDef>
+			<pelletCount>30</pelletCount>
+			<spreadMult>45.4</spreadMult>
+			<damageAmountBase>110</damageAmountBase>
+			<explosionRadius>1.5</explosionRadius>
+			<secondaryDamage>
+				<li>
+					<def>Thermobaric</def>
+					<amount>80</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
+-->
+	
+</Defs>

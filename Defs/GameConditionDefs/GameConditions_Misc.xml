@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GameConditionDef>
+        <defName>HSK_GameCondition_WildHunt</defName>
+        <conditionClass>HSK.Watcher.Content.Incident.GameCondition_WildHunt</conditionClass>
+        <label>HSK_WildHunt_ConditionLabel</label>
+        <description>HSK_WildHunt_ConditionDesc</description>
+        <canBePermanent>false</canBePermanent>
+    </GameConditionDef>
+	
+	   <GameConditionDef>
+        <defName>HSK_GameCondition_CursedSoul</defName>
+        <label>Cursed Soul</label>
+        <description>A dark curse has fallen upon one of your colonists, attracting barghests from the shadows.</description>
+        <conditionClass>HSK.Watcher.Content.Incident.GameCondition_CursedSoul</conditionClass>
+        <canBePermanent>false</canBePermanent>
+        <letterText>One of your colonists has been cursed, attracting barghests to your colony.</letterText>
+        <letterDef>NegativeEvent</letterDef>
+    </GameConditionDef>
+	
+	 <GameConditionDef>
+        <defName>AbominationSpawnTimer</defName>
+        <conditionClass>HSK.Watcher.Content.Incident.GameCondition_AbominationTimer</conditionClass>
+        <canBePermanent>false</canBePermanent>
+    </GameConditionDef>
+
+    <!-- GameCondition для отложенного рейда -->
+    <GameConditionDef>
+        <defName>DelayedRaidCondition</defName>
+        <conditionClass>HSK.Watcher.Content.Incident.GameCondition_DelayedRaid</conditionClass>
+        <canBePermanent>false</canBePermanent>
+    </GameConditionDef>
+	
+ <GameConditionDef>
+        <defName>InfectedAnimalRageTimer</defName>
+        <conditionClass>HSK.Watcher.Content.Incident.GameCondition_InfectedAnimalRageTimer</conditionClass>
+        <canBePermanent>false</canBePermanent>
+    </GameConditionDef>
+ 
+
+   <GameConditionDef>
+    <defName>HSK_PlanetaryBombardment</defName>
+    <label>Planetary Bombardment</label>
+    <description>Planetary Bombardment.</description>
+    <conditionClass>HSK.Watcher.Content.Incident.GameCondition_PlanetaryBombardment</conditionClass>
+  </GameConditionDef>
+  
+  <GameConditionDef>
+    <defName>HSK_AbominationOverrun</defName>
+<label>Critical Infestation</label>
+<description>Abomination has spread across the entire planet</description>
+  </GameConditionDef>
+  
+  
+  
+   
+  
+</Defs>

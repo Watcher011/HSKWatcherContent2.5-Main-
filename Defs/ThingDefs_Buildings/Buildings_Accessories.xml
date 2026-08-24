@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+ 
+
+  <ThingDef ParentName="BuildingBase">
+        <defName>PrimitiveRadioStation</defName>
+        <thingClass>HSK.Watcher.Content.Buildings.Building_PrimitiveRadioStation</thingClass>
+        <label>Primitive radio station</label>
+        <description>Primitive radio station for contacting nearby factions. Cannot reach orbital trade ships.</description>
+        
+         <graphicData>
+            <texPath>Things/Building/Misc/PrimitiveCommsConsole</texPath>
+          	<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(0.8)</drawSize>
+			 <drawOffset>(0,0,0.3)</drawOffset>
+			<shadowData>
+				<volume>(0.85, 1.0, 0.85)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+        </graphicData>
+        <canOverlapZones>false</canOverlapZones>
+		<fillPercent>0.35</fillPercent>
+        <pathCost>50</pathCost>
+        <blockWind>true</blockWind>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToBuild>1800</WorkToBuild>
+            <Flammability>0.7</Flammability>
+            <MarketValue>350</MarketValue>
+			<Bulk>55</Bulk>
+			<Mass>30</Mass> 
+        </statBases>
+        
+        <size>(1,1)</size>
+          
+        <building>
+            <isEdifice>false</isEdifice>
+			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+        </building>
+        
+         <stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<ElectronicComponents>3</ElectronicComponents>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+	     <defaultPlacingRot>South</defaultPlacingRot>
+         <castEdgeShadows>false</castEdgeShadows>
+		 <interactionCellOffset>(0,0,1)</interactionCellOffset>
+          <hasInteractionCell>true</hasInteractionCell>
+          <uiOrder>2100</uiOrder>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Misc</designationCategory>
+        
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>75</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable" />
+        </comps>
+         <designationHotKey>Misc3</designationHotKey>
+		  <placeWorkers>
+           <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+           </placeWorkers>
+        <researchPrerequisites>
+            <li>MicroelectronicsBasics</li>
+        </researchPrerequisites>
+        
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+         <drawerType>MapMeshAndRealTime</drawerType>
+	    <clearBuildingArea>false</clearBuildingArea>
+	    <altitudeLayer>BuildingOnTop</altitudeLayer>
+	   <minifiedDef>MinifiedThing</minifiedDef>
+       <passability>PassThroughOnly</passability>
+          <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    
+    </ThingDef>
+	
+	 <ThingDef ParentName="BuildingBase">
+    <defName>ColumnKristal</defName>
+    <label>columnKristal</label>
+    <description>A column capable of holding a roof com Kristal. Does not block sight or movement and looks quite nice.</description>
+    <designationCategory>Structure</designationCategory>
+    <uiOrder>2040</uiOrder>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.25</fillPercent>
+    <pathCost>0</pathCost>
+    <statBases>
+      <MaxHitPoints>160</MaxHitPoints>
+	 <MarketValue>1600</MarketValue>
+      <WorkToBuild>750</WorkToBuild>
+      <Mass>50</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>5</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+	  	<MeditationFocusStrength>0.3</MeditationFocusStrength>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+	   <costList>
+		<Glass>5</Glass>
+	   <ComponentIndustrial>2</ComponentIndustrial>
+	   <Glowstone>10</Glowstone>
+		</costList>
+    <holdsRoof>true</holdsRoof>
+    <canOverlapZones>false</canOverlapZones>
+    <rotatable>false</rotatable>
+    <fertility>0</fertility>
+    <specialDisplayRadius>9</specialDisplayRadius> <!-- must be kept in sync with roof hold-up radius -->
+    <building>
+      <isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+      <paintable>true</paintable>
+    </building>
+    <graphicData>
+      <drawSize>(1.2,1.3)</drawSize>
+      <drawOffset>(0,0,0.4)</drawOffset>
+      <texPath>Things/Building/Furniture/ColumnKristal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>	
+      <shadowData>
+        <volume>(0.3, 0.5, 0.3)</volume>
+        <offset>(0,0,-0.23)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Styleable" />
+			
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(200,200,240,0)</glowColor>
+				</li>
+			<li Class="SK.CompProperties_RestrictedPlacement">
+				<compClass>SK.CompRestrictedPlacement</compClass>
+			</li>
+			
+    </comps>
+	 <researchPrerequisites>
+      <li>Light_C1</li>
+    </researchPrerequisites>
+	<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+  </ThingDef>
+  
+     <ThingDef ParentName="BuildingBase">
+        <defName>HSK_PredatorBomb</defName>
+        <label>bomb</label>
+        <description>A sophisticated explosive device planted by a saboteur.</description>
+
+        <thingClass>HSK.Watcher.Content.Incident.Building_PredatorBomb</thingClass>
+        <category>Building</category>
+        <altitudeLayer>Building</altitudeLayer>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <castEdgeShadows>true</castEdgeShadows>
+
+        <graphicData>
+            <texPath>Things/Special/PredatorBomb</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>0.5</drawSize>
+        </graphicData>
+       <tickerType>Normal</tickerType>
+        <size>(1,1)</size>
+        <thingCategories>
+         <li>BuildingsSpecial</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <WorkToBuild>45</WorkToBuild>
+            <Flammability>0.6</Flammability>
+            <Beauty>-10</Beauty>
+            <MarketValue>60</MarketValue>
+            <Mass>20</Mass>
+            <TrapMeleeDamage>0</TrapMeleeDamage>
+            <TrapSpringChance>0.95</TrapSpringChance>
+        </statBases>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Chemfuel>15</Chemfuel>
+            <Weapon_Parts>1</Weapon_Parts>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>3.9</explosiveRadius>
+                <explosiveDamageType>BombSuper</explosiveDamageType>
+                <startWickHitPointsPercent>0.25</startWickHitPointsPercent>
+                <wickTicks>15</wickTicks>
+				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>1</preExplosionSpawnChance>
+                <startWickOnDamageTaken>
+                    <li>Bullet</li>
+                    <li>Arrow</li>
+                    <li>Stab</li>
+                    <li>Cut</li>
+                </startWickOnDamageTaken>
+            </li>
+        </comps>
+		  <minifiedDef>MinifiedThing</minifiedDef>
+        <specialDisplayRadius>3.9</specialDisplayRadius>
+        <tradeability>None</tradeability>
+        <alwaysHaulable>false</alwaysHaulable>
+        <building>
+      <deconstructible>true</deconstructible>
+      <claimable>false</claimable>
+       </building>
+    </ThingDef>
+	
+	
+	<ThingDef ParentName="LampBase">
+		<defName>FirstStone</defName>
+		<label>Table lamp "First Stone"</label>
+		<description>Rough form, honest material, and a warm, hearth-like light. A lamp made of natural light stone with a minimalist textile shade. A touch of architechture in your workspace.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Lights/FirstStone</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawRotated>false</drawRotated>
+			 <shaderType>CutoutComplex</shaderType>
+			 <drawOffset>(0,0,0.3)</drawOffset>
+			 <drawSize>0.8</drawSize>
+			<damageData>
+				<rect>(0.35,0.35,0.3,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<pathCost>8</pathCost>
+		<tickerType>Normal</tickerType>
+		 <drawerType>MapMeshAndRealTime</drawerType>
+		 <clearBuildingArea>false</clearBuildingArea>
+		<fillPercent>0.15</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>130</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Bulk>15</Bulk>
+			<Mass>5</Mass>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Metallic</li>
+			<li>Ceramic</li>
+			<li>Precious</li>
+		</stuffCategories>
+		<costList>
+			<Glowstone>20</Glowstone>
+			<Glass>5</Glass>
+		</costList>
+		<costStuffCount>25</costStuffCount>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			 
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(200,200,240,0)</glowColor>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>SK.ITab_Fuel</li>
+		</inspectorTabs>
+		<building>
+			<uninstallWork>150</uninstallWork>
+			 <isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		 <passability>PassThroughOnly</passability>
+		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+	</ThingDef>
+	
+		<ThingDef ParentName="LampBase">
+		<defName>Cell</defName>
+		<label>Table Cell</label>
+		<description>Table Cell.</description>
+		<graphicData>
+			<texPath>Things/Building/Coolerbiohazard</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			 <drawOffset>(0,0,0.3)</drawOffset>
+			 <drawSize>0.8</drawSize>
+			<damageData>
+				<rect>(0.35,0.35,0.3,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<pathCost>8</pathCost>
+		<tickerType>Normal</tickerType>
+		 <drawerType>MapMeshAndRealTime</drawerType>
+		 <clearBuildingArea>false</clearBuildingArea>
+		<fillPercent>0.15</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>130</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Bulk>15</Bulk>
+			<Mass>5</Mass>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<Meat_Twisted>10</Meat_Twisted>
+			<Shard>1</Shard>
+		</costList>
+		<costStuffCount>25</costStuffCount>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+		 
+		  <li Class="HSK.Watcher.Content.Compes.CompProperties_LocalHeart">
+            <offset>(0,0,0)</offset>
+			<drawLayer>BelowTexture</drawLayer>
+			<!--<drawLayer>AboveTexture</drawLayer>-->
+            <fireSize>0.8</fireSize>
+            <!-- Укажите путь к текстуре -->
+            <texturePath>Things/Special/thing</texturePath>
+			 <underlayTexturePath>Things/Building/Coolerbiohazard_basa</underlayTexturePath>
+             <underlaySize>0.8</underlaySize>
+             <underlayOffset>(0, 0, 0.4)</underlayOffset>
+            </li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(200,200,240,0)</glowColor>
+			</li>
+		</comps>
+		<building>
+			<uninstallWork>150</uninstallWork>
+			 <isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		 <passability>PassThroughOnly</passability>
+		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+	</ThingDef>
+	
+		<ThingDef ParentName="BuildingBase">
+		<defName>ColdsHeartBattery</defName>
+		<label>Kirin's Heart battery</label>
+		<description>A life-support chamber housing the heart of a Kirin. Continuously radiates freezing aura around itself. Requires Hematogen as fuel to sustain the creature's metabolism and prevent thermal collapse.</description>
+		<thingClass>SK.Building_ColdstoneBattery</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Temperature/ColdsHeartBattery</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			 <drawOffset>(0,0,0.3)</drawOffset>
+			<drawSize>(0.9,1.8)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>80</pathCost>
+		<canOverlapZones>false</canOverlapZones>
+		<holdsRoof>true</holdsRoof>
+		<fillPercent>0.8</fillPercent>
+		<coversFloor>true</coversFloor>
+		<blockLight>false</blockLight>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<statBases>
+			<Flammability>0</Flammability>
+			<WorkToBuild>1200</WorkToBuild>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>85</costStuffCount>
+		<costList>
+			<LivingFrost>1</LivingFrost>
+			<Glass>10</Glass>
+			<ComponentMedieval>8</ComponentMedieval>
+			<Mechanism>4</Mechanism>
+		</costList>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>2.0</fuelConsumptionRate>
+				<fuelCapacity>30.0</fuelCapacity>
+				<autoRefuelPercent>0.1</autoRefuelPercent>
+				<fuelFilter>
+					<thingDefs>
+						<li>HemogenPack</li>
+					</thingDefs>
+				</fuelFilter>
+				<destroyOnNoFuel>false</destroyOnNoFuel>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="SK.CompProperties_ColdPusher">
+				<ColdPerSecond>-30</ColdPerSecond>
+				<ColdPushMinTemperature>-3</ColdPushMinTemperature>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(200,200,240,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<placeWorkers>
+			<li>SK.PlaceWorker_ColdstoneBattery</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<researchPrerequisites>
+			<li>Temperature_control_B1</li>
+		</researchPrerequisites>
+		<designationCategory>Temperature</designationCategory>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</ThingDef>
+
+
+
+<ThingDef ParentName="BurnerFueled">
+		<defName>PhoenixHeartBattery</defName>
+		<label>Phoenix's Heart Battery</label>
+		<description>A life-support chamber containing the heart of a Phoenix. Constantly emanates searing heat aura around itself. Needs Hematogen as fuel to maintain the creature's metabolism and avert thermal meltdown.</description>
+		<graphicData>
+			<texPath>Things/Building/Temperature/PhoenixHeartBattery</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		 <drawOffset>(0,0,0.3)</drawOffset>
+			<drawSize>(0.9,1.8)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<fillPercent>0.6</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>310</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+	    <stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>85</costStuffCount>
+		<costList>
+			<LivingFire>1</LivingFire>
+			<Glass>10</Glass>
+			<ComponentMedieval>8</ComponentMedieval>
+			<Mechanism>4</Mechanism>
+		</costList>
+		<comps>
+			<li Class="SK.CompProperties_PowerOnGraphic" />
+			<li Class="CompProperties_Flickable"/>
+			<li Class="SK.CompProperties_HeatPusherAdvanced">
+				<compClass>SK.CompHeatPusherAdvanced</compClass>
+				<heatPerSecond>40</heatPerSecond>
+				<heatPushMaxTemperature>50</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(217,112,33,0)</glowColor>
+			</li>
+			<li Class="SK.CompFueled_Properties">
+				<operatingTemp>500</operatingTemp>
+				<drawfirefuel>false</drawfirefuel>
+				<canAutoBurn>true</canAutoBurn>
+				<smokeDrawOffset>(0,-0.1,0.85)</smokeDrawOffset>
+				<smokesize>0.5</smokesize>
+				<fuelCapacity>30</fuelCapacity>
+				<burnFuelMultiplier>1.1</burnFuelMultiplier>
+				<effectOnWeather>true</effectOnWeather>
+				<smokeEnabled>true</smokeEnabled>
+				<smokeDensity>1</smokeDensity>
+				<fuelFilter>
+					<thingDefs>
+						<li>HemogenPack</li>
+					</thingDefs>
+				</fuelFilter>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Temperature</designationCategory>
+		<researchPrerequisites>
+			<li>Temperature_control_B1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>VentilationFilter</defName>
+		<label>Active gas cleaning CO</label>
+		<description>A sealed capsule containing a "live" anomaly. Inside sits the energetic Fumo, who, instead of using dust-absorbing magic, exclusively consumes activated carbon. While being fed, she angrily blows into tubes, sucking out all the CO2 from the room. If Fumo runs out of carbon, she'll start grumbling and spreading rumors about your base over the radio waves.</description>
+		<graphicData>
+			<texPath>Things/Building/Temperature/VentilationFilter</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		 <drawOffset>(0,0,0.3)</drawOffset>
+			<drawSize>(0.9,1.8)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		 <thingClass>HSK.Watcher.Content.Building_VentilationFilter</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<fillPercent>0.6</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>310</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+	    <stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>85</costStuffCount>
+		<costList>
+			<LivingFire>1</LivingFire>
+			<Glass>10</Glass>
+			<ComponentMedieval>8</ComponentMedieval>
+			<Mechanism>4</Mechanism>
+		</costList>
+		<comps>
+	  <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>80.0</fuelConsumptionRate>
+        <fuelCapacity>1.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>ActivatedCarbon</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <canEjectFuel>true</canEjectFuel>
+      </li>
+		</comps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Temperature</designationCategory>
+		<!--<researchPrerequisites>
+			<li>Temperature_control_B1</li>
+		</researchPrerequisites>-->
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</ThingDef>
+</Defs>
+
+

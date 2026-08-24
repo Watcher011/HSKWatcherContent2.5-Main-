@@ -1,0 +1,51 @@
+<Patch>
+
+<!--<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Vent"]/comps/li[@Class="SK.CompProperties_RestrictedPlacement"]/thingDefs</xpath>
+				<value>
+						<li>Walltextile</li>
+						<li>WallcomKristal</li>
+						<li>WallcomKristalReinforced</li>
+				</value>
+			 </Operation>
+			 -->
+	 <Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="RH_SmallCooler"]/comps/li[@Class="SK.CompProperties_RestrictedPlacement"]/thingDefs</xpath>
+				<value>
+						<li>Walltextile</li>
+						<li>WallcomKristal</li>
+						<li>WallcomKristalReinforced</li>
+				</value>
+			 </Operation>
+			 
+  <Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Cooler"]/comps/li[@Class="SK.CompProperties_RestrictedPlacement"]/thingDefs</xpath>
+				<value>
+						<li>Walltextile</li>
+						<li>WallcomKristal</li>
+						<li>WallcomKristalReinforced</li>
+				</value>
+			 </Operation>
+			 
+			  <Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="RH_MediumHeater"]/comps/li[@Class="SK.CompProperties_RestrictedPlacement"]/thingDefs</xpath>
+				<value>
+						<li>Walltextile</li>
+						<li>WallcomKristal</li>
+						<li>WallcomKristalReinforced</li>
+				</value>
+			 </Operation>
+ 
+
+
+    <Operation Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CommsConsole"]</xpath>
+      <value>
+        <comps>
+          <li Class="HSK.Watcher.Content.CompProperties_CallReinforcements" />
+        </comps>
+      </value>
+    </Operation>
+
+</Patch>
+

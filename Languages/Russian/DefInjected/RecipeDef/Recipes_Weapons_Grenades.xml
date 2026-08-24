@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <MakeHealingGrenade.label>Изготовить лечебные гранаты (x5)</MakeHealingGrenade.label>
+  <MakeHealingGrenade.description>Изготовить 5 лечебных гранат. В теории они должны лечить, а не разрывать на куски. Но теория — это всего лишь теория.</MakeHealingGrenade.description>
+  <MakeHealingGrenade.jobString>Изготавливает лечебные гранаты. И молится, чтобы они сработали.</MakeHealingGrenade.jobString>
+
+  <MakeTearGas.label>Изготовить слезоточивые гранаты (x5)</MakeTearGas.label>
+  <MakeTearGas.description>Изготовить 5 слезоточивых гранат. Потому что своих слёз уже не хватает на всех врагов.</MakeTearGas.description>
+  <MakeTearGas.jobString>Изготавливает слезоточивые гранаты. Плачет вместе с ними, просто для атмосферы.</MakeTearGas.jobString>
+
+  <MakeInsecticideGas.label>Изготовить инсектицидные гранаты (x5)</MakeInsecticideGas.label>
+  <MakeInsecticideGas.description>Изготовить 5 инсектицидных гранат. Для жуков, пауков и всех, кто мельче тебя. Или крупнее — какая разница, газ не разбирает.</MakeInsecticideGas.description>
+  <MakeInsecticideGas.jobString>Изготавливает инсектицидные гранаты. Травит всё, что движется. Включая себя, если перепутает рецепт.</MakeInsecticideGas.jobString>
+
+
+  <!-- EN: make healing grenades x5 -->
+  <!-- EN: Craft 5 healing grenades. -->
+  <!-- EN: Making healing grenades. -->
+  <!-- EN: make tear grenades x5 -->
+  <!-- EN: Craft 5 tear grenades. -->
+  <!-- EN: Making tear grenades. -->
+  <!-- EN: make insecticide grenades x5 -->
+  <!-- EN: Craft 5 insecticide grenades. -->
+  <!-- EN: Making insecticide grenades. -->
+
+</LanguageData>

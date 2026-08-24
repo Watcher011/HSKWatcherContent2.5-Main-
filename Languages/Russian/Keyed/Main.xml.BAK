@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+
+  <HSK_WildHunt_LetterLabel>Дикая охота</HSK_WildHunt_LetterLabel>
+  <HSK_WildHunt_LetterText>Вдали небо потемнело и раздались завывания, что пробирают до глубины души. Гончие Дикой Охоты вышли на тропу войны... Они будут атаковать вашу колонию в течение следующих двух дней.</HSK_WildHunt_LetterText>
+
+
+  <HSK_WildHunt_End_LetterLabel>Охота окончена</HSK_WildHunt_End_LetterLabel>
+  <HSK_WildHunt_End_LetterText>Гончие Дикой Охоты, насытившись хаосом и разрушением, покинули ваши земли и двинулись дальше в поисках новой добычи. Тишина, наступившая после их ухода, кажется неестественно громкой.</HSK_WildHunt_End_LetterText>
+
+
+  <HSK_WildHunt_ConditionLabel>Дикая охота</HSK_WildHunt_ConditionLabel>
+  <HSK_WildHunt_ConditionDesc>Гончие Дикой Охоты атакуют колонию. Они покинут эти земли через 2 дня.</HSK_WildHunt_ConditionDesc>
+
+  <Barghest>Гончая Дикой Охоты</Barghest>
+  <Barghest_label>гончая дикой охоты</Barghest_label>
+  <Barghest_description>Ужасающая гончая из легенд о Дикой Охоте. Эти сверхъестественные существа не оставляют следов своего присутствия, исчезая вместе с окончанием охоты. Каждое убийство, совершенное гончей, порождает новую, делая охооту бесконечной.</Barghest_description>
+
+
+  <Barghest_kind>Гончая Дикой Охоты</Barghest_kind>
+  <BarghestPlural>Гончие Дикой Охоты</BarghestPlural>
+  <HSK_CursedSoul_GameConditionLabel>Охота на {0}</HSK_CursedSoul_GameConditionLabel>
+  <HSK_CursedSoul_GameConditionLabelDefault>Охота проклятой души</HSK_CursedSoul_GameConditionLabelDefault>
+  <HSK_CursedSoul_GameConditionTooltip>Баргесты охотятся на {0}. Осталось дней: {1}</HSK_CursedSoul_GameConditionTooltip>
+  <HSK_CursedSoul_LetterLabel>Проклятая душа</HSK_CursedSoul_LetterLabel>
+  <HSK_CursedSoul_LetterText>В вашей колонии поселилось зло, что призвало баргестов. Убейте или изгоните {0}, или в течение 20 дней отбивайтесь от тварей, что пришли за его гнилой душой.</HSK_CursedSoul_LetterText>
+  <HSK_CursedSoul_Survived_LetterLabel>Проклятие рассеялось</HSK_CursedSoul_Survived_LetterLabel>
+  <HSK_CursedSoul_Survived_LetterText>После 20 дней непрерывных атак баргесты отступили. Проклятие, висевшее над {0}, наконец-то рассеялось.</HSK_CursedSoul_Survived_LetterText>
+  <HSK_CursedSoul_Ended_LetterLabel>Проклятие снято</HSK_CursedSoul_Ended_LetterLabel>
+  <HSK_CursedSoul_Ended_LetterText>С исчезновением проклятой души баргесты потеряли интерес к вашей колонии и отступили.</HSK_CursedSoul_Ended_LetterText>
+
+
+  <HSK_SoulCurse>проклятие души</HSK_SoulCurse>
+  <HSK_SoulCurse_label>проклятие души</HSK_SoulCurse_label>
+  <HSK_SoulCurse_desc>Тёмное сверхъестественное проклятие, привлекающее враждебных существ. Проклятая душа испускает ауру, которая призывает баргестов из теней.</HSK_SoulCurse_desc>
+
+  <HSK_SoulCurse_stages_cursed_label>проклятый</HSK_SoulCurse_stages_cursed_label>
+  <HSK_SoulCurse_stages_cursed_desc>Колонист отмечен тёмным проклятием, которое привлекает сверхъестественных хищников.</HSK_SoulCurse_stages_cursed_desc>
+
+
+  <HSK_CursedSoul_label>Проклятая душа</HSK_CursedSoul_label>
+  <HSK_CursedSoul_desc>Один из колонистов проклят тёмными силами, привлекая баргестов к вашей колонии.</HSK_CursedSoul_desc>
+  <HSK_CursedSoul_letterLabel>Проклятая душа</HSK_CursedSoul_letterLabel>
+  <HSK_CursedSoul_letterText>Колонист проклят тёмными силами, привлекая баргестов к вашей колонии!</HSK_CursedSoul_letterText>
+
+
+  <HSK_GameCondition_CursedSoul_label>Проклятая душа</HSK_GameCondition_CursedSoul_label>
+  <HSK_GameCondition_CursedSoul_desc>Тёмное проклятие пало на одного из ваших колонистов, привлекая баргестов из теней.</HSK_GameCondition_CursedSoul_desc>
+  <HSK_GameCondition_CursedSoul_letterLabel>Событие Проклятой Души</HSK_GameCondition_CursedSoul_letterLabel>
+  <HSK_GameCondition_CursedSoul_letterText>Один из ваших колонистов проклят, привлекая баргестов к вашей колонии.</HSK_GameCondition_CursedSoul_letterText>
+
+  <RaiderTribute.DemandText>Пираты требуют выкуп в размере {0}! Они угрожают разграбить ваше поселение, если вы не заплатите. У вас есть выбор: заплатить серебром, отдать ценный предмет или отказаться и рискнуть быть атакованными.</RaiderTribute.DemandText>
+  <RaiderTribute.AlternativeItem>В качестве альтернативы пираты готовы принять {0}.</RaiderTribute.AlternativeItem>
+
+Основныетекстыдиалога
+  <RaiderTribute.DemandText>Пираты требуют выкуп в размере {0}! Они угрожают разграбить ваше поселение, если вы не заплатите. У вас есть выбор: заплатить серебром, отдать ценный предмет или отказаться и рискнуть быть атакованными.</RaiderTribute.DemandText>
+  <RaiderTribute.AlternativeItem>В качестве альтернативы пираты готовы принять {0}.</RaiderTribute.AlternativeItem>
+
+Кнопкивыбора
+  <RaiderTribute.PaySilver>Заплатить серебром</RaiderTribute.PaySilver>
+  <RaiderTribute.NoSilverOption>Недостаточно серебра</RaiderTribute.NoSilverOption>
+  <RaiderTribute.GiveItem>Отдать {0}</RaiderTribute.GiveItem>
+  <RaiderTribute.NoItemOption>Нет подходящих предметов</RaiderTribute.NoItemOption>
+  <RaiderTribute.Refuse>Отказаться платить</RaiderTribute.Refuse>
+
+Письмадлясобытий
+  <RaiderTribute.PaidSilverLetterLabel>Выкуп выплачен</RaiderTribute.PaidSilverLetterLabel>
+  <RaiderTribute.PaidSilverLetterText>Пираты довольны выкупом и уходят, пообещав оставить ваше поселение в покое... по крайней мере, на время.</RaiderTribute.PaidSilverLetterText>
+
+  <RaiderTribute.PaidItemLetterLabel>Предмет передан</RaiderTribute.PaidItemLetterLabel>
+  <RaiderTribute.PaidItemLetterText>Пираты забирают {0} и уходят, довольно посмеиваясь.</RaiderTribute.PaidItemLetterText>
+
+  <RaiderTribute.DoubleCrossLetterLabel>Ловушка!</RaiderTribute.DoubleCrossLetterLabel>
+  <RaiderTribute.DoubleCrossLetterText>Пираты забирают выкуп... но затем с ухмылкой объявляют, что решили взять и ваше поселение тоже! Это была ловушка!</RaiderTribute.DoubleCrossLetterText>
+
+  <RaiderTribute.DoubleCrossWithItemLetterLabel>Ловушка!</RaiderTribute.DoubleCrossWithItemLetterLabel>
+  <RaiderTribute.DoubleCrossWithItemLetterText>Пираты забирают {0}... но вместо того чтобы уйти, они готовятся к атаке! Это была ловушка!</RaiderTribute.DoubleCrossWithItemLetterText>
+
+  <RaiderTribute.BluffRetreatLetterLabel>Пираты отступают</RaiderTribute.BluffRetreatLetterLabel>
+  <RaiderTribute.BluffRetreatLetterText>К вашему удивлению, пираты не атакуют. Они неуверенно переглядываются и начинают отступать. Похоже, это был блеф - у них не хватило сил для настоящей атаки!</RaiderTribute.BluffRetreatLetterText>
+
+  <RaiderTribute.RefusedLetterLabel>Пираты атакуют!</RaiderTribute.RefusedLetterLabel>
+  <RaiderTribute.RefusedLetterText>Пираты в ярости от вашего отказа! Они начинают атаку на ваше поселение!</RaiderTribute.RefusedLetterText>
+
+Орбитальнаябомбардировка
+  <RaiderTribute.OrbitalStrikeLetterLabel>Орбитальная бомбардировка!</RaiderTribute.OrbitalStrikeLetterLabel>
+  <RaiderTribute.OrbitalStrikeLetterText>Пираты вызывают орбитальный удар по вашей колонии! Укройтесь!</RaiderTribute.OrbitalStrikeLetterText>
+
+Ошибки
+  <RaiderTribute.ErrorCreatingDialog>Произошла ошибка при создании диалога пиратского выкупа. Ивент будет отменен.</RaiderTribute.ErrorCreatingDialog>
+
+
+
+  <HSK.CallReinforcements.Title>Вызов подкреплений</HSK.CallReinforcements.Title>
+  <HSK.CallReinforcements.Desc>Вызовите наемников Синдиката для защиты колонии на {0} дней. Стоимость: малый отряд - {1} серебра, большой отряд - {2} серебра.</HSK.CallReinforcements.Desc>
+  <HSK.CallReinforcements.SelectPackage>Выберите пакет подкреплений</HSK.CallReinforcements.SelectPackage>
+  <HSK.CallReinforcements.Button>Вызвать</HSK.CallReinforcements.Button>
+  <HSK.CallReinforcements.Cancel>Отмена</HSK.CallReinforcements.Cancel>
+  <HSK.CallReinforcements.CancelMsg>Вызов отменен</HSK.CallReinforcements.CancelMsg>
+
+   Пакеты 
+  <HSK.CallReinforcements.SmallPackageName>Малый отряд</HSK.CallReinforcements.SmallPackageName>
+  <HSK.CallReinforcements.LargePackageName>Большой отряд</HSK.CallReinforcements.LargePackageName>
+  <HSK.CallReinforcements.SmallPackageTooltip>Малый отряд: {0} бойцов Синдиката</HSK.CallReinforcements.SmallPackageTooltip>
+  <HSK.CallReinforcements.LargePackageTooltip>Большой отряд: {0} бойцов Синдиката</HSK.CallReinforcements.LargePackageTooltip>
+  <HSK.CallReinforcements.PackageDescription>{0} профессиональных бойцов Синдиката ({1} серебра)</HSK.CallReinforcements.PackageDescription>
+
+   Цены и ошибки 
+  <HSK.CallReinforcements.NotEnoughSilver>Требуется {0} серебра (у вас {1})</HSK.CallReinforcements.NotEnoughSilver>
+  <HSK.CallReinforcements.NotEnoughSilverShort>Недостаточно серебра</HSK.CallReinforcements.NotEnoughSilverShort>
+  <HSK.CallReinforcements.NotEnoughSilverMsg>Недостаточно серебра для вызова подкреплений</HSK.CallReinforcements.NotEnoughSilverMsg>
+  <HSK.CallReinforcements.PaymentFailed>Ошибка при оплате</HSK.CallReinforcements.PaymentFailed>
+
+   Таймер 
+  <HSK.CallReinforcements.DurationInfo>Срок службы: {0} дней</HSK.CallReinforcements.DurationInfo>
+  <HSK.CallReinforcements.TimeLeft>Времени осталось: {0}</HSK.CallReinforcements.TimeLeft>
+  <HSK.CallReinforcements.TimeLeftDetailed>Осталось службы: {0}\nИзначальный срок: {1} дней</HSK.CallReinforcements.TimeLeftDetailed>
+  <HSK.CallReinforcements.TimeLeftMessage>Наемники покинут колонию через {0}</HSK.CallReinforcements.TimeLeftMessage>
+  <HSK.CallReinforcements.CheckTimer>Проверить таймер</HSK.CallReinforcements.CheckTimer>
+  <HSK.CallReinforcements.DepartureWarning>{0} наемников скоро покинут колонию (остался 1 день)</HSK.CallReinforcements.DepartureWarning>
+
+   Результаты 
+  <HSK.CallReinforcements.ConfirmTooltip>Вызвать {0} за {1} серебра ({2} бойцов на {3} дней)</HSK.CallReinforcements.ConfirmTooltip>
+  <HSK.CallReinforcements.Success>{0} бойцов Синдиката прибыли и будут защищать колонию {1} дней. Отбытие через: {2}</HSK.CallReinforcements.Success>
+  <HSK.CallReinforcements.SpawnFailed>Не удалось вызвать подкрепления</HSK.CallReinforcements.SpawnFailed>
+  <HSK.CallReinforcements.Error>Произошла ошибка при вызове подкреплений</HSK.CallReinforcements.Error>
+  <HSK.CallReinforcements.Left>{0} наемников покинули колонию по истечении срока контракта</HSK.CallReinforcements.Left>
+
+   Гизмо 
+  <HSK.CallReinforcements.GizmoLabel>Вызвать подкрепления</HSK.CallReinforcements.GizmoLabel>
+  <HSK.CallReinforcements.GizmoDesc>Вызвать наемников Синдиката для защиты колонии</HSK.CallReinforcements.GizmoDesc>
+  <HSK.CallReinforcements.TransportIncoming>Транспорт Синдиката с {0} бойцами в пути. Прибытие через 3 секунды...</HSK.CallReinforcements.TransportIncoming>
+  <HSK.CallReinforcements.TransportArrived>Транспортные капсулы Синдиката приземлились с {0} бойцами</HSK.CallReinforcements.TransportArrived>
+  <HSK.CallReinforcements.LandingFailed>Не удалось найти место для посадки транспорта</HSK.CallReinforcements.LandingFailed>
+
+   Основные сообщения о защите 
+  <HSKBugProof_ProtectionMessage>Пол {0} защищён от насекомых в координатах ({1}, {2}). Спасибо что не спросили.</HSKBugProof_ProtectionMessage>
+  <HSKBugProof_ProtectionMessage2>Насекомые смотрят на пол {0} ({1}, {2}) и плачут от бессилия. Как мило.</HSKBugProof_ProtectionMessage2>
+  <HSKBugProof_ProtectionMessage3>Защита активирована. Пол {0} теперь токсичен для насекомых. Для колонистов - просто скользко.</HSKBugProof_ProtectionMessage3>
+  <HSKBugProof_ProtectionMessage4>Координаты ({1}, {2}) объявлены зоной, свободной от жужжащих тварей. Пол {0} гордится собой.</HSKBugProof_ProtectionMessage4>
+  <HSKBugProof_ProtectionMessage5>Насекомые попытались проникнуть через пол {0}. Их последние слова: "Ай, блин!"</HSKBugProof_ProtectionMessage5>
+
+   Позитивные сообщения о защите 
+  <HSKBugProof_ProtectionMessage_Positive>✅ Защита {0} успешно активирована! Координаты ({1}, {2}) теперь безопасны. Насекомые в замешательстве!</HSKBugProof_ProtectionMessage_Positive>
+  <HSKBugProof_ProtectionMessage2_Positive>🎉 Победа! Пол {0} на ({1}, {2}) неприступен для жужжащих гостей. Наши учёные празднуют!</HSKBugProof_ProtectionMessage2_Positive>
+  <HSKBugProof_ProtectionMessage3_Positive>🛡️ Щит поднят! {0} на ({1}, {2}) защищён. Насекомые ищут другой способ испортить нам день.</HSKBugProof_ProtectionMessage3_Positive>
+  <HSKBugProof_ProtectionMessage4_Positive>🌟 Блестящий результат! Зона ({1}, {2}) с полом {0} теперь чиста от вредителей. Колонисты могут спать спокойно!</HSKBugProof_ProtectionMessage4_Positive>
+  <HSKBugProof_ProtectionMessage5_Positive>💪 Непреодолимая защита! {0} на ({1}, {2}) отразил атаку. Насекомые отступают с потерями!</HSKBugProof_ProtectionMessage5_Positive>
+
+   Простые сообщения 
+  <HSKBugProof_ProtectionMessageSimple>Насекомые ненавидят этот пол. Прямо как мы - понедельники.</HSKBugProof_ProtectionMessageSimple>
+  <HSKBugProof_ProtectionMessageSimple2>Этот пол защищён лучше, чем ваша самооценка после трёх проваленных операций.</HSKBugProof_ProtectionMessageSimple2>
+  <HSKBugProof_ProtectionMessageSimple3>Если бы у насекомых были юристы, они бы уже подали иск за дискриминацию.</HSKBugProof_ProtectionMessageSimple3>
+
+   Названия спавнеров 
+  <HSKBugProof_TunnelJellySpawner>Генератор желейных червей "Министр пропаганды"</HSKBugProof_TunnelJellySpawner>
+  <HSKBugProof_TunnelJellySpawner2>Фабрика ползучих гадостей "Укуси меня нежно"</HSKBugProof_TunnelJellySpawner2>
+  <HSKBugProof_TunnelHiveSpawner>Инкубатор улья "Сладких снов, колонисты"</HSKBugProof_TunnelHiveSpawner>
+  <HSKBugProof_TunnelHiveSpawner2>Конвейер по производству кошмаров "Мама всегда говорила"</HSKBugProof_TunnelHiveSpawner2>
+
+   Описания защиты 
+  <HSKBugProof_FloorProtection>Защищено от насекомых. И от хорошего вкуса тоже.</HSKBugProof_FloorProtection>
+  <HSKBugProof_FloorProtection2>Насекомые предпочитают смерть контакту с этим полом. Мы их понимаем.</HSKBugProof_FloorProtection2>
+  <HSKBugProof_FloorProtection3>Анти-жучковое покрытие. Гарантия: до первой уборки.</HSKBugProof_FloorProtection3>
+  <HSKBugProof_FloorProtection4>Такой же непроходимый для насекомых, как ваш жизненный путь для успеха.</HSKBugProof_FloorProtection4>
+  <HSKBugProof_FloorProtection5>Если бы пол мог говорить, он бы сказал: "Не наступай на меня, тварь шестиногая!"</HSKBugProof_FloorProtection5>
+
+   Дополнительные описания (30% шанс) 
+  <HSKBugProof_FloorProtectionDesc>Побочный эффект: может вызывать экзистенциальный кризис у муравьёв.</HSKBugProof_FloorProtectionDesc>
+  <HSKBugProof_FloorProtectionDesc2>Предупреждение: не пытайтесь объяснить насекомым принцип работы. Им всё равно.</HSKBugProof_FloorProtectionDesc2>
+  <HSKBugProof_FloorProtectionDesc3>Секрет технологии: пол покрыт тонким слоем колонистского пофигизма.</HSKBugProof_FloorProtectionDesc3>
+  <HSKBugProof_FloorProtectionDesc4>Научный факт: 9 из 10 насекомых предпочитают смерть этому полу.</HSKBugProof_FloorProtectionDesc4>
+  <HSKBugProof_FloorProtectionDesc5>Философский вопрос: если насекомое умирает на защищённом полу, издаёт ли оно звук?</HSKBugProof_FloorProtectionDesc5>
+
+   Фразы для логов 
+  <HSKBugProof_Random1>Насекомые получили от ворот поворот</HSKBugProof_Random1>
+  <HSKBugProof_Random2>Ещё один пол, ещё один повод для насекомых ненавидеть свою жизнь</HSKBugProof_Random2>
+  <HSKBugProof_Random3>Защита сработала. Насекомые в печали, мы в восторге</HSKBugProof_Random3>
+  <HSKBugProof_Random4>Насекомые сегодня без обеда. И без ужина. И без завтрака</HSKBugProof_Random4>
+  <HSKBugProof_Random5>Это не жестокость. Это... продвинутая форма энтомологической терапии</HSKBugProof_Random5>
+
+   Позитивные фразы для логов 
+  <HSKBugProof_Random1_Positive>✅ Успешный блок! Насекомые получили вежливый, но твёрдый отказ.</HSKBugProof_Random1_Positive>
+  <HSKBugProof_Random2_Positive>🎊 Ещё одна победа! Насекомые в раздумьях, мы - в работе.</HSKBugProof_Random2_Positive>
+  <HSKBugProof_Random3_Positive>🛡️ Защита сработала идеально! Насекомые в печали, мы гордимся.</HSKBugProof_Random3_Positive>
+  <HSKBugProof_Random4_Positive>🌟 Насекомые остались без ужина. Наши колонисты - с аппетитом!</HSKBugProof_Random4_Positive>
+  <HSKBugProof_Random5_Positive>💡 Гениально! Защита работает как часы. Насекомые могут только завидовать.</HSKBugProof_Random5_Positive>
+<CyberPsychosisNeedLabel>Человечность</CyberPsychosisNeedLabel>
+    <CyberPsychosisNeedDesc>Уровень киберпсихоза. Снижается при чрезмерной аугментации. Держите выше нуля, чтобы избежать психических срывов.</CyberPsychosisNeedDesc>
+    
+    <!-- Status -->
+    <CyberPsychosisStatusStable>Стабильно</CyberPsychosisStatusStable>
+    <CyberPsychosisStatusWarning>Предупреждение</CyberPsychosisStatusWarning>
+    <CyberPsychosisStatusCritical>Критически</CyberPsychosisStatusCritical>
+    <CyberPsychosisStatusDanger>ОПАСНОСТЬ</CyberPsychosisStatusDanger>
+    <CyberPsychosisStatusProtected>Защищено</CyberPsychosisStatusProtected>
+    
+    <!-- Tooltip -->
+    <CyberPsychosisOverThreshold><color=red>ПОРОГ ПРЕВЫШЕН!</color></CyberPsychosisOverThreshold>
+    <CyberPsychosisPointsSafe>очков (безопасно)</CyberPsychosisPointsSafe>
+    <CyberPsychosisEstTime>Примерное время до опустошения: {0:F1} дней</CyberPsychosisEstTime>
+    <CyberPsychosisKillDesire><color=red>ЖЕЛАНИЕ УБИВАТЬ АКТИВНО!</color></CyberPsychosisKillDesire>
+    <CyberPsychosisNeuralStabilizer><color=green>♦ Нейростабилизатор активен</color></CyberPsychosisNeuralStabilizer>
+    
+    <!-- Messages -->
+    <CyberPsychosisKillDesireMessage>{0} чувствует ошеломляющее желание убивать!</CyberPsychosisKillDesireMessage>
+    <CyberPsychosisMentalBreakMessage>{0} испытывает приступ киберпсихоза!</CyberPsychosisMentalBreakMessage>
+    <CyberPsychosisBlockerTaken>{0} принял ингибитор киберпсихоза.</CyberPsychosisBlockerTaken>
+    <CyberPsychosisPermanentProtection>{0} получил постоянную защиту от киберпсихоза!</CyberPsychosisPermanentProtection>
+    <CyberPsychosisAttackMessage>{0} нападает на {1} в приступе ярости!</CyberPsychosisAttackMessage>
+    
+    <!-- Debug -->
+    <CyberPsychosisDebugCheckAll>Проверить всех</CyberPsychosisDebugCheckAll>
+    <CyberPsychosisDebugCheckSelected>Проверить выбранного</CyberPsychosisDebugCheckSelected>
+    <CyberPsychosisDebugForceRecalc>Принудительный пересчёт</CyberPsychosisDebugForceRecalc>
+    <CyberPsychosisDebugFixHumanity>Исправить человечность 100%</CyberPsychosisDebugFixHumanity>
+    <CyberPsychosisDebugForcePsychosis>Форсировать психоз</CyberPsychosisDebugForcePsychosis>
+    <CyberPsychosisDebugTriggerKill>Триггер желания убивать</CyberPsychosisDebugTriggerKill>
+    <CyberPsychosisDebugAddBlocker>Добавить временный блокиратор</CyberPsychosisDebugAddBlocker>
+    <CyberPsychosisDebugAddPermanent>Добавить постоянный блокиратор</CyberPsychosisDebugAddPermanent>
+    <CyberPsychosisDebugListImplants>Список имплантов</CyberPsychosisDebugListImplants>
+    
+    <!-- Settings -->
+    <CyberPsychosisSettingsTitle>Киберпсихоз</CyberPsychosisSettingsTitle>
+    <CyberPsychosisEnableLabel>Включить систему киберпсихоза</CyberPsychosisEnableLabel>
+    <CyberPsychosisEnableDesc>Включить/выключить механику киберпсихоза</CyberPsychosisEnableDesc>
+    <CyberPsychosisDebugModeLabel>Режим отладки</CyberPsychosisDebugModeLabel>
+    <CyberPsychosisDebugModeDesc>Показывать подробную информацию в логах</CyberPsychosisDebugModeDesc>
+    <CyberPsychosisBaseThresholdLabel>Базовый порог: {0}</CyberPsychosisBaseThresholdLabel>
+    <CyberPsychosisThresholdMultLabel>Множитель порога: {0:F2}</CyberPsychosisThresholdMultLabel>
+    <CyberPsychosisGainRateLabel>Скорость накопления: {0:F2}</CyberPsychosisGainRateLabel>
+    <CyberPsychosisCheckIntervalLabel>Интервал проверки (тиков): {0}</CyberPsychosisCheckIntervalLabel>
+</LanguageData>

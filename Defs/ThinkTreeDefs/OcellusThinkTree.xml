@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--  <ThinkTreeDef>
+        <defName>OcellusThinkTree</defName>
+        <thinkRoot Class="ThinkNode_Priority">
+            <subNodes>
+                <li Class="HSK.Watcher.Content.Incident.ThinkNode_OcellusHunt" />
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>Downed</treeDef>
+                </li>
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>BurningResponse</treeDef>
+                </li>
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>MentalStateCritical</treeDef>
+                </li>
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>LordDuty</treeDef>
+                </li>
+            </subNodes>
+        </thinkRoot>
+    </ThinkTreeDef>
+-->
+</Defs>

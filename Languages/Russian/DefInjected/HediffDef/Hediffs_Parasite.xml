@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <OcellusBrainParasite.label>Паразит-глазник</OcellusBrainParasite.label>
+  <OcellusBrainParasite.description>Паразитический организм сросся с мозгом через глазницу. Носитель больше не контролирует себя.</OcellusBrainParasite.description>
+  <OcellusBrainParasite.comps.0.letterLabel>Глазник появляется!</OcellusBrainParasite.comps.0.letterLabel>
+  <OcellusBrainParasite.comps.0.letterText>Паразит-глазник покинул труп {0} через глазницу в поисках нового носителя.</OcellusBrainParasite.comps.0.letterText>
+  <OcellusBrainParasite.stages.0.label> подавление воли</OcellusBrainParasite.stages.0.label>
+
+
+  <!-- HEDIFFDEF: Headcrab Parasite (исправленный) -->
+
+  <HeadcrabParasite.label>хедкраб-паразит</HeadcrabParasite.label>
+  <HeadcrabParasite.description>Паразитический хедкраб присосался к голове жертвы, подчинил себе её нервную систему и превратил в агрессивное создание. Носить шлем или шапку теперь невозможно.</HeadcrabParasite.description>
+  <HeadcrabParasite.comps.2.letterLabel>Перерождение хедкраба!</HeadcrabParasite.comps.2.letterLabel>
+  <HeadcrabParasite.comps.2.letterText>{0} мёртв. Из его тела вырвался хедкраб!</HeadcrabParasite.comps.2.letterText>
+  <HeadcrabParasite.stages.0.label>присосался</HeadcrabParasite.stages.0.label>
+
+
+</LanguageData>

@@ -1,0 +1,1732 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef>
+    <defName>PreyMark</defName>
+    <label>prey mark</label>
+    <hediffClass>HediffWithComps</hediffClass>
+    <labelNoun>a prey mark</labelNoun>
+    <description>BARGHEST'S MARK.</description>
+    <tendable>false</tendable>
+    <stages>
+      <li>
+        <painOffset>0.0125</painOffset>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>15000</disappearsAfterTicks><!-- 6 hours -->
+      </li>
+    </comps>
+  </HediffDef>
+  
+   <HediffDef>
+        <defName>Hediff_AbominationTracker</defName>
+        <label>tracker</label>
+        <hediffClass>HSK.Watcher.Content.Incident.Hediff_AbominationTracker</hediffClass>  
+		<description>---.</description>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+        <comps>
+            <li>
+                <compClass>HSK.Watcher.Content.Incident.HediffComp_AbominationOnDeath</compClass>
+            </li>
+        </comps>
+    </HediffDef>
+	
+	
+	
+	 <HediffDef>
+        <defName>Hediff_InfectedAnimalTracker</defName>
+        <label>infected tracker</label>
+		<description>---.</description>
+        <hediffClass>HSK.Watcher.Content.Incident.Hediff_InfectedAnimalTracker</hediffClass>  
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+        <comps>
+            <li>
+                <compClass>HSK.Watcher.Content.Incident.HediffComp_InfectedAnimalOnDeath</compClass>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>Hediff_InfectionCarrier</defName>
+        <label>infection carrier</label>
+		<description>---.</description>
+        <hediffClass>HSK.Watcher.Content.Incident.Hediff_InfectionCarrier</hediffClass>  
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+        <comps>
+            <li>
+                <compClass>HSK.Watcher.Content.Incident.HediffComp_InfectionCarrier</compClass>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>Hediff_AbominationInfection</defName>
+        <label>latent infection</label>
+		<description>---.</description>
+        <hediffClass>HSK.Watcher.Content.Incident.Hediff_AbominationInfection</hediffClass>  
+        <stages>
+            <li>
+                <label>early stage</label>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+        <comps>
+            <li>
+                <compClass>HSK.Watcher.Content.Incident.HediffComp_AbominationTransformation</compClass>
+            </li>
+        </comps>
+        <isBad>true</isBad>
+    </HediffDef>
+	
+	
+	
+	
+	
+   <HediffDef>
+    <defName>AbnormalLeg</defName>
+    <label>abnormal leg</label>
+    <labelNoun>an abnormal leg</labelNoun>
+    <description>From the outside, this limb deceptively resembles an advanced bionic prosthesis—but only until you touch it. Instead of cold titanium, its segments are cast from living iron (Bioferrite), interspersed with pulsating dark veins. This isn't just a leg replacement. It's a hybrid, where high technology meets something that transcends known reality.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AbnormalLeg</ThingDef>
+    </descriptionHyperlinks>
+    
+    <hediffClass>HSK.Watcher.Content.Compes.Hediff_RandomStatProsthetic</hediffClass>
+    
+   <defaultLabelColor>(1.0, 0.75, 0.0)</defaultLabelColor>
+    <isBad>false</isBad>
+    <priceImpact>true</priceImpact>
+    <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+    <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+    
+    <stages>
+      <li>
+        <label>abnormal leg</label>
+      </li>
+    </stages>
+    
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>claws</label>
+            <capacities>
+              <li>Cut</li>
+            </capacities>
+            <armorPenetration>0.6</armorPenetration>
+            <power>20.5</power>
+            <cooldownTime>2</cooldownTime>
+          </li>
+        </tools>
+      </li>
+      
+      <!-- Настройки для НОГИ: Moving + Beauty + Pain + Hunger -->
+      <li Class="HSK.Watcher.Content.Compes.HediffCompProperties_RandomStatProsthetic">
+        <labelPrefix>AbnormalLeg</labelPrefix>
+        
+        <!-- Для ноги: скорость (Moving) -->
+        <movingMin>0.1</movingMin>
+        <movingMax>0.5</movingMax>
+        
+        <!-- Общие параметры -->
+        <beautyMin>-0.2</beautyMin>
+        <beautyMax>-0.05</beautyMax>
+        <breakMin>-0.04</breakMin>
+        <breakMax>-0.01</breakMax>
+        <painMin>0.01</painMin>
+        <painMax>0.05</painMax>
+        <hungerMin>0.01</hungerMin>
+        <hungerMax>0.05</hungerMax>
+        
+        <generateRandomLabel>true</generateRandomLabel>
+      </li>
+    </comps>
+    
+    <spawnThingOnRemoved>AbnormalLeg</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.30</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBase">
+    <defName>AbnormalLeg</defName>
+    <label>abnormal leg</label>
+    <description>This leg is more than just a limb. It is flesh forged into steel, and steel fused into flesh. The result of experiments with nature itself, carried out to the brink of madness.</description>
+    <descriptionHyperlinks><RecipeDef>InstallAbnormalLeg</RecipeDef></descriptionHyperlinks>
+	 <graphicData>
+      <texPath>Things/Item/Health/AbnormalLeg</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <costList>
+		<ComponentAdvanced>1</ComponentAdvanced>
+		<Meat_Twisted>16</Meat_Twisted>
+		<ArtificialBone>2</ArtificialBone>
+		<Microchips>1</Microchips>
+        <Bioferrite>15</Bioferrite>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallAbnormalLeg</defName>
+    <label>install abnormal leg</label>
+    <description>Install a abnormal leg.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AbnormalLeg</ThingDef>
+      <HediffDef>AbnormalLeg</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing abnormal leg.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AbnormalLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AbnormalLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AbnormalLeg</addsHediff>
+  </RecipeDef>
+	
+	
+	 <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Grow_AbnormalLeg</defName>
+        <label>Grow abnormal leg</label>
+        <description>Grow a abnormal leg. Takes 1.5 days to make</description>
+        <ingredients>
+       <li>
+                <filter>
+                    <thingDefs>
+                        <li>Meat_Twisted</li>
+                    </thingDefs>
+                </filter>
+                <count>16</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>ArtificialBone</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chitin</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>Bioferrite</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+        </ingredients>
+        <products>
+            <AbnormalLeg>1</AbnormalLeg>
+        </products>
+        <recipeUsers>
+            <li>TableOrganvat</li>
+        </recipeUsers>
+        <researchPrerequisite>Prosthesis_making_D2</researchPrerequisite>
+
+        <!-- RecipeDef_UF fields -->
+        <ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>1</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+        <usesTemperature>false</usesTemperature>
+        <processDays>1.5</processDays>
+    </RecipeDef>
+	
+	
+	
+	 <!-- Abnormal arm -->
+  <HediffDef>
+    <defName>AbnormalArm</defName>
+    <label>abnormal arm</label>
+    <labelNoun>an abnormal arm</labelNoun>
+    <description>At first glance, this is a technological marvel...</description>
+    
+    <hediffClass>HSK.Watcher.Content.Compes.Hediff_RandomStatProsthetic</hediffClass>
+    <defaultLabelColor>(1.0, 0.75, 0.0)</defaultLabelColor>
+    <stages>
+      <li>
+        <label>abnormal arm</label>
+      </li>
+    </stages>
+    
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>blade</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>14</power>
+            <cooldownTime>2</cooldownTime>
+          </li>
+        </tools>
+      </li>
+      
+      <!-- Настройки для РУКИ: Manipulation + Consciousness -->
+      <li Class="HSK.Watcher.Content.Compes.HediffCompProperties_RandomStatProsthetic">
+        <labelPrefix>AbnormalArm</labelPrefix>
+        
+        <manipMin>0.1</manipMin>
+        <manipMax>0.8</manipMax>
+        <consciousMin>-0.15</consciousMin>
+        <consciousMax>-0.01</consciousMax>
+        
+        <beautyMin>-0.2</beautyMin>
+        <beautyMax>-0.05</beautyMax>
+        <breakMin>-0.04</breakMin>
+        <breakMax>-0.01</breakMax>
+        <painMin>0.01</painMin>
+        <painMax>0.05</painMax>
+        <hungerMin>0.01</hungerMin>
+        <hungerMax>0.05</hungerMax>
+        
+        <generateRandomLabel>true</generateRandomLabel>
+      </li>
+    </comps>
+    
+    <spawnThingOnRemoved>AbnormalArm</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+  
+  
+  <ThingDef ParentName="BodyPartBase">
+    <defName>AbnormalArm</defName>
+    <label>abnormal arm</label>
+    <description>This limb deceptively resembles an advanced bionic prosthesis—until you see it in action. Its segments are cast from living iron (Bioferrite) with pulsating dark veins, and the joints are covered with chitinous plates. This isn't just a replacement arm. It's a hybrid, where high technology meets something that comes from beyond the realm of known reality.</description>
+    <descriptionHyperlinks><RecipeDef>InstallAbnormalArm</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/AbnormalHand</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <costList>
+         <ComponentAdvanced>1</ComponentAdvanced>
+		<Meat_Twisted>16</Meat_Twisted>
+		<ArtificialBone>2</ArtificialBone>
+		<Microchips>1</Microchips>
+        <Bioferrite>15</Bioferrite>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallAbnormalArm</defName>
+    <label>install abnormal arm</label>
+    <description>Install a abnormal arm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AbnormalArm</ThingDef>
+      <HediffDef>AbnormalArm</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing abnormal arm.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AbnormalArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AbnormalArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AbnormalArm</addsHediff>
+  </RecipeDef>
+
+
+
+	 <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Grow_AbnormalArm</defName>
+        <label>Grow abnormal arm</label>
+        <description>Grow abnormal arm. Takes 1.5 days to make</description>
+        <ingredients>
+       <li>
+                <filter>
+                    <thingDefs>
+                        <li>Meat_Twisted</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>ArtificialBone</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chitin</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>Bioferrite</li>
+                    </thingDefs>
+                </filter>
+                <count>22</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>Shard</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <AbnormalArm>1</AbnormalArm>
+        </products>
+        <recipeUsers>
+            <li>TableOrganvat</li>
+        </recipeUsers>
+        <researchPrerequisite>Prosthesis_making_D2</researchPrerequisite>
+
+        <!-- RecipeDef_UF fields -->
+        <ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>1</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+        <usesTemperature>false</usesTemperature>
+        <processDays>1.5</processDays>
+    </RecipeDef>
+	
+	
+		 <!-- Abnormal Spine -->
+   <HediffDef>
+    <defName>AbnormalSpine</defName>
+    <label>abnormal spine</label>
+    <labelNoun>an abnormal spine</labelNoun>
+    <description>At first glance, this appears to be an advanced bionic spine—flexible, resilient, and perfectly aligned. But a closer inspection reveals the truth: the vertebrae are not titanium, but fused segments of living bone-metal, pulsing with dark veins that seem to breathe in rhythm with the host. The spinal cord itself has been replaced by something... aware. This is not a prosthesis. It is a symbiote that anchors itself to the nervous system, rewriting the body's limits from within.</description>
+    
+    <hediffClass>HSK.Watcher.Content.Compes.Hediff_RandomStatProsthetic</hediffClass>
+    
+   <defaultLabelColor>(1.0, 0.75, 0.0)</defaultLabelColor>
+    <isBad>false</isBad>
+    <priceImpact>true</priceImpact>
+    <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+    <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+    
+    <stages>
+      <li>
+        <label>abnormal spine</label>
+      </li>
+    </stages>
+    
+    <comps>
+      <!-- Настройки для ПОЗВОНОЧНИКА: Moving + Manipulation + Breathing + Pain -->
+      <li Class="HSK.Watcher.Content.Compes.HediffCompProperties_RandomStatProsthetic">
+        <labelPrefix>AbnormalSpine</labelPrefix>
+        <movingMin>0.15</movingMin>
+        <movingMax>0.6</movingMax>
+        <manipMin>0.1</manipMin>
+        <manipMax>0.4</manipMax>
+        <breathingMin>0.05</breathingMin>
+        <breathingMax>0.2</breathingMax>
+        <beautyMin>-0.25</beautyMin>
+        <beautyMax>-0.05</beautyMax>
+        <breakMin>-0.05</breakMin>
+        <breakMax>-0.01</breakMax>
+        <painMin>0.02</painMin>
+        <painMax>0.08</painMax>
+        <hungerMin>0.01</hungerMin>
+        <hungerMax>0.04</hungerMax>
+        <generateRandomLabel>true</generateRandomLabel>
+      </li>
+    </comps>
+    
+    <spawnThingOnRemoved>AbnormalSpine</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.40</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+  
+  
+  <ThingDef ParentName="BodyPartBase">
+    <defName>AbnormalSpine</defName>
+    <label>abnormal spine</label>
+    <description>This is no mere prosthetic—this is a living parasite that has taken the form of a spinal column. Segments of chitinous bone interlock with pulsating tendrils of living iron (Bioferrite), burrowing deep into the host's nervous system. It observes. It learns. It waits. The host believes they are in control, but every movement, every thought, every instinct is subtly guided by the parasite's ancient will. This is not a replacement spine. This is a new master, wearing the guise of a medical miracle.</description>
+    <descriptionHyperlinks><RecipeDef>InstallAbnormalSpine</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/AbnormalSpine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <costList>
+         <ComponentAdvanced>1</ComponentAdvanced>
+		<Meat_Twisted>16</Meat_Twisted>
+		<ArtificialBone>2</ArtificialBone>
+		<Microchips>1</Microchips>
+        <Bioferrite>15</Bioferrite>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallAbnormalSpine</defName>
+    <label>install abnormal spine</label>
+    <description>Install a abnormal spine.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AbnormalSpine</ThingDef>
+      <HediffDef>AbnormalSpine</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing abnormal spine.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AbnormalSpine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AbnormalSpine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Spine</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AbnormalSpine</addsHediff>
+  </RecipeDef>
+
+
+
+	 <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Grow_AbnormalSpine</defName>
+        <label>Grow abnormal spine</label>
+        <description>Grow abnormal spine. Takes 1.5 days to make</description>
+        <ingredients>
+       <li>
+                <filter>
+                    <thingDefs>
+                        <li>Meat_Twisted</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>HemogenPack</li>
+                    </thingDefs>
+                </filter>
+                <count>14</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chitin</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>Bioferrite</li>
+                    </thingDefs>
+                </filter>
+                <count>22</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>Shard</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <AbnormalArm>1</AbnormalArm>
+        </products>
+        <recipeUsers>
+            <li>TableOrganvat</li>
+        </recipeUsers>
+        <researchPrerequisite>Prosthesis_making_D2</researchPrerequisite>
+
+        <!-- RecipeDef_UF fields -->
+        <ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>1</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+        <usesTemperature>false</usesTemperature>
+        <processDays>1.5</processDays>
+    </RecipeDef>
+	
+	
+			 <!-- Abnormal Heart -->
+ <HediffDef>
+  <defName>AbnormalHeart</defName>
+  <label>abnormal heart</label>
+  <labelNoun>an abnormal heart</labelNoun>
+  <description>At first, it looks like a pinnacle of bionic engineering—a perfect replica of a human heart, beating with mechanical precision. But press your ear against the chest, and you will hear something wrong. The rhythm is not steady; it shifts, adapts, almost thinks. The chambers are lined with living tissue that should not exist, pulsing with a faint crimson glow. This organ does not just pump blood. It hungers for it, accelerates it, transforms the entire circulatory system into something beyond human limits. But such power comes at a cost—the heart remembers its true nature, and from time to time, it demands to be heard.</description>
+  
+  <hediffClass>HSK.Watcher.Content.Compes.Hediff_RandomStatProsthetic</hediffClass>
+  
+ <defaultLabelColor>(1.0, 0.75, 0.0)</defaultLabelColor>
+  <isBad>false</isBad>
+  <priceImpact>true</priceImpact>
+  <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+  <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+  <abilities>
+    <li>EntitySkip</li>
+  </abilities>
+  
+  <stages>
+    <li>
+      <label>abnormal heart</label>
+      <painOffset>0.01</painOffset>
+      <hungerRateFactor>1.1</hungerRateFactor>
+      
+      <hediffGivers>
+        <li Class="HediffGiver_Random">
+          <hediff>HeartAttack</hediff>
+          <mtbDays>25</mtbDays>
+          <partsToAffect>
+            <li>Heart</li>
+          </partsToAffect>
+        </li>
+      </hediffGivers>
+    </li>
+  </stages>
+  
+  <comps>
+    <!-- Настройки для СЕРДЦА -->
+    <li Class="HSK.Watcher.Content.Compes.HediffCompProperties_RandomStatProsthetic">
+      <labelPrefix>AbnormalHeart</labelPrefix>
+      
+      <!-- Кровообращение (BloodPumping) - основной параметр сердца -->
+      <bloodPumpingMin>0.2</bloodPumpingMin>
+      <bloodPumpingMax>0.7</bloodPumpingMax>
+      
+      <!-- Фильтрация крови (BloodFiltration) - улучшенная очистка -->
+      <bloodFiltrationMin>0.1</bloodFiltrationMin>
+      <bloodFiltrationMax>0.4</bloodFiltrationMax>
+      
+      <!-- Передвижение (Moving) - больше энергии = быстрее -->
+      <movingMin>0.05</movingMin>
+      <movingMax>0.25</movingMax>
+      
+      <!-- Общие параметры -->
+      <beautyMin>-0.2</beautyMin>
+      <beautyMax>-0.05</beautyMax>
+      <breakMin>-0.03</breakMin>
+      <breakMax>-0.01</breakMax>
+      <painMin>0.01</painMin>
+      <painMax>0.04</painMax>
+      
+      <!-- Сердце-живое требует больше пищи -->
+      <hungerMin>0.05</hungerMin>
+      <hungerMax>0.15</hungerMax>
+      
+      <generateRandomLabel>true</generateRandomLabel>
+    </li>
+  </comps>
+  
+  <spawnThingOnRemoved>AbnormalHeart</spawnThingOnRemoved>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.15</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+</HediffDef>
+  
+  
+  <ThingDef ParentName="BodyPartBase">
+    <defName>AbnormalHeart</defName>
+    <label>abnormal heart</label>
+   <description>This is a body horror born from the anomaly—a heart woven from living iron and chitin, pulsing with dark ichor instead of blood. It beats with a rhythm that feels ancient, hungry, alive. The host feels it spreading, rewriting their flesh from the inside. This is not a replacement—it's a metamorphosis.</description>
+    <descriptionHyperlinks><RecipeDef>InstallAbnormalHeart</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/AbnormalHeart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <costList>
+         <ComponentAdvanced>1</ComponentAdvanced>
+		<Meat_Twisted>16</Meat_Twisted>
+		<ArtificialBone>2</ArtificialBone>
+		<Microchips>1</Microchips>
+        <Bioferrite>15</Bioferrite>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallAbnormalHeart</defName>
+    <label>install abnormal heart</label>
+    <description>Install a abnormal heart.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AbnormalHeart</ThingDef>
+      <HediffDef>AbnormalHeart</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing abnormal heart.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AbnormalHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AbnormalSpine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AbnormalHeart</addsHediff>
+  </RecipeDef>
+
+
+
+	 <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Grow_AbnormalHeart</defName>
+        <label>Grow abnormal heart</label>
+        <description>Grow abnormal heart. Takes 1.5 days to make</description>
+        <ingredients>
+       <li>
+                <filter>
+                    <thingDefs>
+                        <li>Meat_Twisted</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>HemogenPack</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chitin</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>Bioferrite</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>Heart</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <AbnormalHeart>1</AbnormalHeart>
+        </products>
+        <recipeUsers>
+            <li>TableOrganvat</li>
+        </recipeUsers>
+        <researchPrerequisite>Prosthesis_making_D2</researchPrerequisite>
+
+        <!-- RecipeDef_UF fields -->
+        <ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>1</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+        <usesTemperature>false</usesTemperature>
+        <processDays>1.5</processDays>
+    </RecipeDef>
+	
+<!-- Abnormal Stomach -->
+     <HediffDef>
+    <defName>AbnormalStomach</defName>
+    <label>abnormal stomach</label>
+    <labelNoun>an abnormal stomach</labelNoun>
+    <description>This appears to be an advanced bionic stomach—until you feel it churn. Its living iron (Bioferrite) lining produces a viscous, corrosive toxin under pressure. This organ does not just digest—it manufactures a weapon. A stomach born from the anomaly, capable of expelling concentrated poison at a moment's notice.</description>
+    
+    <hediffClass>HSK.Watcher.Content.Compes.Hediff_RandomStatProsthetic</hediffClass>
+    
+   <defaultLabelColor>(1.0, 0.75, 0.0)</defaultLabelColor>
+    <isBad>false</isBad>
+    <priceImpact>true</priceImpact>
+    <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+    <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+    <abilities>
+      <li>AcidSpray</li>
+    </abilities>
+    <stages>
+      <li>
+        <label>abnormal stomach</label>
+		 <makeImmuneTo>
+          <li>GutWorms</li>
+        </makeImmuneTo>
+        <foodPoisoningChanceFactor>0.1</foodPoisoningChanceFactor>
+      </li>
+    </stages>
+    
+    <comps>
+       <li Class="HSK.Watcher.Content.Compes.HediffCompProperties_RandomStatProsthetic">
+        <manipMin>0.05</manipMin>
+        <manipMax>0.15</manipMax>
+        <consciousMin>-0.05</consciousMin>
+        <consciousMax>-0.01</consciousMax>
+        <beautyMin>-0.1</beautyMin>
+        <beautyMax>-0.03</beautyMax>
+        <breakMin>-0.02</breakMin>
+        <breakMax>-0.01</breakMax>
+        <painMin>0.01</painMin>
+        <painMax>0.03</painMax>
+        <hungerMin>-0.1</hungerMin>
+        <hungerMax>-0.02</hungerMax>
+        <generateRandomLabel>true</generateRandomLabel>
+      </li>
+    </comps>
+    
+    <spawnThingOnRemoved>AbnormalStomach</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+  
+  
+  <ThingDef ParentName="BodyPartBase">
+    <defName>AbnormalStomach</defName>
+    <label>abnormal stomach</label>
+   <description>This appears to be an advanced bionic stomach—until you feel it churn. Its living iron (Bioferrite) lining produces a viscous, corrosive toxin under pressure. This organ does not just digest—it manufactures a weapon. A stomach born from the anomaly, capable of expelling concentrated poison at a moment's notice..</description>
+    <descriptionHyperlinks><RecipeDef>InstallAbnormalStomach</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/AbnormalStomach</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <costList>
+         <ComponentAdvanced>1</ComponentAdvanced>
+		<Meat_Twisted>16</Meat_Twisted>
+		<ArtificialBone>2</ArtificialBone>
+		<Microchips>1</Microchips>
+        <Bioferrite>15</Bioferrite>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallAbnormalStomach</defName>
+    <label>install abnormal stomach</label>
+    <description>Install a abnormal stomach.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AbnormalStomach</ThingDef>
+      <HediffDef>AbnormalStomach</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing abnormal stomach.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AbnormalStomach</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AbnormalStomach</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Stomach</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AbnormalStomach</addsHediff>
+  </RecipeDef>
+
+
+
+	 <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Grow_AbnormalStomach</defName>
+        <label>Grow abnormal stomach</label>
+        <description>Grow abnormal stomach. Takes 1.5 days to make</description>
+        <ingredients>
+       <li>
+                <filter>
+                    <thingDefs>
+                        <li>Meat_Twisted</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>HemogenPack</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chitin</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>Bioferrite</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>Stomach</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <AbnormalStomach>1</AbnormalStomach>
+        </products>
+        <recipeUsers>
+            <li>TableOrganvat</li>
+        </recipeUsers>
+        <researchPrerequisite>Prosthesis_making_D2</researchPrerequisite>
+
+        <!-- RecipeDef_UF fields -->
+        <ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>1</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+        <usesTemperature>false</usesTemperature>
+        <processDays>1.5</processDays>
+    </RecipeDef>
+
+
+  <!-- Abnormal Eye -->
+  <HediffDef>
+    <defName>AbnormalEye</defName>
+    <label>abnormal eye</label>
+    <labelNoun>abnormal eye</labelNoun>
+    <description>These eyes appear ordinary at first glance—dark irises, perfect pupils, almost beautiful. But look closer, and you will see the faint shimmer of living iron (Bioferrite) woven into the retina. They do not just see light; they see the truth that hides in the shadows. Invisible entities, spectral anomalies, beings that exist between moments—all are laid bare before this gaze. The host sees what others cannot, and nothing remains hidden.</description>
+    
+    <hediffClass>HSK.Watcher.Content.Compes.Hediff_RandomStatProsthetic</hediffClass>
+    
+    <defaultLabelColor>(1.0, 0.75, 0.0)</defaultLabelColor>
+    <isBad>false</isBad>
+    <priceImpact>true</priceImpact>
+    <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+    <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+    
+    <!-- ПУСТАЯ СТАДИЯ — все параметры задаются кодом -->
+    <stages>
+      <li>
+        <label>abnormal eyes</label>
+      </li>
+    </stages>
+    
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Wounds/BionicEye</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, 0)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    
+    <comps>
+      <!-- Компонент обнаружения невидимости -->
+      <li Class="HSK.Watcher.Content.Compes.HediffCompProperties_InvisibilityDetection">
+        <detectionRadius>50</detectionRadius>
+        <detectionChance>1.0</detectionChance>
+      </li>
+      
+      <!-- Настройки для глаз -->
+      <li Class="HSK.Watcher.Content.Compes.HediffCompProperties_RandomStatProsthetic">
+        <labelPrefix>AbnormalEye</labelPrefix>
+        
+        <!-- Зрение -->
+        <sightMin>0.05</sightMin>
+        <sightMax>0.3</sightMax>
+        
+        <!-- Общие параметры -->
+        <beautyMin>0.05</beautyMin>
+        <beautyMax>0.15</beautyMax>
+        <breakMin>-0.02</breakMin>
+        <breakMax>-0.01</breakMax>
+        <painMin>0.01</painMin>
+        <painMax>0.03</painMax>
+        <hungerMin>0.01</hungerMin>
+        <hungerMax>0.03</hungerMax>
+        
+        <generateRandomLabel>true</generateRandomLabel>
+      </li>
+    </comps>
+    
+    <spawnThingOnRemoved>AbnormalEye</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.2</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+<ThingDef ParentName="BodyPartBase">
+    <defName>AbnormalEye</defName>
+    <label>abnormal eye</label>
+   <description>Eyes woven from living iron and shadow. They see through flesh, through lies, through the veil between worlds. Invisible horrors are laid bare before this gaze—but the host feels them looking back. Nothing remains hidden. Nothing is safe.</description>
+    <descriptionHyperlinks><RecipeDef>InstallAbnormalEye</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/AbnormalEye</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <costList>
+         <ComponentAdvanced>1</ComponentAdvanced>
+		<Meat_Twisted>16</Meat_Twisted>
+		<ArtificialBone>2</ArtificialBone>
+		<Microchips>1</Microchips>
+        <Bioferrite>15</Bioferrite>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>0.3</Mass>
+    </statBases>
+  </ThingDef>
+
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallAbnormalEye</defName>
+    <label>install abnormal eye</label>
+    <description>Install a abnormal eye.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AbnormalEye</ThingDef>
+      <HediffDef>AbnormalEye</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing abnormal eyes.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AbnormalEye</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AbnormalEye</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AbnormalEye</addsHediff>
+  </RecipeDef>
+
+
+ <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>Grow_AbnormalEye</defName>
+        <label>Grow abnormal eye</label>
+        <description>Grow abnormal eye. Takes 1.5 days to make</description>
+        <ingredients>
+       <li>
+                <filter>
+                    <thingDefs>
+                        <li>Meat_Twisted</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>HemogenPack</li>
+                    </thingDefs>
+                </filter>
+                <count>14</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>Bioferrite</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+			 <li>
+                <filter>
+                    <thingDefs>
+                        <li>Eye</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <AbnormalEye>1</AbnormalEye>
+        </products>
+        <recipeUsers>
+            <li>TableOrganvat</li>
+        </recipeUsers>
+        <researchPrerequisite>Prosthesis_making_D2</researchPrerequisite>
+
+        <!-- RecipeDef_UF fields -->
+        <ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>1</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+        <usesTemperature>false</usesTemperature>
+        <processDays>1.5</processDays>
+    </RecipeDef>
+
+   <!-- Abnormal Regeneration Gland - ThingDef -->
+  <ThingDef ParentName="BodyPartBase">
+    <defName>AbnormalRegenerationGland</defName>
+    <label>abnormal regeneration gland</label>
+    <description>It whispers to you from the darkness between your heartbeats. A pulse. A promise. A price. This small, pulsing creature—part flesh, part something more ancient—adheres to your brainstem like a leech to a wound. It doesn't save. It bargains. When death comes for you, it offers a deal: your life for a piece of your soul. It pulls you from the abyss, weaves your flesh, makes your heart beat again—but each resurrection feeds it, changes you, empties you. Remove it, and it will not go quietly. It will burn your mind to ash, erase every thought, every memory, every fragment of who you were. The void doesn't give gifts. It lends. And it always takes.</description>
+    <descriptionHyperlinks><RecipeDef>InstallAbnormalRegenerationGland</RecipeDef></descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Health/AbnormalRegenerationGland</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <costList>
+      <ComponentAdvanced>3</ComponentAdvanced>
+      <Meat_Twisted>25</Meat_Twisted>
+      <ArtificialBone>4</ArtificialBone>
+      <Microchips>3</Microchips>
+      <Bioferrite>25</Bioferrite>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>0.3</Mass>
+    </statBases>
+  </ThingDef>
+
+  <!-- Abnormal Regeneration Gland - HediffDef -->
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>AbnormalRegenerationGland</defName>
+    <label>abnormal regeneration gland</label>
+    <labelNoun>an abnormal regeneration gland</labelNoun>
+    <description>Each coma feeds the parasite, slowly hollowing you out. After three comas, the void takes its payment.</description>
+    
+    <hediffClass>HSK.Watcher.Content.Compes.Hediff_RandomStatProsthetic</hediffClass>
+    
+    <defaultLabelColor>(0.9, 0.3, 0.1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <priceImpact>true</priceImpact>
+    <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+    <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+    
+    <stages>
+      <li>
+        <label>abnormal regeneration gland</label>
+        <capMods>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>0.05</offset>
+          </li>
+        </capMods>
+        <painOffset>0.01</painOffset>
+        <hungerRateFactor>1.05</hungerRateFactor>
+      </li>
+    </stages>
+    
+    <comps>
+      <!-- Компонент для комы при критических ранениях -->
+      <li Class="HSK.Watcher.Content.Compes.HediffCompProperties_RegenerationComaTrigger">
+        <regenerationHediffDef>AbnormalRegenerationComa</regenerationHediffDef>
+        <blissLobotomyDef>AbnormalBlissLobotomy</blissLobotomyDef>
+        <healthThreshold>0.15</healthThreshold>
+        <checkIntervalTicks>60</checkIntervalTicks>
+        <cooldownDays>7</cooldownDays>
+        <maxComas>3</maxComas>
+      </li>
+      
+      <!-- Компонент самоуничтожения при удалении -->
+      <li Class="HSK.Watcher.Content.Compes.HediffCompProperties_SelfDestructOnRemove">
+        <destructionMessage>The void takes what was promised. Consciousness erased. Nervous system burned to nothing.</destructionMessage>
+      </li>
+      
+      <!-- Компонент случайных параметров -->
+      <li Class="HSK.Watcher.Content.Compes.HediffCompProperties_RandomStatProsthetic">
+        <labelPrefix>AbnormalRegenerationGland</labelPrefix>
+        <beautyMin>-0.05</beautyMin>
+        <beautyMax>0.05</beautyMax>
+        <breakMin>-0.02</breakMin>
+        <breakMax>-0.01</breakMax>
+        <painMin>0.01</painMin>
+        <painMax>0.03</painMax>
+        <hungerMin>0.02</hungerMin>
+        <hungerMax>0.06</hungerMax>
+        <generateRandomLabel>true</generateRandomLabel>
+      </li>
+    </comps>
+    
+    <spawnThingOnRemoved>AbnormalRegenerationGland</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.0</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <!-- Abnormal Regeneration Coma -->
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>AbnormalRegenerationComa</defName>
+    <label>abnormal regeneration coma</label>
+    <description>The parasite has taken full control. The host's body is being rebuilt from the inside—wounds closing, organs regrowing, blood flowing again.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <initialSeverity>0.001</initialSeverity>
+    <defaultLabelColor>(0.9, 0.3, 0.1)</defaultLabelColor>
+    <forceRemoveOnResurrection>true</forceRemoveOnResurrection>
+    
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+        <painOffset>0.01</painOffset>
+      </li>
+    </stages>
+    
+    <comps>
+      <li Class="HSK.Watcher.Content.Compes.HediffCompProperties_RegenerationComa">
+        <regenerationTicks>420000</regenerationTicks>
+        <regenerationRate>0.15</regenerationRate>
+        <healRate>0.2</healRate>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <!-- Abnormal Bliss Lobotomy -->
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>AbnormalBlissLobotomy</defName>
+    <label>abnormal bliss lobotomy</label>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>The void took its payment. This person has been psychically lobotomized—their mind shattered, their will broken, their soul hollowed out. They exist in a state of bliss, but there is nothing left of who they were.</description>
+    <clearsEgo>true</clearsEgo>
+    <defaultLabelColor>(0.8, 0.9, 0.6)</defaultLabelColor>
+    <isBad>true</isBad>
+    <stages>
+      <li>
+        <disabledWorkTags>
+          <li>Intellectual</li>
+          <li>ManualSkilled</li>
+        </disabledWorkTags>
+        <statOffsets>
+          <GlobalLearningFactor>-0.5</GlobalLearningFactor>
+          <MentalBreakThreshold>0.2</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_ThoughtSetter">
+        <thought>BlissLobotomy</thought>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <!-- RecipeDef для установки -->
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallAbnormalRegenerationGland</defName>
+    <label>install abnormal regeneration gland</label>
+    <description>Install a regeneration gland into the brainstem. The parasite fuses with the grey matter. The bond is absolute.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AbnormalRegenerationGland</ThingDef>
+      <HediffDef>AbnormalRegenerationGland</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing regeneration gland.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AbnormalRegenerationGland</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AbnormalRegenerationGland</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AbnormalRegenerationGland</addsHediff>
+  </RecipeDef>
+
+  <!-- RecipeDef для выращивания -->
+  <RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+    <defName>Grow_AbnormalRegenerationGland</defName>
+    <label>Grow abnormal regeneration gland</label>
+    <description>Grow a regeneration gland. Takes 12.5 days. The void grows patient.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Meat_Twisted</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HemogenPack</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Bioferrite</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RottedMeat</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Microchips</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <AbnormalRegenerationGland>1</AbnormalRegenerationGland>
+    </products>
+    <recipeUsers>
+      <li>TableOrganvat</li>
+    </recipeUsers>
+    <researchPrerequisite>Prosthesis_making_D2</researchPrerequisite>
+
+    <ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>1</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+    <usesTemperature>false</usesTemperature>
+    <processDays>12.5</processDays>
+  </RecipeDef>
+
+
+
+
+   <HediffDef>
+    <defName>HealingGasHediff</defName>
+    <label>healing gas</label>
+    <labelNoun>healing gas exposure</labelNoun>
+    <description>Healing gas saturates the body, rapidly regenerating tissues and suppressing pain. High concentrations cause lightheadedness. Effect fades gradually after leaving the cloud.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.3, 0.7, 1.0)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>1.0</maxSeverity>
+    <initialSeverity>0.8</initialSeverity>
+    <comps>
+        <li Class="HediffCompProperties_SeverityPerDay">
+            <severityPerDay>-8.0</severityPerDay>
+        </li>
+    </comps>
+    <stages>
+        <li>
+            <label>residual</label>
+            <minSeverity>0</minSeverity>
+            <painFactor>0.9</painFactor>
+            <regeneration>5</regeneration>
+            <capMods>
+                <li>
+                    <capacity>BloodFiltration</capacity>
+                    <offset>0.05</offset>
+                </li>
+            </capMods>
+            <statOffsets>
+                <ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+            </statOffsets>
+        </li>
+        <li>
+            <label>active</label>
+            <minSeverity>0.2</minSeverity>
+            <painFactor>0.5</painFactor>
+            <regeneration>20</regeneration>
+            <capMods>
+                <li>
+                    <capacity>BloodPumping</capacity>
+                    <offset>0.1</offset>
+                </li>
+                <li>
+                    <capacity>BloodFiltration</capacity>
+                    <offset>0.1</offset>
+                </li>
+            </capMods>
+            <statOffsets>
+                <ImmunityGainSpeed>0.3</ImmunityGainSpeed>
+            </statOffsets>
+            <statFactors>
+                <IncomingDamageFactor>0.75</IncomingDamageFactor>
+            </statFactors>
+        </li>
+        <li>
+            <label>peak</label>
+            <minSeverity>0.5</minSeverity>
+            <painOffset>-0.4</painOffset>
+            <regeneration>40</regeneration>
+            <capMods>
+                <li>
+                    <capacity>BloodPumping</capacity>
+                    <offset>0.15</offset>
+                </li>
+                <li>
+                    <capacity>BloodFiltration</capacity>
+                    <offset>0.15</offset>
+                </li>
+                <li>
+                    <capacity>Consciousness</capacity>
+                    <setMax>0.85</setMax>
+                </li>
+            </capMods>
+            <statOffsets>
+                <ImmunityGainSpeed>0.5</ImmunityGainSpeed>
+            </statOffsets>
+            <statFactors>
+                <IncomingDamageFactor>0.55</IncomingDamageFactor>
+                <WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+                <MoveSpeed>-0.1</MoveSpeed>
+            </statFactors>
+        </li>
+    </stages>
+</HediffDef>
+
+    <HediffDef>
+        <defName>TearGasHediff</defName>
+        <label>tear gas</label>
+        <description>Irritant gas causes severe eye burning, coughing, and temporary blindness.</description>
+     <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1.0, 0.5, 0.0)</defaultLabelColor>
+    <isBad>true</isBad>
+    <maxSeverity>1.0</maxSeverity>
+    <makesSickThought>true</makesSickThought>
+    <comps>
+        <li Class="HediffCompProperties_SeverityPerDay">
+            <severityPerDay>-20</severityPerDay>
+        </li>
+    </comps>
+    <stages>
+        <li>
+            <label>watery eyes</label>
+            <minSeverity>0</minSeverity>
+            <becomeVisible>false</becomeVisible>
+            <painOffset>0.02</painOffset>
+            <capMods>
+                <li>
+                    <capacity>Sight</capacity>
+                    <offset>-0.1</offset>
+                </li>
+            </capMods>
+            <statOffsets>
+                <Suppressability>0.2</Suppressability>
+            </statOffsets>
+        </li>
+        <li>
+            <label>burning irritation</label>
+            <minSeverity>0.1</minSeverity>
+            <painOffset>0.08</painOffset>
+            <capMods>
+                <li>
+                    <capacity>Sight</capacity>
+                    <offset>-0.3</offset>
+                </li>
+                <li>
+                    <capacity>Breathing</capacity>
+                    <offset>-0.15</offset>
+                </li>
+            </capMods>
+            <statOffsets>
+                <Suppressability>0.5</Suppressability>
+                <MeleeHitChance>-0.1</MeleeHitChance>
+            </statOffsets>
+        </li>
+        <li>
+            <label>severe burning</label>
+            <minSeverity>0.25</minSeverity>
+            <painOffset>0.2</painOffset>
+            <vomitMtbDays>3</vomitMtbDays>
+            <capMods>
+                <li>
+                    <capacity>Sight</capacity>
+                    <offset>-0.6</offset>
+                </li>
+                <li>
+                    <capacity>Breathing</capacity>
+                    <offset>-0.35</offset>
+                </li>
+                <li>
+                    <capacity>Consciousness</capacity>
+                    <offset>-0.1</offset>
+                </li>
+            </capMods>
+            <statOffsets>
+                <Suppressability>1.0</Suppressability>
+                <MeleeHitChance>-0.25</MeleeHitChance>
+                <MoveSpeed>-0.15</MoveSpeed>
+            </statOffsets>
+        </li>
+        <li>
+            <label>blindness and choking</label>
+            <minSeverity>0.5</minSeverity>
+            <painOffset>0.35</painOffset>
+            <vomitMtbDays>0.8</vomitMtbDays>
+            <!-- ВАНИЛЬНОЕ БЕГСТВО: пешка впадает в панику и убегает -->
+            <mentalStateGivers>
+                <li>
+                    <mentalState>PanicFlee</mentalState>
+                    <mtbDays>0.1</mtbDays>
+                </li>
+            </mentalStateGivers>
+            <capMods>
+                <li>
+                    <capacity>Sight</capacity>
+                    <setMax>0</setMax>
+                </li>
+                <li>
+                    <capacity>Breathing</capacity>
+                    <offset>-0.5</offset>
+                </li>
+                <li>
+                    <capacity>Consciousness</capacity>
+                    <offset>-0.2</offset>
+                </li>
+                <li>
+                    <capacity>Hearing</capacity>
+                    <offset>-0.2</offset>
+                </li>
+            </capMods>
+            <statOffsets>
+                <Suppressability>1.8</Suppressability>
+                <MeleeHitChance>-0.5</MeleeHitChance>
+                <MoveSpeed>-0.4</MoveSpeed>
+            </statOffsets>
+        </li>
+        <li>
+            <label>suffocation</label>
+            <minSeverity>0.75</minSeverity>
+            <painOffset>0.5</painOffset>
+            <vomitMtbDays>0.3</vomitMtbDays>
+            <!-- Почти гарантированный PanicFlee -->
+            <mentalStateGivers>
+                <li>
+                    <mentalState>PanicFlee</mentalState>
+                    <mtbDays>0.05</mtbDays>
+                </li>
+            </mentalStateGivers>
+            <capMods>
+                <li>
+                    <capacity>Sight</capacity>
+                    <setMax>0</setMax>
+                </li>
+                <li>
+                    <capacity>Breathing</capacity>
+                    <setMax>0.1</setMax>
+                </li>
+                <li>
+                    <capacity>Consciousness</capacity>
+                    <setMax>0.2</setMax>
+                </li>
+                <li>
+                    <capacity>Hearing</capacity>
+                    <setMax>0.3</setMax>
+                </li>
+            </capMods>
+            <statOffsets>
+                <Suppressability>2.5</Suppressability>
+                <MeleeHitChance>-0.8</MeleeHitChance>
+                <MoveSpeed>-0.6</MoveSpeed>
+            </statOffsets>
+        </li>
+    </stages>
+</HediffDef>
+
+ <HediffDef ParentName="InfectionBase">
+        <defName>ExplosiveParasite</defName>
+        <label>explosive parasite</label>
+        <labelNoun>an explosive parasite</labelNoun>
+        <description>Uncontrolled reproduction of parasites inside the organism causes severe bloating and accumulation of volatile toxic substances. When tissues are damaged or struck, the pressure inside the body spikes sharply, triggering a powerful explosion with gas release.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.8, 0.2, 0.2)</defaultLabelColor>
+        <initialSeverity>0.01</initialSeverity>
+        <skinColorTint>(0.2, 0.5, 0.1)</skinColorTint>
+        <skinColorTintStrength>0.3</skinColorTintStrength>
+        <forceRenderTreeRecache>true</forceRenderTreeRecache>
+		<renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Overlay">
+        <debugLabel>explosive parasite</debugLabel>
+        <workerClass>PawnRenderNodeWorker_OverlayScaria</workerClass>
+        <overlayLayer>Body</overlayLayer>
+        <baseLayer>20</baseLayer>
+        <pawnType>HumanlikeOnly</pawnType>
+      </li>
+      <li>
+        <debugLabel>explosive parasite</debugLabel>
+        <nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+        <workerClass>PawnRenderNodeWorker_OverlayScaria</workerClass>
+        <overlayLayer>Body</overlayLayer>
+        <baseLayer>20</baseLayer>
+        <pawnType>NonHumanlikeOnly</pawnType>
+      </li>
+	  
+	    
+    
+    </renderNodeProperties>
+        <comps>
+            <li Class="HSK.Watcher.Content.Incident.HediffCompProperties_ExplosiveOnDamage">
+                <explosionRadius>3.9</explosionRadius>
+                <explosionDamageType>Thermobaric</explosionDamageType>
+                <explosionDamage>15</explosionDamage>
+                <chanceToExplode>1.0</chanceToExplode>
+                <postExplosionGasType>ToxGas</postExplosionGasType>
+                <postExplosionGasRadius>4.0</postExplosionGasRadius>
+                <letterLabelKey>HSK_ExplosiveParasite_LetterLabel</letterLabelKey>
+                <letterTextKey>HSK_ExplosiveParasite_LetterText</letterTextKey>
+                <letterDef>NegativeEvent</letterDef>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <label>infected</label>
+                <becomeVisible>true</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+	
+	<HediffDef>
+		<defName>HadAdjika</defName>
+		<label>ate Adjika</label>
+        <description>I ate a spicy paste made from fiery peppers and wild herbs. I felt the searing heat coursing through my veins, warming my body and clearing my mind...</description>
+		<isBad>false</isBad>
+		<initialSeverity>1</initialSeverity>
+		<hediffClass>HediffWithComps</hediffClass>
+		 <abilities>
+          <li>FireSpew</li>
+         </abilities>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.7</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+			
+				<minSeverity>0</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.25</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<GlobalLearningFactor>0.1</GlobalLearningFactor>
+	                 <ComfyTemperatureMax>-2</ComfyTemperatureMax>
+					<ComfyTemperatureMin>-12.5</ComfyTemperatureMin>				
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>	
+</Defs>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <KatXArt.label>Скульптура кота</KatXArt.label>
+  <KatXArt.description>Скульптура кота для колонии. Обеспечивает уют и комфорт.</KatXArt.description>
+
+  <WatcherArt.label>Скульптура Наблюдателя</WatcherArt.label>
+  <WatcherArt.description>Скульптура Наблюдателя для присмотра за колонией, снижает количество ошибок на 3%.</WatcherArt.description>
+
+  <Fumo.label>Скульптура Фумо</Fumo.label>
+  <Fumo.description>Статуя куклы с милыми глазами, похоже, была очень популярна среди двуногих млекопитающих столетия назад. Вы понятия не имеете, как она сюда попала. Вы постоянно чувствуете на себе чей-то взгляд. Кажется, кукла наблюдает за каждым вашим движением.</Fumo.description>
+
+
+</LanguageData>

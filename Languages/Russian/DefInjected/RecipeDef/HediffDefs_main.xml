@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <InstallAbnormalLeg.label>установить аномальную ногу</InstallAbnormalLeg.label>
+  <InstallAbnormalLeg.description>Хирургическая установка аномальной ноги. Плоть примет металл. Металл примет плоть. Границы сотрутся.</InstallAbnormalLeg.description>
+  <InstallAbnormalLeg.jobString>Установка аномальной ноги.</InstallAbnormalLeg.jobString>
+
+  <Grow_AbnormalLeg.label>вырастить аномальную ногу</Grow_AbnormalLeg.label>
+  <Grow_AbnormalLeg.description>Выращивание аномальной ноги. Займёт 1.5 дня. Плоть помнит. Металл ждёт.</Grow_AbnormalLeg.description>
+
+
+  <!-- Abnormal arm -->
+
+  <InstallAbnormalArm.label>установить аномальную руку</InstallAbnormalArm.label>
+  <InstallAbnormalArm.description>Хирургическая установка аномальной руки. Кровь встретится со сталью. Рука будет помнить.</InstallAbnormalArm.description>
+  <InstallAbnormalArm.jobString>Установка аномальной руки.</InstallAbnormalArm.jobString>
+
+  <Grow_AbnormalArm.label>вырастить аномальную руку</Grow_AbnormalArm.label>
+  <Grow_AbnormalArm.description>Выращивание аномальной руки. Займёт 1.5 дня. Сталь помнит прикосновения.</Grow_AbnormalArm.description>
+
+
+  <!-- Abnormal Spine -->
+
+  <InstallAbnormalSpine.label>установить аномальный позвоночник</InstallAbnormalSpine.label>
+  <InstallAbnormalSpine.description>Хирургическая установка аномального позвоночника. Кость срастётся с металлом. Ты больше не будешь один.</InstallAbnormalSpine.description>
+  <InstallAbnormalSpine.jobString>Установка аномального позвоночника.</InstallAbnormalSpine.jobString>
+
+  <Grow_AbnormalSpine.label>вырастить аномальный позвоночник</Grow_AbnormalSpine.label>
+  <Grow_AbnormalSpine.description>Выращивание аномального позвоночника. Займёт 1.5 дня. Нервы помнят путь.</Grow_AbnormalSpine.description>
+
+
+  <!-- Abnormal Heart -->
+
+  <InstallAbnormalHeart.label>установить аномальное сердце</InstallAbnormalHeart.label>
+  <InstallAbnormalHeart.description>Хирургическая установка аномального сердца. Оно будет биться. Оно будет жаждать. Ты почувствуешь каждый удар.</InstallAbnormalHeart.description>
+  <InstallAbnormalHeart.jobString>Установка аномального сердца.</InstallAbnormalHeart.jobString>
+
+  <Grow_AbnormalHeart.label>вырастить аномальное сердце</Grow_AbnormalHeart.label>
+  <Grow_AbnormalHeart.description>Выращивание аномального сердца. Займёт 1.5 дня. Кровь помнит свои пути.</Grow_AbnormalHeart.description>
+
+
+  <!-- Abnormal Stomach -->
+
+  <InstallAbnormalStomach.label>установить аномальный желудок</InstallAbnormalStomach.label>
+  <InstallAbnormalStomach.description>Хирургическая установка аномального желудка. Кислота встретится с плотью. Он будет варить смерть.</InstallAbnormalStomach.description>
+  <InstallAbnormalStomach.jobString>Установка аномального желудка.</InstallAbnormalStomach.jobString>
+
+  <Grow_AbnormalStomach.label>вырастить аномальный желудок</Grow_AbnormalStomach.label>
+  <Grow_AbnormalStomach.description>Выращивание аномального желудка. Займёт 1.5 дня. Токсин ждёт своего часа.</Grow_AbnormalStomach.description>
+
+
+  <!-- Abnormal Eye -->
+
+  <InstallAbnormalEye.label>установить аномальный глаз</InstallAbnormalEye.label>
+  <InstallAbnormalEye.description>Хирургическая установка аномального глаза. Свет встретится с тенью. Ты увидишь то, что не должно быть увидено.</InstallAbnormalEye.description>
+  <InstallAbnormalEye.jobString>Установка аномального глаза.</InstallAbnormalEye.jobString>
+
+  <Grow_AbnormalEye.label>вырастить аномальный глаз</Grow_AbnormalEye.label>
+  <Grow_AbnormalEye.description>Выращивание аномального глаза. Займёт 1.5 дня. Истина ждёт, чтобы её увидели.</Grow_AbnormalEye.description>
+
+
+  <!-- RecipeDef для установки -->
+
+  <InstallAbnormalRegenerationGland.label>установить аномальную железу регенерации</InstallAbnormalRegenerationGland.label>
+  <InstallAbnormalRegenerationGland.description>Хирургическая установка железы регенерации в ствол мозга. Паразит срастётся с серым веществом. Связь абсолютна. Обратного пути нет.</InstallAbnormalRegenerationGland.description>
+  <InstallAbnormalRegenerationGland.jobString>Установка железы регенерации.</InstallAbnormalRegenerationGland.jobString>
+
+
+  <!-- RecipeDef для выращивания -->
+
+  <Grow_AbnormalRegenerationGland.label>вырастить аномальную железу регенерации</Grow_AbnormalRegenerationGland.label>
+  <Grow_AbnormalRegenerationGland.description>Выращивание железы регенерации. Займёт 2.5 дня. Пустота ждёт. Она терпелива.</Grow_AbnormalRegenerationGland.description>
+
+
+  <!-- ========================================== -->
+  <!-- Abnormal Leg                                -->
+  <!-- Abnormal Arm                                -->
+  <!-- Abnormal Spine                              -->
+  <!-- Abnormal Heart                              -->
+  <!-- Abnormal Stomach                            -->
+  <!-- Abnormal Eye                                -->
+  <!-- Abnormal Regeneration Gland                 -->
+
+</LanguageData>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+     <!-- Настройки события пиратского выкупа -->
+  <HSK.Watcher.Content.Incident.RaiderTributeSettings>
+    <defName>RaiderTributeSettings</defName>
+    <label>Pirate Tribute Settings</label>
+    <description>Settings for the pirate tribute event</description>
+    
+    <!-- Основные настройки выкупа -->
+    <baseFee>300</baseFee>
+    <wealthPercentage>0.015</wealthPercentage>
+    <buildingsPercentage>0.005</buildingsPercentage>
+    <colonistValue>1000</colonistValue>
+    <minDemand>100</minDemand>
+    <maxDemand>10000</maxDemand>
+    <randomFactorMin>0.8</randomFactorMin>
+    <randomFactorMax>1.2</randomFactorMax>
+    <roundToNearest>10</roundToNearest>
+    
+    <!-- Настройки рейда -->
+    <baseRaidPoints>350</baseRaidPoints>
+    <raidWealthPercentage>0.002</raidWealthPercentage>
+    <raidBuildingsPercentage>0.001</raidBuildingsPercentage>
+    <raidColonistValue>50</raidColonistValue>
+    <minRaidPoints>350</minRaidPoints>
+    <maxRaidPoints>99999</maxRaidPoints>
+    <raidRandomFactorMin>0.9</raidRandomFactorMin>
+    <raidRandomFactorMax>1.1</raidRandomFactorMax>
+    
+    <!-- Условия активации события -->
+    <minColonists>2</minColonists>
+    <minWealth>25000</minWealth>
+    
+    <!-- Новые настройки случайных событий -->
+    <doubleCrossChance>0.05</doubleCrossChance>
+    <bluffChance>0.08</bluffChance>
+    
+    <!-- Настройки орбитальной бомбардировки -->
+    <minColonyAgeForOrbitalStrike>5</minColonyAgeForOrbitalStrike>
+    <orbitalStrikeChance>0.15</orbitalStrikeChance>
+    <orbitalStrikeWarmupTicks>300</orbitalStrikeWarmupTicks>
+    <orbitalStrikeRadius>8</orbitalStrikeRadius>
+  </HSK.Watcher.Content.Incident.RaiderTributeSettings>
+</Defs>

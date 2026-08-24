@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <ThingDef Name="SpicesPlant" ParentName="PlantBase">
+    <defName>Plant_Spices</defName>
+    <label>Blazepepper plant</label>
+    <description>A low-growing perennial shrub adapted to arid and poor soils. Its leaves have evolved into small waxy spines to minimize moisture evaporation. The bright red fruits resemble elongated pods and hang from thorny branches.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Spices</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+	  <pollution>Any</pollution>
+	  <dieFromToxicFallout>False</dieFromToxicFallout>
+      <immatureGraphicPath>Things/Plant/Spices_Immature</immatureGraphicPath>
+      <fertilitySensitivity>0.1</fertilitySensitivity>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>RawSpices</harvestedThingDef>
+      <harvestYield>11</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>7.8</growDays>
+      <visualSizeRange>1.0~1.5</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+	   <dieFromToxicFallout>False</dieFromToxicFallout>
+	   <wildBiomes Inherit="False">
+    <BorealForest>0.04</BorealForest>
+    <Tundra>0.03</Tundra>
+    <ColdBog>0.02</ColdBog>
+    <TemperateForest>0.06</TemperateForest>
+    <TemperateSwamp>0.05</TemperateSwamp>
+    <TropicalRainforest>0.06</TropicalRainforest>
+    <TropicalSwamp>0.05</TropicalSwamp>
+    <AridShrubland>0.04</AridShrubland>
+    <BorealArchipelago>0.04</BorealArchipelago>
+    <TundraArchipelago>0.02</TundraArchipelago>
+    <ColdBogArchipelago>0.01</ColdBogArchipelago>
+    <TemperateArchipelago>0.05</TemperateArchipelago>
+    <TemperateSwampArchipelago>0.05</TemperateSwampArchipelago>
+    <TropicalArchipelago>0.05</TropicalArchipelago>
+    <TropicalSwampArchipelago>0.05</TropicalSwampArchipelago>
+</wildBiomes>
+    </plant>
+  </ThingDef>
+</Defs>

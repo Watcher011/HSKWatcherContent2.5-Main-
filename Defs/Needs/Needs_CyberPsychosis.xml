@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <NeedDef>
+        <defName>CyberPsychosis</defName>
+        <needClass>HSK.Watcher.Content.Need_CyberPsychosis</needClass>
+        <label>humanity</label>
+        <description>Cyber psychosis level. Decreases with excessive augmentation. Keep above zero to avoid mental breaks.</description>
+        <minIntelligence>Humanlike</minIntelligence>
+        <colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+        <colonistsOnly>false</colonistsOnly>
+        <showForCaravanMembers>true</showForCaravanMembers>
+        <baseLevel>1.0</baseLevel>
+        <seekerRisePerHour>0.0</seekerRisePerHour>
+        <seekerFallPerHour>0.0</seekerFallPerHour>
+        <listPriority>200</listPriority>
+        <major>true</major>
+    </NeedDef>
+</Defs>

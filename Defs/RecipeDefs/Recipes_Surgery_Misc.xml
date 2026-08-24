@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+   <RecipeDef>
+    <defName>TreatmentOfInfection</defName>
+    <label>Treatment of infection</label>
+    <description>Carrying out a wide range of procedures to combat infection.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Treats infection TargetA.</jobString>
+    <successfullyRemovedHediffMessage>{0} has successfully cured the infection on {1}.</successfullyRemovedHediffMessage>
+	 <workAmount>500</workAmount>
+        <workSkillLearnFactor>1</workSkillLearnFactor>
+        <effectWorking>Surgery</effectWorking>
+        <soundWorking>Recipe_Surgery</soundWorking>
+        <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+        <workSkill>Medicine</workSkill>
+    <removesHediff>WoundInfection</removesHediff>
+	 <surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
+	 <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+	 <skillRequirements>
+      <Medicine>4</Medicine>
+    </skillRequirements>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Bandagekitcrude</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+	  <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+		<filter>
+			<thingDefs>
+            <li>HemogenPack</li>
+          </thingDefs>
+			</filter>
+			<count>1</count>
+	   </li>
+    </ingredients>
+	 <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <thingDefs>
+              <li>HemogenPack</li>
+              <li>Bandagekitcrude</li>
+            </thingDefs>  
+        </fixedIngredientFilter>
+  </RecipeDef>
+  
+  <RecipeDef>
+		<defName>Exsanguination</defName>
+		<label>Exsanguination</label>
+		<description>Blood pumping.</description>
+		<jobString>Butchering.</jobString>
+		<workAmount>150</workAmount>
+		<recipeUsers>
+			  <li>TableButcher</li>
+			  <li>TableKitchen</li>
+		</recipeUsers>
+		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<ingredients>
+		 <li>
+        <filter>
+          <categories>
+            	<li>CorpsesHumanlike</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+		</ingredients>
+		  <fixedIngredientFilter>
+      <categories>
+       	<li>CorpsesHumanlike</li>
+      </categories>
+      <disallowedCategories>
+        <li>CorpsesMechanoid</li>
+      </disallowedCategories>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+		<defaultIngredientFilter>
+      <thingDefs>
+        <li>Corpse_Human</li>
+      </thingDefs>
+      <specialFiltersToAllow>
+        <li>AllowCorpsesColonist</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">AllowCorpsesSlave</li>
+        <li>AllowCorpsesStranger</li>
+      </specialFiltersToAllow>
+    </defaultIngredientFilter>
+		<products>
+			<HemogenPack>5</HemogenPack>
+		</products>
+		<researchPrerequisite>Food_0</researchPrerequisite>
+	</RecipeDef>
+
+
+   <RecipeDef>
+		<defName>ExtractsYeast</defName>
+		<label>Get yeast</label>
+		<description>Extract yeast from corpses. Produces 15.</description>
+		<jobString>Extracts yeast.</jobString>
+		<workAmount>150</workAmount>
+		<recipeUsers>
+			  <li>TableButcher</li>
+			  <li>TableKitchen</li>
+		</recipeUsers>
+		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<ingredients>
+		 <li>
+        <filter>
+          <categories>
+            	<li>CorpsesHumanlike</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+		</ingredients>
+		  <fixedIngredientFilter>
+      <categories>
+       	<li>CorpsesHumanlike</li>
+      </categories>
+      <disallowedCategories>
+        <li>CorpsesMechanoid</li>
+      </disallowedCategories>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+		<defaultIngredientFilter>
+      <thingDefs>
+        <li>Corpse_Human</li>
+      </thingDefs>
+      <specialFiltersToAllow>
+        <li>AllowCorpsesColonist</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">AllowCorpsesSlave</li>
+        <li>AllowCorpsesStranger</li>
+      </specialFiltersToAllow>
+    </defaultIngredientFilter>
+		<products>
+			<Yeast>15</Yeast>
+		</products>
+		<researchPrerequisite>Food_0</researchPrerequisite>
+	</RecipeDef>
+</Defs>

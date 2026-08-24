@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+      <ThingDef>
+        <defName>CyberPsychosisBlockerPill</defName>
+        <label>cyber psychosis inhibitor</label>
+        <description>A drug that temporarily prevents cyber psychosis from progressing and slowly restores humanity. Effect lasts 24 hours.</description>
+        <thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Drug/Neuropozyne</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			 <drawSize>(0.5)</drawSize>
+		</graphicData>
+        <category>Item</category>
+        <useHitPoints>true</useHitPoints>
+        <selectable>true</selectable>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>150</MarketValue>
+            <Mass>0.1</Mass>
+        </statBases>
+        <thingCategories>
+            <li>Drugs</li>
+        </thingCategories>
+        <tradeTags>
+            <li>Drugs</li>
+        </tradeTags>
+        <techLevel>Industrial</techLevel>
+        <ingestible>
+            <foodType>Processed</foodType>
+            <baseIngestTicks>100</baseIngestTicks>
+            <chairSearchRadius>0</chairSearchRadius>
+            <preferability>NeverForNutrition</preferability>
+            <ingestSound>Ingest_Pill</ingestSound>
+            <ingestCommandString>Take {0}</ingestCommandString>
+            <ingestReportString>Taking {0}.</ingestReportString>
+            <useEatingSpeedStat>false</useEatingSpeedStat>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>CyberPsychosisBlocker</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <chemical>Psychite</chemical>
+                <addictiveness>0</addictiveness>
+                <existingAddictionSeverityOffset>0</existingAddictionSeverityOffset>
+                <needLevelOffset>1</needLevelOffset>
+                <listOrder>1000</listOrder>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Permanent Neural Stabilizer -->
+    <ThingDef>
+        <defName>NeuralStabilizer</defName>
+        <label>neural stabilizer</label>
+        <description>An advanced implant that permanently prevents cyber psychosis by stabilizing neural pathways against augmentation stress. Can only be installed in the brain.</description>
+        <thingClass>ThingWithComps</thingClass>
+        <category>Item</category>
+        <useHitPoints>true</useHitPoints>
+        <selectable>true</selectable>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>5000</MarketValue>
+            <Mass>0.5</Mass>
+        </statBases>
+        <thingCategories>
+            <li>BodyPartsArtificial</li>
+        </thingCategories>
+        <tradeTags>
+            <li>TechHediff</li>
+        </tradeTags>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <techLevel>Spacer</techLevel>
+        <comps>
+            <li Class="CompProperties_Biocodable" />
+        </comps>
+    </ThingDef>
+</Defs>

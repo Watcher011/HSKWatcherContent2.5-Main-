@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- RECIPE: Извлечение паразита Ocellus -->
+
+  <RemoveOcellusBrainParasite.label>удалить паразита-глазника</RemoveOcellusBrainParasite.label>
+  <RemoveOcellusBrainParasite.description>Аккуратно извлечь паразита-глазника из мозга пациента через глазницу. Крайне опасная процедура.</RemoveOcellusBrainParasite.description>
+  <RemoveOcellusBrainParasite.jobString>Удаление паразита-глазника.</RemoveOcellusBrainParasite.jobString>
+  <RemoveOcellusBrainParasite.successfullyRemovedHediffMessage>{0} успешно извлёк паразита-глазника из мозга {1}.</RemoveOcellusBrainParasite.successfullyRemovedHediffMessage>
+
+
+</LanguageData>

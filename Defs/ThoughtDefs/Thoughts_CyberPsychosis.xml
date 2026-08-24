@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+   <ThoughtDef>
+        <defName>CyberPsychosis</defName>
+        <workerClass>HSK.Watcher.Content.ThoughtWorker_CyberPsychosis</workerClass>
+        <stages>
+            <li>
+                <label>cyber psychosis (early)</label>
+                <description>I feel... different. My thoughts are fuzzy.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+            <li>
+                <label>cyber psychosis (moderate)</label>
+                <description>These implants... they're changing me. I can feel it.</description>
+                <baseMoodEffect>-12</baseMoodEffect>
+            </li>
+            <li>
+                <label>cyber psychosis (severe)</label>
+                <description>I'M LOSING MYSELF! MAKE IT STOP!</description>
+                <baseMoodEffect>-25</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>KillDesire</defName>
+        <workerClass>HSK.Watcher.Content.ThoughtWorker_KillDesire</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>kill desire</label>
+                <description>I need to kill. I NEED TO KILL. THEY MUST DIE.</description>
+                <baseMoodEffect>-50</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

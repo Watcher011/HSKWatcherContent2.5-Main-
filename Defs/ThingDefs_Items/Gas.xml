@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+   <ThingDef>
+        <defName>Custom_Gas_Healing</defName>
+        <label>healing gas cloud</label>
+        <description>A cloud of healing gas that stimulates tissue regeneration.</description>
+        <thingClass>HSK.Watcher.Content.CustomGas</thingClass>
+        <!-- УБРАНО: <category>Gas</category> — не используем ванильную систему газов -->
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Gas/Puff</texPath>
+            <graphicClass>HSK.Watcher.Content.Graphic_CustomGasCloud</graphicClass>
+            <shaderType>GasRotating</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <altitudeLayer>Gas</altitudeLayer>
+        <useHitPoints>false</useHitPoints>
+        <drawerType>RealtimeOnly</drawerType>
+        <selectable>false</selectable>  <!-- Нельзя выделить курсором -->
+        <modExtensions>
+              <li Class="HSK.Watcher.Content.CustomGasConfig">
+              <hediffDef>HealingGasHediff</hediffDef>
+				<severityPerTick>0.8</severityPerTick>   
+				<maxSeverity>1.0</maxSeverity>
+				<expireSeconds>30</expireSeconds>
+				<drawColor>(0.3, 0.7, 1.0)</drawColor>
+				<drawAlpha>0.5</drawAlpha>
+			</li>
+        </modExtensions>
+    </ThingDef>
+
+    <!-- ==================== КАСТОМНЫЙ ГАЗ: СЛЕЗОТОЧИВЫЙ ==================== -->
+    <ThingDef>
+        <defName>Custom_Gas_Tear</defName>
+        <label>tear gas cloud</label>
+        <description>A cloud of irritating tear gas.</description>
+        <thingClass>HSK.Watcher.Content.CustomGas</thingClass>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Gas/Puff</texPath>
+            <graphicClass>HSK.Watcher.Content.Graphic_CustomGasCloud</graphicClass>
+            <shaderType>GasRotating</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <altitudeLayer>Gas</altitudeLayer>
+        <useHitPoints>false</useHitPoints>
+        <drawerType>RealtimeOnly</drawerType>
+        <selectable>false</selectable>
+        <modExtensions>
+            <li Class="HSK.Watcher.Content.CustomGasConfig">
+                <hediffDef>TearGasHediff</hediffDef>
+                <severityPerTick>0.03</severityPerTick>
+                <maxSeverity>1.0</maxSeverity>
+                <expireSeconds>25</expireSeconds>
+                <drawColor>(1.0, 0.5, 0.0)</drawColor>
+                <drawAlpha>0.5</drawAlpha>
+            </li>
+        </modExtensions>
+    </ThingDef>
+	
+	  <ThingDef>
+        <defName>Custom_Gas_Insecticide</defName>
+        <label>insecticide cloud</label>
+        <description>A dense neurotoxic cloud lethal to all insectoid life. Harmless to mammals.</description>
+        <thingClass>HSK.Watcher.Content.CustomGas</thingClass>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Gas/Puff</texPath>
+            <graphicClass>HSK.Watcher.Content.Graphic_CustomGasCloud</graphicClass>
+            <shaderType>GasRotating</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <altitudeLayer>Gas</altitudeLayer>
+        <useHitPoints>false</useHitPoints>
+        <drawerType>RealtimeOnly</drawerType>
+        <selectable>false</selectable>
+        <modExtensions>
+            <li Class="HSK.Watcher.Content.CustomGasConfig">
+                <instantKillInsects>true</instantKillInsects>
+                <expireSeconds>20</expireSeconds>
+                <drawColor>(1.0, 0.0, 0.0)</drawColor>      
+                <drawAlpha>0.6</drawAlpha>
+            </li>
+        </modExtensions>
+    </ThingDef>
+</Defs>

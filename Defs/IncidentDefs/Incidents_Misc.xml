@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IncidentDef>
+	<defName>WildHunt</defName>
+	<label>Wild Hunt</label>
+	<targetTags>
+		<li>Map_PlayerHome</li>
+	</targetTags>
+	<category>ThreatBig</category>
+	<workerClass>HSK.Watcher.Content.Incident.IncidentWorker_WildHunt</workerClass>
+	<letterLabel>HSK_WildHunt_LetterLabel</letterLabel>
+	<letterText>HSK_WildHunt_LetterText</letterText>
+	<letterDef>NegativeEvent</letterDef>
+	<baseChance>0.03</baseChance>         <!-- было 0.05 -->
+	<earliestDay>350</earliestDay>        <!-- было 295 -->
+	<minRefireDays>120</minRefireDays>    <!-- было 70 -->
+	<minThreatPoints>14500</minThreatPoints>
+</IncidentDef>
+
+<IncidentDef>
+	<defName>HSK_CursedSoul</defName>
+	<label>Cursed Soul</label>
+	<workerClass>HSK.Watcher.Content.Incident.IncidentWorker_CursedSoul</workerClass>
+	<baseChance>0.03</baseChance>         <!-- было 0.05 -->
+	<earliestDay>350</earliestDay>        <!-- было 295 -->
+	<minRefireDays>120</minRefireDays>    <!-- было 70 -->
+	<category>ThreatBig</category>
+	<!--   <baseSelectionWeight>0.8</baseSelectionWeight>-->
+	<letterLabel>Cursed Soul</letterLabel>
+	<letterText>A colonist has been cursed by dark forces, attracting barghests to your colony!</letterText>
+	<letterDef>NegativeEvent</letterDef>
+	<targetTags>
+		<li>Map_PlayerHome</li>
+		<li>Map_Misc</li>
+	</targetTags>
+	<tags>
+		<li>Threat</li>
+		<li>HarmColony</li>
+	</tags>
+</IncidentDef>
+
+<IncidentDef>
+	<defName>AnimalWanderIn_Husky</defName>
+	<label>animal has arrived at the settlement</label>
+	<letterText>A friendly husky runs up to your gate. The dog looks healthy and well-groomed, apparently having lost its owners during a journey. It looks at you hopefully, searching for a new home.</letterText>
+	<letterLabel>Animal has arrived</letterLabel>
+	<letterDef>PositiveEvent</letterDef>
+	<category>Misc</category>
+	<workerClass>HSK.Watcher.Content.Incident.IncidentWorker_HuskyAbominationEvent</workerClass>
+	<minPopulation>0</minPopulation>
+	<earliestDay>0</earliestDay>
+	<baseChance>0.06</baseChance>         <!-- было 0.1 -->
+	<targetTags>
+		<li>Map_PlayerHome</li>
+		<li>Map_Misc</li>
+	</targetTags>
+</IncidentDef>
+
+<IncidentDef>
+	<defName>AnimalWanderIn</defName>
+	<label>animal wander in</label>
+	<category>Misc</category>
+	<workerClass>HSK.Watcher.Content.Incident.IncidentWorker_AnimalWanderInEvent</workerClass>
+	<minPopulation>0</minPopulation>
+	<earliestDay>0</earliestDay>
+	<baseChance>0.06</baseChance>         <!-- было 0.1 -->
+	<targetTags>
+		<li>Map_PlayerHome</li>
+		<li>Map_Misc</li>
+	</targetTags>
+</IncidentDef>
+
+<IncidentDef>
+	<defName>HSK_PredatorGuest</defName>
+	<label>HSK_PredatorGuest_Label</label>
+	<description>HSK_PredatorGuest_Description</description>
+	<category>ThreatSmall</category>
+	<baseChance>0.05</baseChance>         <!-- было 0.1 -->
+	<minRefireDays>450</minRefireDays>    <!-- было 300 -->
+	<minPopulation>2</minPopulation>
+	<workerClass>HSK.Watcher.Content.Incident.Incident_PredatorGuest</workerClass>
+	<targetTags>
+		<li>Map_PlayerHome</li>
+	</targetTags>
+	<modExtensions>
+		<li Class="HSK.Watcher.Content.Incident.PredatorEventDefExtension">
+			<explosionDamageType>BombSuper</explosionDamageType>
+			<explosionRadius>3.9</explosionRadius>
+			<explosionDamage>400</explosionDamage>
+			<armorPenetration>1.0</armorPenetration>
+			<bombTimerRange>
+				<min>12000</min>
+				<max>18000</max>
+			</bombTimerRange>
+			<minColonistsForEvent>4</minColonistsForEvent>
+			<minDaysForEvent>20</minDaysForEvent>
+			<eventBaseChance>0.5</eventBaseChance>  <!-- было 0.8 -->
+			<minBombs>1</minBombs>
+			<maxBombs>6</maxBombs>
+		</li>
+	</modExtensions>
+</IncidentDef>
+
+<IncidentDef>
+	<defName>GreenyZyabraInvasion</defName>
+	<label>GreenyZyabra Invasion</label>
+	<category>Misc</category>
+	<workerClass>HSK.Watcher.Content.Incident.IncidentWorker_GreenyZyabraInvasion</workerClass>
+	<baseChance>0.25</baseChance>         <!-- было 0.5 -->
+	<minRefireDays>180</minRefireDays>    <!-- было 90 -->
+	<targetTags>
+		<li>Map_PlayerHome</li>
+	</targetTags>
+</IncidentDef>
+
+<IncidentDef>
+	<defName>HSK_PlanetaryAnnihilation</defName>
+	<label>Annihilation</label>
+	<category>ThreatBig</category>
+	<targetTags>
+		<li>Map_PlayerHome</li>
+	</targetTags>
+	<workerClass>HSK.Watcher.Content.Incident.IncidentWorker_PlanetaryAnnihilation</workerClass>
+	<baseChance>0.0</baseChance>
+	<minRefireDays>9999</minRefireDays>
+	<pointsScaleable>false</pointsScaleable>
+</IncidentDef>
+
+<IncidentDef>
+	<defName>OcellusAttack</defName>
+	<label>Ocellus parasite</label>
+	<category>ThreatSmall</category>
+	<targetTags>
+		<li>Map_PlayerHome</li>
+	</targetTags>
+	<workerClass>HSK.Watcher.Content.Incident.IncidentWorker_OcellusAttack</workerClass>
+	<baseChance>0.1</baseChance>          <!-- было 0.2 -->
+	<minRefireDays>7</minRefireDays>      <!-- было 3 -->
+	<pointsScaleable>false</pointsScaleable>
+	<tale>ManhunterPack</tale>
+</IncidentDef>
+
+<IncidentDef>
+	<defName>HeadcrabAttack</defName>
+	<label>headcrab attack</label>
+	<category>ThreatSmall</category>
+	<targetTags>
+		<li>Map_PlayerHome</li>
+	</targetTags>
+	<workerClass>HSK.Watcher.Content.Headcrab.IncidentWorker_HeadcrabAttack</workerClass>
+	<baseChance>0.25</baseChance>         <!-- было 0.5 -->
+	<minRefireDays>25</minRefireDays>     <!-- было 15 -->
+	<earliestDay>8</earliestDay>          <!-- было 5 -->
+	<letterLabel>Headcrab!</letterLabel>
+	<letterText>A Headcrab has been spotted approaching your colony! It will try to attach itself to a colonist's head and turn them hostile. Kill it before it reaches anyone!</letterText>
+	<letterDef>ThreatSmall</letterDef>
+</IncidentDef>
+
+<IncidentDef>
+	<defName>LamarPortal</defName>
+	<label>anomalous teleportation</label>
+	<category>ThreatSmall</category>
+	<targetTags>
+		<li>Map_PlayerHome</li>
+	</targetTags>
+	<workerClass>HSK.Watcher.Content.Headcrab.IncidentWorker_LamarPortal</workerClass>
+	<baseChance>0.15</baseChance>         <!-- было 0.3 -->
+	<minRefireDays>30</minRefireDays>     <!-- было 20 -->
+	<earliestDay>15</earliestDay>         <!-- было 10 -->
+	<letterLabel>Anomalous Teleportation</letterLabel>
+	<letterText>A strange energy signature has been detected near your colony...</letterText>
+	<letterDef>ThreatSmall</letterDef>
+</IncidentDef>
+
+<IncidentDef>
+	<defName>ArtilleryPreparation</defName>
+	<label>artillery preparation</label>
+	<category>ThreatBig</category>
+	<targetTags>
+		<li>Map_PlayerHome</li>
+	</targetTags>
+	<workerClass>HSK.Watcher.Content.Incident.IncidentWorker_ArtilleryPreparation</workerClass>
+	<baseChance>0.07</baseChance>         <!-- было 0.12 -->
+	<earliestDay>90</earliestDay>         <!-- было 60 -->
+	<minRefireDays>150</minRefireDays>    <!-- было 90 -->
+	<baseChanceWithRoyalty>1.5</baseChanceWithRoyalty>  <!-- было 2.5 -->
+	<pointsScaleable>true</pointsScaleable>
+	<tale>Raid</tale>
+</IncidentDef>
+
+<IncidentDef>
+	<defName>ExplosiveParasiteRaid</defName>
+	<label>explosive parasite</label>
+	<targetTags>
+		<li>Map_PlayerHome</li>
+	</targetTags>
+	<workerClass>HSK.Watcher.Content.Incident.IncidentWorker_ExplosiveParasiteRaid</workerClass>
+	<baseChance>0.25</baseChance>         <!-- было 0.5 -->
+	<category>ThreatBig</category>
+	<pointsScaleable>true</pointsScaleable>
+	<tale>ManhunterPack</tale>
+	<letterHyperlinkHediffDefs>
+		<li>ExplosiveParasite</li>
+		<li>Scaria</li>
+	</letterHyperlinkHediffDefs>
+</IncidentDef>
+
+ 
+</Defs>

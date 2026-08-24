@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+ 
+ 
+ <ThingDef ParentName="AncientRugBase">
+	<defName>GreenzyabryaCarpet</defName>
+    <label>Greenzyabrya carpet</label>
+    <description>A rug made from the skin of a greensabre. Green, fluffy, and so absurdly charming that it's impossible to look away. This creature once tried to be terrifying, but now it's the embodiment of grotesque beauty. The colonists debate: is this high art or a high mockery of art? Either way, it's soft, warm, and always makes you smile.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+	  <texPath>Things/Building/Special/GreenzyabryaCarpet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3, 3)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<!--<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>85</costStuffCount>-->
+		 <costList>
+           <Leather_GreenyZyabra>150</Leather_GreenyZyabra>
+         </costList>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Beauty>17</Beauty>
+			<Cleanliness>0.4</Cleanliness>
+			<Bulk>10</Bulk>
+			<Mass>7</Mass>
+		</statBases>
+		<size>(3,3)</size>
+		<rotatable>true</rotatable>
+		<thingSetMakerTags>
+          <li>RewardStandardCore</li>
+        </thingSetMakerTags>
+		<researchPrerequisites>
+			<li>Carpets_B3</li>
+		</researchPrerequisites>
+	</ThingDef>
+ 
+</Defs>

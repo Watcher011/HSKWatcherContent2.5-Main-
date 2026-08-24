@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CyberPsychosisBlockerPill.label>ингибитор киберпсихоза</CyberPsychosisBlockerPill.label>
+  <CyberPsychosisBlockerPill.description>Препарат, временно предотвращающий прогрессирование киберпсихоза и медленно восстанавливающий человечность. Действует 24 часа.</CyberPsychosisBlockerPill.description>
+  <CyberPsychosisBlockerPill.ingestible.ingestCommandString>Take {0}</CyberPsychosisBlockerPill.ingestible.ingestCommandString>
+  <CyberPsychosisBlockerPill.ingestible.ingestReportString>Taking {0}.</CyberPsychosisBlockerPill.ingestible.ingestReportString>
+
+
+  <!-- Permanent Neural Stabilizer -->
+
+  <NeuralStabilizer.label>нейростабилизатор</NeuralStabilizer.label>
+  <NeuralStabilizer.description>Продвинутый имплант, навсегда предотвращающий киберпсихоз путём стабилизации нейронных путей от стресса аугментации. Может быть установлен только в мозг.</NeuralStabilizer.description>
+
+
+</LanguageData>

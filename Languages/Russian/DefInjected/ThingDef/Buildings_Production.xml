@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <IcecreamBasin.label>Машина для мороженого</IcecreamBasin.label>
+  <IcecreamBasin.description>*"Одобрено Министерством народного удовольствия как 'самое эффективное средство против мятежных мыслей'. Гарантированно отвлекает колонистов от таких ненужных вопросов, как 'почему мы опять едим ореховую пасту' или 'кто это стреляет по периметру'. Каждый рожок содержит тщательно выверенную дозу сахара, синтетических ароматизаторов и мягких антидепрессантов. Встроенный датчик настроения автоматически добавляет дополнительную шоколадную порцию при обнаружении повышенного уровня 'нездоровых мыслей' у клиента."*</IcecreamBasin.description>
+
+  <CoffeeBasin.label>Кофемашина</CoffeeBasin.label>
+  <CoffeeBasin.description>*"Одобрено Министерством колониальной бодрости как 'самый гуманный способ эксплуатации... т.е. мотивации персонала'. Каждая чашка содержит:70% настоящего кофейного порошка (3-й сорт).20% одобренных Империей стимуляторов.10% древесной целлюлозы для объёма (совершенно безвредно!)"</CoffeeBasin.description>
+
+
+  <!-- <ThingDef ParentName="UniversalFermenterBase" Class="UniversalFermenterSK.ThingDef_UF">
+		<defName>CharcoalPit</defName>
+		<label>Charcoal Pit</label>
+		<graphicData>
+			<texPath>Things/Building/CharcoalPit/Charcoal_pit</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(0, 0, 0)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/CharcoalPit/Charcoal_UI</uiIconPath>
+		<costList>
+			<WoodLog>25</WoodLog>
+		</costList>
+		<fillPercent>0.01</fillPercent>
+		<pathCost>60</pathCost>
+		<statBases>
+			<WorkToBuild>8200</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<Beauty>-50</Beauty>
+			<Cleanliness>-100</Cleanliness>
+		</statBases>
+		<description>A primitive wood kiln. Tightly stacked logs slowly smolder beneath a layer of earth, turning into valuable charcoal. It's smoky and smells of burning, but there's no better fuel for metallurgy.</description>
+		<size>(3,3)</size>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>21</heatPerSecond>
+        <heatPushMaxTemperature>28</heatPushMaxTemperature>
+      </li>
+	   <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<rotatable>false</rotatable>
+		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+		<designationCategory>Production</designationCategory>
+		<researchPrerequisites>
+			<li>RecurveBow</li>
+		</researchPrerequisites>
+        <terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+		<!{1}** ThingDef_UF fields **{1}>
+		<showProductIcon>true</showProductIcon>
+		<barOffset>(0.0, 0.25)</barOffset>
+		<barScale>(1.0, 1.0)</barScale>
+		<slotsCount>10</slotsCount>
+	</ThingDef> -->
+
+  <RecyclerBasin.label>Перерабатывающая машина</RecyclerBasin.label>
+  <RecyclerBasin.description>Герметичный стеклянный террариум, заселённый специализированной колонией жуков-термитов (жуков-переработчиков). Эти генетически модифицированные насекомые были выведены на ковчегах для переработки отходов в замкнутой системе. Их слюна содержит уникальный фермент, способный соединять любые материалы с базовыми органическими полимерами.</RecyclerBasin.description>
+
+
+  <!--<CharcoalPit.label>Углевыжигательная яма</CharcoalPit.label>-->
+  <!--<CharcoalPit.description>Примитивная древесная печь. Плотно уложенные брёвна медленно тлеют под слоем земли, превращаясь в ценный уголь. Дымно и пахнет гарью, но лучшего топлива для металлургии не найти.</CharcoalPit.description>-->
+
+</LanguageData>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Compaste -->
+
+  <MakePrimitiveCompaste.label>Создать примитивную компаундную пасту</MakePrimitiveCompaste.label>
+  <MakePrimitiveCompaste.description>Создать флаконы примитивной компаундной пасты, используемой в широком ассортименте одежды. Производится 20 шт.</MakePrimitiveCompaste.description>
+  <MakePrimitiveCompaste.jobString>Создание компаундной пасты</MakePrimitiveCompaste.jobString>
+
+  <MakePrimitiveCaoutchoucCompaste.label>Создать примитивную компаундную пасту</MakePrimitiveCaoutchoucCompaste.label>
+  <MakePrimitiveCaoutchoucCompaste.description>Создать флаконы примитивной компаундной пасты, используемой в широком ассортименте одежды. Производится 20 шт.</MakePrimitiveCaoutchoucCompaste.description>
+  <MakePrimitiveCaoutchoucCompaste.jobString>Создание компаундной пасты</MakePrimitiveCaoutchoucCompaste.jobString>
+
+  <MakeBallisticPlateI.label>Создать Баллистическую Пластину I</MakeBallisticPlateI.label>
+  <MakeBallisticPlateI.description>Отлить из металла простую пластину. Пулю встретит — себя не пожалеет. Выход: 1.</MakeBallisticPlateI.description>
+  <MakeBallisticPlateI.jobString>Создаём пластину.</MakeBallisticPlateI.jobString>
+
+  <MakeBallisticPlateII.label>Создать Баллистическую Пластину II</MakeBallisticPlateII.label>
+  <MakeBallisticPlateII.description>Сталь и пластик в одном флаконе. Пуля вязнет, ломается и проклинает день своего рождения. Выход: 1.</MakeBallisticPlateII.description>
+  <MakeBallisticPlateII.jobString>Создаём гибрид.</MakeBallisticPlateII.jobString>
+
+  <MakeBallisticPlateIII.label>Создать Баллистическую Пластину III</MakeBallisticPlateIII.label>
+  <MakeBallisticPlateIII.description>Керамика + кевлар. Лёгкая, злая и дорогая. Держит удар лучше, чем твоя бывшая. Выход: 1.</MakeBallisticPlateIII.description>
+  <MakeBallisticPlateIII.jobString>Создаём композит.</MakeBallisticPlateIII.jobString>
+
+
+</LanguageData>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>OcellusBrainParasite</defName>
+        <label>Ocellus parasite</label>
+        <description>A parasitic organism has fused with the brain through the eye socket. The host is no longer in control.</description>
+        <defaultLabelColor>(0.8, 0.2, 0.2)</defaultLabelColor>
+        
+        <!-- НЕ isBad — нейтральный как ванильный имплант -->
+        <!-- "Плохость" через thought, statOffsets, mentalStateGivers -->
+        
+        <!-- Стандартный ванильный механизм дропа предмета -->
+        <spawnThingOnRemoved>OcellusParasiteItem</spawnThingOnRemoved>
+        
+        <initialSeverity>1.0</initialSeverity>
+        <maxSeverity>1.0</maxSeverity>
+        
+        <stages>
+            <li>
+                <label>dominating</label>
+                <painFactor>0</painFactor>
+                
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.8</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.5</offset>
+                    </li>
+                </capMods>
+                
+                <!-- Берсерк через mentalStateGivers -->
+                <mentalStateGivers>
+                    <li>
+                        <mentalState>Berserk</mentalState>
+                        <mtbDays>0.001</mtbDays>
+                    </li>
+                </mentalStateGivers>
+                
+                <statOffsets>
+                    <MeleeHitChance>20</MeleeHitChance>
+                    <MeleeDodgeChance>0.5</MeleeDodgeChance>
+                    <ArmorRating_Sharp>2</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>2</ArmorRating_Blunt>
+                    <PainShockThreshold>0.99</PainShockThreshold>
+                    <MentalBreakThreshold>0.99</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+          <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Wounds/Parasite</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.10</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0.10, 0.0, -0.09)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+	
+    </renderNodeProperties>
+        <comps>
+            <!-- Спавн Ocellus при смерти -->
+            <li Class="HSK.Watcher.Content.HediffCompProperties_SpawnOcellusOnDeath">
+                <pawnKind>Ocellus</pawnKind>
+                <factionDefName>Abomination</factionDefName>
+                <spawnSound>Hive_Spawn</spawnSound>
+                <letterLabel>Ocellus emerges!</letterLabel>
+                <letterText>The Ocellus parasite has left the corpse of {0} through the eye socket, searching for a new host.</letterText>
+                <letterDef>ThreatSmall</letterDef>
+            </li>
+            
+            <!-- Исчезновение через 30 дней -->
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>1800000</disappearsAfterTicks>
+                <showRemainingTime>false</showRemainingTime>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <!-- ============================================ -->
+    <!-- THOUGHT: Паразит (отрицательный)              -->
+    <!-- ============================================ -->
+    <ThoughtDef>
+        <defName>OcellusParasiteThought</defName>
+        <thoughtClass>Thought_Situational</thoughtClass>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>OcellusBrainParasite</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>something controls me</label>
+                <description>I can see what my hands are doing, but I can't stop them. Something is moving under my skin. My eye... it glows...</description>
+                <baseMoodEffect>-50</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	
+	
+	<ThingDef>
+        <defName>OcellusParasiteItem</defName>
+        <label>Ocellus parasite specimen</label>
+        <description>A preserved Ocellus parasite extracted from a host's brain. It twitches occasionally in the jar, its single eye darting around. Valuable for research or as a biological weapon component.</description>
+        <thingClass>ThingWithComps</thingClass>
+        <category>Item</category>
+        <useHitPoints>true</useHitPoints>
+        <selectable>true</selectable>
+        <statBases>
+            <MaxHitPoints>60</MaxHitPoints>
+            <MarketValue>850</MarketValue>
+            <Mass>0.3</Mass>
+            <Flammability>0.2</Flammability>
+            <DeteriorationRate>2.0</DeteriorationRate>
+        </statBases>
+        <altitudeLayer>Item</altitudeLayer>
+        <tickerType>Rare</tickerType>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>15</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <graphicData>
+            <texPath>Things/Item/OcellusParasiteJar</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <tradeNeverStack>false</tradeNeverStack>
+        <tradeTags>
+            <li>Exotic</li>
+          
+        </tradeTags>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+       
+    </ThingDef>
+
+
+ <!-- ============================================ -->
+    <!-- RECIPE: Извлечение паразита Ocellus           -->
+    <!-- ============================================ -->
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>RemoveOcellusBrainParasite</defName>
+        <label>remove Ocellus parasite</label>
+        <description>Carefully extract the Ocellus parasite from the patient's brain through the eye socket. Extremely dangerous procedure.</description>
+        <jobString>Removing Ocellus parasite.</jobString>
+        
+        <!-- СТАНДАРТНЫЙ ВАНИЛЬНЫЙ ВОРКЕР -->
+        <workerClass>Recipe_RemoveImplant</workerClass>
+        
+        <workAmount>1000</workAmount>
+        
+        <!-- Удаляемый hediff -->
+        <removesHediff>OcellusBrainParasite</removesHediff>
+        
+        <successfullyRemovedHediffMessage>{0} has successfully extracted the Ocellus parasite from {1}'s brain.</successfullyRemovedHediffMessage>
+        <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+        <surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
+        
+        <hideBodyPartNames>true</hideBodyPartNames>
+        
+        <!-- Часть тела для операции -->
+        <appliedOnFixedBodyParts>
+           <li>Eye</li>
+        </appliedOnFixedBodyParts>
+        
+        <recipeUsers>
+            <li>Human</li>
+            <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+        </recipeUsers>
+        
+        <skillRequirements>
+            <Medicine>5</Medicine>
+        </skillRequirements>
+        
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>3</count>
+            </li>
+        </ingredients>
+        
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <disallowedThingDefs>
+                <li>MedicineHerbal</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+        
+        <descriptionHyperlinks>
+            <HediffDef>OcellusBrainParasite</HediffDef>
+            <ThingDef>OcellusParasiteItem</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+	
+	
+	
+	
+<!-- ============================================ -->
+<!-- HEDIFFDEF: Headcrab Parasite (исправленный)  -->
+<!-- ============================================ -->
+<HediffDef>
+    <defName>HeadcrabParasite</defName>
+    <label>headcrab parasite</label>
+    <description>A parasitic Headcrab attached to the victim's head, controlling their nervous system and turning them hostile. Prevents wearing headgear.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1.0, 0.2, 0.2)</defaultLabelColor>
+    <isBad>true</isBad>
+    <makesSickThought>true</makesSickThought>
+    
+    <stages>
+        <li>
+            <label>attached</label>
+            <becomeVisible>true</becomeVisible>
+            <painOffset>0.2</painOffset>
+            <capMods>
+                <li>
+                    <capacity>Consciousness</capacity>
+                    <setMax>0.4</setMax>
+                </li>
+                <li>
+                    <capacity>Talking</capacity>
+                    <setMax>0</setMax>
+                </li>
+                <li>
+                    <capacity>Manipulation</capacity>
+                    <offset>-0.2</offset>
+                </li>
+            </capMods>
+        </li>
+    </stages>
+    
+    <!-- КАСТОМНАЯ ОТРИСОВКА ХЕДКРАБА НА ГОЛОВЕ -->
+    <!-- Слои в RimWorld:
+         ~45-48: тело/одежда тела
+         ~50: голова
+         ~51-52: волосы/борода
+         ~53-55: головные уборы (шапки, каски)
+         ~56-60: шлемы/маски
+         Хедкраб должен быть ВЫШЕ волос (~52), но ниже шлемов
+    -->
+    <renderNodeProperties>
+        <li Class="HSK.Watcher.Content.Headcrab.PawnRenderNodeProperties_Headcrab">
+            <texPath>Things/Pawn/Wounds/HeadcrabOnHead</texPath>
+            <parentTagDef>Head</parentTagDef>
+            <drawSize>0.9</drawSize>
+            <drawData>
+                <defaultData>
+                    <layer>53</layer>      <!-- ВЫШЕ волос (~51-52), ниже шапок -->
+                    <offset>(0.0, 0.30, 0.10)</offset>  <!-- Y=0.30 — выше по вертикали -->
+                </defaultData>
+                <dataNorth>
+                    <layer>53</layer>
+                    <offset>(0.0, 0.35, 0.14)</offset>  <!-- Север: ещё выше -->
+                </dataNorth>
+                <dataSouth>
+                    <layer>53</layer>
+                    <offset>(0.0, 0.28, 0.08)</offset>  <!-- Юг: чуть ниже -->
+                </dataSouth>
+                <dataEast>
+                    <layer>53</layer>
+                    <offset>(0.06, 0.30, 0.10)</offset>
+                </dataEast>
+                <dataWest>
+                    <layer>53</layer>
+                    <offset>(-0.06, 0.30, 0.10)</offset>
+                </dataWest>
+            </drawData>
+        </li>
+    </renderNodeProperties>
+    
+    <comps>
+        <li Class="HediffCompProperties_SeverityPerDay">
+            <severityPerDay>0.3</severityPerDay>
+        </li>
+        <li Class="HediffCompProperties_Disappears">
+            <disappearsAfterTicks>300000</disappearsAfterTicks>
+            <showRemainingTime>true</showRemainingTime>
+        </li>
+        <!-- Спавн Хедкраба при смерти -->
+        <li Class="HSK.Watcher.Content.Headcrab.HediffCompProperties_SpawnHeadcrabOnDeath">
+            <pawnKind>Headcrab</pawnKind>
+            <factionDefName>Insect</factionDefName>
+            <letterLabel>Headcrab reborn!</letterLabel>
+            <letterText>{0} has died, and a new Headcrab has emerged from their corpse!</letterText>
+        </li>
+        <!-- Запрет шлемов -->
+        <li Class="HSK.Watcher.Content.Headcrab.HediffCompProperties_PreventHeadgear" />
+    </comps>
+</HediffDef>
+
+</Defs>

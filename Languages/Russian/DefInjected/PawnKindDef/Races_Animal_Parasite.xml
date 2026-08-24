@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- PAWNKINDDEF: Ocellus -->
+
+  <Ocellus.label>Глазник</Ocellus.label>
+  <Ocellus.labelPlural>Глазники</Ocellus.labelPlural>
+  <Ocellus.lifeStages.0.label>Глазник</Ocellus.lifeStages.0.label>
+  <Ocellus.lifeStages.0.labelPlural>Глазники</Ocellus.lifeStages.0.labelPlural>
+  <Ocellus.lifeStages.0.labelMale>глазник-самец</Ocellus.lifeStages.0.labelMale>
+  <Ocellus.lifeStages.0.labelMalePlural>глазники-самцы</Ocellus.lifeStages.0.labelMalePlural>
+  <Ocellus.lifeStages.0.labelFemale>глазник-самка</Ocellus.lifeStages.0.labelFemale>
+  <Ocellus.lifeStages.0.labelFemalePlural>глазники-самки</Ocellus.lifeStages.0.labelFemalePlural>
+  <Ocellus.lifeStages.1.label>Глазник</Ocellus.lifeStages.1.label>
+  <Ocellus.lifeStages.1.labelPlural>Глазники</Ocellus.lifeStages.1.labelPlural>
+  <Ocellus.lifeStages.1.labelMale>глазник-самец</Ocellus.lifeStages.1.labelMale>
+  <Ocellus.lifeStages.1.labelMalePlural>глазники-самцы</Ocellus.lifeStages.1.labelMalePlural>
+  <Ocellus.lifeStages.1.labelFemale>глазник-самка</Ocellus.lifeStages.1.labelFemale>
+  <Ocellus.lifeStages.1.labelFemalePlural>глазники-самки</Ocellus.lifeStages.1.labelFemalePlural>
+  <Ocellus.lifeStages.2.label>Глазник</Ocellus.lifeStages.2.label>
+  <Ocellus.lifeStages.2.labelPlural>Глазники</Ocellus.lifeStages.2.labelPlural>
+  <Ocellus.lifeStages.2.labelMale>глазник-самец</Ocellus.lifeStages.2.labelMale>
+  <Ocellus.lifeStages.2.labelMalePlural>глазники-самцы</Ocellus.lifeStages.2.labelMalePlural>
+  <Ocellus.lifeStages.2.labelFemale>глазник-самка</Ocellus.lifeStages.2.labelFemale>
+  <Ocellus.lifeStages.2.labelFemalePlural>глазники-самки</Ocellus.lifeStages.2.labelFemalePlural>
+  <Ocellus.labelMale>глазник-самец</Ocellus.labelMale>
+  <Ocellus.labelMalePlural>глазники-самцы</Ocellus.labelMalePlural>
+  <Ocellus.labelFemale>глазник-самка</Ocellus.labelFemale>
+  <Ocellus.labelFemalePlural>глазники-самки</Ocellus.labelFemalePlural>
+
+
+  <!-- PAWNKINDDEF:Headcrab -->
+
+  <Headcrab.label>Хедкраб</Headcrab.label>
+  <Headcrab.labelPlural>Хедкрабы</Headcrab.labelPlural>
+  <Headcrab.lifeStages.0.label>Хедкраб</Headcrab.lifeStages.0.label>
+  <Headcrab.lifeStages.0.labelPlural>Хедкрабы</Headcrab.lifeStages.0.labelPlural>
+  <Headcrab.lifeStages.0.labelMale>хедкраб</Headcrab.lifeStages.0.labelMale>
+  <Headcrab.lifeStages.0.labelMalePlural>хедкрабы</Headcrab.lifeStages.0.labelMalePlural>
+  <Headcrab.lifeStages.0.labelFemale>хедкраб</Headcrab.lifeStages.0.labelFemale>
+  <Headcrab.lifeStages.0.labelFemalePlural>хедкрабы</Headcrab.lifeStages.0.labelFemalePlural>
+  <Headcrab.lifeStages.1.label>Хедкраб</Headcrab.lifeStages.1.label>
+  <Headcrab.lifeStages.1.labelPlural>Хедкрабы</Headcrab.lifeStages.1.labelPlural>
+  <Headcrab.lifeStages.1.labelMale>хедкраб</Headcrab.lifeStages.1.labelMale>
+  <Headcrab.lifeStages.1.labelMalePlural>хедкрабы</Headcrab.lifeStages.1.labelMalePlural>
+  <Headcrab.lifeStages.1.labelFemale>хедкраб</Headcrab.lifeStages.1.labelFemale>
+  <Headcrab.lifeStages.1.labelFemalePlural>хедкрабы</Headcrab.lifeStages.1.labelFemalePlural>
+  <Headcrab.lifeStages.2.label>Хедкраб</Headcrab.lifeStages.2.label>
+  <Headcrab.lifeStages.2.labelPlural>Хедкрабы</Headcrab.lifeStages.2.labelPlural>
+  <Headcrab.lifeStages.2.labelMale>хедкраб</Headcrab.lifeStages.2.labelMale>
+  <Headcrab.lifeStages.2.labelMalePlural>хедкрабы</Headcrab.lifeStages.2.labelMalePlural>
+  <Headcrab.lifeStages.2.labelFemale>хедкраб</Headcrab.lifeStages.2.labelFemale>
+  <Headcrab.lifeStages.2.labelFemalePlural>хедкрабы</Headcrab.lifeStages.2.labelFemalePlural>
+  <Headcrab.labelMale>хедкраб</Headcrab.labelMale>
+  <Headcrab.labelMalePlural>хедкрабы</Headcrab.labelMalePlural>
+  <Headcrab.labelFemale>хедкраб</Headcrab.labelFemale>
+  <Headcrab.labelFemalePlural>хедкрабы</Headcrab.labelFemalePlural>
+
+  <Worm.label>Глистявчик</Worm.label>
+  <Worm.labelPlural>Глистявчики</Worm.labelPlural>
+  <Worm.labelMale>Глистявчик (особь)</Worm.labelMale>
+  <Worm.labelMalePlural>Глистявчики (особи)</Worm.labelMalePlural>
+  <Worm.labelFemale>Глистявчик (особь)</Worm.labelFemale>
+  <Worm.labelFemalePlural>Глистявчики (особи)</Worm.labelFemalePlural>
+
+
+</LanguageData>

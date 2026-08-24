@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Implants>
+
+    <!-- ==================== RIBS ==================== -->
+    <MedicalRib>5</MedicalRib>
+    <DruggedRib>5</DruggedRib>
+    <AdrenalineRib>5</AdrenalineRib>
+    <PainkillerRib>5</PainkillerRib>
+    <HeaterRib>5</HeaterRib>
+    <CoolerRib>5</CoolerRib>
+    <CoagulatorRib>5</CoagulatorRib>
+
+    <!-- ==================== BASIC ==================== -->
+    <EyePatch>8</EyePatch>
+    <HookHand>8</HookHand>
+    <CochlearImplant>8</CochlearImplant>
+
+    <!-- ==================== SIMPLE PROSTHETICS ==================== -->
+    <GlassEye>10</GlassEye>
+    <ArtificialNose>10</ArtificialNose>
+    <SimpleProstheticHand>10</SimpleProstheticHand>
+    <SimpleProstheticFoot>10</SimpleProstheticFoot>
+    <ArtificialPelvis>10</ArtificialPelvis>
+    <SimpleProstheticLeg>12</SimpleProstheticLeg>
+    <SimpleProstheticArm>12</SimpleProstheticArm>
+    <SimpleProstheticHeart>12</SimpleProstheticHeart>
+
+    <!-- ==================== LIFESUPPORT ==================== -->
+    <LifesupportHeart>12</LifesupportHeart>
+    <LifesupportLung>12</LifesupportLung>
+    <LifesupportKidney>12</LifesupportKidney>
+    <LifesupportLiver>12</LifesupportLiver>
+    <LifesupportStomach>12</LifesupportStomach>
+
+    <!-- ==================== ORASSAN ==================== -->
+    <OClothTail>15</OClothTail>
+    <OBionicTail>15</OBionicTail>
+    <PlasteelClaws>15</PlasteelClaws>
+    <CyberneticTail>15</CyberneticTail>
+
+    <!-- ==================== SYNTHETIC ==================== -->
+    <BionicLung>18</BionicLung>
+    <BionicStomach>18</BionicStomach>
+    <BionicLiver>18</BionicLiver>
+    <BionicKidney>18</BionicKidney>
+    <MuscleStimulatorArms>18</MuscleStimulatorArms>
+    <MuscleStimulatorLegs>18</MuscleStimulatorLegs>
+
+    <!-- ==================== ORGANIC OPTIMIZER ==================== -->
+    <OrganicOptimized>18</OrganicOptimized>
+    <InstinctOptimizedEyes>18</InstinctOptimizedEyes>
+    <InstinctOptimizedHand>18</InstinctOptimizedHand>
+    <InstinctOptimizedFoot>18</InstinctOptimizedFoot>
+
+    <!-- ==================== BIONIC ==================== -->
+    <BionicHand>20</BionicHand>
+    <BionicFoot>20</BionicFoot>
+    <BionicEar>20</BionicEar>
+    <BionicJaw>20</BionicJaw>
+    <BionicSpine>25</BionicSpine>
+    <BionicEye>20</BionicEye>
+    <BionicArm>20</BionicArm>
+    <BionicTongue>18</BionicTongue>
+    <BionicLeg>20</BionicLeg>
+    <PowerClaw>22</PowerClaw>
+    <BrainStimulator>20</BrainStimulator>
+    <AIChip>20</AIChip>
+    <BionicNeck>20</BionicNeck>
+
+    <!-- ==================== CONN PRODUCTIVE ==================== -->
+    <CONN_hediff_BlackPearl>20</CONN_hediff_BlackPearl>
+    <CONN_hediff_HoverFeet>20</CONN_hediff_HoverFeet>
+    <CONN_hediff_Greenthumb>20</CONN_hediff_Greenthumb>
+    <CONN_hediff_CompressionJaw>20</CONN_hediff_CompressionJaw>
+    <CONN_hediff_CompressionStomach>20</CONN_hediff_CompressionStomach>
+    <CONN_hediff_FlashLight>20</CONN_hediff_FlashLight>
+    <CONN_hediff_Musclewire>20</CONN_hediff_Musclewire>
+
+    <!-- ==================== CONN COMBAT ==================== -->
+    <CONN_hediff_Zoom>25</CONN_hediff_Zoom>
+    <CONN_hediff_EnergyFist>25</CONN_hediff_EnergyFist>
+    <CONN_hediff_ElasticAchilles>25</CONN_hediff_ElasticAchilles>
+    <CONN_hediff_CyclopsVisor>25</CONN_hediff_CyclopsVisor>
+    <CONN_hediff_LaserDetection>25</CONN_hediff_LaserDetection>
+    <CONN_hediff_SensoricEarside>25</CONN_hediff_SensoricEarside>
+
+    <!-- ==================== SENEXIUM ==================== -->
+    <SenexiumAccelleratedAging>25</SenexiumAccelleratedAging>
+
+    <!-- ==================== CONN PRODUCTIVE ADVANCED ==================== -->
+    <CONN_hediff_EnergeticLung>28</CONN_hediff_EnergeticLung>
+    <CONN_hediff_EnergeticKidney>28</CONN_hediff_EnergeticKidney>
+    <CONN_hediff_EnergyCore>28</CONN_hediff_EnergyCore>
+    <CONN_hediff_Autonomicviruskiller>28</CONN_hediff_Autonomicviruskiller>
+    <CONN_hediff_Aurum>28</CONN_hediff_Aurum>
+
+    <!-- ==================== GT CYBERNETIC ==================== -->
+    <GTEar>30</GTEar>
+    <GTHeart>30</GTHeart>
+    <GTLung>30</GTLung>
+    <GTKidney>30</GTKidney>
+    <GTLiver>30</GTLiver>
+    <GTStomach>30</GTStomach>
+    <GTHand>30</GTHand>
+    <GTFoot>30</GTFoot>
+    <GTDentures>30</GTDentures>
+    <GTSpine>30</GTSpine>
+    <GTNeck>30</GTNeck>
+
+    <!-- ==================== ARCHOTECH ==================== -->
+    <ArchotechEye>50</ArchotechEye>
+    <ArchotechArm>50</ArchotechArm>
+    <ArchotechLeg>50</ArchotechLeg>
+
+    <!-- ==================== CONN COMBAT ADVANCED ==================== -->
+    <CONN_hediff_IndependentEye>30</CONN_hediff_IndependentEye>
+    <CONN_hediff_EnergyLink>30</CONN_hediff_EnergyLink>
+    <CONN_hediff_OuterBlade>30</CONN_hediff_OuterBlade>
+    <CONN_hediff_PowerArms>30</CONN_hediff_PowerArms>
+    <CONN_hediff_Shadowrunner>30</CONN_hediff_Shadowrunner>
+    <CONN_hediff_ExoskeletonArmor>30</CONN_hediff_ExoskeletonArmor>
+    <CONN_hediff_Dermalplating>30</CONN_hediff_Dermalplating>
+    <CONN_hediff_Lionheart>30</CONN_hediff_Lionheart>
+
+    <!-- ==================== EXOSKELETON ==================== -->
+    <ExoskeletonSuit>35</ExoskeletonSuit>
+    <ProtectiveExoskeleton>35</ProtectiveExoskeleton>
+
+    <!-- ==================== GLITTERWORLD ==================== -->
+    <TacticalCorneaImplant>40</TacticalCorneaImplant>
+    <ConstructorCore>40</ConstructorCore>
+    <FarmerCore>40</FarmerCore>
+    <MinerCore>40</MinerCore>
+    <DoctorCore>40</DoctorCore>
+    <DiplomatCore>40</DiplomatCore>
+    <AuxiliaryAI_Sharpshooter>40</AuxiliaryAI_Sharpshooter>
+    <AuxiliaryAI_Commando>40</AuxiliaryAI_Commando>
+    <AuxiliaryAI_Brawler>40</AuxiliaryAI_Brawler>
+    <AIPersonaCore>40</AIPersonaCore>
+
+    <!-- ==================== CONN MIND ALTERING ==================== -->
+    <CONN_hediff_BerserkerChip>45</CONN_hediff_BerserkerChip>
+    <CONN_hediff_Mindtwist>45</CONN_hediff_Mindtwist>
+    <CONN_hediff_MuseChip>45</CONN_hediff_MuseChip>
+    <CONN_hediff_NeuroEnhancer>45</CONN_hediff_NeuroEnhancer>
+    <CONN_hediff_CombatAI>45</CONN_hediff_CombatAI>
+
+    <!-- ==================== SPECIAL ==================== -->
+    <Joywire>35</Joywire>
+    <Painstopper>30</Painstopper>
+     <MindLock>-260</MindLock>
+</Implants>

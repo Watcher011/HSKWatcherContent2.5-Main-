@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CookSausages.label>Приготовить сосиски</CookSausages.label>
+  <CookSausages.description>Подготавливает сосиски. Производит 1 шт.</CookSausages.description>
+  <CookSausages.jobString>Обжаривает сосиски.</CookSausages.jobString>
+
+  <CookSausagesBulk.label>Приготовить сосиски (4 шт.)</CookSausagesBulk.label>
+  <CookSausagesBulk.description>Подготавливает сосиски. Производит 4. Большая часть ингредиентов выбрасывается ради создания наилучшего вкуса.</CookSausagesBulk.description>
+  <CookSausagesBulk.jobString>Жареные сосиски.</CookSausagesBulk.jobString>
+
+  <CookMealFishAndBeer.label>Приготовить пиво с рыбой.</CookMealFishAndBeer.label>
+  <CookMealFishAndBeer.description>Настоящая мужская еда.</CookMealFishAndBeer.description>
+  <CookMealFishAndBeer.jobString>Готовит.</CookMealFishAndBeer.jobString>
+
+  <CookMealFishinplastic.label>Запечатывать рыбу в пленку.</CookMealFishinplastic.label>
+  <CookMealFishinplastic.description>Сухой паек для трудных времен.</CookMealFishinplastic.description>
+  <CookMealFishinplastic.jobString>Готовит.</CookMealFishinplastic.jobString>
+
+  <CookCyberPsychosisBlockerPill.label>Создать дозу ингибитора киберпсихоза</CookCyberPsychosisBlockerPill.label>
+  <CookCyberPsychosisBlockerPill.description>Доза ингибитора киберпсихоза.</CookCyberPsychosisBlockerPill.description>
+  <CookCyberPsychosisBlockerPill.jobString>Создание дозы ингибитора</CookCyberPsychosisBlockerPill.jobString>
+
+  <CookMealHeadcrab.label>Зажарить хедкраба</CookMealHeadcrab.label>
+  <CookMealHeadcrab.description>Еда для смельчаков. Или для безнадёжных.</CookMealHeadcrab.description>
+  <CookMealHeadcrab.jobString>Колдует над хедкрабом.</CookMealHeadcrab.jobString>
+
+<MakeAdjika.label>приготовить Аджику</MakeAdjika.label>
+<MakeAdjika.description>Создаёт острую пасту из жгучего перца, чеснока и диких трав. Выход: 2.</MakeAdjika.description>
+<MakeAdjika.jobString>Готовит Аджику.</MakeAdjika.jobString>
+
+
+</LanguageData>

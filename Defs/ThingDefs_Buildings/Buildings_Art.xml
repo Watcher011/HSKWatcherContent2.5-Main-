@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingDef ParentName="SculptureBase">
+		<defName>KatXArt</defName>
+		<label>cat sculpture</label>
+        <description>A cat sculpture for a colony. Provides warmth and comfort.</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<texPath>Things/Building/Art/Can</texPath>
+			<drawSize>(1,1)</drawSize>
+		    <drawOffset>(0,0,0.3)</drawOffset>
+		</graphicData>
+		<fillPercent>0.3</fillPercent>
+		<rotatable>false</rotatable>
+			<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>170</MaxHitPoints>
+			<Beauty>70</Beauty>
+			<WorkToMake>36000</WorkToMake>
+			<Bulk>80</Bulk>
+			<Mass>50</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">48</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<Glowstone>2</Glowstone>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(180,197,215,0)</glowColor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>Art_B2</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="SculptureBase">
+		<defName>WatcherArt</defName>
+		<label>Watcher sculpture</label>
+		<description>Watcher sculpture for watching over the colony, reduces the number of errors by 3%.</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<texPath>Things/Building/Art/W</texPath>
+			<drawSize>(1.8,1.8)</drawSize>
+		</graphicData>
+		<fillPercent>0.3</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>170</MaxHitPoints>
+			<Beauty>70</Beauty>
+			<WorkToMake>36000</WorkToMake>
+			<Bulk>80</Bulk>
+			<Mass>50</Mass>
+			 <TerrorSource>25</TerrorSource>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">48</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(180,197,215,0)</glowColor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>Art_B2</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+<ThingDef ParentName="SculptureBase">
+		<defName>Fumo</defName>
+		<label>Fumo sculpture</label>
+        <description>Statue of a doll with cute eyes, seems to be very popular among two-legged mammals centuries ago. You have no idea how it got in hereou constantly feel someone's gaze on you. The doll seems to be watching your every move..</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<texPath>Things/Building/Art/Fumo</texPath>
+			<drawSize>(1,1)</drawSize>
+		   <drawOffset>(0,0,0.3)</drawOffset>
+		</graphicData>
+		<fillPercent>0.3</fillPercent>
+		<rotatable>false</rotatable>
+			<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>170</MaxHitPoints>
+			<Beauty>70</Beauty>
+			<WorkToMake>36000</WorkToMake>
+			<Bulk>80</Bulk>
+			<Mass>50</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">48</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<Glowstone>2</Glowstone>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(180,197,215,0)</glowColor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>Art_B2</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,715 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RecipeDef Name="Make_CoffeeBase" Abstract="True">
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GroundCoffee</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>CoffeeBasin</li>
+		</recipeUsers>
+		
+		<!-- RecipeDef_UF fields -->
+		<temperatureSafe>
+			<min>-50</min>
+			<max>60</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>-40</min>
+			<max>30</max>
+		</temperatureIdeal>
+		<processDays>1</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.5</speedAboveSafe>
+		<sunFactor>
+			<min>1</min>
+			<max>1</max>
+		</sunFactor>
+		<rainFactor>
+			<min>1</min>
+			<max>1</max>
+		</rainFactor>
+		<snowFactor>
+			<min>1</min>
+			<max>1</max>
+		</snowFactor>
+		<windFactor>
+			<min>1</min>
+			<max>1</max>
+		</windFactor>
+		
+	</RecipeDef>
+	
+	<RecipeDef ParentName="Make_CoffeeBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_CupDecaffeinatedCoffee</defName>
+	    <label>Decaffeinated Coffee x2</label>
+        <description>"Officially approved by the Imperial Ministry of Health as 'the least harmful way to lose your temper with life'. It undergoes 12 stages of chemical processing, during which the beans are carefully stripped of everything that could bring even a drop of joy to this cruel world. Ideal for:Colonies where alcohol has already been banned (by order of a nervous security chief).Former coffee drinkers who have 'pulled themselves together' (and now hate everyone around them).Fake productivity during night shifts"</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GroundCoffee</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<products>
+			<CupDecaffeinatedCoffee>2</CupDecaffeinatedCoffee>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_CoffeeBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_CupStrongCoffee</defName>
+		<label>Double coffee</label>
+		<description>"Officially approved by the Imperial Colonial Administration as a "temporarily necessary psychoactive drug to enhance combat effectiveness." Unofficially, it's a black goo for which your colonists will sell their souls, their last hydroponic component, and possibly you.Production:Harvested on plantations under the scorching sun.Dried in kilns along with the hopes of the workers.Grinded into dust, like moral principles</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GroundCoffee</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			<li>GroundCoffee</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<CupStrongCoffee>1</CupStrongCoffee>
+		</products>
+	</RecipeDef>
+	
+	
+	
+	
+	<RecipeDef Name="Make_IcecreamBase" Abstract="True">
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Milk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>IcecreamBasin</li>
+		</recipeUsers>
+		
+		<!-- RecipeDef_UF fields -->
+		<temperatureSafe>
+			<min>-50</min>
+			<max>60</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>-40</min>
+			<max>30</max>
+		</temperatureIdeal>
+		<processDays>1</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.5</speedAboveSafe>
+		<sunFactor>
+			<min>1</min>
+			<max>1</max>
+		</sunFactor>
+		<rainFactor>
+			<min>1</min>
+			<max>1</max>
+		</rainFactor>
+		<snowFactor>
+			<min>1</min>
+			<max>1</max>
+		</snowFactor>
+		<windFactor>
+			<min>1</min>
+			<max>1</max>
+		</windFactor>
+		
+	</RecipeDef>
+	
+	<RecipeDef ParentName="Make_IcecreamBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_IceCreamfruits</defName>
+	    <label>Ice Cream(fruits) x2</label>
+        <description>*"When Imperial nutritionists declared synthetic paste to be "a perfectly balanced food" for the 57th time, the colonists responded by choking on these multi-colored ice balls. Supposedly "natural" - although every child knows that real fruit died out before the Fall Wars.The secret ingredient is nostalgia. And 12% genetically modified pseudo-strawberries grown in underground hydroponic jars (which are, of course, completely legal and definitely do not require monthly "donations" to the local branch of the Imperial Inspectorate)."*</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			<li>Milk</li>
+			<li>RawBerries</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<IceCreamfruits>2</IceCreamfruits>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_IcecreamBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_IceCreamchocolate</defName>
+		<label>Ice Cream(chocolate) x2</label>
+		<description>*"Officially approved by the Imperial Committee on People's Happiness (Protocol #451-bis) as a "morally necessary substance for the productivity of colonists". Each serving contains:*
+*- 12% genetically modified cocoa from Outer Rim plantations (flamethrower-treated for sterility)*
+*- 43% recycled milk concentrate (don't ask what it's made of)*
+*- 22% crystals of happiness (chemical formula classified by order of the Architect)*
+*- 23% government propaganda (in the form of crispy waffle patterns)*
+Recent studies have shown that 97% of colonist subjects demonstrated temporary loyalty after consumption. The remaining 3% were... recycled into the next batch."</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chocolate</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			<li>Milk</li>
+			<li>Chocolate</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<IceCreamchocolate>2</IceCreamchocolate>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="Make_IcecreamBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_IceCreamcoconut</defName>
+		<label>Ice Cream(coconut) x2</label>
+		<description>"Officially approved by the Imperial Colonial Administration as a "temporarily necessary psychoactive drug to enhance combat effectiveness." Unofficially, it's a black goo for which your colonists will sell their souls, their last hydroponic component, and possibly you.Production:Harvested on plantations under the scorching sun.Dried in kilns along with the hopes of the workers.Grinded into dust, like moral principles</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCoconut</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			<li>Milk</li>
+			<li>RawCoconut</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<IceCreamcoconut>2</IceCreamcoconut>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="Make_IcecreamBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_IceCream</defName>
+		<label>Ice Cream x2</label>
+		<description>"A crispy waffle cone filled with a suspiciously smooth substance that colonists insist on calling 'ice cream'. Rumor has it that it's made from real milk (if you were lucky enough to not lose all your cows in the last raid), synthetic substitutes (read: nutrient paste with sugar), or, at a pinch, what's left over from 'voluntary' recycling of biomass. Adorned with a tiny flag bearing your colony's logo - because even in the hell of capitalism there must be branding."</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			<li>Milk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<IceCream>2</IceCream>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="Make_IcecreamBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_IceCream10x</defName>
+		<label>Ice Cream x10</label>
+		<description>"A crispy waffle cone filled with a suspiciously smooth substance that colonists insist on calling 'ice cream'. Rumor has it that it's made from real milk (if you were lucky enough to not lose all your cows in the last raid), synthetic substitutes (read: nutrient paste with sugar), or, at a pinch, what's left over from 'voluntary' recycling of biomass. Adorned with a tiny flag bearing your colony's logo - because even in the hell of capitalism there must be branding."</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			<li>Milk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<IceCream>10</IceCream>
+		</products>
+	</RecipeDef>
+	
+	
+		<RecipeDef ParentName="GlitterpediaModExtBase" Name="Make_CharcoalPitBase" Abstract="True">
+		<recipeUsers>
+			<li>CharcoalPit</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<temperatureSafe>
+			<min>-50</min>
+			<max>120</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>-30</min>
+			<max>90</max>
+		</temperatureIdeal>
+		<processDays>2.8</processDays>
+		<speedBelowSafe>0.5</speedBelowSafe>
+		<speedAboveSafe>1</speedAboveSafe>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="Make_CharcoalPitBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_20Charcoal</defName>
+		<label>make Charcoal x20</label>
+		<description>Make Charcoal. Takes 3 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Wooden</li>
+					</categories>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Wooden</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<Charcoal>20</Charcoal>
+			<Ash>5</Ash>
+		</products>
+		<processDays>3</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.8</speedAboveSafe>
+		<graphicSuffix>_closed</graphicSuffix>
+	</RecipeDef>
+	
+	
+	<RecipeDef ParentName="Make_CharcoalPitBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_90Carcoal</defName>
+		<label>make Charcoal x90</label>
+		<description>Make Charcoal. Takes 6 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Wooden</li>
+					</categories>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Wooden</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<Charcoal>90</Charcoal>
+			<Ash>10</Ash>
+		</products>
+		<processDays>6</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.8</speedAboveSafe>
+		<graphicSuffix>_closed</graphicSuffix>
+	</RecipeDef>
+	
+	
+	<RecipeDef ParentName="Make_CharcoalPitBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_100Ash</defName>
+		<label>make Ash x100</label>
+		<description>Make Ash. Takes 6 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Wooden</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Wooden</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<Charcoal>1</Charcoal>
+			<Ash>100</Ash>
+		</products>
+		<processDays>6</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.8</speedAboveSafe>
+		<graphicSuffix>_closed</graphicSuffix>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="Make_CharcoalPitBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_20ClayBricks</defName>
+		<label>make Clay Bricks x20</label>
+		<description>Make Clay Bricks. Takes 2 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+						<li>SoftClay</li>
+				</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+				<thingDefs>
+						<li>Charcoal</li>
+				</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+					<li>SoftClay</li>
+					<li>Charcoal</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ClayBrick>20</ClayBrick>
+			<GlassBatch>2</GlassBatch>
+		</products>
+		<processDays>2</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.8</speedAboveSafe>
+		 
+	</RecipeDef>
+	
+	<RecipeDef Name="Make_DriedMushroomsBase" Abstract="True">
+		<fixedIngredientFilter>
+			<categories>
+				<li>FungusPlantRaw</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>DryingRack</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<temperatureSafe>
+			<min>5</min>
+			<max>80</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>18</min>
+			<max>50</max>
+		</temperatureIdeal>
+		<processDays>2</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.8</speedAboveSafe>
+		<sunFactor>
+			<min>0.75</min>
+			<max>1.2</max>
+		</sunFactor>
+		<rainFactor>
+			<min>1</min>
+			<max>0</max>
+		</rainFactor>
+		<snowFactor>
+			<min>1</min>
+			<max>0</max>
+		</snowFactor>
+		<windFactor>
+			<min>1</min>
+			<max>1.2</max>
+		</windFactor>
+	</RecipeDef>
+	<RecipeDef ParentName="Make_DriedMushroomsBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_DriedMushrooms</defName>
+		<label>dry mushrooms</label>
+        <description>Dry fresh mushrooms. The process takes 2 days.</description>
+		<ingredients>
+		<li>
+				<filter>
+					<categories>
+						<li>FungusPlantRaw</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<DruFungus>5</DruFungus>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Make_DriedMushroomsBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_DriedMushrooms_x5</defName>
+        <label>Dry Mushrooms x5</label>
+        <description>Dry fresh mushrooms. The process takes 2 days.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FungusPlantRaw</li>
+					</categories>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<products>
+			<DruFungus>25</DruFungus>
+		</products>
+
+		<!-- RecipeDef_UF fields -->
+		<slotsRequired>5</slotsRequired>
+	</RecipeDef>
+
+
+
+<RecipeDef Name="Make_FishBase" Abstract="True">
+		<recipeUsers>
+			<li>JerkyRack</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<temperatureSafe>
+			<min>12</min>
+			<max>80</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>23</min>
+			<max>50</max>
+		</temperatureIdeal>
+		<processDays>2</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.8</speedAboveSafe>
+		<sunFactor>
+			<min>0.75</min>
+			<max>1.2</max>
+		</sunFactor>
+		<rainFactor>
+			<min>1</min>
+			<max>0</max>
+		</rainFactor>
+		<snowFactor>
+			<min>1</min>
+			<max>0</max>
+		</snowFactor>
+		<windFactor>
+			<min>1</min>
+			<max>1.2</max>
+		</windFactor>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="Make_FishBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_DriedFish</defName>
+	    <label>dry the fish</label>
+         <description>Dry the fish. The process takes 2 days.</description>
+		 <ingredients>
+      <li>
+        <filter>
+		  <thingDefs>
+			<li>Corpse_ThingDefFishSduiggles</li>
+			<li>Corpse_ThingDefFishSeasnake</li>
+			<li>Corpse_ThingDefFishMashgon</li>
+			<li>Corpse_ThingDefFishBlueblade</li>
+			<li>Corpse_ThingDefFishTailteeth</li>
+			<li>Corpse_ThingDefCuda</li>
+			<li>Corpse_ThingDefIceFlounder</li>
+			<li>Corpse_ThingDefFishSterlingPerch</li>
+			<li>Corpse_ThingDefFishPinstripeBass</li>
+		  </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	   <li>
+        <filter>
+		  <thingDefs>
+			<li>Salt</li>
+		  </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+		<products>
+			<DruFish>3</DruFish>
+		</products>
+		  <fixedIngredientFilter>
+      <thingDefs>
+        <li>Corpse_ThingDefFishSduiggles</li>
+		<li>Corpse_ThingDefFishSeasnake</li>
+		<li>Corpse_ThingDefFishMashgon</li>
+		<li>Corpse_ThingDefFishBlueblade</li>
+        <li>Corpse_ThingDefFishTailteeth</li>
+		<li>Corpse_ThingDefCuda</li>
+		<li>Corpse_ThingDefIceFlounder</li>
+		<li>Corpse_ThingDefFishSterlingPerch</li>
+		<li>Corpse_ThingDefFishPinstripeBass</li>
+		<li>Salt</li>
+      </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+	</RecipeDef>
+
+
+
+<RecipeDef Name="Make_RecyclerBasinBase" Abstract="True">
+		<recipeUsers>
+			<li>RecyclerBasin</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<temperatureSafe>
+			<min>12</min>
+			<max>80</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>23</min>
+			<max>50</max>
+		</temperatureIdeal>
+		<processDays>2</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.8</speedAboveSafe>
+		<sunFactor>
+			<min>0.75</min>
+			<max>1.2</max>
+		</sunFactor>
+		<rainFactor>
+			<min>1</min>
+			<max>0</max>
+		</rainFactor>
+		<snowFactor>
+			<min>1</min>
+			<max>0</max>
+		</snowFactor>
+		<windFactor>
+			<min>1</min>
+			<max>1.2</max>
+		</windFactor>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="Make_RecyclerBasinBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_RecyclerBasin</defName>
+	    <label>feed things</label>
+         <description>Feed things. The process takes 2 days.</description>
+       <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Apparel</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+		<products>
+			<InsectJelly>5</InsectJelly>
+		</products>
+		<fixedIngredientFilter>
+      <categories>
+        <li>Apparel</li>
+      </categories>
+    </fixedIngredientFilter>
+		<graphicSuffix>_Recycler</graphicSuffix>
+	</RecipeDef>
+
+
+<RecipeDef ParentName="Make_RecyclerBasinBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_RecyclerWeapon</defName>
+		<label>feed weapon</label>
+		<description>feed  weapon.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>WeaponsRanged</li>
+						<li>ShieldCat</li>
+						<li>SharpMelee</li>
+						<li>AgileMelee</li>
+						<li>SurvivalToolsNeolithic</li>
+						<li>HeavyMelee</li>
+						<li>BluntMelee</li>
+						<li>CrossbarRanged</li>
+						<li>BowRanged</li>
+						<li>ThrownRanged</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<InsectJelly>5</InsectJelly>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>WeaponsRanged</li>
+				<li>SharpMelee</li>
+				<li>AgileMelee</li>
+				<li>SurvivalToolsNeolithic</li>
+				<li>HeavyMelee</li>
+				<li>BluntMelee</li>
+				<li>CrossbarRanged</li>
+				<li>BowRanged</li>
+				<li>ThrownRanged</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>MeleeWeapon_Club</li> 
+			</disallowedThingDefs>
+			<specialFiltersToDisallow>
+				<li>AllowApparelSpacer</li>
+				<li>AllowApparelUltra</li>
+				<li>AllowApparelArchotech</li>
+				<li>AllowNonMetallicStuffApparel</li>
+			</specialFiltersToDisallow>
+	
+		</fixedIngredientFilter>
+		
+	</RecipeDef>
+
+</Defs>

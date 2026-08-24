@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <!-- <PsychicRitualDef_InvocationCircle>
+    <defName>SummonRandomOutcome</defName>
+    <label>ritual of uncertain fate</label>
+    <description>Invoke unpredictable powers. Results may vary from miraculous blessings to catastrophic failure.</description>
+    <invokerRole>Invoker</invokerRole>
+	<hoursUntilOutcome>2</hoursUntilOutcome>
+    <layerWhitelist>
+        <li>Surface</li>
+    </layerWhitelist>
+    <requiredOffering>
+        <filter>
+            <thingDefs>
+                <li>Skull</li>
+            </thingDefs>
+        </filter>
+        <count>8</count>
+    </requiredOffering>
+    <cooldownHours>120</cooldownHours>
+    <iconPath>UI/PsychicRituals/PsychicRitual_SummonOutcome</iconPath>
+  </PsychicRitualDef_InvocationCircle>-->
+ 
+  <!--
+     <PsychicRitualDef_Chronophagy ParentName="PsychicRitualBase">
+        <defName>HSK_StatAugmentation</defName>
+        <label>ritual of stat augmentation</label>
+        <description>Invoke dark psychic energies to enhance the invoker's abilities. The ritual channels forbidden archotech knowledge to temporarily boost a random skill. However, failure may result in permanent eye damage or worse...</description>
+        <researchPrerequisite>Chronophagy</researchPrerequisite>
+        <outcomeDescription>At the current ritual quality, the invoker has a chance to gain significant stat bonuses. Poor results may cause cataracts or trigger catastrophic events.</outcomeDescription>
+        <hoursUntilOutcome>4</hoursUntilOutcome>
+        <cooldownHours>120</cooldownHours>
+        <iconPath>UI/PsychicRituals/PsychicRitual_Chronophagy</iconPath>
+        <statBonusRange>1~5</statBonusRange>
+        <minorBonusChance>0.3</minorBonusChance>
+        <failureCataractChance>0.2</failureCataractChance>
+        <planetaryAnnihilationChance>0.05</planetaryAnnihilationChance>
+        <requiredOffering>
+            <filter>
+                <thingDefs>
+                    <li>Bioferrite</li>
+                </thingDefs>
+            </filter>
+            <count>30</count>
+        </requiredOffering>
+        <comps>
+            <li Class="PsychicRitualCompProperties_InvokerOnly" />
+        </comps>
+    </PsychicRitualDef_Chronophagy>-->
+
+ <!--   <PsychicRitualRoleDef>
+        <defName>HSK_StatAugmentationInvoker</defName>
+        <label>invoker</label>
+        <description>The one who channels the dark energies.</description>
+        <showDesc>True</showDesc>
+        <category>PsychicRitual</category>
+        <maxCount>1</maxCount>
+        <requirePsychicSensitivity>True</requirePsychicSensitivity>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+    </PsychicRitualRoleDef>-->
+</Defs>

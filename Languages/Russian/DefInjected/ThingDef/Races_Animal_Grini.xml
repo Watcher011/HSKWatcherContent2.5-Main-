@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <GrinCat.label>ГриньКот</GrinCat.label>
+  <GrinCat.description>Одно из первых одомашненных существ человечества, ГриньКот — это мелкое млекопитающее, охотящееся на вредителей. Известные своей отчуждённостью, ГриньКоты тем не менее остаются популярными компаньонами благодаря своей независимости, спокойному нраву и красивой, приятной на ощупь шерсти.</GrinCat.description>
+  <GrinCat.tools.0.label>левая лапа</GrinCat.tools.0.label>
+  <GrinCat.tools.1.label>правая лапа</GrinCat.tools.1.label>
+  <GrinCat.tools.3.label>голова</GrinCat.tools.3.label>
+
+  <GreenyZyabra.label>ГриниЗябра</GreenyZyabra.label>
+  <GreenyZyabra.description>Название происходит от древнепастушеских слов «грини» (зелень, трава, а также предсмертный хрип дурака с дубинкой) и «зябра» (то, чем он дышит и заодно откусывает конечности). Уточнение «от слова Грини» закрепилось в фольклоре после того, как семеро лингвистов попытались переспорить ГриниЗябру о склонениях и были съедены вместе со словарями.</GreenyZyabra.description>
+  <GreenyZyabra.tools.0.label>Левая клешня</GreenyZyabra.tools.0.label>
+  <GreenyZyabra.tools.1.label>Правая клешня</GreenyZyabra.tools.1.label>
+  <GreenyZyabra.tools.2.label>Голова</GreenyZyabra.tools.2.label>
+
+
+</LanguageData>
