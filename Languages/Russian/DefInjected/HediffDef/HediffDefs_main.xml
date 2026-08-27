@@ -107,8 +107,14 @@
   <ExplosiveParasite.description>Бесконтрольное размножение паразитов внутри организма вызывает сильное вздутие и накопление летучих токсичных веществ. При повреждении тканей или ударе давление внутри тела резко возрастает, что провоцирует мощный взрыв с выбросом газа.</ExplosiveParasite.description>
   <ExplosiveParasite.stages.0.label>заражён</ExplosiveParasite.stages.0.label>
   <ExplosiveParasite.labelNoun>взрывной паразит</ExplosiveParasite.labelNoun>
-<HadAdjika.label>ел Аджику</HadAdjika.label>
-<HadAdjika.description>Я ел острую пасту из жгучего перца и диких трав. Я чувствовал, как обжигающий жар разливается по венам, согревая тело и проясняя мысли...</HadAdjika.description>
+
+  <HadAdjika.label>ел Аджику</HadAdjika.label>
+  <HadAdjika.description>Я ел острую пасту из жгучего перца и диких трав. Я чувствовал, как обжигающий жар разливается по венам, согревая тело и проясняя мысли...</HadAdjika.description>
+
+  <RimBargHappy.label>Энергетический всплеск «РимБарг»</RimBargHappy.label>
+  <RimBargHappy.description>Жидкий хаос в банке — агава, кофеин и ярость Баргеста. Мои вены кричат, мозг плавится, а я ещё никогда не чувствовал себя таким живым. Смерть подождёт. Мне нужно сжигать колонии и бить мордой тумбо.</RimBargHappy.description>
+  <RimBargHappy.stages.0.label>Топливо Баргеста</RimBargHappy.stages.0.label>
+  <RimBargHappy.stages.1.label>Слишком закофеинен, чтобы волноваться</RimBargHappy.stages.1.label>
 
 
   <!-- ========================================== -->

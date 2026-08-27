@@ -26,12 +26,12 @@
   <HeadcrabAttack.letterText>Хедкраб замечен приближающимся к вашей колонии! Он попытается прикрепиться к голове поселенца и превратить его во враждебное существо. Убейте его, пока он не добрался до кого-нибудь!</HeadcrabAttack.letterText>
   <HeadcrabAttack.letterLabel>Хедкраб!</HeadcrabAttack.letterLabel>
 
-  <LamarPortal.label>аномальная телепортация</LamarPortal.label>
+  <LamarPortal.label>Аномальная телепортация</LamarPortal.label>
   <LamarPortal.letterText>Странный энергетический сигнал зафиксирован недалеко от вашей колонии...</LamarPortal.letterText>
   <LamarPortal.letterLabel>Аномальная телепортация</LamarPortal.letterLabel>
 
   <ArtilleryPreparation.label>Артиллерийская подготовка</ArtilleryPreparation.label>
-  <ExplosiveParasiteRaid.label>взрывной паразит</ExplosiveParasiteRaid.label>
+  <ExplosiveParasiteRaid.label>Взрывной паразит</ExplosiveParasiteRaid.label>
 
 
   <!--<GreenyZyabraInvasion.description>Земля трескается. Небо темнеет. Зелёная Зиабра пришла. Её плоть — хитин и слизь. Её разум — рой. Она не завоёвывает — она пожирает. Города исчезают. Технологии бесполезны. Остаётся только бежать. Или стать частью неё.</GreenyZyabraInvasion.description>-->

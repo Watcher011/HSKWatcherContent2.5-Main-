@@ -83,4 +83,18 @@
     </stages>
 </ThoughtDef>
 
+
+
+	<ThoughtDef>
+		<defName>HadRimBargDrink</defName>
+		<durationDays>0.7</durationDays>
+		<stackLimit>2</stackLimit>
+		<stages>
+			<li>
+				<label>RimBarg Surge</label>
+			    <description>Barghest's wrath in a can! The agave buzz and caffeine kick make me feel like I could punch a thrumbo to death. Too bad my heart disagrees — but hey, at least I'll die energized and mildly hallucinating.</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 </Defs>

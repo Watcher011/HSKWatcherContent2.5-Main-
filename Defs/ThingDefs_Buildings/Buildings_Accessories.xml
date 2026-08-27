@@ -536,8 +536,6 @@
 		</stuffCategories>
 		<costStuffCount>85</costStuffCount>
 		<costList>
-			<LivingFire>1</LivingFire>
-			<Glass>10</Glass>
 			<ComponentMedieval>8</ComponentMedieval>
 			<Mechanism>4</Mechanism>
 		</costList>

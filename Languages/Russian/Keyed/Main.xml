@@ -1,23 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-
   <HSK_WildHunt_LetterLabel>Дикая охота</HSK_WildHunt_LetterLabel>
   <HSK_WildHunt_LetterText>Вдали небо потемнело и раздались завывания, что пробирают до глубины души. Гончие Дикой Охоты вышли на тропу войны... Они будут атаковать вашу колонию в течение следующих двух дней.</HSK_WildHunt_LetterText>
-
-
   <HSK_WildHunt_End_LetterLabel>Охота окончена</HSK_WildHunt_End_LetterLabel>
   <HSK_WildHunt_End_LetterText>Гончие Дикой Охоты, насытившись хаосом и разрушением, покинули ваши земли и двинулись дальше в поисках новой добычи. Тишина, наступившая после их ухода, кажется неестественно громкой.</HSK_WildHunt_End_LetterText>
-
-
   <HSK_WildHunt_ConditionLabel>Дикая охота</HSK_WildHunt_ConditionLabel>
   <HSK_WildHunt_ConditionDesc>Гончие Дикой Охоты атакуют колонию. Они покинут эти земли через 2 дня.</HSK_WildHunt_ConditionDesc>
-
   <Barghest>Гончая Дикой Охоты</Barghest>
   <Barghest_label>гончая дикой охоты</Barghest_label>
   <Barghest_description>Ужасающая гончая из легенд о Дикой Охоте. Эти сверхъестественные существа не оставляют следов своего присутствия, исчезая вместе с окончанием охоты. Каждое убийство, совершенное гончей, порождает новую, делая охооту бесконечной.</Barghest_description>
-
-
   <Barghest_kind>Гончая Дикой Охоты</Barghest_kind>
   <BarghestPlural>Гончие Дикой Охоты</BarghestPlural>
   <HSK_CursedSoul_GameConditionLabel>Охота на {0}</HSK_CursedSoul_GameConditionLabel>
@@ -29,57 +21,38 @@
   <HSK_CursedSoul_Survived_LetterText>После 20 дней непрерывных атак баргесты отступили. Проклятие, висевшее над {0}, наконец-то рассеялось.</HSK_CursedSoul_Survived_LetterText>
   <HSK_CursedSoul_Ended_LetterLabel>Проклятие снято</HSK_CursedSoul_Ended_LetterLabel>
   <HSK_CursedSoul_Ended_LetterText>С исчезновением проклятой души баргесты потеряли интерес к вашей колонии и отступили.</HSK_CursedSoul_Ended_LetterText>
-
-
   <HSK_SoulCurse>проклятие души</HSK_SoulCurse>
   <HSK_SoulCurse_label>проклятие души</HSK_SoulCurse_label>
   <HSK_SoulCurse_desc>Тёмное сверхъестественное проклятие, привлекающее враждебных существ. Проклятая душа испускает ауру, которая призывает баргестов из теней.</HSK_SoulCurse_desc>
-
   <HSK_SoulCurse_stages_cursed_label>проклятый</HSK_SoulCurse_stages_cursed_label>
   <HSK_SoulCurse_stages_cursed_desc>Колонист отмечен тёмным проклятием, которое привлекает сверхъестественных хищников.</HSK_SoulCurse_stages_cursed_desc>
-
-
   <HSK_CursedSoul_label>Проклятая душа</HSK_CursedSoul_label>
   <HSK_CursedSoul_desc>Один из колонистов проклят тёмными силами, привлекая баргестов к вашей колонии.</HSK_CursedSoul_desc>
   <HSK_CursedSoul_letterLabel>Проклятая душа</HSK_CursedSoul_letterLabel>
   <HSK_CursedSoul_letterText>Колонист проклят тёмными силами, привлекая баргестов к вашей колонии!</HSK_CursedSoul_letterText>
-
-
   <HSK_GameCondition_CursedSoul_label>Проклятая душа</HSK_GameCondition_CursedSoul_label>
   <HSK_GameCondition_CursedSoul_desc>Тёмное проклятие пало на одного из ваших колонистов, привлекая баргестов из теней.</HSK_GameCondition_CursedSoul_desc>
   <HSK_GameCondition_CursedSoul_letterLabel>Событие Проклятой Души</HSK_GameCondition_CursedSoul_letterLabel>
   <HSK_GameCondition_CursedSoul_letterText>Один из ваших колонистов проклят, привлекая баргестов к вашей колонии.</HSK_GameCondition_CursedSoul_letterText>
-
   <RaiderTribute.DemandText>Пираты требуют выкуп в размере {0}! Они угрожают разграбить ваше поселение, если вы не заплатите. У вас есть выбор: заплатить серебром, отдать ценный предмет или отказаться и рискнуть быть атакованными.</RaiderTribute.DemandText>
   <RaiderTribute.AlternativeItem>В качестве альтернативы пираты готовы принять {0}.</RaiderTribute.AlternativeItem>
-
-
   <RaiderTribute.DemandText>Пираты требуют выкуп в размере {0}! Они угрожают разграбить ваше поселение, если вы не заплатите. У вас есть выбор: заплатить серебром, отдать ценный предмет или отказаться и рискнуть быть атакованными.</RaiderTribute.DemandText>
   <RaiderTribute.AlternativeItem>В качестве альтернативы пираты готовы принять {0}.</RaiderTribute.AlternativeItem>
-
-
   <RaiderTribute.PaySilver>Заплатить серебром</RaiderTribute.PaySilver>
   <RaiderTribute.NoSilverOption>Недостаточно серебра</RaiderTribute.NoSilverOption>
   <RaiderTribute.GiveItem>Отдать {0}</RaiderTribute.GiveItem>
   <RaiderTribute.NoItemOption>Нет подходящих предметов</RaiderTribute.NoItemOption>
   <RaiderTribute.Refuse>Отказаться платить</RaiderTribute.Refuse>
-
-
   <RaiderTribute.PaidSilverLetterLabel>Выкуп выплачен</RaiderTribute.PaidSilverLetterLabel>
   <RaiderTribute.PaidSilverLetterText>Пираты довольны выкупом и уходят, пообещав оставить ваше поселение в покое... по крайней мере, на время.</RaiderTribute.PaidSilverLetterText>
-
   <RaiderTribute.PaidItemLetterLabel>Предмет передан</RaiderTribute.PaidItemLetterLabel>
   <RaiderTribute.PaidItemLetterText>Пираты забирают {0} и уходят, довольно посмеиваясь.</RaiderTribute.PaidItemLetterText>
-
   <RaiderTribute.DoubleCrossLetterLabel>Ловушка!</RaiderTribute.DoubleCrossLetterLabel>
   <RaiderTribute.DoubleCrossLetterText>Пираты забирают выкуп... но затем с ухмылкой объявляют, что решили взять и ваше поселение тоже! Это была ловушка!</RaiderTribute.DoubleCrossLetterText>
-
   <RaiderTribute.DoubleCrossWithItemLetterLabel>Ловушка!</RaiderTribute.DoubleCrossWithItemLetterLabel>
   <RaiderTribute.DoubleCrossWithItemLetterText>Пираты забирают {0}... но вместо того чтобы уйти, они готовятся к атаке! Это была ловушка!</RaiderTribute.DoubleCrossWithItemLetterText>
-
   <RaiderTribute.BluffRetreatLetterLabel>Пираты отступают</RaiderTribute.BluffRetreatLetterLabel>
   <RaiderTribute.BluffRetreatLetterText>К вашему удивлению, пираты не атакуют. Они неуверенно переглядываются и начинают отступать. Похоже, это был блеф - у них не хватило сил для настоящей атаки!</RaiderTribute.BluffRetreatLetterText>
-
   <RaiderTribute.RefusedLetterLabel>Пираты атакуют!</RaiderTribute.RefusedLetterLabel>
   <RaiderTribute.RefusedLetterText>Пираты в ярости от вашего отказа! Они начинают атаку на ваше поселение!</RaiderTribute.RefusedLetterText>
 
@@ -89,7 +62,6 @@
 
 Ошибки
   <RaiderTribute.ErrorCreatingDialog>Произошла ошибка при создании диалога пиратского выкупа. Ивент будет отменен.</RaiderTribute.ErrorCreatingDialog>
-
   <GreenyZyabra_SummonTitle>Ярость ГриниЗябры</GreenyZyabra_SummonTitle>
   <GreenyZyabra_SummonText>Гринизябра ходит злой , О-ооооо гринизябра, о-оооо победю! Древнее существо ГриниЗябра почуяло отсутствие сосиски у  {0} и обрушилось на вашу колонию в ярости! Тёмное затмение накрывает землю, когда чудовище нападает. Если повезёт — явится обычный. Если нет — злой. А угадать нельзя.
 На колонию обрушится солнечное затмение… и вместе с ним — приступ зелёной иронии судьбы.</GreenyZyabra_SummonText>
@@ -99,8 +71,6 @@
   <GreenyZyabraInvasionLabel>Вторжение Гринизябры!</GreenyZyabraInvasionLabel>
   <GreenyZyabraInvasionText>Ваш колонист {0} привлёк внимание Гринизябры!</GreenyZyabraInvasionText>
   <GreenyZyabraEvent_Message_Start>Древняя ГриниЗябра почуяла отсутствие сосиски у {0}!О-ооооо гринизябра о-оооо победю!</GreenyZyabraEvent_Message_Start>
-
-
   <HSK_PlanetaryAnnihilation_WarningLabel>Экстерминатус</HSK_PlanetaryAnnihilation_WarningLabel>
   <HSK_PlanetaryAnnihilation_WarningText>Дальние сканеры зафиксировали аномалию на орбите. Массивные объекты выходят из пространственного прыжка и занимают позиции над {0}.
 
@@ -147,9 +117,6 @@
   <HSK_PlanetaryAnnihilation_EndButton>Принять конец</HSK_PlanetaryAnnihilation_EndButton>
   <HSK_PlanetaryAnnihilation_CreditsTitle>ПЛАНЕТАРНАЯ АННИГИЛЯЦИЯ</HSK_PlanetaryAnnihilation_CreditsTitle>
   <HSK_PlanetaryAnnihilation_AllDead>ВСЕ КОЛОНИСТЫ ПОГИБЛИ. КОЛОНИЯ УНИЧТОЖЕНА.ВЫ ВИДЕЛИ КОНЕЦ МИРА</HSK_PlanetaryAnnihilation_AllDead>
-
-
-
   <HSK_PlanetaryAnnihilation_NuclearLabel>ПРОТОКОЛ: ЦИКЛОННЫЙ УДАР</HSK_PlanetaryAnnihilation_NuclearLabel>
   <HSK_PlanetaryAnnihilation_NuclearText>
     <![CDATA[
@@ -164,11 +131,8 @@
         Ядерный удар нанесён прямо по центру вашей базы.
         Радиоактивные осадки покроют планету в ближайшие часы.
         У вас есть 2 часа игрового времени, чтобы наблюдать за гибелью колонии.
-    ]]>
-</HSK_PlanetaryAnnihilation_NuclearText>
-
+    ]]></HSK_PlanetaryAnnihilation_NuclearText>
   <HSK.AbominationOverrun.LetterLabel>⚠ КРИТИЧЕСКОЕ ЗАРАЖЕНИЕ ⚠</HSK.AbominationOverrun.LetterLabel>
-
   <HSK.AbominationOverrun.LetterText>[ТРЕСК] [ПОМЕХИ]
 
 — Центральный Узел... последнее сообщение...
@@ -183,7 +147,6 @@
 [ОБРЫВ]
 
 ══ ШАНСОВ НЕТ ══</HSK.AbominationOverrun.LetterText>
-
   <HSK.AbominationOverrun.DialogText>Вы допустили непоправимое.
   
 Нечто расплодилось. 
@@ -197,10 +160,7 @@
 Этот сектор потерян навсегда.
 
 Единственное, что вы можете сделать сейчас — прекратить этот кошмар.</HSK.AbominationOverrun.DialogText>
-
   <HSK.AbominationOverrun.EndButton>Принять свою участь</HSK.AbominationOverrun.EndButton>
-
-
   <HSK_Watcher_GeneratedParameters>Сгенерированные параметры</HSK_Watcher_GeneratedParameters>
   <HSK_Watcher_Manipulation>Манипуляция</HSK_Watcher_Manipulation>
   <HSK_Watcher_Consciousness>Сознание</HSK_Watcher_Consciousness>
@@ -215,12 +175,8 @@
   <HSK_Watcher_MentalBreakThreshold>Порог нервного срыва</HSK_Watcher_MentalBreakThreshold>
   <HSK_Watcher_Pain>Боль</HSK_Watcher_Pain>
   <HSK_Watcher_HungerRate>Скорость голода</HSK_Watcher_HungerRate>
-
-
   <LetterLabelOcellusAttack>Паразит Ocellus</LetterLabelOcellusAttack>
   <LetterOcellusAttack>Из тени появилось маленькое существо. Оно движется с неестественной скоростью к {0}!</LetterOcellusAttack>
-
-
   <LetterLabelLamarPortal>Аномальная телепортация</LetterLabelLamarPortal>
   <LetterLamarPortal>[Шипение, треск. Голос профессора, слегка искажённый динамиком]
 
@@ -241,16 +197,12 @@
 — …Фух. Гордон? Ты цел? Кажется, наш маленький вредитель только что протестировал портал на себе. Ламар… вылетел прямо через контур. Приём.
 
 [Что-то ещё прошло через портал. Хедкраб и припасы появились рядом с вашей колонией!]</LetterLamarPortal>
-
-
   <HeadcrabInfectionLabel>Ой-ой! Хедкраб нашёл друга!</HeadcrabInfectionLabel>
   <HeadcrabInfectionText>Внимание! {0} теперь официально стал марионеткой хедкраба. Поздравляем! Он больше не будет ныть о еде и жаловаться на усталость. Зато будет пытаться съесть ваши мозги. Эволюция, блин.</HeadcrabInfectionText>
-
   <HeadcrabLeapWarning>Осторожно! {0} прицелился в лицо {1}! Советуем увернуться — у хедкрабов плохое чувство юмора.</HeadcrabLeapWarning>
   <HeadcrabBlockedByHelmet>Хедкраб впечатался в шлем {0}! Кажется, у нас тут второй случай "умный, но не очень".</HeadcrabBlockedByHelmet>
   <HeadcrabBreaksHelmet>Хедкраб всё-таки пробил шлем {0}! Надеюсь, вы его застраховали. Шлем — нет, хедкраб — да.</HeadcrabBreaksHelmet>
   <HeadcrabFleeing>{0} убегает искать новую цель!</HeadcrabFleeing>
-
   <LetterLabelArtilleryPrep>ПЕРЕХВАТ: {0}</LetterLabelArtilleryPrep>
   <LetterArtilleryPrep>— Корректировщик на связи. Объект визуально подтверждаю. Передаю координаты.
 — Принято. Координаты цели.
@@ -266,7 +218,6 @@
 — Команда была три минуты назад. Ждите вспышку.
 *конец перехвата*
 {0} ведёт корректировку огня. Координаты цели: {1}. Укрытие рекомендуется. Но, судя по перехвату, поздновато.</LetterArtilleryPrep>
-
   <HSK_ExplosiveParasite_LetterLabel>Взрывной паразит!</HSK_ExplosiveParasite_LetterLabel>
   <HSK_ExplosiveParasite_LetterText>{0} заражён взрывным паразитом! При получении урона произойдёт мощный взрыв с выделением токсичного газа.</HSK_ExplosiveParasite_LetterText>
   <HSK_ExplosiveParasiteRaid_LetterLabel>Стая заражённых взрывных паразитов</HSK_ExplosiveParasiteRaid_LetterLabel>
@@ -279,15 +230,11 @@
 =====Settings=====
   <Enable_Cyber_Psychosis_System>Включить систему киберпсихоза</Enable_Cyber_Psychosis_System>
   <Enable_Cyber_Psychosis_System_Tip>Включает механику потери человечности от имплантов и протезов.</Enable_Cyber_Psychosis_System_Tip>
-
   <Debug_Mode>Режим отладки</Debug_Mode>
   <Debug_Mode_Tip>Выводить подробные логи в консоль разработчика.</Debug_Mode_Tip>
-
   <Base_Threshold>Базовый порог</Base_Threshold>
   <Threshold_Multiplier>Множитель порога</Threshold_Multiplier>
   <Psychosis_Gain_Rate>Скорость развития психоза</Psychosis_Gain_Rate>
-
-
   <Cyber_Psychosis>Киберпсихоз</Cyber_Psychosis>
 
 =====HediffTips=====
@@ -319,7 +266,6 @@
   <CyberPsychosis_BlockerTaken>{0} принял(а) ингибитор киберпсихоза.</CyberPsychosis_BlockerTaken>
   <CyberPsychosis_PermanentProtection>{0} получил(а) перманентную защиту от киберпсихоза.</CyberPsychosis_PermanentProtection>
   <CyberPsychosis_Attack>{0} напал(а) на {1} в приступе киберпсихоза!</CyberPsychosis_Attack>
-
   <Iron_Will_Immune>Непоколебимая воля — иммунитет к киберпсихозу</Iron_Will_Immune>
   <Hollowed_Lost_Self>Опустошённый — личность стёрта</Hollowed_Lost_Self>
   <CyberPsychosis_BecameHollowed>{0} окончательно потерял себя под гнётом имплантов. Колонист стал опустошённым.</CyberPsychosis_BecameHollowed>

@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<RecipeDef Name="CookRoastedMeat">
 		<defName>CookSausages</defName>
 		<label>cook Sausages</label>
@@ -58,8 +57,6 @@
 		</recipeUsers>
 		<researchPrerequisite>Food_00</researchPrerequisite>
 	</RecipeDef>
-
-
 	<RecipeDef Name="CookRoastedMeatx4">
 		<defName>CookSausagesBulk</defName>
 		<label>cook Sausages (x4)</label>
@@ -114,18 +111,17 @@
 		</recipeUsers>
 		<researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
 	</RecipeDef>
-
-   <RecipeDef ParentName="CookMealFineBase">
-    <defName>CookMealFishAndBeer</defName>
-   <label>Make beer with fish</label>
-    <description>Real man food.</description>
-    <jobString>Cooks.</jobString>
-	<recipeUsers>
+	<RecipeDef ParentName="CookMealFineBase">
+		<defName>CookMealFishAndBeer</defName>
+		<label>Make beer with fish</label>
+		<description>Real man food.</description>
+		<jobString>Cooks.</jobString>
+		<recipeUsers>
 			<li>TableButcher</li>
 			<li>TableKitchen</li>
 		</recipeUsers>
-    <ingredients>
-     <li>
+		<ingredients>
+			<li>
 				<filter>
 					<thingDefs>
 						<li>DruFish</li>
@@ -133,7 +129,7 @@
 				</filter>
 				<count>1</count>
 			</li>
-             <li>
+			<li>
 				<filter>
 					<thingDefs>
 						<li>Beer</li>
@@ -141,24 +137,23 @@
 				</filter>
 				<count>1</count>
 			</li>
-    </ingredients>
-    <products>
-      <MealFishAndBeer>1</MealFishAndBeer>
-    </products>
-    <displayPriority>200</displayPriority>
-  </RecipeDef>
-
-   <RecipeDef ParentName="CookMealFineBase">
-    <defName>CookMealFishinplastic</defName>
-    <label>Seal fish in plastic</label>
-    <description>Dry rations for hard times.</description>
-    <jobString>Cooks.</jobString>
-	<recipeUsers>
+		</ingredients>
+		<products>
+			<MealFishAndBeer>1</MealFishAndBeer>
+		</products>
+		<displayPriority>200</displayPriority>
+	</RecipeDef>
+	<RecipeDef ParentName="CookMealFineBase">
+		<defName>CookMealFishinplastic</defName>
+		<label>Seal fish in plastic</label>
+		<description>Dry rations for hard times.</description>
+		<jobString>Cooks.</jobString>
+		<recipeUsers>
 			<li>TableButcher</li>
 			<li>TableKitchen</li>
 		</recipeUsers>
-    <ingredients>
-     <li>
+		<ingredients>
+			<li>
 				<filter>
 					<thingDefs>
 						<li>DruFish</li>
@@ -166,7 +161,7 @@
 				</filter>
 				<count>2</count>
 			</li>
-             <li>
+			<li>
 				<filter>
 					<thingDefs>
 						<li>Plastic</li>
@@ -174,18 +169,16 @@
 				</filter>
 				<count>1</count>
 			</li>
-    </ingredients>
-    <products>
-      <DruFishPlastic>1</DruFishPlastic>
-    </products>
-    <displayPriority>300</displayPriority>
-  </RecipeDef>
- 
-  
-  <RecipeDef>
- <defName>CookCyberPsychosisBlockerPill</defName>
-    <label>Make CyberPsychosis Blocker Pill</label>
-    <description>CyberPsychosis Blocker Pill.</description>
+		</ingredients>
+		<products>
+			<DruFishPlastic>1</DruFishPlastic>
+		</products>
+		<displayPriority>300</displayPriority>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>CookCyberPsychosisBlockerPill</defName>
+		<label>Make CyberPsychosis Blocker Pill</label>
+		<description>CyberPsychosis Blocker Pill.</description>
 		<jobString>Crafting Blocker Pill</jobString>
 		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
 		<workSkill>Medicine</workSkill>
@@ -220,56 +213,51 @@
 		</recipeUsers>
 		<researchPrerequisite>PenoxycylineProduction</researchPrerequisite>
 	</RecipeDef>
-
-
- <RecipeDef ParentName="CookMealFineBase">
-    <defName>CookMealHeadcrab</defName>
-   <label>Make Headcrab Meal</label>
-    <description>Real man food.</description>
-    <jobString>Cooks.</jobString>
-	     <recipeUsers>
+	<RecipeDef ParentName="CookMealFineBase">
+		<defName>CookMealHeadcrab</defName>
+		<label>Make Headcrab Meal</label>
+		<description>Real man food.</description>
+		<jobString>Cooks.</jobString>
+		<recipeUsers>
 			<li>Campfire</li>
 			<li>TableGrill</li>
 			<li>FueledStove</li>
 			<li>ElectricStove</li>
 			<li>ElectricOven</li>
 		</recipeUsers>
-      <ingredients>
-        <li>
-            <filter>
-                <thingDefs>
-                    <li>Corpse_Headcrab</li>
-                </thingDefs>
-            </filter>
-            <count>1</count>
-        </li>
-        <li>
-            <filter>
-                <thingDefs>
-                    <li>Beer</li>
-                </thingDefs>
-            </filter>
-            <count>0.1</count>
-        </li>
-    </ingredients>
-    <fixedIngredientFilter>
-        <thingDefs>
-            <li>Corpse_Headcrab</li>
-        </thingDefs>
-    </fixedIngredientFilter>
-    <defaultIngredientFilter>
-        <thingDefs>
-            <li>Corpse_Headcrab</li>
-        </thingDefs>
-    </defaultIngredientFilter>
-    <products>
-      <HeadcrabGrill>1</HeadcrabGrill>
-    </products>
-    <displayPriority>200</displayPriority>
-  </RecipeDef>
-
-
-
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Corpse_Headcrab</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Beer</li>
+					</thingDefs>
+				</filter>
+				<count>0.1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Corpse_Headcrab</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Corpse_Headcrab</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<HeadcrabGrill>1</HeadcrabGrill>
+		</products>
+		<displayPriority>200</displayPriority>
+	</RecipeDef>
 	<RecipeDef ParentName="CookMealSpecialBase_SK">
 		<defName>MakeAdjika</defName>
 		<label>cook Adjika</label>
@@ -314,12 +302,61 @@
 			<Cooking>4</Cooking>
 		</skillRequirements>
 		<recipeUsers>
-		    <li>Campfire</li>
+			<li>Campfire</li>
 			<li>TableGrill</li>
 			<li>FueledStove</li>
 			<li>ElectricStove</li>
 			<li>ElectricOven</li>
 		</recipeUsers>
 	</RecipeDef>
-
+	<RecipeDef>
+		<defName>MakeRimBargDrink</defName>
+		<label>concoct Rim-Barg energy drinks</label>
+		<description>Mix agave, caffeine, and Barghest's wrath in a can. Warning: may cause temporary god complex and permanent heart palpitations. Produces 3.</description>
+		<jobString>Pressing Rim-Barg into drinks.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>1350</workAmount>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawAgave</li>
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCoffee</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawAgave</li>
+				<li>RawCoffee</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RimBargDrink>3</RimBargDrink>
+		</products>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<researchPrerequisite>Food_B2</researchPrerequisite>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>ElectricOven</li>
+		</recipeUsers>
+	</RecipeDef>
 </Defs>
