@@ -29,9 +29,9 @@
   <MakeAdjika.description>Создаёт острую пасту из жгучего перца, чеснока и диких трав. Выход: 2.</MakeAdjika.description>
   <MakeAdjika.jobString>Готовит Аджику.</MakeAdjika.jobString>
 
-<MakeRimBargDrink.label>сварить энергетик Rim-Barg</MakeRimBargDrink.label>
-<MakeRimBargDrink.description>Смешайте агаву, кофеин и ярость Баргеста в одной банке. Предупреждение: может вызвать временный комплекс бога и необратимые проблемы с сердцем. Производит 3 порции.</MakeRimBargDrink.description>
-<MakeRimBargDrink.jobString>Разливаю Rim-Barg по банкам.</MakeRimBargDrink.jobString>
+  <MakeRimBargDrink.label>сварить энергетик Rim-Barg</MakeRimBargDrink.label>
+  <MakeRimBargDrink.description>Смешайте агаву, кофеин и ярость Баргеста в одной банке. Предупреждение: может вызвать временный комплекс бога и необратимые проблемы с сердцем. Производит 3 порции.</MakeRimBargDrink.description>
+  <MakeRimBargDrink.jobString>Разливаю Rim-Barg по банкам.</MakeRimBargDrink.jobString>
 
 
 </LanguageData>
