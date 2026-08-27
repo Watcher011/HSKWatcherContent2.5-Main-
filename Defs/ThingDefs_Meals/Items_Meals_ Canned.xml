@@ -236,6 +236,72 @@
 		</comps>
 	</ThingDef>
 	
+	<ThingDef ParentName="MealBeverage">
+		<defName>RimBargDrink</defName>
+		<label>R-BAG Energy</label>
+		<description>RIMBARG Energy is the power of the Barghest in every can: agave hits your brain, caffeine hits your heart, and you obey all the laws of physics.
+Drink before your colony turns into a bloody mess—though with this drink, you'll even meet it faster.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/RimBargDrink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			 <drawSize>(0.4,0.4)</drawSize>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>10</stackLimit>
+		<statBases>
+			<MarketValue>9</MarketValue>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<thingCategories>
+			<li>Energetics</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<joy>0.17</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<tasteThought>HadRimBargDrink</tasteThought>
+			<chairSearchRadius>25</chairSearchRadius>
+			<joyKind>Gluttonous</joyKind>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RimBargHappy</hediffDef>
+					<severity>0.25</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.7</offset>
+					<toleranceChemical>Caffeine</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>CaffeineTolerance</hediffDef>
+					<severity>0.03</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Caffeine</chemical>
+				<addictiveness>0.010</addictiveness>
+				<minToleranceToAddict>0.25</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.05</existingAddictionSeverityOffset>
+				<needLevelOffset>0.5</needLevelOffset>
+				<listOrder>1100</listOrder>
+			</li>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>7</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
 	
 </Defs>
 
