@@ -1670,4 +1670,153 @@
 			</li>
 		</stages>
 	</HediffDef>
+	<!-- Хеддиф 1: головокружение от пыльцы -->
+	<HediffDef>
+		<defName>PlantPollenAllergy</defName>
+		<label>dizziness from pollen</label>
+		<description>Mild dizziness caused by flower pollen.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 0.9, 0.3)</defaultLabelColor>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+				<minSeverity>0.01</minSeverity>
+				<label>mild</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.3</minSeverity>
+				<label>moderate</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.12</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.7</minSeverity>
+				<label>severe</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.25</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- Hediff 2: toxic spores (example of a second effect) -->
+	<HediffDef>
+		<defName>ToxicSporeInhalation</defName>
+		<label>toxic spores</label>
+		<description>Respiratory tract irritation caused by fungal spores.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.4, 0.8, 0.4)</defaultLabelColor>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+				<minSeverity>0.01</minSeverity>
+				<label>mild irritation</label>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<label>poisoning</label>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.20</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<label>severe poisoning</label>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.35</offset>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	
+	<HediffDef>
+		<defName>GoodPenicillin</defName>
+		<label>Fresh Penicillin</label>
+		<description>Had some Penicillin.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>2</initialSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.7</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<label>warmfuzzy</label>
+				<painFactor>0.9</painFactor>
+				<capMods>
+
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.10</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.95</offset>
+					</li>
+
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<label>Healty Penicillin, Feeling Better.</label>
+				<painFactor>0.8</painFactor>
+				<capMods>
+
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.15</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>1.20</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
 </Defs>

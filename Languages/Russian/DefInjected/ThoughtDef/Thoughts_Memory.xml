@@ -22,5 +22,13 @@
   <HadRimBargDrink.stages.0.label>Прилив «РимБарг»</HadRimBargDrink.stages.0.label>
   <HadRimBargDrink.stages.0.description>Ярость Баргеста в банке! Агавовый угар и кофеиновый заряд — я чувствую, что могу забить трумбо голыми руками. Жаль, что моё сердце с этим не согласно — но эй, по крайней мере я умру полным энергии и с лёгкими галлюцинациями.</HadRimBargDrink.stages.0.description>
 
+<SporeHallucinations.stages.0.label>Споровые галлюцинации</SporeHallucinations.stages.0.label>
+
+<SporeHallucinations.stages.0.description>Перед моими глазами танцуют красочные узоры. Стены дышат... или это только мне так кажется?</SporeHallucinations.stages.0.description>
+
+<SporeEuphoria.stages.0.label>Споровая эйфория</SporeEuphoria.stages.0.label>
+
+<SporeEuphoria.stages.0.description>Сейчас всё так хорошо. Споры поют мне, и я парю на облаке блаженства.</SporeEuphoria.stages.0.description>
+
 
 </LanguageData>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+     <HSK.Watcher.Content.PlantAllergyGlobalSettings>
+    <defName>PlantAllergyGlobal</defName>
+    <radius>4.9</radius>
+    <checkInterval>250</checkInterval>
+    <onlyMature>true</onlyMature>
+    
+    <affectColonists>true</affectColonists>
+    <affectPrisoners>true</affectPrisoners>
+    <affectSlaves>true</affectSlaves>
+    <affectVisitors>false</affectVisitors>
+    <affectAnimals>false</affectAnimals>
+    
+    <maxSeverity>1.0</maxSeverity>
+    <useFixedMode>false</useFixedMode>
+    <fixedSeverity>0.25</fixedSeverity>
+    
+   
+    <severityPerTick>0.001</severityPerTick>  
+    <decayPerTick>0.002</decayPerTick>         <!-- Сколько убывает за тик -->
+    
+    <protectiveHediffNames>
+      <li>WearingGasMask</li>
+    </protectiveHediffNames>
+  </HSK.Watcher.Content.PlantAllergyGlobalSettings>
+</Defs>

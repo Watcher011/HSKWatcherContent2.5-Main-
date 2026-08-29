@@ -116,6 +116,25 @@
   <RimBargHappy.stages.0.label>Топливо Баргеста</RimBargHappy.stages.0.label>
   <RimBargHappy.stages.1.label>Слишком закофеинен, чтобы волноваться</RimBargHappy.stages.1.label>
 
+<!-- Haddiff 1: головокружение от пыльцы -->
+
+<PlantPollenAllergy.label>головокружение от пыльцы</PlantPollenAllergy.label>
+<PlantPollenAllergy.description>Легкое головокружение, вызванное цветочной пыльцой.</PlantPollenAllergy.description>
+<PlantPollenAllergy.stages.0.label>легкое</PlantPollenAllergy.stages.0.label>
+<PlantPollenAllergy.stages.1.label>умеренное</PlantPollenAllergy.stages.1.label>
+<PlantPollenAllergy.stages.2.label>тяжелое</PlantPollenAllergy.stages.2.label>
+
+<!-- Hediff 2: токсичные споры (пример (второй эффект) -->
+
+<ToxicSporeInhalation.label>токсичные споры</ToxicSporeInhalation.label>
+<ToxicSporeInhalation.description>Раздражение дыхательных путей, вызванное грибковыми спорами.</ToxicSporeInhalation.description>
+<ToxicSporeInhalation.stages.0.label>легкое раздражение</ToxicSporeInhalation.stages.0.label>
+<ToxicSporeInhalation.stages.1.label>отравление</ToxicSporeInhalation.stages.1.label>
+<ToxicSporeInhalation.stages.2.label>тяжелое отравление</ToxicSporeInhalation.stages.2.label>
+
+<GoodPenicillin.label>Свежий пенициллин</GoodPenicillin.label> <GoodPenicillin.description>Принял пенициллин.</GoodPenicillin.description>
+<GoodPenicillin.stages.0.label>приятно</GoodPenicillin.stages.0.label>
+<GoodPenicillin.stages.1.label>Здорово ! Пенициллин, чувствую себя лучше.</GoodPenicillin.stages.1.label>
 
   <!-- ========================================== -->
   <!-- Abnormal Arm                                -->

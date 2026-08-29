@@ -303,6 +303,60 @@ Drink before your colony turns into a bloody mess—though with this drink, you'
 		</comps>
 	</ThingDef>
 	
+	
+	<ThingDef ParentName="MealBeverage">
+		<defName>Penicillin</defName>
+		<label>Penicillin</label>
+		<description>Penicillin.</description>
+		<graphicData>
+			<texPath>Things/Item/Penicillin</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>(0.4,0.4)</drawSize>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>10</stackLimit>
+		<statBases>
+			<MarketValue>9</MarketValue>
+			<Nutrition>-0.15</Nutrition>
+		</statBases>
+		<thingCategories>
+			<li>Energetics</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<joy>0.17</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<tasteThought>HadFruitDrink</tasteThought>
+			<chairSearchRadius>25</chairSearchRadius>
+			<joyKind>Gluttonous</joyKind>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>GoodPenicillin</hediffDef>
+					<severity>0.95</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<addictiveness>0</addictiveness>
+				<listOrder>1100</listOrder>
+			</li>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>7</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	
 </Defs>
 
 

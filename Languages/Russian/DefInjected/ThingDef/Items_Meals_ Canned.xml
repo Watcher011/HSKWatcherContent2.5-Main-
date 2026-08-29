@@ -19,9 +19,18 @@
   <HeadcrabGrill.label>Хедкраб на гриле</HeadcrabGrill.label>
   <HeadcrabGrill.description>У вас есть хедкраб. У вас есть гриль. Что может пойти не так? Ответ: абсолютно всё. Но если закрыть глаза и не думать о том, что это существо пыталось сожрать ваш мозг, мясо оказывается вполне съедобным — что-то среднее между кальмаром и подошвой ботинка. Секрет успеха — подавать с щедрой порцией алкоголя и полным отрицанием содеянного. Вкус победы над инопланетным паразитом. С ноткой горечи.</HeadcrabGrill.description>
 
-<RimBargDrink.label>Энергетик «Р-БАГ»</RimBargDrink.label>
-<RimBargDrink.description>Энергетик RIMBARG — это сила Баргеста в каждой банке: агава бьёт по мозгу, кофеин — по сердцу, а законы физики ты всё равно соблюдаешь. Пей до того, как твоя колония превратится в кровавое месиво — хотя с этим напитком ты добежишь до этого момента даже быстрее.</RimBargDrink.description>
-<RimBargDrink.ingestible.ingestCommandString>Выпить {0}</RimBargDrink.ingestible.ingestCommandString>
-<RimBargDrink.ingestible.ingestReportString>Выпивает {0}.</RimBargDrink.ingestible.ingestReportString>
+  <RimBargDrink.label>Энергетик «Р-БАГ»</RimBargDrink.label>
+  <RimBargDrink.description>Энергетик RIMBARG — это сила Баргеста в каждой банке: агава бьёт по мозгу, кофеин — по сердцу, а законы физики ты всё равно соблюдаешь. Пей до того, как твоя колония превратится в кровавое месиво — хотя с этим напитком ты добежишь до этого момента даже быстрее.</RimBargDrink.description>
+  <RimBargDrink.ingestible.ingestCommandString>Выпить {0}</RimBargDrink.ingestible.ingestCommandString>
+  <RimBargDrink.ingestible.ingestReportString>Выпивает {0}.</RimBargDrink.ingestible.ingestReportString>
+
+ <Penicillin.label>Пенициллин</Penicillin.label>
+
+<Penicillin.description>Пенициллин.</Penicillin.description>
+
+<Penicillin.ingestible.ingestCommandString>Пить {0}</Penicillin.ingestible.ingestCommandString>
+
+<Penicillin.ingestible.ingestReportString>Пить {0}.</Penicillin.ingestible.ingestReportString>
+
 
 </LanguageData>
