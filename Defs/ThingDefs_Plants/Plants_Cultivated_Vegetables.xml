@@ -61,13 +61,13 @@
 			</li>-->
 			<li Class="HSK.Watcher.Content.CompProperties_PlantAllergySource">
 				<hediffDef>PlantPollenAllergy</hediffDef>
-				<severityContribution>0.10</severityContribution>
+				<severityContribution>0.30</severityContribution>
 				<onlyMature>true</onlyMature>
-				<radius>2.9</radius>
+				<radius>5.9</radius>
 				<maxSeverity>1.0</maxSeverity>
-				<severityPerTick>0.02</severityPerTick>
+				<severityPerTick>0.2</severityPerTick>
 				<!-- Быстрее накапливается -->
-				<decayPerTick>0.01</decayPerTick>
+				<decayPerTick>0.1</decayPerTick>
 				<!-- Медленнее спадает -->
 			</li>
 		</comps>

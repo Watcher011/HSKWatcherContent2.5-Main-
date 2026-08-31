@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
+ <TradingSpotCaravan_SettingsCategory>Торговая площадка караванов</TradingSpotCaravan_SettingsCategory>
+  <TradingSpotCaravan_EnableMod>Включить ограничение караванов</TradingSpotCaravan_EnableMod>
+  <TradingSpotCaravan_EnableModDesc>При включении, торговые караваны будут прибывать только если у вас построена Торговая площадка или Коммуникационная консоль.</TradingSpotCaravan_EnableModDesc>
   <HSK_WildHunt_LetterLabel>Дикая охота</HSK_WildHunt_LetterLabel>
   <HSK_WildHunt_LetterText>Вдали небо потемнело и раздались завывания, что пробирают до глубины души. Гончие Дикой Охоты вышли на тропу войны... Они будут атаковать вашу колонию в течение следующих двух дней.</HSK_WildHunt_LetterText>
   <HSK_WildHunt_End_LetterLabel>Охота окончена</HSK_WildHunt_End_LetterLabel>
