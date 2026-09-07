@@ -271,5 +271,45 @@
   <Iron_Will_Immune>Непоколебимая воля — иммунитет к киберпсихозу</Iron_Will_Immune>
   <Hollowed_Lost_Self>Опустошённый — личность стёрта</Hollowed_Lost_Self>
   <CyberPsychosis_BecameHollowed>{0} окончательно потерял себя под гнётом имплантов. Колонист стал опустошённым.</CyberPsychosis_BecameHollowed>
+  
+  
+    <!-- Настройки мода -->
+  <HSK.Watcher>HSK Наблюдатель</HSK.Watcher>
+  
+  <HSK.EnableHuskyAbominationEvent>Событие с хаски-мерзостью</HSK.EnableHuskyAbominationEvent>
+  <HSK.EnableHuskyAbominationEvent.Tooltip>Включает событие, где хаски может превратиться в мерзость</HSK.EnableHuskyAbominationEvent.Tooltip>
+  
+  <HSK.EnableInfectedAnimalEvents>События с заражёнными животными</HSK.EnableInfectedAnimalEvents>
+  <HSK.EnableInfectedAnimalEvents.Tooltip>Включает события, где животные могут быть заражены и превратиться в мерзостей</HSK.EnableInfectedAnimalEvents.Tooltip>
+
+  <!-- Событие с хаски (присоединение к колонии) -->
+  <HSK.AnimalWanderIn_Husky.LetterLabel>В колонию забрела хаски</HSK.AnimalWanderIn_Husky.LetterLabel>
+  <HSK.AnimalWanderIn_Husky.LetterText>Дружелюбная хаски решила присоединиться к вашей колонии.</HSK.AnimalWanderIn_Husky.LetterText>
+
+  <!-- Рейд -->
+  <HSK.Raid.LetterLabel>Незваные гости</HSK.Raid.LetterLabel>
+  <HSK.Raid.LetterText>На вашу колонию напали! Похоже, они что-то искали.</HSK.Raid.LetterText>
+
+  <!-- Появление мерзости при смерти хаски -->
+  <HSK.AbominationSpawn.Death.LetterLabel>Ужасное пробуждение</HSK.AbominationSpawn.Death.LetterLabel>
+  <HSK.AbominationSpawn.Death.LetterText>Из тела погибшей хаски вырвались {0} ужасающих созданий!</HSK.AbominationSpawn.Death.LetterText>
+
+  <!-- Появление мерзости по таймеру -->
+  <HSK.AbominationSpawn.Timer.LetterLabel>Тьма пробуждается</HSK.AbominationSpawn.Timer.LetterLabel>
+  <HSK.AbominationSpawn.Timer.LetterText>Из хаски, которая жила с вами, вырвались {0} мерзостей!</HSK.AbominationSpawn.Timer.LetterText>
+
+  <!-- Ярость заражённого животного -->
+  <HSK.AnimalRage.LetterLabel>Животное сошло с ума</HSK.AnimalRage.LetterLabel>
+  <HSK.AnimalRage.LetterText>{0} внезапно пришло в ярость и нападает на всех вокруг!</HSK.AnimalRage.LetterText>
+
+  <!-- Укус заражённого животного -->
+  <HSK.InfectionBite.Message>{0} был укушен {1}</HSK.InfectionBite.Message>
+
+  <!-- Превращение колониста -->
+  <HSK.InfectionTransformation.Message>{0} внезапно начал трансформироваться в нечто ужасное!</HSK.InfectionTransformation.Message>
+
+  <!-- Смерть заражённого животного -->
+  <HSK.InfectedAnimalDeath.LetterLabel>Смерть заражённого животного</HSK.InfectedAnimalDeath.LetterLabel>
+  <HSK.InfectedAnimalDeath.LetterText>Из тела {0} вырвались {1} мерзостей!</HSK.InfectedAnimalDeath.LetterText>
 
 </LanguageData>
