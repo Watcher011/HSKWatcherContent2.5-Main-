@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- БАЗА ДЛЯ МИРНЫХ ПЕРСОНАЖЕЙ -->
+    <PawnKindDef Abstract="True" Name="PeacefulVisitorBase">
+        <race>Human</race>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Offworld</li>
+                    <li>Civil</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <backstoryCryptosleepCommonality>0.1</backstoryCryptosleepCommonality>
+        <isFighter>false</isFighter>
+        <chemicalAddictionChance>0.3</chemicalAddictionChance>
+        <itemQuality>Normal</itemQuality>
+        <invNutrition>2.5</invNutrition>
+        <invFoodDef>MealFine</invFoodDef>
+        <minGenerationAge>16</minGenerationAge>
+        <maxGenerationAge>70</maxGenerationAge>
+        <apparelColor>(120,120,120)</apparelColor>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <gearHealthRange>
+            <min>0.4</min>
+            <max>1.2</max>
+        </gearHealthRange>
+        <disallowedTraits>
+            <li>Pyromaniac</li>
+            <li>Bloodlust</li>
+            <li>Psychopath</li>
+        </disallowedTraits>
+        <techHediffsMoney>
+            <min>2000</min>
+            <max>8000</max>
+        </techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <techHediffsChance>0.3</techHediffsChance>
+        <techHediffsMaxAmount>3</techHediffsMaxAmount>
+    </PawnKindDef>
+
+    <!-- РИК -->
+    <PawnKindDef ParentName="PeacefulVisitorBase">
+    <defName>Rick</defName>
+    <label>Rick Sanchez</label>
+    <combatPower>180</combatPower>
+    <apparelColor>(0.75, 0.76, 0.82)</apparelColor>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelRequired>
+        <li>Apparel_RickCoat</li>
+        <li>Apparel_BasicShirt</li>
+    </apparelRequired>
+        <apparelTags>
+            <li>Civil</li>
+        </apparelTags>
+        <weaponMoney>
+            <min>500</min>
+            <max>1500</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>Gun</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>4~10</range>
+            </li>
+            <li>
+                <skill>Intellectual</skill>
+                <range>16~20</range>
+            </li>
+            <li>
+                <skill>Crafting</skill>
+                <range>10~18</range>
+            </li>
+        </skills>
+        <initialWillRange>6~10</initialWillRange>
+        <initialResistanceRange>10~15</initialResistanceRange>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>3</min>
+                    <max>5</max>
+                </primaryMagazineCount>
+                <sidearms>
+                    <li>
+                        <generateChance>0.6</generateChance>
+                        <sidearmMoney>
+                            <min>300</min>
+                            <max>600</max>
+                        </sidearmMoney>
+                        <weaponTags>
+                            <li>PlasmaPistol</li>
+                        </weaponTags>
+                        <magazineCount>
+                            <min>1</min>
+                            <max>3</max>
+                        </magazineCount>
+                    </li>
+                </sidearms>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+
+    <!-- МОРТИ -->
+    <PawnKindDef ParentName="PeacefulVisitorBase">
+        <defName>Morty</defName>
+    <label>Morty Smith</label>
+    <combatPower>40</combatPower>
+    <apparelColor>(1.00, 0.84, 0.00)</apparelColor>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelRequired>
+        <li>Apparel_MortyShirt</li>
+    </apparelRequired>
+        <apparelTags>
+            <li>Civil</li>
+        </apparelTags>
+        <weaponMoney>
+            <min>50</min>
+            <max>300</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>Knife</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>1~4</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>1~3</range>
+            </li>
+            <li>
+                <skill>Social</skill>
+                <range>4~10</range>
+            </li>
+            <li>
+                <skill>Intellectual</skill>
+                <range>3~8</range>
+            </li>
+        </skills>
+        <initialWillRange>1~4</initialWillRange>
+        <initialResistanceRange>6~10</initialResistanceRange>
+    </PawnKindDef>
+
+
+</Defs>

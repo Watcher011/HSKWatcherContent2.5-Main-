@@ -205,5 +205,18 @@
 	</letterHyperlinkHediffDefs>
 </IncidentDef>
 
- 
+    <IncidentDef>
+        <defName>RMPortalEvent</defName>
+        <label>mysterious portal</label>
+        <description>A strange portal opens out of nowhere... What will happen next?</description>
+        <workerClass>HSK.Watcher.Content.Incident.IncidentWorker_RickMortyPortal</workerClass>
+        <category>Misc</category>
+        <baseChance>0.08</baseChance>
+        <minRefireDays>180</minRefireDays>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <letterText>A mysterious portal opens out of nowhere! A strange sound emanates from it...</letterText>
+        <letterDef>PositiveEvent</letterDef>
+    </IncidentDef>
 </Defs>

@@ -23,4 +23,30 @@
             </li>
         </subSounds>
     </SoundDef>
+	
+	 <SoundDef>
+        <defName>RM_PortalArrival</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <onCamera>True</onCamera>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>PortalArrival</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>100</min>
+                    <max>100</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>0.9</min>
+                    <max>1.1</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+	
+	
 </Defs>

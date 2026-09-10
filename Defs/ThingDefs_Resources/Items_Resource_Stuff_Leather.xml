@@ -87,4 +87,54 @@
 		</thingCategories>
 		<burnableByRecipe>True</burnableByRecipe>
 	</ThingDef>
+	
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>PlumbusFilm</defName>
+		<label>Plumbus Film</label>
+		<description>It is a processed extract of dribbles, pressed with the tears of a Shlem and dried on the fuzz of a Flib.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Wool</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(1.00,0.84,0.00)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>130</MaxHitPoints>
+			<MarketValue>7.0</MarketValue>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<StuffPower_Armor_Sharp>2.0</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>2.0</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.105</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>25</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
+			<Mass>0.02</Mass>
+			<Bulk>0.02</Bulk>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<stackLimit>300</stackLimit>
+		<techLevel>Neolithic</techLevel>
+		<stuffProps>
+			<categories>
+				<li>Fabric</li>
+			</categories>
+			<color>(1.00,0.84,0.00)</color>
+			<statFactors>
+				<MaxHitPoints>1.2</MaxHitPoints>
+				<Beauty>1.2</Beauty>
+				<MoveSpeed>0.85</MoveSpeed>
+				<MarketValue>0.7</MarketValue>
+				<WorkToMake>1.1</WorkToMake>
+				<WorkToBuild>1.1</WorkToBuild>
+				<BedRestEffectiveness>1.2</BedRestEffectiveness>
+				<ImmunityGainSpeedFactor>1.65</ImmunityGainSpeedFactor>
+				<Mass>0.66</Mass>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BTextiles</li>
+		</thingCategories>
+		<burnableByRecipe>True</burnableByRecipe>
+	</ThingDef>
 </Defs>

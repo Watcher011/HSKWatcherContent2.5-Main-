@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <!-- ХАЛАТ РИКА -->
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>Apparel_RickCoat</defName>
+        <label>lab coat</label>
+        <description>A stained, wrinkled lab coat. It smells of whiskey and genius.</description>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+            <displayPriority>210</displayPriority>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/LabCoat/LabCoat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <costStuffCount>70</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>140</MaxHitPoints>
+            <WorkToMake>5000</WorkToMake>
+            <Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.60</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ResearchSpeed>0.05</ResearchSpeed>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/LabCoat/LabCoat</wornGraphicPath>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>1</weight>
+                    <only>(0.75, 0.76, 0.82)</only>
+                </li>
+            </options>
+        </colorGenerator>
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
+
+  
+
+    <!-- ФУТБОЛКА МОРТИ -->
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>Apparel_MortyShirt</defName>
+        <label>yellow t-shirt</label>
+        <description>A bright yellow t-shirt, slightly too big for him.</description>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+            <displayPriority>208</displayPriority>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costStuffCount>40</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>2700</WorkToMake>
+            <Mass>0.3</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic</wornGraphicPath>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+                <li>Spacefarer</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>1</weight>
+                    <only>(1.00, 0.84, 0.00)</only>
+                </li>
+            </options>
+        </colorGenerator>
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
+
+</Defs>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <ThingDef ParentName="BuildingBase">
+    <defName>PortalRM</defName>
+    <label>Portal</label>
+     <thingClass>HSK.Watcher.Content.Incident.Building_Portal_RickMorty</thingClass>
+    <category>Building</category>
+    <graphicData>
+        <texPath>Things/Building/Genstep/BlueportalRM</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <selectable>false</selectable>
+    <drawerType>RealtimeOnly</drawerType>
+    <tickerType>Normal</tickerType>
+	 <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>8</glowRadius>
+                <glowColor>(80,215,90,0)</glowColor>
+            </li>
+        </comps>
+</ThingDef>
+</Defs>

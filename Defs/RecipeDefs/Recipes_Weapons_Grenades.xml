@@ -162,14 +162,6 @@
 		  </li>
 		  <li>
 			<filter>
-			   <thingDefs>
-				<li>PoisonGland</li>
-			  </thingDefs>
-			</filter>
-			<count>1</count>
-		  </li>
-		  <li>
-			<filter>
 			  <thingDefs>
 				<li>InsectJelly</li>
 			  </thingDefs>
@@ -196,7 +188,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 		  <thingDefs>
-		    <li>Rawonion</li>
+		     
 			<li>ComponentIndustrial</li>
 			<li>FSX</li>
 			<li>Powder</li>

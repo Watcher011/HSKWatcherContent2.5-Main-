@@ -311,5 +311,13 @@
   <!-- Смерть заражённого животного -->
   <HSK.InfectedAnimalDeath.LetterLabel>Смерть заражённого животного</HSK.InfectedAnimalDeath.LetterLabel>
   <HSK.InfectedAnimalDeath.LetterText>Из тела {0} вырвались {1} мерзостей!</HSK.InfectedAnimalDeath.LetterText>
+  
+    <!-- Письмо при открытии портала рядом с базой игрока -->
+  <RMPortal.LetterLabel>Таинственный портал</RMPortal.LetterLabel>
+  <RMPortal.LetterText>Рядом с вашей базой открылся таинственный портал!\n\nБудьте осторожны!</RMPortal.LetterText>
+ 
+  <!-- Сообщение при появлении враждебных существ из портала -->
+  <RMPortal.HostileMessage>Из портала вырвались агрессивные существа!</RMPortal.HostileMessage>
+ 
 
 </LanguageData>
