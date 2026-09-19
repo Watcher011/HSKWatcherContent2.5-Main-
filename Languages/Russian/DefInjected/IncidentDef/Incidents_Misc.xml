@@ -33,6 +33,10 @@
   <ArtilleryPreparation.label>Артиллерийская подготовка</ArtilleryPreparation.label>
   <ExplosiveParasiteRaid.label>Взрывной паразит</ExplosiveParasiteRaid.label>
 
+  <RMPortalEvent.label>таинственный портал</RMPortalEvent.label>
+<RMPortalEvent.description>Из ниоткуда возникает странный портал... Что произойдет дальше?</RMPortalEvent.description>
+<RMPortalEvent.letterText>Из ниоткуда возникает таинственный портал! Из него доносится странный звук...</RMPortalEvent.letterText>
+
 
   <!--<GreenyZyabraInvasion.description>Земля трескается. Небо темнеет. Зелёная Зиабра пришла. Её плоть — хитин и слизь. Её разум — рой. Она не завоёвывает — она пожирает. Города исчезают. Технологии бесполезны. Остаётся только бежать. Или стать частью неё.</GreenyZyabraInvasion.description>-->
   <!--<HSK_PlanetaryAnnihilation.description>Нет спасения. Нет надежды. Только конец. Планета умрёт. Не в огне. Не во тьме. В тишине. Всё, что было — исчезнет. Всё, что есть — станет прахом. Пустота пришла. И она никогда не уйдёт.</HSK_PlanetaryAnnihilation.description>-->

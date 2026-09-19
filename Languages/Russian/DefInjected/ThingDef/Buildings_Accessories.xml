@@ -26,7 +26,10 @@
   <VentilationFilter.label>Активная газоочистка CO</VentilationFilter.label>
   <VentilationFilter.description>Герметичная капсула с «живой» аномалией. Внутри сидит энергичная Фумо, которая вместо магии поглощения пыли эксклюзивно потребляет активированный уголь. Пока её кормят, она сердито дует в трубки, высасывая весь CO2 из помещения. Если у Фумо заканчивается уголь, она начинает ворчать и распускать слухи о вашей базе по радиоволнам.</VentilationFilter.description>
 
- 
+ <ZeonToy.label>Игрушка Зеон</ZeonToy.label>
+<ZeonToy.description>Эта игрушка изображает механоида-босса Зеона, Защитника ионной фазы (вооружённого молниями).</ZeonToy.description>
+
+
   <!--<CeilingPlantsKristal.description>Потолочная лампа из светящегося камня.</CeilingPlantsKristal.description>-->
 
 </LanguageData>

@@ -25,5 +25,8 @@
   <Adjika.label>Аджика</Adjika.label>
   <Adjika.description>Тёмно-красная пастообразная приправа из молотого жгучего перца, чеснока и диких трав.</Adjika.description>
 
+  <BirdsMilk.label>Птичье молоко</BirdsMilk.label>
+<BirdsMilk.description>Продукт доения кур. Куры бастуют, но доильный аппарат не читал Трудовой кодекс.
+Если забастовка длится дольше трёх дней,молоко превращается в куриный фарш с мякотью.</BirdsMilk.description>
 
 </LanguageData>

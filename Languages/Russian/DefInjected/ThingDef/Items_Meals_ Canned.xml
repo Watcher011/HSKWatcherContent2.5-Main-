@@ -24,13 +24,10 @@
   <RimBargDrink.ingestible.ingestCommandString>Выпить {0}</RimBargDrink.ingestible.ingestCommandString>
   <RimBargDrink.ingestible.ingestReportString>Выпивает {0}.</RimBargDrink.ingestible.ingestReportString>
 
- <Penicillin.label>Пенициллин</Penicillin.label>
-
-<Penicillin.description>Пенициллин.</Penicillin.description>
-
-<Penicillin.ingestible.ingestCommandString>Пить {0}</Penicillin.ingestible.ingestCommandString>
-
-<Penicillin.ingestible.ingestReportString>Пить {0}.</Penicillin.ingestible.ingestReportString>
+  <Penicillin.label>Пенициллин</Penicillin.label>
+  <Penicillin.description>Пенициллин.</Penicillin.description>
+  <Penicillin.ingestible.ingestCommandString>Пить {0}</Penicillin.ingestible.ingestCommandString>
+  <Penicillin.ingestible.ingestReportString>Пить {0}.</Penicillin.ingestible.ingestReportString>
 
 
 </LanguageData>

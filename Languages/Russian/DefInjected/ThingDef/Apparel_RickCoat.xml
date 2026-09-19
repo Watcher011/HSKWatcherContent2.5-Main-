@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!-- ХАЛАТ РИКА -->
+<Apparel_RickCoat.label>лабораторный халат</Apparel_RickCoat.label>
+<Apparel_RickCoat.description>Запятнанный, мятый лабораторный халат. Пахнет виски и гениальностью.</Apparel_RickCoat.description>
+
+<!-- ФУТБОЛКА МОРТИ -->
+<Apparel_MortyShirt.label>жёлтая футболка</Apparel_MortyShirt.label>
+<Apparel_MortyShirt.description>Ярко-жёлтая футболка, немного великовата ему.</Apparel_MortyShirt.description>
+
+
+
+</LanguageData>

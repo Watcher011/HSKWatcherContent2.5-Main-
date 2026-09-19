@@ -560,6 +560,67 @@
 		</researchPrerequisites>-->
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+	  <defName>ZeonToy</defName>
+    <label>Zeon Toy</label>
+		<description>This toy depicts the Mechanoid boss, Zeon the Ion-Phase Defender (Lightning-Armed).</description>
+		<graphicData>
+			  <texPath>Things/Pawn/Mechanoid/Zeon</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawRotated>false</drawRotated>
+			  <drawSize>(0.5,0.5)</drawSize>
+			 <drawOffset>(0,0,0.3)</drawOffset>
+			<damageData>
+				<rect>(0.35,0.35,0.3,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<rotatable>True</rotatable>
+		<pathCost>8</pathCost>
+		<tickerType>Normal</tickerType>
+		 <drawerType>MapMeshAndRealTime</drawerType>
+		 <clearBuildingArea>false</clearBuildingArea>
+		<fillPercent>0.15</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>130</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Bulk>4</Bulk>
+			<Beauty>12</Beauty>
+			<Mass>3</Mass>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<costStuffCount>50</costStuffCount>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		 
+	     <tradeTags>
+            <li>ExoticBuilding</li>
+        </tradeTags>
+		 <thingSetMakerTags>
+           <li>RewardStandardCore</li>
+         </thingSetMakerTags>
+		  <thingCategories>
+            <li>BuildingsSpecial</li>
+         </thingCategories>
+		<building>
+			<uninstallWork>150</uninstallWork>
+			 <isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		 <passability>PassThroughOnly</passability>
+		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+	</ThingDef>
 </Defs>
 
 

@@ -664,51 +664,34 @@ Recent studies have shown that 97% of colonist subjects demonstrated temporary l
 		<defName>Make_RecyclerWeapon</defName>
 		<label>feed weapon</label>
 		<description>feed  weapon.</description>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>WeaponsRanged</li>
-						<li>ShieldCat</li>
-						<li>SharpMelee</li>
-						<li>AgileMelee</li>
-						<li>SurvivalToolsNeolithic</li>
-						<li>HeavyMelee</li>
-						<li>BluntMelee</li>
-						<li>CrossbarRanged</li>
-						<li>BowRanged</li>
-						<li>ThrownRanged</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
+		  <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Weapons</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>Weapons</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>Gun_DoomsdayRocket</li>
+        <li>Gun_TripleRocket</li>
+        <li>TornadoGenerator</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
 		<products>
 			<InsectJelly>5</InsectJelly>
 		</products>
-		<fixedIngredientFilter>
-			<categories>
-				<li>WeaponsRanged</li>
-				<li>SharpMelee</li>
-				<li>AgileMelee</li>
-				<li>SurvivalToolsNeolithic</li>
-				<li>HeavyMelee</li>
-				<li>BluntMelee</li>
-				<li>CrossbarRanged</li>
-				<li>BowRanged</li>
-				<li>ThrownRanged</li>
-			</categories>
-			<disallowedThingDefs>
-				<li>MeleeWeapon_Club</li> 
-			</disallowedThingDefs>
-			<specialFiltersToDisallow>
-				<li>AllowApparelSpacer</li>
-				<li>AllowApparelUltra</li>
-				<li>AllowApparelArchotech</li>
-				<li>AllowNonMetallicStuffApparel</li>
-			</specialFiltersToDisallow>
-	
-		</fixedIngredientFilter>
 		
 	</RecipeDef>
 

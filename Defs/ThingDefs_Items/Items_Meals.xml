@@ -285,4 +285,40 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<ThingDef ParentName="CropsBase">
+    <defName>BirdsMilk</defName>
+    <label>Bird's Milk</label>
+    <description>A product of chicken milking. The chickens are on strike, but the milking machine hasn't read the Labor Code.
+If the strike lasts longer than three days, the milk is renamed "ground chicken with pulp.".</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/BirdsMilk</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>1.9</MarketValue> <!-- Can be used like meat in recipes -->
+      <Mass>0.045</Mass>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <Nutrition>0.08</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+			<foodType>Processed</foodType>
+			<preferability>MealAwful</preferability>
+			<maxNumToIngestAtOnce>10</maxNumToIngestAtOnce>
+			<babiesCanIngest>true</babiesCanIngest>
+		</ingestible>
+		<thingCategories>
+			<li>CookingSupplies</li>
+		</thingCategories>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
 </Defs>

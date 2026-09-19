@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Chicken"]/comps</xpath>
+		<value>
+			<li Class="CompProperties_Milkable">
+				<milkDef>BirdsMilk</milkDef>
+				<milkIntervalDays>1</milkIntervalDays>
+				<milkAmount>14</milkAmount>
+			</li>
+		</value>
+	</Operation>
+	  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[@Name="Make_CheeseBase"]/fixedIngredientFilter/thingDefs</xpath>
+    <value>
+      <li>BirdsMilk</li>
+    </value>
+  </Operation>
+
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName="Make_Cheese"]/ingredients/li/filter/thingDefs</xpath>
+    <value>
+      <li>BirdsMilk</li>
+    </value>
+  </Operation>
+
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName="Make_Cheese_x5"]/ingredients/li/filter/thingDefs</xpath>
+    <value>
+      <li>BirdsMilk</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName="Make_Cheese_Vat_x10"]/fixedIngredientFilter/thingDefs</xpath>
+    <value>
+      <li>BirdsMilk</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName="Make_Cheese_Vat_x10"]/ingredients/li/filter/thingDefs</xpath>
+    <value>
+      <li>BirdsMilk</li>
+    </value>
+  </Operation>
+</Patch>
