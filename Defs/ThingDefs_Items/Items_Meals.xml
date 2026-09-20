@@ -295,6 +295,7 @@ If the strike lasts longer than three days, the milk is renamed "ground chicken 
       <texPath>Things/Item/Resource/BirdsMilk</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	 <tickerType>Normal</tickerType>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
       <MarketValue>1.9</MarketValue> <!-- Can be used like meat in recipes -->
@@ -320,5 +321,39 @@ If the strike lasts longer than three days, the milk is renamed "ground chicken 
 			<li>CookingSupplies</li>
 		</thingCategories>
     <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+  
+  
+  
+    <ThingDef ParentName="SK_MealBase">
+    <defName>JellyPie</defName>
+    <label>Jelly Pie</label>
+    <description>A soft, airy sponge cake soaked in melted insect jelly; despite the unusual ingredient, the jelly lends the cake a subtle caramel note and an amazing texture. Even the pickiest colonists ask for seconds after trying a piece.</description>
+    <possessionCount>10</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Meal/JellyPie</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>8.0</MarketValue>
+      <Mass>0.025</Mass>
+      <Nutrition>0.08</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+    </statBases>
+    	<ingestible>
+			<tasteThought>AteLavishMeal</tasteThought>
+			<preferability>MealLavish</preferability>
+			<joy>0.7</joy>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<joyKind>Gluttonous</joyKind>
+			<!--<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>HadAdjika</hediffDef>
+					<severity>0.6</severity>
+				</li>
+			</outcomeDoers>-->
+		</ingestible>
   </ThingDef>
 </Defs>

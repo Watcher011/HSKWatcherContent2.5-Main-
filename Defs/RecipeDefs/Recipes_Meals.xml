@@ -325,7 +325,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>RawAgave</li>
+						<li>InsectJelly</li>
 					</thingDefs>
 				</filter>
 				<count>0.5</count>
@@ -341,7 +341,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>RawAgave</li>
+				<li>InsectJelly</li>
 				<li>RawCoffee</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -359,4 +359,40 @@
 			<li>ElectricOven</li>
 		</recipeUsers>
 	</RecipeDef>
+	
+	<RecipeDef>
+  <defName>MakeJellyPie</defName>
+<label>prepare "Beehive Sweetness" jelly pie</label>
+<description>A sweet pie with insect jelly.</description>
+  <workAmount>1200</workAmount>
+  <skillRequirements>
+    <Cooking>8</Cooking>
+  </skillRequirements>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>InsectJelly</li>
+        </thingDefs>
+      </filter>
+      <count>4</count>
+    </li>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Flour</li> 
+        </thingDefs>
+      </filter>
+      <count>10</count>
+    </li>
+  </ingredients>
+  <products>
+  <JellyPie>3</JellyPie>
+  </products>
+  <recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>ElectricOven</li>
+		</recipeUsers>
+</RecipeDef>
 </Defs>
