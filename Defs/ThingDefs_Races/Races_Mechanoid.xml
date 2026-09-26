@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Centipede - abstract -->
+  <ThingDef Abstract="True" Name="MechPlankBeast" ParentName="BaseMechanoid">
+    <statBases>
+      <MoveSpeed>1.9</MoveSpeed>
+      <ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+      <PsychicSensitivity>0.05</PsychicSensitivity>
+      <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">4</BandwidthCost>
+      <MechEnergyLossPerHP  MayRequire="Ludeon.RimWorld.Biotech">0.2</MechEnergyLossPerHP>
+    </statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <body>MechanicalCentipede</body>
+      <baseBodySize>3.0</baseBodySize>
+      <baseHealthScale>4.32</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+        <li MayRequire="Ludeon.RimWorld.Biotech">
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+      <mechWeightClass>Heavy</mechWeightClass>
+      <detritusLeavings>
+        <li>
+          <def>ChunkMechanoidSlag</def>
+          <texOverrideIndex>10</texOverrideIndex>
+          <spawnChance>0.5</spawnChance>
+        </li>
+        <li>
+          <def>ChunkMechanoidSlag</def>
+          <texOverrideIndex>19</texOverrideIndex>
+          <spawnChance>0.5</spawnChance>
+        </li>
+        <li>
+          <def>ChunkMechanoidSlag</def>
+          <texOverrideIndex>14</texOverrideIndex>
+          <spawnChance>0.5</spawnChance>
+        </li>
+      </detritusLeavings>
+    </race>
+    <butcherProducts>
+      <Steel>30</Steel>
+      <Plasteel>10</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+
+ 
+  <!-- Centipede - minigun -->
+  <ThingDef ParentName="MechPlankBeast">
+    <defName>Mech_GreatPlankBeast</defName>
+    <label>The Great Plank Beast</label>
+	<description>The pinnacle of Neanderthal engineering, which is itself an exhaustive characteristic. Assembled from vines, sticks, boards, and mud in proportions dictated not by calculation but by inspiration. Officially classified as combat support; unofficially, as a collective delusion. It requires no fuel, but it does require feeding. It has no software, but it has an attitude. If struck by enemy ordnance, it will most likely simply die before firing a single shot. Primary uses: distracting the enemy, allies, and predators. Operator losses from friendly fire are considered ritual. If mooing comes from inside, the system is operating normally. If there is silence, seek cover. Not recommended to approach from behind: emissions are toxic and organically active. No warranty is provided, as the concept of a warranty requires abstract thinking unavailable to its creators. Field tests have shown effectiveness comparable to throwing stones, but considerably more expensive. Some tribes worship it as a god of war. Others use it as a training dummy. Both groups are correct.</description>
+	 <statBases>
+      <Flammability>2</Flammability>
+    </statBases>
+	 <race>
+      <deathAction Class="DeathActionProperties_Divide">
+        <divideBloodFilthCountRange>3~4</divideBloodFilthCountRange>
+        <dividePawnCount>1</dividePawnCount>
+        <dividePawnKindOptions>
+          <li>Muffalo</li>
+        </dividePawnKindOptions>
+      </deathAction>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="MechCentipedeBase">
+    <defName>Mech_GreatPlankBeast</defName>
+    <label>The Great Plank Beast</label>
+    <race>Mech_GreatPlankBeast</race>
+    <lifeStages Inherit="False">
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/GreatPlankBeast/GreatPlankBeast</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/GreatPlankBeast/GreatPlankBeast</texPath>
+         <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags>
+     <li>NorbalRanged</li>
+	 <li>CE_Bow</li>
+    </weaponTags>
+  </PawnKindDef>
+
+
+</Defs>

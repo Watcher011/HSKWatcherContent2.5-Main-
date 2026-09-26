@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- <ThingDef ParentName="BuildingBase">
+    <defName>HSK_SpotlightEmitter</defName>
+    <label>spotlight emitter</label>
+    <description>Invisible light emitter used by spotlights.</description>
+
+    <!{1}** Не рисовать вообще — рендер отключён полностью. **{1}>
+    <drawerType>None</drawerType>
+
+    <!{1}** graphicData нужна только для прохождения валидации Def'а.
+         Используем ту же текстуру, что у самой лампы — она точно
+         есть в моде, раз на неё ссылается Constructionlamp. **{1}>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Lights/LampF</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+
+    <size>(1,1)</size>
+    <selectable>false</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <useHitPoints>false</useHitPoints>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <blockLight>false</blockLight>
+    <blockWind>false</blockWind>
+    <pathCost>0</pathCost>
+    <passability>Standable</passability>
+    <fillPercent>0</fillPercent>
+
+    <comps>
+      <li Class="HSK.Watcher.Content.CompProperties_SpotlightEmitter">
+        <glowRadius>2.0</glowRadius>
+        <glowColor>(255, 250, 220, 0)</glowColor>
+        <overlightRadius>0.5</overlightRadius>
+      </li>
+    </comps>
+  </ThingDef>-->
+</Defs>

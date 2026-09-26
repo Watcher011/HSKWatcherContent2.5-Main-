@@ -219,4 +219,18 @@
         <letterText>A mysterious portal opens out of nowhere! A strange sound emanates from it...</letterText>
         <letterDef>PositiveEvent</letterDef>
     </IncidentDef>
+	
+	<IncidentDef>
+    <defName>HSK_GreatPlankBeastRaid</defName>
+    <label>Raid of the Great Plank Beast</label>
+    <workerClass>HSK.Watcher.Content.Incident.IncidentWorker_GreatPlankBeastRaid</workerClass>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <baseChance>0.08</baseChance>
+    <minRefireDays>15</minRefireDays>
+    <earliestDay>10</earliestDay>
+    <pointsScaleable>true</pointsScaleable>
+  </IncidentDef>
 </Defs>

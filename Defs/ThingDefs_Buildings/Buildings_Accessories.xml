@@ -1,8 +1,262 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
+<ThingDef ParentName="LampBase">
+	<defName>Constructionlamp</defName>
+	<label>Survivor's Lantern</label>
+	<description>In a world of perpetual resource shortages, constant pirate raids, and a chronic lack of decent furniture, the "Survivor's Lantern™" isn’t just a lamp—it’s your new best friend, space heater, and potential weapon all in one!</description>
+	<graphicData>
+		<texPath>Things/Building/Furniture/Lights/LampF</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<drawSize>(1,1)</drawSize>
+		<shadowData>
+			<volume>(0.2, 0.1, 0.2)</volume>
+			<offset>(0,0,0)</offset>
+		</shadowData>
+	</graphicData>
+	<fillPercent>0</fillPercent>
+	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+	<rotatable>true</rotatable>
+	<pathCost>20</pathCost>
+	<tickerType>Normal</tickerType>
+	<stuffCategories>
+		<li>Metallic</li>
+	</stuffCategories>
+	<costStuffCount>30</costStuffCount>
+	<costList>
+		<Glass>3</Glass>
+		<ComponentIndustrial>2</ComponentIndustrial>
+		<ElectronicComponents>1</ElectronicComponents>
+	</costList>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<statBases>
+		<Beauty>9</Beauty>
+		<WorkToBuild>310</WorkToBuild>
+		<Bulk>12</Bulk>
+		<Mass>4</Mass>
+		<Cleanliness>0</Cleanliness>
+		<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
+	</statBases>
+	<comps>
+		<li>
+			<compClass>CompQuality</compClass>
+		</li>
+		<li Class="SK.CompProperties_HeatPusherAdvanced">
+			<compClass>SK.CompHeatPusherAdvanced</compClass>
+			<heatPerSecond>3.5</heatPerSecond>
+			<heatPushMaxTemperature>15</heatPushMaxTemperature>
+		</li>
+		<!-- CompProperties_Glower на самой лампе больше не нужен — в этой
+		     версии реальный свет полностью обеспечивают фантомные
+		     эмиттеры (HSK_SpotlightEmitter), расставленные внутри
+		     конуса кодом CompSpotlight. Если оставить обычный
+		     CompProperties_Glower здесь, вокруг лампы вернётся паразитный
+		     круг света в дополнение к конусу.
  
+		     beamColor/brightness — цвет и яркость нарисованного меша
+		     конуса (визуальный оверлей, аддитивный блендинг).
+		     emitterDefName/emitterRows/emitterSpacing — настройка сетки
+		     фантомов: сколько "рядов" по длине конуса и с каким шагом
+		     между эмиттерами в ряду. Радиус/цвет КАЖДОГО фантома
+		     задаётся отдельно в самом SpotlightEmitter.xml
+		     (glowRadius/glowColor у HSK_SpotlightEmitter).
+		     angleOffset — общая поправка сверх значений ниже (обычно 0).
+		     angleNorth/angleEast/angleSouth/angleWest — угол луча под
+		     каждое конкретное направление спрайта (0=север, 90=восток,
+		     180=юг, 270=запад по умолчанию). Если "линза" на картинке
+		     лампы для конкретного направления смотрит не туда — меняйте
+		     соответствующее значение, посмотрев в игре, куда бьёт луч
+		     при повороте здания в эту сторону. -->
+		<li Class="HSK.Watcher.Content.CompProperties_Spotlight">
+			<beamAngle>45</beamAngle>
+			<beamLength>9</beamLength>
+			<sourceOffset>0.5</sourceOffset>
+			<beamColor>(1, 1, 0.8, 0.45)</beamColor>
+			<brightness>1.6</brightness>
+			<rotatable>true</rotatable>
+			<rotationSpeed>90</rotationSpeed>
+			<rotationStep>45</rotationStep>
+			<angleOffset>0</angleOffset>
+			<angleNorth>0</angleNorth>
+			<angleEast>90</angleEast>
+			<angleSouth>180</angleSouth>
+			<angleWest>270</angleWest>
+			<affectsLight>true</affectsLight>
+			<emitterDefName>HSK_SpotlightEmitter</emitterDefName>
+			<emitterRows>5</emitterRows>
+			<emitterSpacing>1.6</emitterSpacing>
+		</li>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>80</basePowerConsumption>
+			<shortCircuitInRain>false</shortCircuitInRain>
+			<soundPowerOn>Power_OnSmall</soundPowerOn>
+			<soundPowerOff>Power_OffSmall</soundPowerOff>
+			<powerUpgrades>
+				<li>
+					<researchProject>ColoredLights</researchProject>
+					<factor>0.7</factor>
+				</li>
+			</powerUpgrades>
+		</li>
+	</comps>
+	<building>
+		<uninstallWork>300</uninstallWork>
+	</building>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>
+	<passability>PassThroughOnly</passability>
+	<researchPrerequisites>
+		<li>Light_B1</li>
+	</researchPrerequisites>
+	<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+</ThingDef>
+
+<ThingDef>
+		<defName>HSK_SpotlightEmitter</defName>
+		<label>--</label>
+		<description>-</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<tickerType>Never</tickerType>
+		<drawerType>None</drawerType>
+		<selectable>false</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<seeThroughFog>true</seeThroughFog>
+		<useHitPoints>false</useHitPoints>
+		<destroyable>false</destroyable>
+		<rotatable>false</rotatable>
+		<passability>Standable</passability>
+		<fillPercent>0</fillPercent>
+		<coversFloor>false</coversFloor>
+		<size>(1,1)</size>
+		<altitudeLayer>Item</altitudeLayer>
+		<comps>
+			<li Class="HSK.Watcher.Content.CompProperties_SpotlightEmitter">
+				<!-- Радиус/цвет КАЖДОГО отдельного фантома. Должен
+				     перекрываться с соседними (см. emitterSpacing у
+				     CompProperties_Spotlight), иначе в конусе останутся
+				     тёмные дыры между точками. -->
+				<glowRadius>3</glowRadius>
+				<glowColor>(255, 250, 217, 0)</glowColor>
+			</li>
+		</comps>
+		<building>
+			<deconstructible>false</deconstructible>
+		</building>
+	</ThingDef>
+ 
+
+<!--<ThingDef ParentName="LampBase">
+	<defName>Constructionlamp</defName>
+	<label>Survivor's Lantern</label>
+	<description>In a world of perpetual resource shortages, constant pirate raids, and a chronic lack of decent furniture, the "Survivor's Lantern™" isn’t just a lamp—it’s your new best friend, space heater, and potential weapon all in one!</description>
+	<graphicData>
+		<texPath>Things/Building/Furniture/Lights/LampF</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<drawSize>(1,1)</drawSize>
+		<shadowData>
+			<volume>(0.2, 0.1, 0.2)</volume>
+			<offset>(0,0,0)</offset>
+		</shadowData>
+	</graphicData>
+	<fillPercent>0</fillPercent>
+	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+	<rotatable>true</rotatable>
+	<pathCost>20</pathCost>
+	<tickerType>Normal</tickerType>
+	<stuffCategories>
+		<li>Metallic</li>
+	</stuffCategories>
+	<costStuffCount>30</costStuffCount>
+	<costList>
+		<Glass>3</Glass>
+		<ComponentIndustrial>2</ComponentIndustrial>
+		<ElectronicComponents>1</ElectronicComponents>
+	</costList>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<statBases>
+		<Beauty>9</Beauty>
+		<WorkToBuild>310</WorkToBuild>
+		<Bulk>12</Bulk>
+		<Mass>4</Mass>
+		<Cleanliness>0</Cleanliness>
+		<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
+	</statBases>
+	<comps>
+		<li>
+			<compClass>CompQuality</compClass>
+		</li>
+		<li Class="SK.CompProperties_HeatPusherAdvanced">
+			<compClass>SK.CompHeatPusherAdvanced</compClass>
+			<heatPerSecond>3.5</heatPerSecond>
+			<heatPushMaxTemperature>15</heatPushMaxTemperature>
+		</li>
+		<li Class="CompProperties_Glower">
+			<glowRadius>9</glowRadius>
+			<!{1}** Цвет НАСТОЯЩЕГО света (тонировка земли/освещение).
+			     Формат 0-255. Держите визуально согласованным с
+			     beamColor ниже (тот в формате 0-1). **{1}>
+			<glowColor>(255, 50, 50, 0)</glowColor>
+		</li>
+		<!{1}** Наш компонент прожектора. beamAngle: 45 или 90 градусов —
+		     подставьте нужное значение. beamLength лучше держать равным
+		     glowRadius выше (9), чтобы визуальный конус и реальный
+		     радиус освещения совпадали. affectsLight=true включает
+		     Harmony-патч, который реально гасит свет вне конуса —
+		     поставьте false, если нужен только визуальный луч без
+		     влияния на игровую механику (рост растений/настроение/
+		     точность стрельбы).
+		     beamColor — цвет ТОЛЬКО нарисованного треугольника-оверлея
+		     (формат 0-1, RGBA), не путать с glowColor выше.
+		     angleOffset — общая поправка сверх значений ниже (обычно 0).
+		     angleNorth/angleEast/angleSouth/angleWest — угол луча под
+		     каждое конкретное направление спрайта (0=север, 90=восток,
+		     180=юг, 270=запад по умолчанию). Если "линза" на картинке
+		     лампы для конкретного направления смотрит не туда — меняйте
+		     соответствующее значение, посмотрев в игре, куда бьёт луч
+		     при повороте здания в эту сторону. **{1}>
+		<li Class="HSK.Watcher.Content.CompProperties_Spotlight">
+			<beamAngle>45</beamAngle>
+			<beamLength>9</beamLength>
+			<sourceOffset>0.5</sourceOffset>
+			<beamColor>(1, 1, 0.8, 0.45)</beamColor>
+			<rotatable>true</rotatable>
+			<rotationSpeed>90</rotationSpeed>
+			<rotationStep>45</rotationStep>
+			<angleOffset>0</angleOffset>
+			<angleNorth>0</angleNorth>
+			<angleEast>90</angleEast>
+			<angleSouth>180</angleSouth>
+			<angleWest>270</angleWest>
+			<affectsLight>true</affectsLight>
+		</li>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>80</basePowerConsumption>
+			<shortCircuitInRain>false</shortCircuitInRain>
+			<soundPowerOn>Power_OnSmall</soundPowerOn>
+			<soundPowerOff>Power_OffSmall</soundPowerOff>
+			<powerUpgrades>
+				<li>
+					<researchProject>ColoredLights</researchProject>
+					<factor>0.7</factor>
+				</li>
+			</powerUpgrades>
+		</li>
+	</comps>
+	<building>
+		<uninstallWork>300</uninstallWork>
+	</building>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>
+	<passability>PassThroughOnly</passability>
+	<researchPrerequisites>
+		<li>Light_B1</li>
+	</researchPrerequisites>
+	<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+</ThingDef>-->
+	
+
 
   <ThingDef ParentName="BuildingBase">
         <defName>PrimitiveRadioStation</defName>
@@ -286,7 +540,7 @@
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 	</ThingDef>
 	
-		<ThingDef ParentName="LampBase">
+	<!--	<ThingDef ParentName="LampBase">
 		<defName>Cell</defName>
 		<label>Table Cell</label>
 		<description>Table Cell.</description>
@@ -333,9 +587,9 @@
 		  <li Class="HSK.Watcher.Content.Compes.CompProperties_LocalHeart">
             <offset>(0,0,0)</offset>
 			<drawLayer>BelowTexture</drawLayer>
-			<!--<drawLayer>AboveTexture</drawLayer>-->
+			<!{1}**<drawLayer>AboveTexture</drawLayer>**{1}>
             <fireSize>0.8</fireSize>
-            <!-- Укажите путь к текстуре -->
+            <!{1}** Укажите путь к текстуре **{1}>
             <texturePath>Things/Special/thing</texturePath>
 			 <underlayTexturePath>Things/Building/Coolerbiohazard_basa</underlayTexturePath>
              <underlaySize>0.8</underlaySize>
@@ -354,7 +608,7 @@
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		 <passability>PassThroughOnly</passability>
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
-	</ThingDef>
+	</ThingDef>-->
 	
 		<ThingDef ParentName="BuildingBase">
 		<defName>ColdsHeartBattery</defName>

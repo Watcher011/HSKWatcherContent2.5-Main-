@@ -29,7 +29,8 @@
  <ZeonToy.label>Игрушка Зеон</ZeonToy.label>
 <ZeonToy.description>Эта игрушка изображает механоида-босса Зеона, Защитника ионной фазы (вооружённого молниями).</ZeonToy.description>
 
-
+<Constructionlamp.label>Прожектор</Constructionlamp.label>
+<Constructionlamp.description>В мире вечной нехватки ресурсов, постоянных налётов пиратов и хронической нехватки приличной мебели «Прожектор™» — это не просто лампа, это ваш новый лучший друг, обогреватель и потенциальное оружие в одном флаконе!</Constructionlamp.description>
   <!--<CeilingPlantsKristal.description>Потолочная лампа из светящегося камня.</CeilingPlantsKristal.description>-->
 
 </LanguageData>
