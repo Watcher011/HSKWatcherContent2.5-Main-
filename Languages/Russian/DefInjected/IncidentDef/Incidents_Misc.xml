@@ -34,8 +34,10 @@
   <ExplosiveParasiteRaid.label>Взрывной паразит</ExplosiveParasiteRaid.label>
 
   <RMPortalEvent.label>таинственный портал</RMPortalEvent.label>
-<RMPortalEvent.description>Из ниоткуда возникает странный портал... Что произойдет дальше?</RMPortalEvent.description>
-<RMPortalEvent.letterText>Из ниоткуда возникает таинственный портал! Из него доносится странный звук...</RMPortalEvent.letterText>
+  <RMPortalEvent.description>Из ниоткуда возникает странный портал... Что произойдет дальше?</RMPortalEvent.description>
+  <RMPortalEvent.letterText>Из ниоткуда возникает таинственный портал! Из него доносится странный звук...</RMPortalEvent.letterText>
+
+  <HSK_GreatPlankBeastRaid.label>Нашествие Великого Древесного Зверя</HSK_GreatPlankBeastRaid.label>
 
 
   <!--<GreenyZyabraInvasion.description>Земля трескается. Небо темнеет. Зелёная Зиабра пришла. Её плоть — хитин и слизь. Её разум — рой. Она не завоёвывает — она пожирает. Города исчезают. Технологии бесполезны. Остаётся только бежать. Или стать частью неё.</GreenyZyabraInvasion.description>-->

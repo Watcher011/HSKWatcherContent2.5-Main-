@@ -3,8 +3,8 @@
 
   <CyberPsychosisBlockerPill.label>ингибитор киберпсихоза</CyberPsychosisBlockerPill.label>
   <CyberPsychosisBlockerPill.description>Препарат, временно предотвращающий прогрессирование киберпсихоза и медленно восстанавливающий человечность. Действует 24 часа.</CyberPsychosisBlockerPill.description>
-  <CyberPsychosisBlockerPill.ingestible.ingestCommandString>Take {0}</CyberPsychosisBlockerPill.ingestible.ingestCommandString>
-  <CyberPsychosisBlockerPill.ingestible.ingestReportString>Taking {0}.</CyberPsychosisBlockerPill.ingestible.ingestReportString>
+  <CyberPsychosisBlockerPill.ingestible.ingestCommandString>Принять {0}</CyberPsychosisBlockerPill.ingestible.ingestCommandString>
+  <CyberPsychosisBlockerPill.ingestible.ingestReportString>Принимает {0}.</CyberPsychosisBlockerPill.ingestible.ingestReportString>
 
 
   <!-- Permanent Neural Stabilizer -->

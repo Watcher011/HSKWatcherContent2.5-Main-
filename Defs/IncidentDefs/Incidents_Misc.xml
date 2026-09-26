@@ -224,11 +224,11 @@
     <defName>HSK_GreatPlankBeastRaid</defName>
     <label>Raid of the Great Plank Beast</label>
     <workerClass>HSK.Watcher.Content.Incident.IncidentWorker_GreatPlankBeastRaid</workerClass>
-    <category>ThreatBig</category>
+    <category>ThreatSmall</category>
     <targetTags>
       <li>Map_PlayerHome</li>
     </targetTags>
-    <baseChance>0.08</baseChance>
+    <baseChance>0.07</baseChance>
     <minRefireDays>15</minRefireDays>
     <earliestDay>10</earliestDay>
     <pointsScaleable>true</pointsScaleable>

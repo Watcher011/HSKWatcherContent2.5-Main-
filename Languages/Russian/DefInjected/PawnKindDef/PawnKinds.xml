@@ -2,13 +2,15 @@
 <LanguageData>
 
   <!-- РИК -->
-<Rick.label>Рик Санчес</Rick.label>
-<Rick.labelPlural>Рики Санчесы</Rick.labelPlural>
 
-<!-- МОРТИ -->
-<Morty.label>Морти Смит</Morty.label>
-<Morty.labelPlural>Морти Смиты</Morty.labelPlural>
+  <Rick.label>Рик Санчес</Rick.label>
+  <Rick.labelPlural>Рики Санчесы</Rick.labelPlural>
 
+
+  <!-- МОРТИ -->
+
+  <Morty.label>Морти Смит</Morty.label>
+  <Morty.labelPlural>Морти Смиты</Morty.labelPlural>
 
 
 </LanguageData>

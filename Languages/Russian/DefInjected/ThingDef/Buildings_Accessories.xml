@@ -1,6 +1,123 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <Constructionlamp.label>Прожектор направленный</Constructionlamp.label>
+  <Constructionlamp.description>В мире вечной нехватки ресурсов, постоянных налётов пиратов и хронической нехватки приличной мебели «Прожектор™» — это не просто лампа, это ваш новый лучший друг, обогреватель и потенциальное оружие в одном флаконе!</Constructionlamp.description>
+
+  <HSK_SpotlightEmitter.label>--</HSK_SpotlightEmitter.label>
+  <HSK_SpotlightEmitter.description>-</HSK_SpotlightEmitter.description>
+
+
+  <!-- <ThingDef ParentName="LampBase">
+	<defName>Constructionlamp</defName>
+	<label>Survivor's Lantern</label>
+	<description>In a world of perpetual resource shortages, constant pirate raids, and a chronic lack of decent furniture, the "Survivor's Lantern™" isn’t just a lamp—it’s your new best friend, space heater, and potential weapon all in one!</description>
+	<graphicData>
+		<texPath>Things/Building/Furniture/Lights/LampF</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<drawSize>(1,1)</drawSize>
+		<shadowData>
+			<volume>(0.2, 0.1, 0.2)</volume>
+			<offset>(0,0,0)</offset>
+		</shadowData>
+	</graphicData>
+	<fillPercent>0</fillPercent>
+	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+	<rotatable>true</rotatable>
+	<pathCost>20</pathCost>
+	<tickerType>Normal</tickerType>
+	<stuffCategories>
+		<li>Metallic</li>
+	</stuffCategories>
+	<costStuffCount>30</costStuffCount>
+	<costList>
+		<Glass>3</Glass>
+		<ComponentIndustrial>2</ComponentIndustrial>
+		<ElectronicComponents>1</ElectronicComponents>
+	</costList>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<statBases>
+		<Beauty>9</Beauty>
+		<WorkToBuild>310</WorkToBuild>
+		<Bulk>12</Bulk>
+		<Mass>4</Mass>
+		<Cleanliness>0</Cleanliness>
+		<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
+	</statBases>
+	<comps>
+		<li>
+			<compClass>CompQuality</compClass>
+		</li>
+		<li Class="SK.CompProperties_HeatPusherAdvanced">
+			<compClass>SK.CompHeatPusherAdvanced</compClass>
+			<heatPerSecond>3.5</heatPerSecond>
+			<heatPushMaxTemperature>15</heatPushMaxTemperature>
+		</li>
+		<li Class="CompProperties_Glower">
+			<glowRadius>9</glowRadius>
+			<!{1}** Цвет НАСТОЯЩЕГО света (тонировка земли/освещение).
+			     Формат 0-255. Держите визуально согласованным с
+			     beamColor ниже (тот в формате 0-1). **{1}>
+			<glowColor>(255, 50, 50, 0)</glowColor>
+		</li>
+		<!{1}** Наш компонент прожектора. beamAngle: 45 или 90 градусов —
+		     подставьте нужное значение. beamLength лучше держать равным
+		     glowRadius выше (9), чтобы визуальный конус и реальный
+		     радиус освещения совпадали. affectsLight=true включает
+		     Harmony-патч, который реально гасит свет вне конуса —
+		     поставьте false, если нужен только визуальный луч без
+		     влияния на игровую механику (рост растений/настроение/
+		     точность стрельбы).
+		     beamColor — цвет ТОЛЬКО нарисованного треугольника-оверлея
+		     (формат 0-1, RGBA), не путать с glowColor выше.
+		     angleOffset — общая поправка сверх значений ниже (обычно 0).
+		     angleNorth/angleEast/angleSouth/angleWest — угол луча под
+		     каждое конкретное направление спрайта (0=север, 90=восток,
+		     180=юг, 270=запад по умолчанию). Если "линза" на картинке
+		     лампы для конкретного направления смотрит не туда — меняйте
+		     соответствующее значение, посмотрев в игре, куда бьёт луч
+		     при повороте здания в эту сторону. **{1}>
+		<li Class="HSK.Watcher.Content.CompProperties_Spotlight">
+			<beamAngle>45</beamAngle>
+			<beamLength>9</beamLength>
+			<sourceOffset>0.5</sourceOffset>
+			<beamColor>(1, 1, 0.8, 0.45)</beamColor>
+			<rotatable>true</rotatable>
+			<rotationSpeed>90</rotationSpeed>
+			<rotationStep>45</rotationStep>
+			<angleOffset>0</angleOffset>
+			<angleNorth>0</angleNorth>
+			<angleEast>90</angleEast>
+			<angleSouth>180</angleSouth>
+			<angleWest>270</angleWest>
+			<affectsLight>true</affectsLight>
+		</li>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>80</basePowerConsumption>
+			<shortCircuitInRain>false</shortCircuitInRain>
+			<soundPowerOn>Power_OnSmall</soundPowerOn>
+			<soundPowerOff>Power_OffSmall</soundPowerOff>
+			<powerUpgrades>
+				<li>
+					<researchProject>ColoredLights</researchProject>
+					<factor>0.7</factor>
+				</li>
+			</powerUpgrades>
+		</li>
+	</comps>
+	<building>
+		<uninstallWork>300</uninstallWork>
+	</building>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>
+	<passability>PassThroughOnly</passability>
+	<researchPrerequisites>
+		<li>Light_B1</li>
+	</researchPrerequisites>
+	<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+</ThingDef> -->
+
   <PrimitiveRadioStation.label>Примитивная радиостанция</PrimitiveRadioStation.label>
   <PrimitiveRadioStation.description>Примитивная радиостанция для связи с ближайшими фракциями. Не может связаться с орбитальными торговыми кораблями.</PrimitiveRadioStation.description>
 
@@ -14,8 +131,76 @@
   <FirstStone.label>Настольная лампа «Первый камень»</FirstStone.label>
   <FirstStone.description>Грубая форма, честный материал и тёплый, очаговый свет. Лампа из природного светящегося камня с минималистичным текстильным абажуром. Частичка архитектуры в твоём рабочем пространстве.</FirstStone.description>
 
-  <Cell.label>«Клетка»</Cell.label>
-  <Cell.description>«Клетка».</Cell.description>
+
+  <!-- <ThingDef ParentName="LampBase">
+		<defName>Cell</defName>
+		<label>Table Cell</label>
+		<description>Table Cell.</description>
+		<graphicData>
+			<texPath>Things/Building/Coolerbiohazard</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			 <drawOffset>(0,0,0.3)</drawOffset>
+			 <drawSize>0.8</drawSize>
+			<damageData>
+				<rect>(0.35,0.35,0.3,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<pathCost>8</pathCost>
+		<tickerType>Normal</tickerType>
+		 <drawerType>MapMeshAndRealTime</drawerType>
+		 <clearBuildingArea>false</clearBuildingArea>
+		<fillPercent>0.15</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>130</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Bulk>15</Bulk>
+			<Mass>5</Mass>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<Meat_Twisted>10</Meat_Twisted>
+			<Shard>1</Shard>
+		</costList>
+		<costStuffCount>25</costStuffCount>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+		 
+		  <li Class="HSK.Watcher.Content.Compes.CompProperties_LocalHeart">
+            <offset>(0,0,0)</offset>
+			<drawLayer>BelowTexture</drawLayer>
+			<!{1}**<drawLayer>AboveTexture</drawLayer>**{1}>
+            <fireSize>0.8</fireSize>
+            <!{1}** Укажите путь к текстуре **{1}>
+            <texturePath>Things/Special/thing</texturePath>
+			 <underlayTexturePath>Things/Building/Coolerbiohazard_basa</underlayTexturePath>
+             <underlaySize>0.8</underlaySize>
+             <underlayOffset>(0, 0, 0.4)</underlayOffset>
+            </li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(200,200,240,0)</glowColor>
+			</li>
+		</comps>
+		<building>
+			<uninstallWork>150</uninstallWork>
+			 <isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		 <passability>PassThroughOnly</passability>
+		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+	</ThingDef> -->
 
   <ColdsHeartBattery.label>Батарея «Сердце Кирина»</ColdsHeartBattery.label>
   <ColdsHeartBattery.description>Жизнеобеспечивающая камера, внутри которой находится сердце Кирина. Непрерывно генерирует вокруг себя поле морозного холода. Для поддержания метаболизма существа и предотвращения теплового коллапса требует питания Гематогеном.</ColdsHeartBattery.description>
@@ -26,11 +211,12 @@
   <VentilationFilter.label>Активная газоочистка CO</VentilationFilter.label>
   <VentilationFilter.description>Герметичная капсула с «живой» аномалией. Внутри сидит энергичная Фумо, которая вместо магии поглощения пыли эксклюзивно потребляет активированный уголь. Пока её кормят, она сердито дует в трубки, высасывая весь CO2 из помещения. Если у Фумо заканчивается уголь, она начинает ворчать и распускать слухи о вашей базе по радиоволнам.</VentilationFilter.description>
 
- <ZeonToy.label>Игрушка Зеон</ZeonToy.label>
-<ZeonToy.description>Эта игрушка изображает механоида-босса Зеона, Защитника ионной фазы (вооружённого молниями).</ZeonToy.description>
+  <ZeonToy.label>Игрушка Зеон</ZeonToy.label>
+  <ZeonToy.description>Эта игрушка изображает механоида-босса Зеона, Защитника ионной фазы (вооружённого молниями).</ZeonToy.description>
 
-<Constructionlamp.label>Прожектор</Constructionlamp.label>
-<Constructionlamp.description>В мире вечной нехватки ресурсов, постоянных налётов пиратов и хронической нехватки приличной мебели «Прожектор™» — это не просто лампа, это ваш новый лучший друг, обогреватель и потенциальное оружие в одном флаконе!</Constructionlamp.description>
+
+  <!--<Cell.label>«Клетка»</Cell.label>-->
+  <!--<Cell.description>«Клетка».</Cell.description>-->
   <!--<CeilingPlantsKristal.description>Потолочная лампа из светящегося камня.</CeilingPlantsKristal.description>-->
 
 </LanguageData>

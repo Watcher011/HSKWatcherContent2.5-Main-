@@ -123,6 +123,14 @@
      <li>NorbalRanged</li>
 	 <li>CE_Bow</li>
     </weaponTags>
+	<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>10</min>
+					<max>20</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
   </PawnKindDef>
 
 
