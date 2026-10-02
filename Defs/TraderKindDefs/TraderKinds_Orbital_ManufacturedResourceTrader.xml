@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--========================= Manufactured Goods Trader =============================-->
+
+
+	<TraderKindDef>
+		<defName>PlanetCrackerGoodsTrader</defName>
+		<label>Planet Cracker</label>
+		<commonality>1.4</commonality>
+		<orbital>true</orbital>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>18000~125000</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Metallic</categoryDef>
+				<thingDefCountRange>12~30</thingDefCountRange>
+				<totalPriceRange>4500~6800</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>RAR</categoryDef>
+				<thingDefCountRange>12~30</thingDefCountRange>
+				<totalPriceRange>2500~3800</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>HCM</categoryDef>
+				<thingDefCountRange>12~30</thingDefCountRange>
+				<totalPriceRange>2500~3800</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>HVY</categoryDef>
+				<thingDefCountRange>12~30</thingDefCountRange>
+				<totalPriceRange>2500~3800</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>SLD</categoryDef>
+				<thingDefCountRange>12~30</thingDefCountRange>
+				<totalPriceRange>2500~3800</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>RARBar</categoryDef>
+				<thingDefCountRange>5~10</thingDefCountRange>
+				<price>Expensive</price>
+				<totalPriceRange>700~1500</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Parts</categoryDef>
+				<thingDefCountRange>3~8</thingDefCountRange>
+				<price>Expensive</price>
+				<totalPriceRange>1400~3200</totalPriceRange>
+			</li>
+            <li Class="StockGenerator_SingleDef">
+				<thingDef>MetalCan</thingDef>
+				<countRange>50~300</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>FoodMeals</categoryDef>
+				<thingDefCountRange>6~18</thingDefCountRange>
+				<price>Expensive</price>
+				<totalPriceRange>400~1500</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Coal</categoryDef>
+				<thingDefCountRange>10~20</thingDefCountRange>
+				<price>Expensive</price>
+				<totalPriceRange>300~800</totalPriceRange>
+			</li>
+			
+			<li Class="StockGenerator_Category">
+				<categoryDef>ElectronicsCat</categoryDef>
+				<price>Expensive</price>
+				<thingDefCountRange>3~5</thingDefCountRange>
+				<totalPriceRange>4100~5300</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Chemfuel</thingDef>
+				<price>Expensive</price>
+				<countRange>200~600</countRange>
+			</li>
+
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>ConcreteResource</thingDef>
+				<price>Expensive</price>
+				<countRange>300~700</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Glass</thingDef>
+				<price>Expensive</price>
+				<countRange>70~300</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Chemfuel</thingDef>
+				<price>Expensive</price>
+				<countRange>100~300</countRange>
+			</li>
+			<li Class="StockGenerator_ReinforcedBarrels">
+				<countRange>5~10</countRange>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+
+
+</Defs>

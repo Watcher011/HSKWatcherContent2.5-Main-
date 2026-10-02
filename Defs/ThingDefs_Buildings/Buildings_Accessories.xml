@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<ThingDef ParentName="LampBase">
+<!--<ThingDef ParentName="LampBase">
 	<defName>Constructionlamp</defName>
 	<label>Survivor's Lantern</label>
 	<description>In a world of perpetual resource shortages, constant pirate raids, and a chronic lack of decent furniture, the "Survivor's Lantern™" isn’t just a lamp—it’s your new best friend, space heater, and potential weapon all in one!</description>
@@ -46,7 +46,7 @@
 			<heatPerSecond>3.5</heatPerSecond>
 			<heatPushMaxTemperature>15</heatPushMaxTemperature>
 		</li>
-		<!-- CompProperties_Glower на самой лампе больше не нужен — в этой
+		<!{1}** CompProperties_Glower на самой лампе больше не нужен — в этой
 		     версии реальный свет полностью обеспечивают фантомные
 		     эмиттеры (HSK_SpotlightEmitter), расставленные внутри
 		     конуса кодом CompSpotlight. Если оставить обычный
@@ -66,7 +66,7 @@
 		     180=юг, 270=запад по умолчанию). Если "линза" на картинке
 		     лампы для конкретного направления смотрит не туда — меняйте
 		     соответствующее значение, посмотрев в игре, куда бьёт луч
-		     при повороте здания в эту сторону. -->
+		     при повороте здания в эту сторону. **{1}>
 		<li Class="HSK.Watcher.Content.CompProperties_Spotlight">
 			<beamAngle>45</beamAngle>
 			<beamLength>9</beamLength>
@@ -132,10 +132,10 @@
 		<altitudeLayer>Item</altitudeLayer>
 		<comps>
 			<li Class="HSK.Watcher.Content.CompProperties_SpotlightEmitter">
-				<!-- Радиус/цвет КАЖДОГО отдельного фантома. Должен
+				<!{1}** Радиус/цвет КАЖДОГО отдельного фантома. Должен
 				     перекрываться с соседними (см. emitterSpacing у
 				     CompProperties_Spotlight), иначе в конусе останутся
-				     тёмные дыры между точками. -->
+				     тёмные дыры между точками. **{1}>
 				<glowRadius>3</glowRadius>
 				<glowColor>(255, 250, 217, 0)</glowColor>
 			</li>
@@ -143,7 +143,7 @@
 		<building>
 			<deconstructible>false</deconstructible>
 		</building>
-	</ThingDef>
+	</ThingDef>-->
  
 
 <!--<ThingDef ParentName="LampBase">
