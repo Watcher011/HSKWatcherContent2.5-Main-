@@ -255,5 +255,124 @@
     </researchPrerequisites>
     <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 </ThingDef>
+
+	<ThingDef ParentName="TurretBase">
+		<defName>IlluminationTurret_Turret</defName>
+		<label>IlluminationTurret</label>
+		<graphicData>
+			<!-- текстура ЗАНЯТОЙ турели (внутри есть оператор) -->
+			<texPath>Things/Building/Security/AvengerTurretGun_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/IlluminationTurret_Ico</uiIconPath>
+		<statBases>
+			<Mass>50</Mass>
+		</statBases>
+		<!-- Verb_ShootMortarCE не находится в PlaceWorker_ShowTurretRadius (NullReference),
+		     поэтому оставляем только PlaceWorker_TurretTop -->
+		<placeWorkers Inherit="False">
+			<li>PlaceWorker_TurretTop</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Stunnable">
+				<affectedDamageDefs>
+					<li>Stun</li>
+					<li>EMP</li>
+				</affectedDamageDefs>
+			</li>
+			<li Class="SK.CompProperties_HeatPusherAdvanced">
+				<compClass>SK.CompHeatPusherAdvanced</compClass>
+				<heatPerSecond>5</heatPerSecond>
+				<heatPushMaxTemperature>30</heatPushMaxTemperature>
+			</li>
+		</comps>
+		<description>An automatic turret that launches illumination rockets. It automatically targets enemies within its range and lights up the combat area, but deals no damage. Useful at night, in fog, and in dark caves. Requires power.\nCaliber: Flare</description>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Weapon_Parts>10</Weapon_Parts>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<specialDisplayRadius>3</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>Gun_IlluminationTurret</turretGunDef>
+			<turretTopDrawSize>2.0</turretTopDrawSize>
+		</building>
+		<designationHotKey>Misc1</designationHotKey>
+		<tradeTags>
+			<li>CE_Turret</li>
+		</tradeTags>
+		<minifiedDef>MinifiedTurretGun</minifiedDef>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseAutoTurretGun">
+		<defName>Gun_IlluminationTurret</defName>
+		<label>IlluminationTurret</label>
+		<graphicData>
+			<texPath>Things/Building/Security/IlluminationTurret_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>--.</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tradeability>None</tradeability>
+		<statBases>
+			<SightsEfficiency>2.45</SightsEfficiency>
+			<ShotSpread>2.08</ShotSpread>
+			<SwayFactor>2.80</SwayFactor>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<verbs>
+		<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootFlareCE</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_Flare</defaultProjectile>
+				<warmupTime>3.1</warmupTime>
+				<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+				<burstShotCount>2</burstShotCount>
+				<range>70</range>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<circularError>3</circularError>
+				<indirectFirePenalty>0.5</indirectFirePenalty>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>9</magazineSize>
+				<reloadTime>20.8</reloadTime>
+			    <ammoSet>AmmoSet_Flare</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes" />
+			<li Class="CombatExtended.CompProperties_Charges">
+				<chargeSpeeds>
+					<li>30</li>
+					<li>50</li>
+					<li>70</li>
+					<li>90</li>
+				</chargeSpeeds>
+			</li>
+		</comps>
+	</ThingDef>
 	
 </Defs>
