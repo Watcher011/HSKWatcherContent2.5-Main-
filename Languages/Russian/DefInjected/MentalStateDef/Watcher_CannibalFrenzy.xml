@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <Watcher_CannibalFrenzy.label>каннибальское безумие</Watcher_CannibalFrenzy.label>
+  <Watcher_CannibalFrenzy.beginLetterLabel>каннибальское безумие</Watcher_CannibalFrenzy.beginLetterLabel>
+  <Watcher_CannibalFrenzy.beginLetter>{PAWN_nameDef} слишком долго не ел человеческого мяса и впал в каннибальское безумие! Он нападает на колонистов.</Watcher_CannibalFrenzy.beginLetter>
+  <Watcher_CannibalFrenzy.baseInspectLine>Психическое состояние: каннибальское безумие</Watcher_CannibalFrenzy.baseInspectLine>
+  <Watcher_CannibalFrenzy.recoveryMessage>{PAWN_nameDef} пришёл в себя после каннибальского безумия.</Watcher_CannibalFrenzy.recoveryMessage>
+
+</LanguageData>

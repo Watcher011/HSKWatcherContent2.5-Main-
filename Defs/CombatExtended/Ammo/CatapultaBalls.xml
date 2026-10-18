@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==================== AmmoSet ========================== -->
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_Catapult</defName>
+		<label>balls</label>
+		<ammoTypes>
+			<Ammo_StoneBall>Stone_Ball</Ammo_StoneBall>
+			<Ammo_ExplosiveBall>Explosive_Ball</Ammo_ExplosiveBall>
+			<Ammo_PlagueBall>Plague_Ball</Ammo_PlagueBall>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	<!-- ==================== Ammo ========================== -->
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="ExplosiveBallBase">
+		<defName>Ammo_PlagueBall</defName>
+		<label>Plague Ball</label>
+		<graphicData>
+		<texPath>Things/Projectile/Medieval_Catapult_PlagueBall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+		</statBases>
+		<ammoClass>Toxic</ammoClass>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.8</explosiveRadius>
+				<explosiveDamageType>ToxGas</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<wickTicks>
+					<min>5</min>
+					<max>10</max>
+				</wickTicks>
+			</li>
+		</comps>
+		<generateAllowChance>0.6</generateAllowChance>
+		<spawnAsSiegeAmmo>true</spawnAsSiegeAmmo>
+	</ThingDef>
+	<!-- ================== Projectiles ================== -->
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseExplosiveBall">
+		<defName>Plague_Ball</defName>
+		<label>Plague ball</label>
+		<graphicData>
+			<texPath>Things/Projectile/Cow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(183,65,14)</color>
+			 <drawSize>2.25</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Blunt</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<!-- <armorPenetrationBase>0.7</armorPenetrationBase> -->
+			<armorPenetrationBlunt>600.12</armorPenetrationBlunt>
+			<armorPenetrationSharp>1</armorPenetrationSharp>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<suppressionFactor>6</suppressionFactor>
+			<dangerFactor>4</dangerFactor>
+			<airborneSuppressionFactor>8.5</airborneSuppressionFactor>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>50</damageAmountBase>
+				<explosiveDamageType>ToxGas</explosiveDamageType>
+				<explosiveRadius>4</explosiveRadius>
+				<postExplosionGasType>RotStink</postExplosionGasType>
+				<postExplosionSpawnThingDef>Filth_PlagueGerms</postExplosionSpawnThingDef>
+				<postExplosionSpawnChance>0.3</postExplosionSpawnChance>
+				<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+			</li>
+			<li Class="HSK.Watcher.Content.CompProperties_SpawnCorpse">
+				<pawnKind>Cow</pawnKind>
+				<count>1</count>
+				<extraRotDays>1</extraRotDays>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==================== Recipes ========================== -->
+	
+	<RecipeDef ParentName="AmmoRecipeNeolithicBase">
+		<defName>MakeAmmo_PlagueBall</defName>
+		<label>make plague balls x5</label>
+		<description>Craft plague balls.</description>
+		<jobString>Making plague balls.</jobString>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<workAmount>1500</workAmount>
+		<unfinishedThingDef>UnfinishedBalls</unfinishedThingDef>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+						<li>Powder</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RottedMush</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+			<thingDefs>
+				<li>FSX</li>
+				<li>Powder</li>
+				<li>RottedMush</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_PlagueBall>5</Ammo_PlagueBall>
+		</products>
+		<researchPrerequisite>Ballista_B1</researchPrerequisite>
+	</RecipeDef>
+</Defs>

@@ -1,0 +1,138 @@
+﻿<Patch>
+
+	
+<Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+
+        <!-- WindTurbine (factor 1.2) -->
+        <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="WindTurbine"]/comps/li[@Class="CompProperties_Power"]/powerUpgrades</xpath>
+            <match Class="PatchOperationAdd">
+                <!-- Если powerUpgrades уже есть - добавляем внутрь -->
+                <xpath>Defs/ThingDef[defName="WindTurbine"]/comps/li[@Class="CompProperties_Power"]/powerUpgrades</xpath>
+                <value>
+                    <li>
+                        <researchProject>AdvancedPowerKult</researchProject>
+                        <factor>1.2</factor>
+                    </li>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+                <!-- Если powerUpgrades нет - создаём -->
+                <xpath>Defs/ThingDef[defName="WindTurbine"]/comps/li[@Class="CompProperties_Power"]</xpath>
+                <value>
+                    <powerUpgrades>
+                        <li>
+                            <researchProject>AdvancedPowerKult</researchProject>
+                            <factor>1.2</factor>
+                        </li>
+                    </powerUpgrades>
+                </value>
+            </nomatch>
+        </li>
+
+        <!-- AdvancedWindTurbine (factor 1.5) -->
+        <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="AdvancedWindTurbine"]/comps/li[@Class="CompProperties_Power"]/powerUpgrades</xpath>
+            <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="AdvancedWindTurbine"]/comps/li[@Class="CompProperties_Power"]/powerUpgrades</xpath>
+                <value>
+                    <li>
+                        <researchProject>AdvancedPowerKult</researchProject>
+                        <factor>1.5</factor>
+                    </li>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="AdvancedWindTurbine"]/comps/li[@Class="CompProperties_Power"]</xpath>
+                <value>
+                    <powerUpgrades>
+                        <li>
+                            <researchProject>AdvancedPowerKult</researchProject>
+                            <factor>1.5</factor>
+                        </li>
+                    </powerUpgrades>
+                </value>
+            </nomatch>
+        </li>
+
+        <!-- WoodFiredGenerator -->
+        <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="WoodFiredGenerator"]/comps/li[@Class="CompProperties_Power"]/powerUpgrades</xpath>
+            <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="WoodFiredGenerator"]/comps/li[@Class="CompProperties_Power"]/powerUpgrades</xpath>
+                <value>
+                    <li>
+                        <researchProject>AdvancedPowerKult</researchProject>
+                        <factor>1.5</factor>
+                    </li>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="WoodFiredGenerator"]/comps/li[@Class="CompProperties_Power"]</xpath>
+                <value>
+                    <powerUpgrades>
+                        <li>
+                            <researchProject>AdvancedPowerKult</researchProject>
+                            <factor>1.5</factor>
+                        </li>
+                    </powerUpgrades>
+                </value>
+            </nomatch>
+        </li>
+
+        <!-- CoalPowerPlant -->
+        <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="CoalPowerPlant"]/comps/li[@Class="CompProperties_Power"]/powerUpgrades</xpath>
+            <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CoalPowerPlant"]/comps/li[@Class="CompProperties_Power"]/powerUpgrades</xpath>
+                <value>
+                    <li>
+                        <researchProject>AdvancedPowerKult</researchProject>
+                        <factor>1.5</factor>
+                    </li>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="CoalPowerPlant"]/comps/li[@Class="CompProperties_Power"]</xpath>
+                <value>
+                    <powerUpgrades>
+                        <li>
+                            <researchProject>AdvancedPowerKult</researchProject>
+                            <factor>1.5</factor>
+                        </li>
+                    </powerUpgrades>
+                </value>
+            </nomatch>
+        </li>
+
+        <!-- ChemfuelPoweredGenerator -->
+        <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="ChemfuelPoweredGenerator"]/comps/li[@Class="CompProperties_Power"]/powerUpgrades</xpath>
+            <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="ChemfuelPoweredGenerator"]/comps/li[@Class="CompProperties_Power"]/powerUpgrades</xpath>
+                <value>
+                    <li>
+                        <researchProject>AdvancedPowerKult</researchProject>
+                        <factor>1.5</factor>
+                    </li>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="ChemfuelPoweredGenerator"]/comps/li[@Class="CompProperties_Power"]</xpath>
+                <value>
+                    <powerUpgrades>
+                        <li>
+                            <researchProject>AdvancedPowerKult</researchProject>
+                            <factor>1.5</factor>
+                        </li>
+                    </powerUpgrades>
+                </value>
+            </nomatch>
+        </li>
+
+    </operations>
+</Operation>
+</Patch>
+

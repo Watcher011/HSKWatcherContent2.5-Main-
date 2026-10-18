@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+<MakeAmmo_PlagueBall.label>Изготовить чумные шары (5 шт.)</MakeAmmo_PlagueBall.label>
+<MakeAmmo_PlagueBall.description>Изготовить чумные шары.</MakeAmmo_PlagueBall.description>
+<MakeAmmo_PlagueBall.jobString>Изготовление чумных шаров.</MakeAmmo_PlagueBall.jobString>
+
+
+</LanguageData>

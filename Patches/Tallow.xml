@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+<Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+
+        <!-- 1. Заменяем существующий Tallow -->
+        <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[contains(@ParentName, "Animal") or contains(@ParentName, "ThingBase") or contains(@ParentName, "ThingFoxBase") or contains(@ParentName, "WolfThingBase") or contains(@ParentName, "HareThingBase") or contains(@ParentName, "InsectThingBase")]/butcherProducts/Tallow</xpath>
+            <match Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[contains(@ParentName, "Animal") or contains(@ParentName, "ThingBase") or contains(@ParentName, "ThingFoxBase") or contains(@ParentName, "WolfThingBase") or contains(@ParentName, "HareThingBase") or contains(@ParentName, "InsectThingBase")]/butcherProducts/Tallow</xpath>
+                <value>
+                    <Tallow>5</Tallow>
+                </value>
+            </match>
+        </li>
+
+        <!-- 2. Добавляем в существующий butcherProducts -->
+        <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[contains(@ParentName, "Animal") or contains(@ParentName, "ThingBase") or contains(@ParentName, "ThingFoxBase") or contains(@ParentName, "WolfThingBase") or contains(@ParentName, "HareThingBase") or contains(@ParentName, "InsectThingBase")]/butcherProducts[not(Tallow)]</xpath>
+            <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[contains(@ParentName, "Animal") or contains(@ParentName, "ThingBase") or contains(@ParentName, "ThingFoxBase") or contains(@ParentName, "WolfThingBase") or contains(@ParentName, "HareThingBase") or contains(@ParentName, "InsectThingBase")]/butcherProducts</xpath>
+                <value>
+                    <Tallow>5</Tallow>
+                </value>
+            </match>
+        </li>
+
+        <!-- 3. Создаём butcherProducts, если его нет -->
+        <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[contains(@ParentName, "Animal") or contains(@ParentName, "ThingBase") or contains(@ParentName, "ThingFoxBase") or contains(@ParentName, "WolfThingBase") or contains(@ParentName, "HareThingBase") or contains(@ParentName, "InsectThingBase") and not(butcherProducts)]</xpath>
+            <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[contains(@ParentName, "Animal") or contains(@ParentName, "ThingBase") or contains(@ParentName, "ThingFoxBase") or contains(@ParentName, "WolfThingBase") or contains(@ParentName, "HareThingBase") or contains(@ParentName, "InsectThingBase") and not(butcherProducts)]</xpath>
+                <value>
+                    <butcherProducts>
+                        <Tallow>5</Tallow>
+                    </butcherProducts>
+                </value>
+            </match>
+        </li>
+
+    </operations>
+</Operation>
+</Patch>
+
+
+
+
+

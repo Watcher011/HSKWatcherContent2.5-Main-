@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+ <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Candle"]/drawerType</xpath>
+    <value>
+      <drawerType>MapMeshAndRealTime</drawerType>
+    </value>
+  </Operation>
+
+  <!-- Добавляем новые поля для возможности строительства над предметом -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Candle"]</xpath>
+    <value>
+      <clearBuildingArea>false</clearBuildingArea>
+      <altitudeLayer>BuildingOnTop</altitudeLayer>
+      <passability>PassThroughOnly</passability>
+    </value>
+  </Operation>
+
+  <!-- Добавляем isEdifice=false в секцию building -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Candle"]/building</xpath>
+    <value>
+      <isEdifice>false</isEdifice>
+    </value>
+  </Operation>
+  
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Candle"]/graphicData</xpath>
+    <value>
+      <drawOffset>(0, 0, 0.6)</drawOffset>
+    </value>
+  </Operation>
+  
+</Patch>

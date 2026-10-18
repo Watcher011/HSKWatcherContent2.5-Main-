@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+   
+   <JobDef>
+    <defName>Watcher_CannibalEatBodyPart</defName>
+    <driverClass>HSK.Watcher.Content.JobDriver_CannibalEatBodyPart</driverClass>
+    <reportString>biting a chunk off TargetA.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <suspendable>false</suspendable>
+  </JobDef>
+
+  <MentalStateDef>
+    <defName>Watcher_CannibalFrenzy</defName>
+    <label>cannibal frenzy</label>
+    <stateClass>HSK.Watcher.Content.MentalState_CannibalFrenzy</stateClass>
+    <workerClass>HSK.Watcher.Content.MentalStateWorker_CannibalFrenzy</workerClass>
+    <category>Aggro</category>
+    <blockNormalThoughts>true</blockNormalThoughts>
+    <nameColor>(0.9, 0.15, 0.15)</nameColor>
+    <beginLetterLabel>cannibal frenzy</beginLetterLabel>
+    <beginLetter>{PAWN_nameDef} has gone too long without human flesh and has fallen into a cannibal frenzy! They are attacking colonists.</beginLetter>
+    <beginLetterDef>ThreatSmall</beginLetterDef>
+    <baseInspectLine>Mental state: cannibal frenzy</baseInspectLine>
+    <recoveryMessage>{PAWN_nameDef} has recovered from the cannibal frenzy.</recoveryMessage>
+    <minTicksBeforeRecovery>4000</minTicksBeforeRecovery>
+    <maxTicksBeforeRecovery>12000</maxTicksBeforeRecovery>
+    <recoveryMtbDays>0.5</recoveryMtbDays>
+  </MentalStateDef>
+</Defs>
