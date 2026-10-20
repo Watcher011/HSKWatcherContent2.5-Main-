@@ -3,12 +3,14 @@
 
   <!-- Ammo -->
 
- <Ammo_PlagueBall.label>Чумной шар</Ammo_PlagueBall.label>
+  <Ammo_PlagueBall.label>Чумной шар</Ammo_PlagueBall.label>
 
 
-<!-- Снаряды -->
+  <!-- Projectiles -->
 
-<Plague_Ball.label>Чумной шар</Plague_Ball.label>
+  <Plague_Ball.label>Чумной шар</Plague_Ball.label>
 
+
+  <!-- Снаряды -->
 
 </LanguageData>

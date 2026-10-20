@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- M249 LMG SAW MG -->
+
+<BuildGunSimp.label>Сборка заказного ПКМ</BuildGunSimp.label>
+<BuildGunSimp.description>Сборка заказного пулемёта \nКалибр: 7.62x51mm NATO</BuildGunSimp.description>
+<BuildGunSimp.jobString>Сборка Симп Гана.</BuildGunSimp.jobString>
+
+</LanguageData>

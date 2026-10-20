@@ -325,10 +325,10 @@
 
   <HSK_GreatPlankBeast_MuffaloFlee>Освобождённый муффало</HSK_GreatPlankBeast_MuffaloFlee>
 
-  
+
   <Watcher_CannibalFrenzy_Reason>слишком долго без человеческого мяса</Watcher_CannibalFrenzy_Reason>
   <Watcher_CannibalFrenzy_MutilationLabel>Колонист изувечен</Watcher_CannibalFrenzy_MutilationLabel>
   <Watcher_CannibalFrenzy_MutilationText>{0} в припадке каннибальского безумия повалил {1} и откусил часть его тела. Потеряно: {2}.</Watcher_CannibalFrenzy_MutilationText>
- 
-  
+
+
 </LanguageData>
