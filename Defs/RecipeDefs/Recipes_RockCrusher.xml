@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>CrushChunkSandA</defName>
+		<label>pulverize chunks into sand</label>
+		<description>Obtain sand by pulverizing a chunk of stone</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+            <li>SoftStoneChunks</li>
+          </categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+            <li>SoftStoneChunks</li>
+          </categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+            <li>SoftStoneChunks</li>
+          </categories>
+		</defaultIngredientFilter>
+		<products>
+			<SandResource>80</SandResource>
+		</products>
+		<recipeUsers>
+			<li>RockCrusher</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<usesTemperature>false</usesTemperature>
+		<processDays>0.8</processDays>
+		<autoExtract>true</autoExtract>
+	</RecipeDef>
+
+	
+
+	<RecipeDef ParentName="GlitterpediaModExtBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Crush_Chunk_RubbleA</defName>
+		<label>crush chunks into rubble</label>
+		<description>Crush stone chunks into rubble</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+            <li>SoftStoneChunks</li>
+          </categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+            <li>SoftStoneChunks</li>
+          </categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+            <li>SoftStoneChunks</li>
+          </categories>
+		</defaultIngredientFilter>
+		<products>
+			<CrushedStone>35</CrushedStone>
+		</products>
+		<recipeUsers>
+			<li>RockCrusher</li>
+		</recipeUsers>
+
+		<!-- RecipeDef_UF fields -->
+		<usesTemperature>false</usesTemperature>
+		<processDays>0.6</processDays>
+		<autoExtract>true</autoExtract>
+	</RecipeDef>
+
+	
+
+</Defs>
