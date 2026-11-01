@@ -3,8 +3,9 @@
 
   <!-- M249 LMG SAW MG -->
 
-<BuildGunSimp.label>Сборка заказного ПКМ</BuildGunSimp.label>
-<BuildGunSimp.description>Сборка заказного пулемёта \nКалибр: 7.62x51mm NATO</BuildGunSimp.description>
-<BuildGunSimp.jobString>Сборка Симп Гана.</BuildGunSimp.jobString>
+  <BuildGunSimp.label>Сборка заказного РПЛ-20</BuildGunSimp.label>
+  <BuildGunSimp.description>Сборка заказного пулемёта \nКалибр: 7.62x51mm NATO</BuildGunSimp.description>
+  <BuildGunSimp.jobString>Сборка Симп Гана.</BuildGunSimp.jobString>
+
 
 </LanguageData>

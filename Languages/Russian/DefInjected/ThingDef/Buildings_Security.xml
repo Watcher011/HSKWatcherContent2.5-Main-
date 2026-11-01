@@ -97,17 +97,16 @@
 		</comps>
 	</ThingDef> -->
 
-  <Claymore.label>Направленная мина «Клеймор»</Claymore.label>
-  <Claymore.description>Направленная осколочная мина для периметральной обороны. Использует лазерный триггер для обнаружения целей. При срабатывании подрывает основной заряд пластичного взрывчатого вещества.</Claymore.description>
-
-  <ClaymoreNonLethal.label>Нелетальный «Клеймор»</ClaymoreNonLethal.label>
-  <ClaymoreNonLethal.description>Направленное устройство для нелетального контроля периметра. Использует желатиновые капсулы со снотворным в качестве поражающего элемента.</ClaymoreNonLethal.description>
-
   <IlluminationTurret_Turret.label>Осветительная турель</IlluminationTurret_Turret.label>
   <IlluminationTurret_Turret.description>Автоматическая турель, запускающая осветительные ракеты. Автоматически наводится на противников в радиусе действия и освещает область боя, но не наносит урона. Полезна ночью, в тумане и в тёмных пещерах. Требует питания.\nБоеприпас: осветительная ракета</IlluminationTurret_Turret.description>
 
   <Gun_IlluminationTurret.label>Осветительная турель</Gun_IlluminationTurret.label>
   <Gun_IlluminationTurret.description>--.</Gun_IlluminationTurret.description>
 
+
+  <!--<Claymore.label>Направленная мина «Клеймор»</Claymore.label>-->
+  <!--<Claymore.description>Направленная осколочная мина для периметральной обороны. Использует лазерный триггер для обнаружения целей. При срабатывании подрывает основной заряд пластичного взрывчатого вещества.</Claymore.description>-->
+  <!--<ClaymoreNonLethal.label>Нелетальный «Клеймор»</ClaymoreNonLethal.label>-->
+  <!--<ClaymoreNonLethal.description>Направленное устройство для нелетального контроля периметра. Использует желатиновые капсулы со снотворным в качестве поражающего элемента.</ClaymoreNonLethal.description>-->
 
 </LanguageData>
