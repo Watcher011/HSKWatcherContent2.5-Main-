@@ -144,9 +144,10 @@
     <CONN_hediff_MuseChip>45</CONN_hediff_MuseChip>
     <CONN_hediff_NeuroEnhancer>45</CONN_hediff_NeuroEnhancer>
     <CONN_hediff_CombatAI>45</CONN_hediff_CombatAI>
-
+     <HSK_WatcherVisor>30</HSK_WatcherVisor>
     <!-- ==================== SPECIAL ==================== -->
     <Joywire>35</Joywire>
     <Painstopper>30</Painstopper>
      <MindLock>-260</MindLock>
+	 
 </Implants>

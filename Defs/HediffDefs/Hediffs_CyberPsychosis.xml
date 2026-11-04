@@ -1,55 +1,49 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-   
-
-    <!-- Temporary Blocker -->
-    <HediffDef>
-        <defName>CyberPsychosisBlocker</defName>
-        <label>cyber psychosis inhibitor</label>
-        <description>Temporary protection against cyber psychosis. Prevents humanity loss and slowly restores it.</description>
-        <hediffClass>HSK.Watcher.Content.Hediff_CyberPsychosisBlocker</hediffClass>
-        <defaultLabelColor>(0.2, 0.6, 1.0)</defaultLabelColor>
-        <isBad>false</isBad>
-        <stages>
-            <li>
-                <label>active</label>
-                <becomeVisible>true</becomeVisible>
-            </li>
-        </stages>
-        <comps>
-            <li Class="HSK.Watcher.Content.HediffCompProperties_CyberPsychosisBlocker">
-                <durationHours>24</durationHours>
-            </li>
-        </comps>
-    </HediffDef>
-
-    <!-- Permanent Blocker -->
-    <HediffDef>
-        <defName>PermanentCyberPsychosisBlocker</defName>
-        <label>neural stabilizer</label>
-        <description>An advanced neural implant that permanently stabilizes the psyche against cybernetic augmentation stress. Prevents cyber psychosis and slowly restores lost humanity.</description>
-        <hediffClass>HSK.Watcher.Content.Hediff_PermanentCyberPsychosisBlocker</hediffClass>
-        <defaultLabelColor>(0.2, 0.8, 0.2)</defaultLabelColor>
-        <isBad>false</isBad>
-        <stages>
-            <li>
-                <label>active</label>
-                <becomeVisible>true</becomeVisible>
-            </li>
-        </stages>
-        <comps>
-            <li Class="HSK.Watcher.Content.HediffCompProperties_PermanentCyberBlocker">
-                <humanityRestorePerDay>0.1</humanityRestorePerDay>
-            </li>
-        </comps>
-        <addedPartProps>
-            <solid>true</solid>
-            <partEfficiency>1.0</partEfficiency>
-        </addedPartProps>
-    </HediffDef>
-	
-	
-	
+	<!-- Temporary Blocker -->
+	<HediffDef>
+		<defName>CyberPsychosisBlocker</defName>
+		<label>cyber psychosis inhibitor</label>
+		<description>Temporary protection against cyber psychosis. Prevents humanity loss and slowly restores it.</description>
+		<hediffClass>HSK.Watcher.Content.Hediff_CyberPsychosisBlocker</hediffClass>
+		<defaultLabelColor>(0.2, 0.6, 1.0)</defaultLabelColor>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<label>active</label>
+				<becomeVisible>true</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HSK.Watcher.Content.HediffCompProperties_CyberPsychosisBlocker">
+				<durationHours>24</durationHours>
+			</li>
+		</comps>
+	</HediffDef>
+	<!-- Permanent Blocker -->
+	<HediffDef>
+		<defName>PermanentCyberPsychosisBlocker</defName>
+		<label>neural stabilizer</label>
+		<description>An advanced neural implant that permanently stabilizes the psyche against cybernetic augmentation stress. Prevents cyber psychosis and slowly restores lost humanity.</description>
+		<hediffClass>HSK.Watcher.Content.Hediff_PermanentCyberPsychosisBlocker</hediffClass>
+		<defaultLabelColor>(0.2, 0.8, 0.2)</defaultLabelColor>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<label>active</label>
+				<becomeVisible>true</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HSK.Watcher.Content.HediffCompProperties_PermanentCyberBlocker">
+				<humanityRestorePerDay>0.1</humanityRestorePerDay>
+			</li>
+		</comps>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.0</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
 	<ThingDef ParentName="BodyPartBase_Bionic">
 		<defName>MindLock</defName>
 		<label>Glass Cage</label>
@@ -80,7 +74,6 @@
 			<researchPrerequisite>Bionics</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
 	<HediffDef ParentName="HediffBodyPartBase_BionicImplant">
 		<defName>MindLock</defName>
 		<label>Glass Cage</label>
@@ -109,7 +102,6 @@
 		</stages>
 		<spawnThingOnRemoved>MindLock</spawnThingOnRemoved>
 	</HediffDef>
-
 	<RecipeDef ParentName="SK_SurgeryFlesh">
 		<defName>InstallMindLock</defName>
 		<label>Install Glass Cage</label>
@@ -156,7 +148,6 @@
 		</skillRequirements>
 		<researchPrerequisite>Prosthesis_install_D4</researchPrerequisite>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SK_SurgeryFlesh">
 		<defName>RemoveMindLock</defName>
 		<label>remove Glass Cage</label>
@@ -191,4 +182,170 @@
 		</skillRequirements>
 		<researchPrerequisite>Prosthesis_install_D3</researchPrerequisite>
 	</RecipeDef>
+<ThingDef ParentName="BodyPartBase_Cybernetic">
+        <defName>HSK_WatcherVisor</defName>
+        <label>Maelstrom ocular system</label>
+        <description>A radical multi-lens optical cluster replacing both eyes at once. Wired directly into the frontal lobe during a single surgical procedure.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>HSK_InstallWatcherVisor</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Health/Visor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.80</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>7200</MarketValue>
+            <Mass>0.5</Mass>
+            <MaxHitPoints>80</MaxHitPoints>
+        </statBases>
+        <costList>
+            <ComponentUltra>1</ComponentUltra>
+            <Biomatter>10</Biomatter>
+            <BioMicrochips>1</BioMicrochips>
+            <Paraffins>20</Paraffins>
+            <ReinforcedGlass>10</ReinforcedGlass>
+        </costList>
+        <techHediffsTags>
+            <li>Cybernetic</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <!-- ============================================ -->
+    <!-- HEDIFF 1: Основной имплант (Мозг / Голова)   -->
+    <!-- ============================================ -->
+    <HediffDef ParentName="HediffBodyPartBase_Cybernetic">
+        <defName>HSK_WatcherVisor</defName>
+        <label>Maelstrom ocular system</label>
+        <description>A radical multi-lens optical cluster replacing both eyes and wired directly into the frontal lobe, heavily inspired by brutal industrial modifications[cite: 1]. The procedure involves excavating the eye sockets without anesthesia, severing the optic nerves, and slamming in glowing red scanning arrays[cite: 1, 2]. It completely severs the wearer from baseline humanity—there's no going back to normal after looking through this hardware[cite: 1]. Side effects include chronic headaches, data-bleed, and a microscopic chance of cheerful cyberpsychosis[cite: 1].</description>
+        <labelNoun>a Maelstrom ocular system</labelNoun>
+        <descriptionHyperlinks>
+            <ThingDef>HSK_WatcherVisor</ThingDef>
+        </descriptionHyperlinks>
+        <woundAnchorRange>0</woundAnchorRange>
+        <displayWound>true</displayWound>
+        <spawnThingOnRemoved>HSK_WatcherVisor</spawnThingOnRemoved>
+        <comps>
+            <li Class="HSK.Watcher.VisorUniqueSystem.HediffCompProperties_VisorLink" />
+        </comps>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.25</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+
+        <!-- ОТРИСОВКА БЕЗ СМЕЩЕНИЙ (offset сброшен в 0) -->
+        <renderNodeProperties>
+            <li Class="HSK.Watcher.VisorUniqueSystem.PawnRenderNodeProperties_Visor">
+                <texPath>Things/Pawn/Wounds/Visor</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <drawSize>0.9</drawSize>
+                <drawData>
+                    <defaultData>
+                        <layer>54</layer>
+                        <offset>(0.0, 0.0, 0.0)</offset>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>54</layer>
+                        <offset>(0.0, 0.0, 0.0)</offset>
+                    </dataNorth>
+                    <dataSouth>
+                        <layer>54</layer>
+                        <offset>(0.0, 0.0, 0.0)</offset>
+                    </dataSouth>
+                    <dataEast>
+                        <layer>54</layer>
+                        <offset>(0.0, 0.0, 0.0)</offset>
+                    </dataEast>
+                    <dataWest>
+                        <layer>54</layer>
+                        <offset>(0.0, 0.0, 0.0)</offset>
+                    </dataWest>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+
+        <stages>
+            <li>
+                <statOffsets>
+                    <NightVisionEfficiency_Implant>0.5</NightVisionEfficiency_Implant>
+                </statOffsets>
+                <capMods>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.42</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- ============================================ -->
+    <!-- HEDIFF 2: Вторая половина визора (для глаз)  -->
+    <!-- ============================================ -->
+    <HediffDef ParentName="HediffBodyPartBase_Cybernetic">
+        <defName>HSK_WatcherVisorEye</defName>
+        <label>Maelstrom ocular node</label>
+        <description>Secondary optical sensor node, deeply integrated with the main neural cluster.</description>
+        <comps>
+            <li Class="HSK.Watcher.VisorUniqueSystem.HediffCompProperties_VisorLink" />
+        </comps>
+        <labelNoun>a Maelstrom ocular node</labelNoun>
+        <descriptionHyperlinks>
+            <ThingDef>HSK_WatcherVisor</ThingDef>
+        </descriptionHyperlinks>
+        <woundAnchorRange>0</woundAnchorRange>
+        <displayWound>true</displayWound>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.25</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.1</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- ============================================ -->
+    <!-- RECIPE: Установка через мозг                 -->
+    <!-- ============================================ -->
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
+        <defName>HSK_InstallWatcherVisor</defName>
+        <label>install Maelstrom ocular system</label>
+        <description>Perform a brutal neural and optical replacement. Rips out organic eyes, rewires the optic nerves through the brain, and slams in a red-lens cluster. Anesthesia is optional, screaming is mandatory.</description>
+        <descriptionHyperlinks>
+            <ThingDef>HSK_WatcherVisor</ThingDef>
+            <HediffDef>HSK_WatcherVisor</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing Maelstrom ocular system.</jobString>
+        <workerClass>HSK.Watcher.VisorUniqueSystem.Recipe_InstallWatcherVisor</workerClass>
+        <surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>HSK_WatcherVisor</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>HSK_WatcherVisor</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>HSK_WatcherVisor</addsHediff>
+    </RecipeDef>
 </Defs>
+
