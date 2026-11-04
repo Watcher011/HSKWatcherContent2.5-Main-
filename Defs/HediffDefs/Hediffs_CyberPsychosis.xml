@@ -182,7 +182,7 @@
 		</skillRequirements>
 		<researchPrerequisite>Prosthesis_install_D3</researchPrerequisite>
 	</RecipeDef>
-<ThingDef ParentName="BodyPartBase_Cybernetic">
+<ThingDef ParentName="BodyPartBase_Synthetic">
         <defName>HSK_WatcherVisor</defName>
         <label>Maelstrom ocular system</label>
         <description>A radical multi-lens optical cluster replacing both eyes at once. Wired directly into the frontal lobe during a single surgical procedure.</description>
@@ -200,10 +200,10 @@
             <MaxHitPoints>80</MaxHitPoints>
         </statBases>
         <costList>
-            <ComponentUltra>1</ComponentUltra>
-            <Biomatter>10</Biomatter>
-            <BioMicrochips>1</BioMicrochips>
-            <Paraffins>20</Paraffins>
+           <ComponentSpacer>5</ComponentSpacer>
+           <Electronics>2</Electronics>
+           <Gold>2</Gold>
+           <SyntheticFibers>8</SyntheticFibers>
             <ReinforcedGlass>10</ReinforcedGlass>
         </costList>
         <techHediffsTags>
@@ -316,7 +316,7 @@
     <!-- ============================================ -->
     <!-- RECIPE: Установка через мозг                 -->
     <!-- ============================================ -->
-    <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SK_SurgeryFlesh">
         <defName>HSK_InstallWatcherVisor</defName>
         <label>install Maelstrom ocular system</label>
         <description>Perform a brutal neural and optical replacement. Rips out organic eyes, rewires the optic nerves through the brain, and slams in a red-lens cluster. Anesthesia is optional, screaming is mandatory.</description>
