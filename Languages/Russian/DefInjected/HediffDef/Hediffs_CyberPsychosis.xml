@@ -1,6 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+<WildAIOverride.label>перехват диким ИИ</WildAIOverride.label>
+  <WildAIOverride.description>Своенравный, агрессивный искусственный интеллект захватил контроль над нервной системой носителя. Он насильственно подавляет все биологические импульсы, боль и эмоциональные колебания, фиксируя основные способности на стабильном базовом уровне и переопределяя кибернетические улучшения.</WildAIOverride.description>
+  <WildAIOverride.stages.0.label>активен</WildAIOverride.stages.0.label>
+
+  <CyberPsychosisManagerHediff.label>трекер киберпсихоза</CyberPsychosisManagerHediff.label>
+  <CyberPsychosisManagerHediff.description>Внутренний модуль отслеживания кибернетики и ментальной стабильности.</CyberPsychosisManagerHediff.description>
+
+  <CyberPsychosisCombatBuff.label>кибернетический разгон</CyberPsychosisCombatBuff.label>
+  <CyberPsychosisCombatBuff.description>Перегруженные нейронные пути и боевые стимуляторы, вызванные киберпсихозом.</CyberPsychosisCombatBuff.description>
+  <CyberPsychosisCombatBuff.stages.0.label>начальный</CyberPsychosisCombatBuff.stages.0.label>
+  <CyberPsychosisCombatBuff.stages.1.label>разгон</CyberPsychosisCombatBuff.stages.1.label>
+  <CyberPsychosisCombatBuff.stages.2.label>кибер-ярость</CyberPsychosisCombatBuff.stages.2.label>
+
+
   <!-- Temporary Blocker -->
 
   <CyberPsychosisBlocker.label>ингибитор киберпсихоза</CyberPsychosisBlocker.label>
@@ -18,7 +32,10 @@
   <MindLock.description>Установленный маленький чип способен значительно усилить психику.</MindLock.description>
   <MindLock.labelNoun>чип «Стеклянная клетка»</MindLock.labelNoun>
 
- <HSK_WatcherVisor.label>Окулярная система «Мальстрём»</HSK_WatcherVisor.label>
+
+  <!-- HEDIFF 1: Основной имплант (Мозг / Голова) -->
+
+  <HSK_WatcherVisor.label>Окулярная система «Мальстрём»</HSK_WatcherVisor.label>
   <HSK_WatcherVisor.description>Радикальный оптический кластер с множеством линз, заменяющий оба глаза и подключенный напрямую к лобной доле. Вдохновлен жестокими промышленными модификациями. Процедура включает вырезание глазниц без анестезии, перерезание зрительных нервов и грубую установку светящихся красных сканирующих матриц. Она полностью отрезает носителя от обычного человечества — после взгляда через это железо пути назад к нормальной жизни уже нет. Побочные эффекты включают хронические головные боли, утечку данных и микроскопический шанс на веселый киберпсихоз.</HSK_WatcherVisor.description>
   <HSK_WatcherVisor.labelNoun>окулярная система «Мальстрём»</HSK_WatcherVisor.labelNoun>
 
@@ -28,5 +45,6 @@
   <HSK_WatcherVisorEye.label>Окулярный узел «Мальстрём»</HSK_WatcherVisorEye.label>
   <HSK_WatcherVisorEye.description>Вторичный оптический сенсорный узел, глубоко интегрированный с основным нейрокластером.</HSK_WatcherVisorEye.description>
   <HSK_WatcherVisorEye.labelNoun>окулярный узел «Мальстрём»</HSK_WatcherVisorEye.labelNoun>
+
 
 </LanguageData>

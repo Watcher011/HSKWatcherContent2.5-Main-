@@ -1,5 +1,140 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+<HediffDef>
+    <defName>WildAIOverride</defName>
+    <label>wild AI override</label>
+    <description>A rogue, invasive artificial intelligence has seized control of the host's nervous system. It forcibly suppresses all biological impulses, pain, and emotional fluctuations, locking core capacities at a stable baseline while overriding cybernetic augmentations.</description>
+    <hediffClass>HSK.Watcher.Content.Hediff_WildAIOverride</hediffClass>
+    <defaultLabelColor>(0.1, 0.9, 0.8)</defaultLabelColor>
+    <isBad>true</isBad>
+	<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>15000</disappearsAfterTicks>
+				<!-- 6 hours -->
+			</li>
+		</comps>
+    <stages>
+        <li>
+            <label>active</label>
+            <becomeVisible>true</becomeVisible>
+            <!-- Ограничиваем максимальное значение до 1.0 (100%), убирая любые имплантные оверклокинги и усиления -->
+            <capMods>
+                <li>
+                    <capacity>Consciousness</capacity>
+                    <setMax>1.0</setMax>
+                </li>
+                <li>
+                    <capacity>Moving</capacity>
+                    <setMax>1.0</setMax>
+                </li>
+                <li>
+                    <capacity>Manipulation</capacity>
+                    <setMax>1.0</setMax>
+                </li>
+                <li>
+                    <capacity>Talking</capacity>
+                    <setMax>1.0</setMax>
+                </li>
+                <li>
+                    <capacity>Eating</capacity>
+                    <setMax>1.0</setMax>
+                </li>
+                <li>
+                    <capacity>Sight</capacity>
+                    <setMax>1.0</setMax>
+                </li>
+                <li>
+                    <capacity>Hearing</capacity>
+                    <setMax>1.0</setMax>
+                </li>
+                <li>
+                    <capacity>Breathing</capacity>
+                    <setMax>1.0</setMax>
+                </li>
+                <li>
+                    <capacity>BloodFiltration</capacity>
+                    <setMax>1.0</setMax>
+                </li>
+                <li>
+                    <capacity>BloodPumping</capacity>
+                    <setMax>1.0</setMax>
+                </li>
+                <li>
+                    <capacity>Metabolism</capacity>
+                    <setMax>1.0</setMax>
+                </li>
+            </capMods>
+        </li>
+    </stages>
+</HediffDef>
+<HediffDef>
+    <defName>CyberPsychosisManagerHediff</defName>
+    <label>cyberpsychosis tracker</label>
+    <description>Internal tracker for cybernetics and mental stability.</description>
+    <hediffClass>HSK.Watcher.Content.Hediff_CyberPsychosisManager</hediffClass>
+    <isBad>false</isBad>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <stages>
+        <li>
+            <becomeVisible>false</becomeVisible>
+        </li>
+    </stages>
+</HediffDef>
+<HediffDef>
+    <defName>CyberPsychosisCombatBuff</defName>
+    <label>cybernetic overdrive</label>
+    <description>Overclocked neural pathways and combat stimulators driven by cyber psychosis.</description>
+    <hediffClass>HSK.Watcher.Content.Hediff_CyberPsychosisBuff</hediffClass>
+    <defaultLabelColor>(0.8, 0.2, 0.2)</defaultLabelColor>
+    <isBad>false</isBad>
+    <stages>
+        <li>
+            <label>initial</label>
+            <statOffsets>
+                <MoveSpeed>0.15</MoveSpeed>
+                <ShootingAccuracyPawn>2.0</ShootingAccuracyPawn>
+                <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+                <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
+            </statOffsets>
+        </li>
+        <li>
+            <minSeverity>0.5</minSeverity>
+            <label>overclocked</label>
+            <statOffsets>
+                <MoveSpeed>0.35</MoveSpeed>
+                <ShootingAccuracyPawn>4.0</ShootingAccuracyPawn>
+                <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+                <WorkSpeedGlobal>0.40</WorkSpeedGlobal>
+                <PainShockThreshold>0.3</PainShockThreshold>
+            </statOffsets>
+        </li>
+        <li>
+            <minSeverity>0.8</minSeverity>
+            <label>cyber-fury</label>
+            <statOffsets>
+                <MoveSpeed>0.60</MoveSpeed>
+                <ShootingAccuracyPawn>7.0</ShootingAccuracyPawn>
+                <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+                <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+                <WorkSpeedGlobal>0.60</WorkSpeedGlobal>
+                <PainShockThreshold>0.6</PainShockThreshold>
+            </statOffsets>
+        </li>
+    </stages>
+    <renderNodeProperties>
+        <li>
+            <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+            <texPath>Things/Pawn/Wounds/CyberPsychosis</texPath>
+            <parentTagDef>Head</parentTagDef>
+            <drawData>
+                <defaultData>
+                    <layer>60</layer>
+                </defaultData>
+            </drawData>
+        </li>
+    </renderNodeProperties>
+</HediffDef>
+
 	<!-- Temporary Blocker -->
 	<HediffDef>
 		<defName>CyberPsychosisBlocker</defName>

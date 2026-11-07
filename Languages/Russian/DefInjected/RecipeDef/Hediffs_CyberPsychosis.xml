@@ -15,7 +15,7 @@
 
   <!-- RECIPE: Установка через мозг -->
 
-    <HSK_InstallWatcherVisor.label>установить окулярную систему «Мальстрём»</HSK_InstallWatcherVisor.label>
+  <HSK_InstallWatcherVisor.label>установить окулярную систему «Мальстрём»</HSK_InstallWatcherVisor.label>
   <HSK_InstallWatcherVisor.description>Провести жестокую нейрооптическую замену. Выдирает органические глаза, переподключает зрительные нервы через мозг и вбивает блок красных линз. Анестезия необязательна, крики — обязательны.</HSK_InstallWatcherVisor.description>
   <HSK_InstallWatcherVisor.jobString>Установка окулярной системы «Мальстрём».</HSK_InstallWatcherVisor.jobString>
 
