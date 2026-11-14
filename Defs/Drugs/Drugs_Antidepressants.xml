@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- ==================== THING DEF ==================== -->
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>Antidepressants</defName>
+    <label>antidepressants</label>
+    <description>A powerful pharmaceutical compound designed to artificially stabilize mood and eliminate psychological stress. In small doses it brings euphoria and peace of mind, but prolonged use alters brain chemistry, and mixing it with alcohol leads to a fatal chemical reaction.\n\nWarning: Highly addictive. Extended use without maintenance leads to severe depressive crash.</description>
+    <descriptionHyperlinks>
+      <HediffDef>AntidepressantsHigh</HediffDef>
+      <HediffDef>AntidepressantsAddiction</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Antidepressants</texPath> <!-- Можешь заменить на свою иконку таблеток/флакона -->
+      <graphicClass>Graphic_StackCount</graphicClass>
+	<!--  <drawSize>(0.5)</drawSize>-->
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MarketValue>40</MarketValue>
+      <Mass>0.05</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <joyKind>Chemical</joyKind>
+      <joy>0.80</joy>
+      <drugCategory>Medical</drugCategory>
+      <foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>30</baseIngestTicks>
+      <ingestSound>Ingest_Pills</ingestSound>
+      <ingestCommandString>Take {0}</ingestCommandString>
+      <ingestReportString>Taking {0}.</ingestReportString>
+      <useEatingSpeedStat>true</useEatingSpeedStat>
+      <chairSearchRadius>0</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AntidepressantsHigh</hediffDef>
+          <severity>0.2</severity>
+          <toleranceChemical>Antidepressants</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>MedicineProduction</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+		<li>meditable</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+      <displayPriority>1600</displayPriority>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>1</Neutroamine>
+      <MedicineHerbal>1</MedicineHerbal>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Antidepressants</chemical>
+        <addictiveness>0.04</addictiveness>
+        <existingAddictionSeverityOffset>0.15</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>210</listOrder>
+        <overdoseSeverityOffset>0.10~0.25</overdoseSeverityOffset>
+        <largeOverdoseChance>0.01</largeOverdoseChance>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+  <!-- ==================== HEDIFF: HIGH / PHASES ==================== -->
+  <HediffDef>
+    <defName>AntidepressantsHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>antidepressant effect</label>
+    <labelNoun>an antidepressant effect</labelNoun>
+    <description>Antidepressants active in the bloodstream. Initially provides a massive mood boost, but as time passes, the chemical balance shifts into a severe depressive crash.</description>
+    <defaultLabelColor>(0.4,0.7,1)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <!-- Со временем тяжесть эффекта растет, переходя от эйфории к депрессивному отходняку -->
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>0.15</severityPerDay> 
+        <showHoursToRecover>false</showHoursToRecover>
+      </li>
+      <!-- Проверка на смертельное взаимодействие с алкоголем -->
+    
+    </comps>
+    <stages>
+      <!-- Стадия 1: Недавний прием — огромный бафф к настроению -->
+      <li>
+        <minSeverity>0.0</minSeverity>
+        <label>euphoria</label>
+        <statOffsets>
+          <MentalBreakThreshold>-0.15</MentalBreakThreshold>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.10</offset>
+          </li>
+        </capMods>
+      </li>
+      <!-- Стадия 2: Спустя 1-2 дня — спад эффекта, нейтрально -->
+      <li>
+        <minSeverity>0.4</minSeverity>
+        <label>stabilized</label>
+      </li>
+      <!-- Стадия 3: Спустя несколько дней — сильный дебафф (откат) -->
+      <li>
+        <minSeverity>0.7</minSeverity>
+        <label>depressive crash</label>
+        <statOffsets>
+          <MentalBreakThreshold>0.25</MentalBreakThreshold>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.15</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.10</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!-- Мысли (настроение) для разных стадий препарата -->
+  <ThoughtDef>
+    <defName>AntidepressantsHighThoughts</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>AntidepressantsHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <!-- Стадия 1: Огромный бафф -->
+      <li>
+        <label>antidepressant euphoria</label>
+        <description>Everything is wonderful! The world is bright, and all my worries have simply melted away.</description>
+        <baseMoodEffect>55</baseMoodEffect>
+      </li>
+      <!-- Стадия 2: Нейтрально -->
+      <li>
+        <label>antidepressants (active)</label>
+        <description>I feel emotionally numb, but at least stable.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <!-- Стадия 3: Жесткий дебафф настроения через несколько дней -->
+      <li>
+        <label>antidepressant crash</label>
+        <description>The artificial happiness is gone. An overwhelming emptiness, anxiety, and despair have taken its place...</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+  <!-- ==================== ADDICTION & WITHDRAWAL ==================== -->
+  <ChemicalDef>
+    <defName>Antidepressants</defName>
+    <label>antidepressants</label>
+    <addictionHediff>AntidepressantsAddiction</addictionHediff>
+  </ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Chemical_Antidepressants</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>antidepressants</label>
+    <description>Because of an antidepressant dependency, this person needs regular doses to prevent severe emotional collapse.</description>
+    <fallPerDay>0.333</fallPerDay>
+    <listPriority>40</listPriority>
+  </NeedDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>AntidepressantsAddiction</defName>
+    <label>antidepressants addiction</label>
+    <description>A chemical and psychological dependency on antidepressants. Without the drug, the brain's neurotransmitters fail to regulate mood properly, leading to severe withdrawal.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <chemicalNeed>Chemical_Antidepressants</chemicalNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.03</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li></li>
+      <li>
+        <label>withdrawal</label>
+        <painFactor>1.2</painFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.15</offset>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Wander_Sad</mentalState>
+            <mtbDays>8</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>AntidepressantsWithdrawal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>AntidepressantsAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>antidepressant withdrawal</label>
+        <description>I feel completely broken, empty, and hopeless. I need my pills back, I can't take this grey reality.</description>
+        <baseMoodEffect>-25</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Толерантность -->
+  <HediffDef ParentName="DrugToleranceBase">
+    <defName>AntidepressantsTolerance</defName>
+    <label>antidepressant tolerance</label>
+    <description>A built-up tolerance to antidepressants, reducing their euphoric and mood-stabilizing effects.</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.015</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>Antidepressants</chemical>
+      </li>
+    </comps>
+  </HediffDef>
+</Defs>

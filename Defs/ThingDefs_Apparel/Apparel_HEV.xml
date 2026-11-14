@@ -106,4 +106,78 @@
 			<researchPrerequisite>ReconArmor</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
+	
+	
+<ThingDef ParentName="ArmorIndustrialSimpleBase">
+		<defName>Helmet_MaxTac</defName>
+		<label>MaxTac cyber-police helmet</label>
+		<description>A heavy tactical helmet used by MaxTac cyber-police units. Equipped with an integrated neural dampener that suppresses cyberpsychosis symptoms and protects the entire upper head and eyes, leaving only the jaw exposed.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Helmets/MaxTac</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			 <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<Compaste>15</Compaste>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Kevlar>30</Kevlar>
+		</costList>
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Mass>1.2</Mass>
+			<Bulk>3</Bulk>
+			<WornBulk>0</WornBulk>
+			<EquipDelay>2.5</EquipDelay>
+			<Insulation_Cold>4.0</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>7.5</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>14.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>28.0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.08</MoveSpeed>
+			<WorkSpeedGlobal>-0.02</WorkSpeedGlobal>
+			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
+		</equippedStatOffsets>
+		<generateCommonality>0.5</generateCommonality>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<!-- Закрывает голову и глаза, оставляя челюсть открытой -->
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Helmets/MaxTac</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>IndustrialMilitaryAdvanced</li>
+				<li>SectarianMedium</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			<parentTagDef>ApparelHead</parentTagDef>
+		</apparel>
+		<thingCategories>
+			<li>MediumHelmetsCat</li>
+			<li>Setmarinearmor</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
 </Defs>

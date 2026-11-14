@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- THING DEF -->
+
+<Antidepressants.label>антидепрессанты</Antidepressants.label>
+  <Antidepressants.description>Мощное фармацевтическое соединение, созданное для искусственной стабилизации настроения и устранения психологического стресса. В малых дозах дарит эйфорию и душевный покой, но длительное употребление меняет химию мозга, а смешивание с алкоголем приводит к фатальной химической реакции — патологоанатом потом будет долго вспоминать вашу печень добрым словом.\n\nВнимание: вызывает сильную зависимость. Длительное использование без поддерживающей дозы ведёт к тяжёлому депрессивному обвалу — вы рухнете быстрее, чем недостроенная стена, и колония останется без штатного нытика.</Antidepressants.description>
+  <Antidepressants.ingestible.ingestCommandString>Принять {0}</Antidepressants.ingestible.ingestCommandString>
+  <Antidepressants.ingestible.ingestReportString>Принимает {0}.</Antidepressants.ingestible.ingestReportString>
+
+
+</LanguageData>

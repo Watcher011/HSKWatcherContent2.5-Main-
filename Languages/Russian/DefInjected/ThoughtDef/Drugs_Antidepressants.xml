@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Мысли (настроение) для разных стадий препарата -->
+<AntidepressantsHighThoughts.stages.0.label>антидепрессантная эйфория</AntidepressantsHighThoughts.stages.0.label>
+  <AntidepressantsHighThoughts.stages.0.description>Всё прекрасно! Мир яркий, а все мои тревоги просто растворились. Подозрительно, конечно, но колония советует наслаждаться, пока химия не выставила счёт.</AntidepressantsHighThoughts.stages.0.description>
+  <AntidepressantsHighThoughts.stages.1.label>антидепрессанты (активны)</AntidepressantsHighThoughts.stages.1.label>
+  <AntidepressantsHighThoughts.stages.1.description>Я чувствую эмоциональное онемение, но зато стабильно. Как бетонная плита: ни радости, ни паники — и это уже почти карьера.</AntidepressantsHighThoughts.stages.1.description>
+  <AntidepressantsHighThoughts.stages.2.label>антидепрессантный обвал</AntidepressantsHighThoughts.stages.2.label>
+  <AntidepressantsHighThoughts.stages.2.description>Искусственное счастье закончилось. На его месте — всепоглощающая пустота, тревога и отчаяние... Колония напоминает: это не характер, это химия, и она уже подала заявку на повышение.</AntidepressantsHighThoughts.stages.2.description>
+
+
+  <!-- ЗАВИСИМОСТЬ И АБСТИНЕНЦИЯ -->
+
+  <AntidepressantsWithdrawal.stages.1.label>антидепрессантная абстиненция</AntidepressantsWithdrawal.stages.1.label>
+  <AntidepressantsWithdrawal.stages.1.description>Я чувствую себя полностью сломленным, пустым и безнадёжным. Верните мне таблетки, я не выдержу эту серую реальность. В колонии говорят, что серую реальность можно разбавить краской, но краска кончилась раньше, чем достоинство.</AntidepressantsWithdrawal.stages.1.description>
+
+
+</LanguageData>

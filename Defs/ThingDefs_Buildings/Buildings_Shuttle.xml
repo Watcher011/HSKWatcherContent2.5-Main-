@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--
+<!{1}** Шаттл в процессе прилета (Incoming) **{1}>
+  <ThingDef ParentName="ShuttleSkyfallerBase">
+    <defName>HSK_MaxTacShuttleIncoming</defName>
+    <label>Max-Tac Assault Shuttle (incoming)</label>
+    <thingClass>HSK.Watcher.Content.Incident.Skyfaller_MaxTacShuttle</thingClass>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Misc/MaxTacShuttle</texPath>
+      <drawSize>(6,3)</drawSize>
+    </graphicData>
+    <size>(5,3)</size>
+    <skyfaller>
+      <anticipationSound>Shuttle_Landing</anticipationSound>
+      <anticipationSoundTicks>250</anticipationSoundTicks>
+      <ticksToImpactRange>200~250</ticksToImpactRange>
+      <minimalRoofDestruction>true</minimalRoofDestruction>
+      <shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow>
+      <shadowSize>(5.5,3.5)</shadowSize>
+    </skyfaller>
+  </ThingDef>
+
+  <!{1}** Приземленный шаттл Max-Tac (по образцу эталонного шаттла) **{1}>
+  <ThingDef Name="MaxTacShuttleBase" ParentName="BuildingBase">
+    <defName>HSK_MaxTacShuttleBuilding</defName>
+    <label>Max-Tac Assault Shuttle</label>
+    <description>Тяжелый десантный шаттл корпоративной полиции Max-Tac.</description>
+    <altitudeLayer>Building</altitudeLayer>
+    <preventDroppingThingsOn>true</preventDroppingThingsOn>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <passability>Impassable</passability>
+    <fillPercent>1.0</fillPercent>
+    <size>(5,3)</size>
+    <drawHighlight>true</drawHighlight>
+    <highlightColor>(0.56, 0.62, 0.9)</highlightColor>
+    <graphicData>
+      <texPath>Things/Building/Misc/MaxTacShuttle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(6,3)</drawSize>
+      <shadowData>
+        <volume>(4.1, 1.0, 1.8)</volume>
+        <offset>(0, 0, -0.1)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Comfort>0.65</Comfort>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <canOverlapZones>true</canOverlapZones>
+    <rotatable>false</rotatable>
+    <bringAlongOnGravship>false</bringAlongOnGravship>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0, 0, -2)</interactionCellOffset>
+    <selectable>true</selectable>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+    <drawerType>RealtimeOnly</drawerType>
+    <repairEffect>ConstructMetal</repairEffect>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <uiIconScale>1.4</uiIconScale>
+    <building>
+      <claimable>false</claimable>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <inspectorTabs>
+      <li>ITab_ContentsTransporter</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Shuttle" />
+      <li Class="CompProperties_Transporter">
+        <massCapacity>5000</massCapacity>
+        <max1PerGroup>true</max1PerGroup>
+        <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+        <showOverallStats>false</showOverallStats>
+        <pawnLoadedSound>Shuttle_PawnLoaded</pawnLoadedSound>
+        <pawnExitSound>Shuttle_PawnExit</pawnExitSound>
+      </li>
+      <li Class="CompProperties_AmbientSound">
+        <sound>ShuttleIdle_Ambience</sound>
+      </li>
+    </comps>
+  </ThingDef>-->
+</Defs>

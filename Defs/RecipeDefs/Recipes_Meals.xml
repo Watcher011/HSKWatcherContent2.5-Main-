@@ -175,7 +175,7 @@
 		</products>
 		<displayPriority>300</displayPriority>
 	</RecipeDef>
-	<RecipeDef>
+	<!--<RecipeDef>
 		<defName>CookCyberPsychosisBlockerPill</defName>
 		<label>Make CyberPsychosis Blocker Pill</label>
 		<description>CyberPsychosis Blocker Pill.</description>
@@ -212,7 +212,7 @@
 			<li>DrugLab</li>
 		</recipeUsers>
 		<researchPrerequisite>PenoxycylineProduction</researchPrerequisite>
-	</RecipeDef>
+	</RecipeDef>-->
 	<RecipeDef ParentName="CookMealFineBase">
 		<defName>CookMealHeadcrab</defName>
 		<label>Make Headcrab Meal</label>

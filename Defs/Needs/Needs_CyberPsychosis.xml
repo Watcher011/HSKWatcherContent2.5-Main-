@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
- <NeedDef>
+ <!--<NeedDef>
         <defName>CyberPsychosis</defName>
         <needClass>HSK.Watcher.Content.Need_CyberPsychosis</needClass>
         <label>humanity</label>
@@ -14,5 +14,5 @@
         <seekerFallPerHour>0.0</seekerFallPerHour>
         <listPriority>200</listPriority>
         <major>true</major>
-    </NeedDef>
+    </NeedDef>-->
 </Defs>

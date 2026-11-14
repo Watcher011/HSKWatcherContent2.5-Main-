@@ -1,23 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- Permanent Blocker -->
-
-  <InstallMindLock.label>Установить «Стеклянную клетку»</InstallMindLock.label>
-  <InstallMindLock.description>Устанавливает чип «Стеклянная клетка».</InstallMindLock.description>
-  <InstallMindLock.jobString>Установка «Стеклянной клетки».</InstallMindLock.jobString>
-
-  <RemoveMindLock.label>Удалить «Стеклянную клетку»</RemoveMindLock.label>
-  <RemoveMindLock.description>Удаляет чип «Стеклянная клетка».</RemoveMindLock.description>
-  <RemoveMindLock.jobString>Удаление чипа «Стеклянная клетка».</RemoveMindLock.jobString>
-  <RemoveMindLock.successfullyRemovedHediffMessage>{0} успешно удалил(а) чип «Стеклянная клетка» у {1}.</RemoveMindLock.successfullyRemovedHediffMessage>
-
-
   <!-- RECIPE: Установка через мозг -->
 
   <HSK_InstallWatcherVisor.label>установить окулярную систему «Мальстрём»</HSK_InstallWatcherVisor.label>
   <HSK_InstallWatcherVisor.description>Провести жестокую нейрооптическую замену. Выдирает органические глаза, переподключает зрительные нервы через мозг и вбивает блок красных линз. Анестезия необязательна, крики — обязательны.</HSK_InstallWatcherVisor.description>
   <HSK_InstallWatcherVisor.jobString>Установка окулярной системы «Мальстрём».</HSK_InstallWatcherVisor.jobString>
 
+
+  <!-- Permanent Blocker -->
+  <!--<InstallMindLock.label>Установить «Стеклянную клетку»</InstallMindLock.label>-->
+  <!--<InstallMindLock.description>Устанавливает чип «Стеклянная клетка».</InstallMindLock.description>-->
+  <!--<InstallMindLock.jobString>Установка «Стеклянной клетки».</InstallMindLock.jobString>-->
+  <!--<RemoveMindLock.label>Удалить «Стеклянную клетку»</RemoveMindLock.label>-->
+  <!--<RemoveMindLock.description>Удаляет чип «Стеклянная клетка».</RemoveMindLock.description>-->
+  <!--<RemoveMindLock.jobString>Удаление чипа «Стеклянная клетка».</RemoveMindLock.jobString>-->
+  <!--<RemoveMindLock.successfullyRemovedHediffMessage>{0} успешно удалил(а) чип «Стеклянная клетка» у {1}.</RemoveMindLock.successfullyRemovedHediffMessage>-->
 
 </LanguageData>

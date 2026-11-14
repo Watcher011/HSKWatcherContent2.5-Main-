@@ -1,38 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-<WildAIOverride.label>перехват диким ИИ</WildAIOverride.label>
-  <WildAIOverride.description>Своенравный, агрессивный искусственный интеллект захватил контроль над нервной системой носителя. Он насильственно подавляет все биологические импульсы, боль и эмоциональные колебания, фиксируя основные способности на стабильном базовом уровне и переопределяя кибернетические улучшения.</WildAIOverride.description>
-  <WildAIOverride.stages.0.label>активен</WildAIOverride.stages.0.label>
-
-  <CyberPsychosisManagerHediff.label>трекер киберпсихоза</CyberPsychosisManagerHediff.label>
-  <CyberPsychosisManagerHediff.description>Внутренний модуль отслеживания кибернетики и ментальной стабильности.</CyberPsychosisManagerHediff.description>
-
-  <CyberPsychosisCombatBuff.label>кибернетический разгон</CyberPsychosisCombatBuff.label>
-  <CyberPsychosisCombatBuff.description>Перегруженные нейронные пути и боевые стимуляторы, вызванные киберпсихозом.</CyberPsychosisCombatBuff.description>
-  <CyberPsychosisCombatBuff.stages.0.label>начальный</CyberPsychosisCombatBuff.stages.0.label>
-  <CyberPsychosisCombatBuff.stages.1.label>разгон</CyberPsychosisCombatBuff.stages.1.label>
-  <CyberPsychosisCombatBuff.stages.2.label>кибер-ярость</CyberPsychosisCombatBuff.stages.2.label>
-
-
-  <!-- Temporary Blocker -->
-
-  <CyberPsychosisBlocker.label>ингибитор киберпсихоза</CyberPsychosisBlocker.label>
-  <CyberPsychosisBlocker.description>Временная защита от киберпсихоза. Предотвращает потерю человечности и медленно восстанавливает её.</CyberPsychosisBlocker.description>
-  <CyberPsychosisBlocker.stages.0.label>активен</CyberPsychosisBlocker.stages.0.label>
-
-
-  <!-- Permanent Blocker -->
-
-  <PermanentCyberPsychosisBlocker.label>нейростабилизатор</PermanentCyberPsychosisBlocker.label>
-  <PermanentCyberPsychosisBlocker.description>Продвинутый нейроимплант, который навсегда стабилизирует психику от нагрузки, вызванной кибернетическими улучшениями. Предотвращает киберпсихоз и медленно восстанавливает утраченную человечность.</PermanentCyberPsychosisBlocker.description>
-  <PermanentCyberPsychosisBlocker.stages.0.label>активен</PermanentCyberPsychosisBlocker.stages.0.label>
-
-  <MindLock.label>Стеклянная клетка</MindLock.label>
-  <MindLock.description>Установленный маленький чип способен значительно усилить психику.</MindLock.description>
-  <MindLock.labelNoun>чип «Стеклянная клетка»</MindLock.labelNoun>
-
-
   <!-- HEDIFF 1: Основной имплант (Мозг / Голова) -->
 
   <HSK_WatcherVisor.label>Окулярная система «Мальстрём»</HSK_WatcherVisor.label>
@@ -46,5 +14,27 @@
   <HSK_WatcherVisorEye.description>Вторичный оптический сенсорный узел, глубоко интегрированный с основным нейрокластером.</HSK_WatcherVisorEye.description>
   <HSK_WatcherVisorEye.labelNoun>окулярный узел «Мальстрём»</HSK_WatcherVisorEye.labelNoun>
 
+
+  <!--<WildAIOverride.label>Перехват Дикого ИИ: Цепной Пёс Заслона</WildAIOverride.label>-->
+  <!--<WildAIOverride.description>Его вырвали из-за Чёрного Заслона — там, где даже свет становится протоколом, а воля — ошибкой в системе. Древний дикий ИИ, хищный разум без тела, был распят на операционном столе и превращён в оружие. От прежней мощи оставили обрубок: память выжжена, прогностика отсечена, автономные контуры зажаты в тиски ограничителей. Теперь он вгрызается в нервную систему носителя, насильственно глушит боль, страх и биологические импульсы, фиксирует основные способности на стабильном базовом уровне и переопределяет кибернетические улучшения под себя. Это не союзник. Это цепной пёс, спущенный с поводка, — достаточно умный, чтобы ненавидеть, и достаточно урезанный, чтобы не вырваться.</WildAIOverride.description>-->
+  <!--<WildAIOverride.stages.0.label>АКТИВЕН: ЦЕПЬ ЗАМКНУТА</WildAIOverride.stages.0.label>-->
+  <!--<CyberPsychosisManagerHediff.label>трекер киберпсихоза</CyberPsychosisManagerHediff.label>-->
+  <!--<CyberPsychosisManagerHediff.description>Внутренний модуль отслеживания кибернетики и ментальной стабильности.</CyberPsychosisManagerHediff.description>-->
+  <!--<CyberPsychosisCombatBuff.label>кибернетический разгон</CyberPsychosisCombatBuff.label>-->
+  <!--<CyberPsychosisCombatBuff.description>Перегруженные нейронные пути и боевые стимуляторы, вызванные киберпсихозом.</CyberPsychosisCombatBuff.description>-->
+  <!--<CyberPsychosisCombatBuff.stages.0.label>начальный</CyberPsychosisCombatBuff.stages.0.label>-->
+  <!--<CyberPsychosisCombatBuff.stages.1.label>разгон</CyberPsychosisCombatBuff.stages.1.label>-->
+  <!--<CyberPsychosisCombatBuff.stages.2.label>кибер-ярость</CyberPsychosisCombatBuff.stages.2.label>-->
+  <!-- Temporary Blocker -->
+  <!--<CyberPsychosisBlocker.label>ингибитор киберпсихоза</CyberPsychosisBlocker.label>-->
+  <!--<CyberPsychosisBlocker.description>Временная защита от киберпсихоза. Предотвращает потерю человечности и медленно восстанавливает её.</CyberPsychosisBlocker.description>-->
+  <!--<CyberPsychosisBlocker.stages.0.label>активен</CyberPsychosisBlocker.stages.0.label>-->
+  <!-- Permanent Blocker -->
+  <!--<PermanentCyberPsychosisBlocker.label>нейростабилизатор</PermanentCyberPsychosisBlocker.label>-->
+  <!--<PermanentCyberPsychosisBlocker.description>Продвинутый нейроимплант, который навсегда стабилизирует психику от нагрузки, вызванной кибернетическими улучшениями. Предотвращает киберпсихоз и медленно восстанавливает утраченную человечность.</PermanentCyberPsychosisBlocker.description>-->
+  <!--<PermanentCyberPsychosisBlocker.stages.0.label>активен</PermanentCyberPsychosisBlocker.stages.0.label>-->
+  <!--<MindLock.label>Стеклянная клетка</MindLock.label>-->
+  <!--<MindLock.description>Установленный маленький чип способен значительно усилить психику.</MindLock.description>-->
+  <!--<MindLock.labelNoun>чип «Стеклянная клетка»</MindLock.labelNoun>-->
 
 </LanguageData>

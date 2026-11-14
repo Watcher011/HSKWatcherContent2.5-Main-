@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-   <ThoughtDef>
+   <!--<ThoughtDef>
         <defName>CyberPsychosis</defName>
         <workerClass>HSK.Watcher.Content.ThoughtWorker_CyberPsychosis</workerClass>
         <stages>
@@ -33,5 +33,5 @@
                 <baseMoodEffect>-50</baseMoodEffect>
             </li>
         </stages>
-    </ThoughtDef>
+    </ThoughtDef>-->
 </Defs>

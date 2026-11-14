@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<HediffDef>
+<!--<HediffDef>
     <defName>WildAIOverride</defName>
     <label>wild AI override</label>
     <description>A rogue, invasive artificial intelligence has seized control of the host's nervous system. It forcibly suppresses all biological impulses, pain, and emotional fluctuations, locking core capacities at a stable baseline while overriding cybernetic augmentations.</description>
@@ -10,14 +10,14 @@
 	<comps>
 			<li Class="HediffCompProperties_Disappears">
 				<disappearsAfterTicks>15000</disappearsAfterTicks>
-				<!-- 6 hours -->
+				<!{1}** 6 hours **{1}>
 			</li>
 		</comps>
     <stages>
         <li>
             <label>active</label>
             <becomeVisible>true</becomeVisible>
-            <!-- Ограничиваем максимальное значение до 1.0 (100%), убирая любые имплантные оверклокинги и усиления -->
+            <!{1}** Ограничиваем максимальное значение до 1.0 (100%), убирая любые имплантные оверклокинги и усиления **{1}>
             <capMods>
                 <li>
                     <capacity>Consciousness</capacity>
@@ -135,7 +135,7 @@
     </renderNodeProperties>
 </HediffDef>
 
-	<!-- Temporary Blocker -->
+	<!{1}** Temporary Blocker **{1}>
 	<HediffDef>
 		<defName>CyberPsychosisBlocker</defName>
 		<label>cyber psychosis inhibitor</label>
@@ -155,7 +155,7 @@
 			</li>
 		</comps>
 	</HediffDef>
-	<!-- Permanent Blocker -->
+	<!{1}** Permanent Blocker **{1}>
 	<HediffDef>
 		<defName>PermanentCyberPsychosisBlocker</defName>
 		<label>neural stabilizer</label>
@@ -316,7 +316,7 @@
 			<Medicine>6</Medicine>
 		</skillRequirements>
 		<researchPrerequisite>Prosthesis_install_D3</researchPrerequisite>
-	</RecipeDef>
+	</RecipeDef>-->
 <ThingDef ParentName="BodyPartBase_Synthetic">
         <defName>HSK_WatcherVisor</defName>
         <label>Maelstrom ocular system</label>

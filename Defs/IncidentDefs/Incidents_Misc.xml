@@ -211,7 +211,7 @@
         <description>A strange portal opens out of nowhere... What will happen next?</description>
         <workerClass>HSK.Watcher.Content.Incident.IncidentWorker_RickMortyPortal</workerClass>
         <category>Misc</category>
-        <baseChance>0.08</baseChance>
+        <baseChance>0.25</baseChance>
         <minRefireDays>180</minRefireDays>
         <targetTags>
             <li>Map_PlayerHome</li>
@@ -228,9 +228,24 @@
     <targetTags>
       <li>Map_PlayerHome</li>
     </targetTags>
-    <baseChance>0.07</baseChance>
+    <baseChance>0.25</baseChance>
     <minRefireDays>15</minRefireDays>
     <earliestDay>10</earliestDay>
     <pointsScaleable>true</pointsScaleable>
   </IncidentDef>
+  
+<!--<IncidentDef>
+    <defName>HSK_MaxTacPunishmentIncident</defName>
+    <label>Карательный отряд Макс-Так</label>
+    <category>ThreatBig</category>
+    <workerClass>HSK.Watcher.Content.Incident.IncidentWorker_MaxTacPunishment</workerClass>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <baseChance>0</baseChance>
+    <minRefireDays>50</minRefireDays>
+    <letterLabel>HSK_MaxTacLetterLabel</letterLabel>
+    <letterText>HSK_MaxTacLetterText</letterText>
+    <letterDef>ThreatBig</letterDef>
+  </IncidentDef>-->
 </Defs>

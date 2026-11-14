@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="DrugBase">
+<!--	<ThingDef ParentName="DrugBase">
 		<defName>CyberPsychosisBlockerPill</defName>
 		<label>cyber psychosis inhibitor</label>
 		<description>A drug that temporarily prevents cyber psychosis from progressing and slowly restores humanity. Effect lasts 24 hours.</description>
@@ -50,7 +50,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- Permanent Neural Stabilizer -->
+	<!{1}** Permanent Neural Stabilizer **{1}>
 	<ThingDef>
 		<defName>NeuralStabilizer</defName>
 		<label>neural stabilizer</label>
@@ -77,5 +77,5 @@
 		<comps>
 			<li Class="CompProperties_Biocodable"/>
 		</comps>
-	</ThingDef>
+	</ThingDef>-->
 </Defs>

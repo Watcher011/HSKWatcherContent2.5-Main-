@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--<QuestScriptDef>
+    <defName>HSK_MaxTacStrikeQuest</defName>
+    <rootSelectionWeight>0</rootSelectionWeight>
+    <expireDaysRange>0.01</expireDaysRange>
+    <defaultChallengeRating>3</defaultChallengeRating>
+    <isRootSpecial>true</isRootSpecial>
+    <sendAvailableLetter>false</sendAvailableLetter>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Зачистка Max-Tac</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->Зафиксирована вспышка тяжелого киберпсихоза. Объект  признан неконтролируемым.\n\nШтурмовой отряд "Макс-Так" высажен в секторе. Задача: локализация и физическое уничтожение угрозы. \n\nПротокол взаимодействия с местным населением: "Игнорирование". Оперативники не атакуют ваше поселение, если вы не проявите агрессию. Любое действие против отряда будет расценено как пособничество цели и повлечет полную зачистку сектора. Сохраняйте дистанцию и не вмешивайтесь.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="HSK.Watcher.Content.Incident.QuestNode_Root_MaxTacStrike" />
+  </QuestScriptDef>-->
+</Defs>

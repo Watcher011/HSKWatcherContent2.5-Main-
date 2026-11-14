@@ -17,9 +17,45 @@
   <CookMealFishinplastic.description>Сухой паек для трудных времен.</CookMealFishinplastic.description>
   <CookMealFishinplastic.jobString>Готовит.</CookMealFishinplastic.jobString>
 
-  <CookCyberPsychosisBlockerPill.label>Создать дозу ингибитора киберпсихоза</CookCyberPsychosisBlockerPill.label>
-  <CookCyberPsychosisBlockerPill.description>Доза ингибитора киберпсихоза.</CookCyberPsychosisBlockerPill.description>
-  <CookCyberPsychosisBlockerPill.jobString>Создание дозы ингибитора</CookCyberPsychosisBlockerPill.jobString>
+
+  <!-- <RecipeDef>
+		<defName>CookCyberPsychosisBlockerPill</defName>
+		<label>Make CyberPsychosis Blocker Pill</label>
+		<description>CyberPsychosis Blocker Pill.</description>
+		<jobString>Crafting Blocker Pill</jobString>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<workAmount>720</workAmount>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<CyberPsychosisBlockerPill>4</CyberPsychosisBlockerPill>
+		</products>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<researchPrerequisite>PenoxycylineProduction</researchPrerequisite>
+	</RecipeDef> -->
 
   <CookMealHeadcrab.label>Зажарить хедкраба</CookMealHeadcrab.label>
   <CookMealHeadcrab.description>Еда для смельчаков. Или для безнадёжных.</CookMealHeadcrab.description>
@@ -36,5 +72,9 @@
   <MakeJellyPie.label>приготовить желейный пирог «Сладость улья»</MakeJellyPie.label>
   <MakeJellyPie.description>Сладкий пирог с желе насекомых.</MakeJellyPie.description>
 
+
+  <!--<CookCyberPsychosisBlockerPill.label>Создать дозу ингибитора киберпсихоза</CookCyberPsychosisBlockerPill.label>-->
+  <!--<CookCyberPsychosisBlockerPill.description>Доза ингибитора киберпсихоза.</CookCyberPsychosisBlockerPill.description>-->
+  <!--<CookCyberPsychosisBlockerPill.jobString>Создание дозы ингибитора</CookCyberPsychosisBlockerPill.jobString>-->
 
 </LanguageData>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- HEDIFF: HIGH / PHASES -->
+
+ <AntidepressantsHigh.label>эффект антидепрессанта</AntidepressantsHigh.label>
+  <AntidepressantsHigh.description>Антидепрессанты активны в крови. Сначала настроение взлетает так, будто вы выиграли в лотерею и вам почему-то не придётся платить налоги. Но со временем химический баланс решает вернуть должок — и вы падаете в тяжёлый депрессивный обвал. Колония настоятельно рекомендует не планировать свадьбу и не подписывать важные бумаги на этой стадии.</AntidepressantsHigh.description>
+  <AntidepressantsHigh.stages.0.label>эйфория</AntidepressantsHigh.stages.0.label>
+  <AntidepressantsHigh.stages.1.label>стабилизация</AntidepressantsHigh.stages.1.label>
+  <AntidepressantsHigh.stages.2.label>депрессивный обвал</AntidepressantsHigh.stages.2.label>
+  <AntidepressantsHigh.labelNoun>эффект антидепрессанта</AntidepressantsHigh.labelNoun>
+
+
+  <!-- ЗАВИСИМОСТЬ И АБСТИНЕНЦИЯ -->
+
+  <AntidepressantsAddiction.label>зависимость от антидепрессантов</AntidepressantsAddiction.label>
+  <AntidepressantsAddiction.description>Химическая и психологическая зависимость от антидепрессантов. Без препарата нейромедиаторы мозга перестают регулировать настроение и устраивают забастовку с требованием вернуть дозу. Абстиненция идёт по расписанию: сначала дрожь, потом слёзы, потом философские беседы с вентиляцией. В колонии такие обычно становятся либо поэтами, либо причиной пожара.</AntidepressantsAddiction.description>
+  <AntidepressantsAddiction.stages.1.label>абстиненция</AntidepressantsAddiction.stages.1.label>
+
+
+  <!-- Толерантность -->
+
+  <AntidepressantsTolerance.label>толерантность к антидепрессантам</AntidepressantsTolerance.label>
+  <AntidepressantsTolerance.description>Накопленная толерантность к антидепрессантам: эйфория и стабилизация настроения слабеют. Мозг привык и теперь требует дозу, как печень — собутыльника. Побочный эффект: вы всё ещё грустны, но уже дороже.</AntidepressantsTolerance.description>
+
+</LanguageData>
