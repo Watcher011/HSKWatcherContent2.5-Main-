@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
- <QuestScriptDef>
+<!--<QuestScriptDef>
     <defName>MechPodCrashQuest</defName>
     <autoAccept>true</autoAccept>
     <defaultHidden>true</defaultHidden>
@@ -12,7 +12,7 @@
     </questNameRules>
     <questDescriptionRules>
       <rulesStrings>
-        <li>questDescription->A pod has crashed nearby. Survivors and hidden dangers are inside.</li>
+        <li>questDescription->A pod has crashed nearby. Something is inside.</li>
       </rulesStrings>
     </questDescriptionRules>
 
@@ -21,8 +21,6 @@
         <li Class="QuestNode_GetMap" />
         <li Class="HSK.Watcher.Content.QuestNode_MechPodCrash" />
         <li Class="HSK.Watcher.Content.QuestNode_SpawnSealedPod" />
-        
-        <!-- Письмо о падении капсулы (изменили letterDef на PositiveEvent для синего цвета) -->
         <li Class="QuestNode_Letter">
           <letterDef>PositiveEvent</letterDef>
           <label>$crashLabel</label>
@@ -30,5 +28,5 @@
         </li>
       </nodes>
     </root>
-  </QuestScriptDef>
+  </QuestScriptDef>-->
 </Defs>

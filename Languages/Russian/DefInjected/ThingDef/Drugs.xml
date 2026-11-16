@@ -11,10 +11,10 @@
 
   <!-- THING DEF: КРОТОВУХА -->
 
-<Krotovukha.label>кротовуха</Krotovukha.label>
-<Krotovukha.description>Мутная, вонючая алкогольная настойка на подземных роющих тварях. После употребления просыпается сверхъестественное инстинктивное чутьё к рытью и туннелям — правда, токсичная дрянь заодно временно отключает зрение, чтобы не мешало наслаждаться процессом. Теперь вы копаете как проклятый крот, которому уже нечего терять, кроме глаз.</Krotovukha.description>
-<Krotovukha.ingestible.ingestCommandString>Выпить {0}</Krotovukha.ingestible.ingestCommandString>
-<Krotovukha.ingestible.ingestReportString>Пьёт {0}. Судя по лицу, мысленно прощается со зрением.</Krotovukha.ingestible.ingestReportString>
+  <Krotovukha.label>кротовуха</Krotovukha.label>
+  <Krotovukha.description>Мутная, вонючая алкогольная настойка на подземных роющих тварях. После употребления просыпается сверхъестественное инстинктивное чутьё к рытью и туннелям — правда, токсичная дрянь заодно временно отключает зрение, чтобы не мешало наслаждаться процессом. Теперь вы копаете как проклятый крот, которому уже нечего терять, кроме глаз.</Krotovukha.description>
+  <Krotovukha.ingestible.ingestCommandString>Выпить {0}</Krotovukha.ingestible.ingestCommandString>
+  <Krotovukha.ingestible.ingestReportString>Пьёт {0}. Судя по лицу, мысленно прощается со зрением.</Krotovukha.ingestible.ingestReportString>
 
 
 </LanguageData>

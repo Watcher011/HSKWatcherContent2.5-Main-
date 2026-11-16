@@ -233,19 +233,19 @@
     <earliestDay>10</earliestDay>
     <pointsScaleable>true</pointsScaleable>
   </IncidentDef>
-<IncidentDef>
+<!--<IncidentDef>
     <defName>MechPodCrashQuestIncident</defName>
-    <label>крушение капсулы с угрозой</label>
+    <label>crash of a capsule containing a threat</label>
     <category>Misc</category>
     <targetTags>
       <li>Map_PlayerHome</li>
     </targetTags>
     <workerClass>IncidentWorker_GiveQuest</workerClass>
     <questScriptDef>MechPodCrashQuest</questScriptDef>
-    <baseChance>1.0</baseChance>
+    <baseChance>0.05</baseChance>
     <populationEffect>IncreaseMedium</populationEffect>
     <requireColonistsPresent>True</requireColonistsPresent>
-  </IncidentDef>
+  </IncidentDef>-->
 <!--<IncidentDef>
     <defName>HSK_MaxTacPunishmentIncident</defName>
     <label>Карательный отряд Макс-Так</label>

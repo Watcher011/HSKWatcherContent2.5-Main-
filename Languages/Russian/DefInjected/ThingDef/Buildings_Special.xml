@@ -4,5 +4,12 @@
   <GreenzyabryaCarpet.label>Ковёр из гринизябры</GreenzyabryaCarpet.label>
   <GreenzyabryaCarpet.description>Ковёр, сделанный из шкуры гринизябры. Зелёный, пушистый и до абсурда обаятельный — от него невозможно отвести взгляд. Это существо когда-то пыталось быть устрашающим, но теперь оно стало воплощением гротескной красоты. Колонисты спорят: это высокое искусство или издевательство над искусством? Как бы то ни было, он мягкий, тёплый и всегда вызывает улыбку.</GreenzyabryaCarpet.description>
 
+ <HSK_MechPodFlying.label>летящая спасательная капсула</HSK_MechPodFlying.label>
+
+
+<!-- Обломки: SK DropPodLanded + компонент, который при разборке выпускает пешек из груза -->
+
+<HSK_MechPodLanded.label>обломков инженерной капсулы</HSK_MechPodLanded.label>
+
 
 </LanguageData>

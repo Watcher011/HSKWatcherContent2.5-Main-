@@ -26,9 +26,9 @@
 
   <!-- HEDIFF: ЭФФЕКТ КРОТОВУХИ -->
 
-<KrotovukhaEffect.label>кротовый инстинкт (кротовуха)</KrotovukhaEffect.label>
-<KrotovukhaEffect.description>Диковинный подземный настой временно ослепил этого бедолагу — зато наградил жуткой инстинктивной скоростью и сноровкой при рытье камня. Теперь он вгрызается в породу с эффективностью обречённого, которому очень надо успеть на собственные похороны.</KrotovukhaEffect.description>
-<KrotovukhaEffect.labelNoun>кротовый инстинкт</KrotovukhaEffect.labelNoun>
+  <KrotovukhaEffect.label>кротовый инстинкт (кротовуха)</KrotovukhaEffect.label>
+  <KrotovukhaEffect.description>Диковинный подземный настой временно ослепил этого бедолагу — зато наградил жуткой инстинктивной скоростью и сноровкой при рытье камня. Теперь он вгрызается в породу с эффективностью обречённого, которому очень надо успеть на собственные похороны.</KrotovukhaEffect.description>
+  <KrotovukhaEffect.labelNoun>кротовый инстинкт</KrotovukhaEffect.labelNoun>
 
 
 </LanguageData>

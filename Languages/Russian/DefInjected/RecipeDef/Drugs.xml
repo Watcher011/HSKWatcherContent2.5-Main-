@@ -3,9 +3,9 @@
 
   <!-- RECIPE: ВАРКА КРОТОВУХИ -->
 
-<Make_Krotovukha.label>сварить кротовуху</Make_Krotovukha.label>
-<Make_Krotovukha.description>Сварить кротовуху из сырого мяса и хмеля. Рецепт настолько древний, что даже совесть предпочла не спрашивать, что это за «мясо».</Make_Krotovukha.description>
-<Make_Krotovukha.jobString>Варит кротовуху. Пахнет так, будто подвал решил заговорить.</Make_Krotovukha.jobString>
+  <Make_Krotovukha.label>сварить кротовуху</Make_Krotovukha.label>
+  <Make_Krotovukha.description>Сварить кротовуху из сырого мяса и хмеля. Рецепт настолько древний, что даже совесть предпочла не спрашивать, что это за «мясо».</Make_Krotovukha.description>
+  <Make_Krotovukha.jobString>Варит кротовуху. Пахнет так, будто подвал решил заговорить.</Make_Krotovukha.jobString>
 
 
 </LanguageData>
