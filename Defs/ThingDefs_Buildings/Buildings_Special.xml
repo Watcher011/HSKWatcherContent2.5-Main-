@@ -40,5 +40,37 @@
 			<li>Carpets_B3</li>
 		</researchPrerequisites>
 	</ThingDef>
- 
+	
+  <ThingDef ParentName="SkyfallerFlying">
+    <defName>HSK_MechPodFlying</defName>
+    <label>flying drop pod</label>
+    <thingClass>HSK.Watcher.Content.MechPodFlying</thingClass>
+    <graphicData>
+      <texPath>Things/Special/MechDropPod</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <!-- Обломки: SK DropPodLanded + компонент, который при разборке выпускает пешек из груза -->
+  <ThingDef ParentName="ShipPartsLanded">
+    <defName>HSK_MechPodLanded</defName>
+    <label>drop pod wreckage</label>
+    <thingClass>SK.DropPodLanded</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Genstep/DropPodLanded</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <shadowData>
+        <volume>(0.8, 0.6, 0.8)</volume>
+      </shadowData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="SK.CompSealedCargo_Properties"></li>
+      <li Class="HSK.Watcher.Content.CompProperties_ReleaseCargoPawns">
+        <!-- true: освобождённый беженец сразу вступает в колонию; false: остаётся нейтральным -->
+        <joinPlayer>true</joinPlayer>
+      </li>
+    </comps>
+  </ThingDef>
 </Defs>

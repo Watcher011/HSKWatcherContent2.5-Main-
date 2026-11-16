@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- THING DEF -->
+
+  <Antidepressants.label>антидепрессанты</Antidepressants.label>
+  <Antidepressants.description>Мощное фармацевтическое соединение, созданное для искусственной стабилизации настроения и устранения психологического стресса. В малых дозах дарит эйфорию и душевный покой, но длительное употребление меняет химию мозга, а смешивание с алкоголем приводит к фатальной химической реакции — патологоанатом потом будет долго вспоминать вашу печень добрым словом.\n\nВнимание: вызывает сильную зависимость. Длительное использование без поддерживающей дозы ведёт к тяжёлому депрессивному обвалу — вы рухнете быстрее, чем недостроенная стена, и колония останется без штатного нытика.</Antidepressants.description>
+  <Antidepressants.ingestible.ingestCommandString>Принять {0}</Antidepressants.ingestible.ingestCommandString>
+  <Antidepressants.ingestible.ingestReportString>Принимает {0}.</Antidepressants.ingestible.ingestReportString>
+
+
+  <!-- THING DEF: КРОТОВУХА -->
+
+<Krotovukha.label>кротовуха</Krotovukha.label>
+<Krotovukha.description>Мутная, вонючая алкогольная настойка на подземных роющих тварях. После употребления просыпается сверхъестественное инстинктивное чутьё к рытью и туннелям — правда, токсичная дрянь заодно временно отключает зрение, чтобы не мешало наслаждаться процессом. Теперь вы копаете как проклятый крот, которому уже нечего терять, кроме глаз.</Krotovukha.description>
+<Krotovukha.ingestible.ingestCommandString>Выпить {0}</Krotovukha.ingestible.ingestCommandString>
+<Krotovukha.ingestible.ingestReportString>Пьёт {0}. Судя по лицу, мысленно прощается со зрением.</Krotovukha.ingestible.ingestReportString>
+
+
+</LanguageData>

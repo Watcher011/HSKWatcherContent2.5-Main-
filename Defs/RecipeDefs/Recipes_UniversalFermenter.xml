@@ -552,17 +552,10 @@ Recent studies have shown that 97% of colonist subjects demonstrated temporary l
 		 <ingredients>
       <li>
         <filter>
-		  <thingDefs>
-			<li>Corpse_ThingDefFishSduiggles</li>
-			<li>Corpse_ThingDefFishSeasnake</li>
-			<li>Corpse_ThingDefFishMashgon</li>
-			<li>Corpse_ThingDefFishBlueblade</li>
-			<li>Corpse_ThingDefFishTailteeth</li>
-			<li>Corpse_ThingDefCuda</li>
-			<li>Corpse_ThingDefIceFlounder</li>
-			<li>Corpse_ThingDefFishSterlingPerch</li>
-			<li>Corpse_ThingDefFishPinstripeBass</li>
-		  </thingDefs>
+		  <categories>
+			<li>CorpsesFish</li>
+			<li>Fish</li>
+		  </categories>
         </filter>
         <count>1</count>
       </li>
@@ -579,16 +572,11 @@ Recent studies have shown that 97% of colonist subjects demonstrated temporary l
 			<DruFish>3</DruFish>
 		</products>
 		  <fixedIngredientFilter>
+		  	<categories>
+			<li>CorpsesFish</li>
+			<li>Fish</li>
+		</categories>
       <thingDefs>
-        <li>Corpse_ThingDefFishSduiggles</li>
-		<li>Corpse_ThingDefFishSeasnake</li>
-		<li>Corpse_ThingDefFishMashgon</li>
-		<li>Corpse_ThingDefFishBlueblade</li>
-        <li>Corpse_ThingDefFishTailteeth</li>
-		<li>Corpse_ThingDefCuda</li>
-		<li>Corpse_ThingDefIceFlounder</li>
-		<li>Corpse_ThingDefFishSterlingPerch</li>
-		<li>Corpse_ThingDefFishPinstripeBass</li>
 		<li>Salt</li>
       </thingDefs>
       <specialFiltersToDisallow>
