@@ -1,0 +1,13 @@
+C:\Users\----\Desktop\HSK Watcher Content\HSK Watcher Content\bin\Debug\HSK Watcher Content.dll
+C:\Users\----\Desktop\HSK Watcher Content\HSK Watcher Content\bin\Debug\HSK Watcher Content.pdb
+C:\Users\----\Desktop\HSK Watcher Content\HSK Watcher Content\obj\Debug\HSK Watcher Content.csproj.AssemblyReference.cache
+C:\Users\----\Desktop\HSK Watcher Content\HSK Watcher Content\obj\Debug\HSK Watcher Content.csproj.CoreCompileInputs.cache
+C:\Users\----\Desktop\HSK Watcher Content\HSK Watcher Content\obj\Debug\HSK Watcher Content.dll
+C:\Users\----\Desktop\HSK Watcher Content\HSK Watcher Content\obj\Debug\HSK Watcher Content.pdb
+C:\Users\----\Desktop\HSK Watcher Content\HSK Watcher Content\bin\Debug\UnityEngine.TextRenderingModule.dll
+C:\Users\----\Desktop\HSK Watcher Content\HSK Watcher Content\obj\Debug\HSK Watc.89C891BC.Up2Date
+C:\Users\----\Desktop\HSK Watcher Content\HSK Watcher Content\bin\Debug\0Harmony.dll
+C:\Users\----\Desktop\HSK Watcher Content\HSK Watcher Content\bin\Debug\CombatExtended.dll
+C:\Users\----\Desktop\HSK Watcher Content\HSK Watcher Content\bin\Debug\CombatExtended.HSK.dll
+C:\Users\----\Desktop\HSK Watcher Content\HSK Watcher Content\bin\Debug\CombatExtendedLoader.dll
+C:\Users\----\Desktop\HSK Watcher Content\HSK Watcher Content\bin\Debug\Core_SK.dll
